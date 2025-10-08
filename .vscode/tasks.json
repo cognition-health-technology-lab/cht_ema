@@ -1,0 +1,75 @@
+{
+  "version": "2.0.0",
+  "options": {
+    "cwd": "${workspaceFolder}"
+  },
+  "tasks": [
+    {
+      "label": "Melos: bootstrap",
+      "type": "shell",
+      "command": "dart run melos bootstrap",
+      "problemMatcher": []
+    },
+    {
+      "label": "Melos: clean",
+      "type": "shell",
+      "command": "dart run melos clean",
+      "problemMatcher": []
+    },
+    {
+      "label": "Melos: generate localizations",
+      "type": "shell",
+      "command": "dart run melos run generate_localizations",
+      "problemMatcher": []
+    },
+    {
+      "label": "Melos: check format",
+      "type": "shell",
+      "command": "dart run melos run check_format",
+      "group": { "kind": "build" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Melos: format (apply)",
+      "type": "shell",
+      "command": "dart run melos exec dart format .",
+      "problemMatcher": []
+    },
+    {
+      "label": "Melos: analyze",
+      "type": "shell",
+      "command": "dart run melos run analyze",
+      "group": { "kind": "build", "isDefault": true }
+    },
+    {
+      "label": "Melos: test",
+      "type": "shell",
+      "command": "dart run melos run test",
+      "group": { "kind": "test", "isDefault": true }
+    },
+    {
+      "label": "Melos: build Android examples (debug)",
+      "type": "shell",
+      "command": "dart run melos run build_android_examples",
+      "problemMatcher": []
+    },
+    {
+      "label": "Melos: build iOS examples (no codesign)",
+      "type": "shell",
+      "command": "dart run melos run build_ios_examples",
+      "problemMatcher": []
+    },
+    {
+      "label": "CI: all basic checks (bootstrap, gen-l10n, check format, analyze, test)",
+      "type": "shell",
+      "command": "dart run melos run all_basic_checks",
+      "problemMatcher": []
+    },
+    {
+      "label": "CI: all formal checks (bootstrap, gen-l10n, check format, analyze, test, build android, ios build)",
+      "type": "shell",
+      "command": "dart run melos run all_formal_checks",
+      "problemMatcher": []
+    }
+  ]
+}

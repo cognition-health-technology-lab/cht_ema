@@ -1,0 +1,45 @@
+name: "📚 Documentation"
+description: Request docs or propose improvements
+title: "docs(scope): short summary"
+labels: ["documentation", "needs-triage"]
+body:
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Documentation scope
+      options:
+        - cognition
+        - surveys
+        - general
+    validations:
+      required: true
+
+  - type: textarea
+    id: improve
+    attributes:
+      label: What needs documenting or improving?
+      placeholder: Clarify setup for internalization in examples...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed changes
+      placeholder: Add a new section in README → “Getting Started”, include code sample...
+    validations:
+      required: false
+
+  - type: textarea
+    id: links
+    attributes:
+      label: Related links
+      placeholder: Link to current docs, PRs, or examples
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I’ve searched existing issues and there isn’t a similar request
+          required: true

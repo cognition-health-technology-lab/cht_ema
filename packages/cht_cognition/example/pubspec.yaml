@@ -1,0 +1,31 @@
+name: cht_cognition_example
+description: "A new Flutter project."
+publish_to: "none"
+resolution: workspace
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  cht_cognition:
+    path: ../../cht_cognition
+  cupertino_icons: ^1.0.6
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  research_package:
+    git:
+      url: https://github.com/mario-bermonti/research.package.git
+      ref: 90829448e20fa72ce34ee740dac25849078cb2de
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  generate: true

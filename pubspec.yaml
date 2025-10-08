@@ -1,0 +1,63 @@
+name: cht_ema
+publish_to: none
+environment:
+  sdk: ^3.9.0
+
+workspace:
+  - packages/cht_ema_surveys
+  - packages/cht_ema_surveys/example
+  - packages/cht_cognition
+  - packages/cht_cognition/example
+
+dev_dependencies:
+  melos: ^7.1.1
+  very_good_analysis: ^10.0.0
+
+melos:
+  scripts:
+    check_format:
+      run: dart run melos exec dart format --set-exit-if-changed .
+      description: "Check if any file in any package needs formatting. Convenient for CI checks."
+
+    analyze:
+      run: dart run melos exec flutter analyze --fatal-infos --fatal-warnings
+      description: "Run static code analysis in all packages."
+
+    test:
+      description: "Run unit tests in all packages and their example apps."
+      steps:
+        - dart run melos exec --dir-exists=test -- flutter test --no-pub
+        - dart run melos exec --dir-exists=example -- 'cd example && flutter test --no-pub'
+
+    generate_localizations:
+      description: "Generate localization files for all packages and their examples apps."
+      steps:
+        - dart run melos exec -- 'flutter gen-l10n'
+
+    build_android_examples:
+      run: dart run melos exec -c 1 --dir-exists=example -- 'cd example && flutter build apk --debug'
+      description: "Check Android APKs build for all example apps. Useful for CI checks."
+
+    build_ios_examples:
+      run: dart run melos exec -c 2 --dir-exists=example -- 'cd example && flutter build ios --no-codesign'
+      description: "Check iOS app build for all example apps. Useful for CI checks."
+
+    all_basic_checks:
+      run: |
+        dart run melos bootstrap && 
+        dart run melos run generate_localizations && 
+        dart run melos run check_format &&
+        dart run  melos run analyze &&
+        dart run  melos run test
+      description: "Run all basic checks: bootstrap, generate localizations, check format, analyze, and test."
+
+    all_formal_checks:
+      run: |
+        dart run melos bootstrap && 
+        dart run melos run generate_localizations && 
+        dart run melos run check_format && 
+        dart run  melos run analyze && 
+        dart run  melos run test && 
+        dart run melos run build_android_examples && 
+        dart run melos run build_ios_examples
+      description: "Run all formal checks: bootstrap, generate localizations, check format, analyze, test, build android, build ios."

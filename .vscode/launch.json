@@ -1,0 +1,55 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    // Surveys package - example
+    {
+      "name": "Run: cht_ema_surveys — example (debug)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "cwd": "${workspaceFolder}/packages/cht_ema_surveys/example",
+      "flutterMode": "debug"
+    },
+    {
+      "name": "Run: cht_ema_surveys — example (profile)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "cwd": "${workspaceFolder}/packages/cht_ema_surveys/example",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "Run: cht_ema_surveys — example (release)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "cwd": "${workspaceFolder}/packages/cht_ema_surveys/example",
+      "flutterMode": "release"
+    },
+    // Cognition package - example
+    {
+      "name": "Run: cht_cognition — example (debug)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "cwd": "${workspaceFolder}/packages/cht_cognition/example",
+      "flutterMode": "debug"
+    },
+    {
+      "name": "Run: cht_cognition — example (profile)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "cwd": "${workspaceFolder}/packages/cht_cognition/example",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "Run: cht_cognition — example (release)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "cwd": "${workspaceFolder}/packages/cht_cognition/example",
+      "flutterMode": "release"
+    }
+  ]
+}

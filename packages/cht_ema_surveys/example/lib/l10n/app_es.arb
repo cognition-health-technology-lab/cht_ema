@@ -1,0 +1,23 @@
+{
+  "@@locale": "es",
+  "appTitle": "Ejemplo CHT Encuestas",
+  "@appTitle": {
+    "description": "Title for the app"
+  },
+  "homeMessage": "Pantalla de inicio",
+  "@homeMessage": {
+    "description": "Message displayed on the home screen"
+  },
+  "languageToolTip": "Seleccionar idioma",
+  "@languageToolTip": {
+    "description": "Tooltip for the language selection menu"
+  },
+  "langOptionEn": "English",
+  "@langOptionEn": {
+    "description": "English language option"
+  },
+  "langOptionEs": "Español",
+  "@langOptionEs": {
+    "description": "Spanish language option"
+  }
+}

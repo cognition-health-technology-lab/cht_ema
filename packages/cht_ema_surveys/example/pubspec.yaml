@@ -1,0 +1,31 @@
+name: example_surveys
+description: "A new Flutter project."
+publish_to: "none"
+resolution: workspace
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  cht_ema_surveys:
+    path: ../../cht_ema_surveys
+  cupertino_icons: ^1.0.6
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  research_package:
+    git:
+      url: https://github.com/mario-bermonti/research.package.git
+      ref: 90829448e20fa72ce34ee740dac25849078cb2de
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  generate: true
