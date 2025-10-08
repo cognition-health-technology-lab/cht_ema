@@ -1,0 +1,23 @@
+{
+  "@@locale": "en",
+  "appTitle": "CHT Cognitive Tasks Example",
+  "@appTitle": {
+    "description": "Title for the app"
+  },
+  "homeMessage": "Home screen",
+  "@homeMessage": {
+    "description": "Message displayed on the home screen"
+  },
+  "languageToolTip": "Select Language",
+  "@languageToolTip": {
+    "description": "Tooltip for the language selection menu"
+  },
+  "langOptionEn": "English",
+  "@langOptionEn": {
+    "description": "English language option"
+  },
+  "langOptionEs": "Español",
+  "@langOptionEs": {
+    "description": "Spanish language option"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "@@locale": "es",
+  "itemTitle": "Título del item",
+  "@itemTitle": {
+    "description": "Title for the EMA survey item"
+  }
+}

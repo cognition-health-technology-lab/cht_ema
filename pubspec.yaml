@@ -1,0 +1,32 @@
+name: cht_ema
+publish_to: none
+environment:
+  sdk: ^3.9.0
+workspace:
+  - packages/cht_ema_surveys
+  - packages/cht_ema_cognitive_tasks
+dev_dependencies:
+  melos: ^7.1.1
+  very_good_analysis: ^10.0.0
+
+melos:
+  scripts:
+    format-check:
+      run: dart run melos exec dart format --set-exit-if-changed .
+      description: "Fail if any file would be reformatted. Mostly for CI."
+
+    analyze: |
+      dart run melos exec flutter analyze --fatal-infos --fatal-warnings
+
+    test: |
+      dart run melos exec --dir-exists=test -- flutter test --no-pub
+
+    # convenience for CI checks
+    build-android-examples: |
+      dart run melos exec --dir-exists=example -- \
+        bash -lc 'cd example && flutter build apk --debug'
+
+    # convenience for CI checks
+    build-ios-examples: |
+      dart run melos exec --dir-exists=example -- \
+        bash -lc 'cd example && flutter build ios --no-codesign'

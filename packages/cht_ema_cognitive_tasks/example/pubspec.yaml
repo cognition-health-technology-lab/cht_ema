@@ -1,0 +1,32 @@
+name: example
+description: "A new Flutter project."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.2 <4.0.0"
+
+dependencies:
+  cht_ema_cognitive_tasks:
+    path: ../../cht_ema_cognitive_tasks
+  cupertino_icons: ^1.0.6
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  research_package:
+    git:
+      url: https://github.com/mario-bermonti/research.package.git
+      ref: 90829448e20fa72ce34ee740dac25849078cb2de
+
+dev_dependencies:
+  flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^5.1.0
+
+flutter:
+  uses-material-design: true
+  generate: true

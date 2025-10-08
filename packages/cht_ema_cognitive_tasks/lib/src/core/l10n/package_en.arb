@@ -1,0 +1,7 @@
+{
+  "@@locale": "en",
+  "placeholderText": "Placeholder cognitive task",
+  "@placeholderText": {
+    "description": "Message for example widget"
+  }
+}

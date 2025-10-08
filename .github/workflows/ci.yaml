@@ -1,0 +1,54 @@
+# name: CI
+# on:
+#   push:
+#     branches: [main]
+#   pull_request:
+#     branches: [main]
+
+# concurrency:
+#   group: ${{ github.workflow }}-${{ github.ref }}
+#   cancel-in-progress: true
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Clone repository
+#         uses: actions/checkout@v4
+
+#       - name: Cache dependencies
+#         uses: actions/cache@v3
+#         with:
+#           path: ~/.cache/dependencies
+#           key: ${{ runner.os }}-dependencies-${{ hashFiles('**/package-lock.json') }}
+#           restore-keys: |
+#             ${{ runner.os }}-dependencies-
+
+#       - name: Setup Flutter
+#         uses: subosito/flutter-action@v2.19.0
+#         with:
+#           channel: stable
+#           flutter-version: 3.19.4
+#           cache: true
+
+#       - name: Install dependencies
+#         run: flutter pub get
+
+#       - name: Check code formatting
+#         shell: bash
+#         run: |
+#           find lib test example/lib example/test -type f -name '*.dart' \
+#             -not -path 'lib/src/core/l10n/*' \
+#             -not -path 'example/lib/l10n/*' \
+#             -not -name '*.g.dart' \
+#             -not -name '*.freezed.dart' \
+#             -print0 | xargs -0 dart format --set-exit-if-changed
+
+#       - name: Run analyzer (lint)
+#         run: flutter analyze
+
+#       - name: Run package tests
+#         run: flutter test --coverage
+
+#       - name: Run example app tests
+#         run: flutter test example

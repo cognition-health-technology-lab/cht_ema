@@ -1,0 +1,87 @@
+name-template: "v$RESOLVED_VERSION"
+tag-template: "v$RESOLVED_VERSION"
+
+template: |
+  ## Changes
+  $CHANGES
+
+  ## Contributors
+  $CONTRIBUTORS
+
+categories:
+  - title: 🚀 Features
+    labels: [feature]
+
+  - title: 🐞 Fixes
+    labels: [bug]
+
+  - title: 🧪 Tests
+    labels: [test]
+
+  - title: 🛠️ Improvements / Refactors
+    labels: [enhancement, enh, refactor, performance, perf]
+
+  - title: 📚 Documentation
+    labels: [documentation, docs]
+
+  - title: ⚙️ CI / Chores / Deps
+    labels: [ci, chore, dependencies, deps]
+
+change-template: "- $TITLE (#$NUMBER) by @$AUTHOR"
+
+exclude-labels:
+  - skip-changelog
+  - wip
+
+version-resolver:
+  major:
+    labels: [breaking, "semver:major"]
+  minor:
+    labels: [feature, "semver:minor"]
+  patch:
+    labels:
+      - bug
+      - enhancement
+      - enh
+      - refactor
+      - documentation
+      - docs
+      - ci
+      - chore
+      - dependencies
+      - deps
+      - test
+      - performance
+      - perf
+      - "semver:patch"
+  default: patch
+
+autolabeler:
+  - label: dependencies
+    title:
+      - '/^chore\\(deps\\)/i'
+      - "/^deps?:/i"
+    files:
+      - "pubspec.yaml"
+      - "**/Podfile*"
+      - "android/**/build.gradle*"
+  - label: bug
+    title:
+      - "/^(fix|bug)/i"
+  - label: feature
+    title:
+      - "/^(feat|feature)/i"
+  - label: documentation
+    title:
+      - "/^(docs?|doc)/i"
+    files:
+      - "README.md"
+      - "docs/**"
+      - "example/**"
+  - label: performance
+    title:
+      - "/^(perf|performance)/i"
+  - label: ci
+    files:
+      - ".github/**"
+      - "tool/**"

@@ -1,0 +1,31 @@
+include: package:very_good_analysis/analysis_options.5.1.0.yaml
+
+analyzer:
+  exclude:
+    - build/**
+    - .dart_tool/**
+    - lib/l10n/**
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+
+  language:
+    strict-inference: true
+    strict-raw-types: true
+  errors:
+    public_member_api_docs: ignore
+    lines_longer_than_80_chars: ignore
+    prefer_const_constructors: warning
+    prefer_const_literals_to_create_immutables: warning
+
+linter:
+  rules:
+    always_use_package_imports: true
+    avoid_print: true
+    use_key_in_widget_constructors: true
+    directives_ordering: true
+    unawaited_futures: true
+    unnecessary_lambdas: true
+    diagnostic_describe_all_properties: false
+    comment_references: false
+    sort_constructors_first: false
+    cascade_invocations: false
