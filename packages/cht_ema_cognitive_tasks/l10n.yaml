@@ -3,5 +3,4 @@ output-class: ChtEmaCognitiveTasksLocalization
 template-arb-file: package_en.arb
 output-localization-file: cht_ema_cognitive_tasks_localization.dart
 output-dir: lib/src/core/l10n
-synthetic-package: false
 nullable-getter: false
