@@ -9,23 +9,47 @@ template: |
   $CONTRIBUTORS
 
 categories:
-  - title: 🚀 Features
-    labels: [feature]
+  # ================================
+  # 📦 cht_ema_cognitive_tasks
+  # ================================
+  - title: "## 📦 cht_ema_cognitive_tasks — 🚀 Features"
+    labels: [pkg:cognitive-tasks, feature]
 
-  - title: 🐞 Fixes
-    labels: [bug]
+  - title: "## 📦 cht_ema_cognitive_tasks — 🐞 Fixes"
+    labels: [pkg:cognitive-tasks, bug]
 
-  - title: 🧪 Tests
-    labels: [test]
+  - title: "## 📦 cht_ema_cognitive_tasks — 🧪 Tests"
+    labels: [pkg:cognitive-tasks, test]
 
-  - title: 🛠️ Improvements / Refactors
-    labels: [enhancement, enh, refactor, performance, perf]
+  - title: "## 📦 cht_ema_cognitive_tasks — 🛠️ Improvements / Refactors"
+    labels: [pkg:cognitive-tasks, enhancement, enh, refactor, performance, perf]
 
-  - title: 📚 Documentation
-    labels: [documentation, docs]
+  - title: "## 📦 cht_ema_cognitive_tasks — 📚 Documentation"
+    labels: [pkg:cognitive-tasks, documentation, docs]
 
-  - title: ⚙️ CI / Chores / Deps
-    labels: [ci, chore, dependencies, deps]
+  - title: "## 📦 cht_ema_cognitive_tasks — ⚙️ CI / Chores / Deps"
+    labels: [pkg:cognitive-tasks, ci, chore, dependencies, deps]
+
+  # ================================
+  # 📦 cht_ema_surveys
+  # ================================
+  - title: "## 📦 cht_ema_surveys — 🚀 Features"
+    labels: [pkg:surveys, feature]
+
+  - title: "## 📦 cht_ema_surveys — 🐞 Fixes"
+    labels: [pkg:surveys, bug]
+
+  - title: "## 📦 cht_ema_surveys — 🧪 Tests"
+    labels: [pkg:surveys, test]
+
+  - title: "## 📦 cht_ema_surveys — 🛠️ Improvements / Refactors"
+    labels: [pkg:surveys, enhancement, enh, refactor, performance, perf]
+
+  - title: "## 📦 cht_ema_surveys — 📚 Documentation"
+    labels: [pkg:surveys, documentation, docs]
+
+  - title: "## 📦 cht_ema_surveys — ⚙️ CI / Chores / Deps"
+    labels: [pkg:surveys, ci, chore, dependencies, deps]
 
 change-template: "- $TITLE (#$NUMBER) by @$AUTHOR"
 
@@ -85,3 +109,9 @@ autolabeler:
     files:
       - ".github/**"
       - "tool/**"
+  - label: pkg:cognitive-tasks
+    files:
+      - "packages/cht_ema_cognitive_tasks/**"
+  - label: pkg:surveys
+    files:
+      - "packages/cht_ema_surveys/**"
