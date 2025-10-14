@@ -1,29 +1,26 @@
-# name: Release Drafter
+name: Release Drafter
 
-# on:
-#   push:
-#     branches: [main]
-#   pull_request:
-#     branches: [main]
-#     types: [opened, edited, reopened, synchronize, labeled, unlabeled]
-#   workflow_dispatch:
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+    workflow_dispatch:
 
-# permissions:
-#   contents: write
-#   pull-requests: read
+permissions:
+    contents: write
+    pull-requests: write
 
-# concurrency:
-#   group: release-drafter-${{ github.ref }}
-#   cancel-in-progress: true
+concurrency:
+    group: release-drafter-${{ github.workflow }}-${{ github.ref || github.run_id }}
+    cancel-in-progress: true
 
-# jobs:
-#   update_release_draft:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Update the next release
-#         uses: release-drafter/release-drafter@v6
-#         with:
-#           # ensures our autolabel rules in release-drafter.yml work
-#           disable-autolabeler: false
-#         env:
-#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+jobs:
+    update_release_draft:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Update the next release
+              if: github.event_name != 'pull_request_target' || github.base_ref == 'main'
+              uses: release-drafter/release-drafter@v6
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
