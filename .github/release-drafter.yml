@@ -78,39 +78,39 @@ version-resolver:
 autolabeler:
   - label: feature
     title:
-      - "/^(feat|feature)(\\(|:|\\s)/i"
+      - "/^(feat|feature)\\b/i"
 
   - label: fix
     title:
-      - "/^(fix|bug)(\\(|:|\\s)/i"
+      - "/^(fix|bug)\\b/i"
 
   - label: test
     title:
-      - "/^(test|tests)(\\(|:|\\s)/i"
+      - "/^(tests?)\\b/i"
 
   - label: documentation
     title:
-      - "/^(docs?|doc|documentation)(\\(|:|\\s)/i"
+      - "/^(docs?|documentation)\\b/i"
 
   - label: refactor
     title:
-      - "/^(refactor)(\\(|:|\\s)/i"
+      - "/^(refactor)\\b/i"
 
   - label: improvement
     title:
-      - "/^(improve|improvement?)(\\(|:|\\s)/i"
+      - "/^(improve|improvement)\\b/i"
 
   - label: ci
     title:
-      - "/^(ci)(\\(|:|\\s)/i"
+      - "/^(ci)\\b/i"
 
   - label: chore
     title:
-      - "/^(chore)(\\(|:|\\s)/i"
+      - "/^(chore)\\b/i"
 
   - label: dependencies
     title:
-      - "/^(deps?|dependencies)(\\(|:|\\s)/i"
+      - "/^(deps?|dependencies)\\b/i"
 
   - label: pkg:cognitive-tasks
     files:
