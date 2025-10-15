@@ -16,19 +16,19 @@ categories:
     labels: [pkg:cognitive-tasks, feature]
 
   - title: "## 📦 cht_ema_cognitive_tasks — 🐞 Fixes"
-    labels: [pkg:cognitive-tasks, bug]
+    labels: [pkg:cognitive-tasks, fix]
 
   - title: "## 📦 cht_ema_cognitive_tasks — 🧪 Tests"
     labels: [pkg:cognitive-tasks, test]
 
   - title: "## 📦 cht_ema_cognitive_tasks — 🛠️ Improvements / Refactors"
-    labels: [pkg:cognitive-tasks, enhancement, enh, refactor, performance, perf]
+    labels: [pkg:cognitive-tasks, improvement, refactor]
 
   - title: "## 📦 cht_ema_cognitive_tasks — 📚 Documentation"
-    labels: [pkg:cognitive-tasks, documentation, docs]
+    labels: [pkg:cognitive-tasks, docs]
 
   - title: "## 📦 cht_ema_cognitive_tasks — ⚙️ CI / Chores / Deps"
-    labels: [pkg:cognitive-tasks, ci, chore, dependencies, deps]
+    labels: [pkg:cognitive-tasks, ci, chore, dependencies]
 
   # ================================
   # 📦 cht_ema_surveys
@@ -37,19 +37,19 @@ categories:
     labels: [pkg:surveys, feature]
 
   - title: "## 📦 cht_ema_surveys — 🐞 Fixes"
-    labels: [pkg:surveys, bug]
+    labels: [pkg:surveys, fix]
 
   - title: "## 📦 cht_ema_surveys — 🧪 Tests"
     labels: [pkg:surveys, test]
 
   - title: "## 📦 cht_ema_surveys — 🛠️ Improvements / Refactors"
-    labels: [pkg:surveys, enhancement, enh, refactor, performance, perf]
+    labels: [pkg:surveys, improvement, refactor]
 
   - title: "## 📦 cht_ema_surveys — 📚 Documentation"
-    labels: [pkg:surveys, documentation, docs]
+    labels: [pkg:surveys, docs]
 
   - title: "## 📦 cht_ema_surveys — ⚙️ CI / Chores / Deps"
-    labels: [pkg:surveys, ci, chore, dependencies, deps]
+    labels: [pkg:surveys, ci, chore, dependencies]
 
 change-template: "- $TITLE (#$NUMBER) by @$AUTHOR"
 
@@ -64,54 +64,50 @@ version-resolver:
     labels: [feature, "semver:minor"]
   patch:
     labels:
-      - bug
-      - enhancement
-      - enh
-      - refactor
+      - fix
+      - test
       - documentation
-      - docs
+      - refactor
+      - improvement
       - ci
       - chore
       - dependencies
-      - deps
-      - test
-      - performance
-      - perf
       - "semver:patch"
   default: patch
 
 autolabeler:
-  - label: dependencies
-    title:
-      - '/^chore\\(deps\\)/i'
-      - "/^deps?:/i"
-    files:
-      - "pubspec.yaml"
-      - "**/Podfile*"
-      - "android/**/build.gradle*"
-  - label: bug
-    title:
-      - "/^(fix|bug)/i"
   - label: feature
     title:
-      - "/^(feat|feature)/i"
+      - "/^(feat|feature)(\\(|:|\\s)/i"
+
+  - label: fix
+    title:
+      - "/^(fix|bug)(\\(|:|\\s)/i"
+
+  - label: test
+    title:
+      - "/^(test|tests)(\\(|:|\\s)/i"
+
   - label: documentation
     title:
-      - "/^(docs?|doc)/i"
-    files:
-      - "README.md"
-      - "docs/**"
-      - "example/**"
-  - label: performance
+      - "/^(docs?|doc|documentation)(\\(|:|\\s)/i"
+
+  - label: refactor
     title:
-      - "/^(perf|performance)/i"
+      - "/^(refactor)(\\(|:|\\s)/i"
+
+  - label: improvement
+    title:
+      - "/^(improve|improvement?)(\\(|:|\\s)/i"
+
   - label: ci
-    files:
-      - ".github/**"
-      - "tool/**"
-  - label: pkg:cognitive-tasks
-    files:
-      - "packages/cht_ema_cognitive_tasks/**"
-  - label: pkg:surveys
-    files:
-      - "packages/cht_ema_surveys/**"
+    title:
+      - "/^(ci)(\\(|:|\\s)/i"
+
+  - label: chore
+    title:
+      - "/^(chore)(\\(|:|\\s)/i"
+
+  - label: dependencies
+    title:
+      - "/^(deps?|dependencies)(\\(|:|\\s)/i"
