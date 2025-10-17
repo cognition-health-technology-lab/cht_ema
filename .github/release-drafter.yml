@@ -67,6 +67,12 @@ categories:
   - title: "## 📦 cht_ema_surveys — ✨ Other changes"
     labels: [pkg:surveys]
 
+  # ================================
+  # 🧰 general (monorepo-wide)
+  # ================================
+  - title: "## 🧰 general"
+    labels: [general]
+
 change-template: "- $TITLE (#$NUMBER) by @$AUTHOR"
 
 exclude-labels:
@@ -90,6 +96,7 @@ version-resolver:
       - dependencies
       - perf
       - revert
+      - repo
       - "semver:patch"
   default: patch
 
@@ -213,3 +220,7 @@ autolabeler:
   - label: pkg:surveys:dependencies
     files: ["packages/cht_ema_surveys/**"]
     title: ["/^(deps?|dependencies)\\b/i"]
+
+  # general package label
+  - label: repo
+    title: ["/\\b(repo|general)\\b/i"]
