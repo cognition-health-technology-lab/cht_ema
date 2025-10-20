@@ -94,38 +94,39 @@ version-resolver:
   default: patch
 
 autolabeler:
+  # basic labels
   - label: feature
-    title: ["/^(feat|feature)\\b/i"]
+    title: ["/^(feature|feat)\\([^)]*\\):/i"]
 
   - label: fix
-    title: ["/^(fix|bug)\\b/i"]
+    title: ["/^(fix|bug)\\([^)]*\\):/i"]
 
   - label: test
-    title: ["/^(tests?)\\b/i"]
+    title: ["/^(test|tests)\\([^)]*\\):/i"]
 
   - label: documentation
-    title: ["/^(docs?|documentation)\\b/i"]
+    title: ["/^(docs|doc|documentation)\\([^)]*\\):/i"]
 
   - label: refactor
-    title: ["/^(refactor)\\b/i"]
+    title: ["/^(refactor)\\([^)]*\\):/i"]
 
   - label: improvement
-    title: ["/^(improve|improvement)\\b/i"]
+    title: ["/^(improve|improvement)\\([^)]*\\):/i"]
 
   - label: perf
-    title: ["/^(perf|performance)\\b/i"]
+    title: ["/^(perf|performance)\\([^)]*\\):/i"]
 
   - label: revert
-    title: ["/^(revert)\\b/i"]
+    title: ["/^(revert)\\([^)]*\\):/i"]
 
   - label: ci
-    title: ["/^(ci)\\b/i"]
+    title: ["/^(ci)\\([^)]*\\):/i"]
 
   - label: chore
-    title: ["/^(chore)\\b/i"]
+    title: ["/^(chore)\\([^)]*\\):/i"]
 
   - label: dependencies
-    title: ["/^(deps?|dependencies)\\b/i"]
+    title: ["/^(deps|dependencies)\\([^)]*\\):/i"]
 
   - label: pkg:cognitive-tasks
     files: ["packages/cht_ema_cognitive_tasks/**"]
@@ -133,83 +134,81 @@ autolabeler:
   - label: pkg:surveys
     files: ["packages/cht_ema_surveys/**"]
 
-  # create compound tags so changes can be organized by package and type
+  # type-package compound labels: cognitive-tasks
   - label: pkg:cognitive-tasks:feature
-    files: ["packages/cht_ema_cognitive_tasks/**"]
-    title: ["/^(feat|feature)\\b/i"]
+    title: ["/^(feature|feat)\\(cognitive-tasks\\):/i"]
 
   - label: pkg:cognitive-tasks:fix
-    files: ["packages/cht_ema_cognitive_tasks/**"]
-    title: ["/^(fix|bug)\\b/i"]
+    title: ["/^(fix|bug)\\(cognitive-tasks\\):/i"]
 
   - label: pkg:cognitive-tasks:test
-    files: ["packages/cht_ema_cognitive_tasks/**"]
-    title: ["/^(tests?)\\b/i"]
-
-  - label: pkg:cognitive-tasks:improvement
-    files: ["packages/cht_ema_cognitive_tasks/**"]
-    title: ["/^(improve|improvement)\\b/i"]
-
-  - label: pkg:cognitive-tasks:refactor
-    files: ["packages/cht_ema_cognitive_tasks/**"]
-    title: ["/^(refactor)\\b/i"]
-
-  - label: pkg:cognitive-tasks:perf
-    files: ["packages/cht_ema_cognitive_tasks/**"]
-    title: ["/^(perf|performance)\\b/i"]
+    title: ["/^(test|tests)\\(cognitive-tasks\\):/i"]
 
   - label: pkg:cognitive-tasks:documentation
-    files: ["packages/cht_ema_cognitive_tasks/**"]
-    title: ["/^(docs?|documentation)\\b/i"]
+    title: ["/^(doc|docs|documentation)\\(cognitive-tasks\\):/i"]
+
+  - label: pkg:cognitive-tasks:refactor
+    title: ["/^(refactor)\\(cognitive-tasks\\):/i"]
+
+  - label: pkg:cognitive-tasks:improvement
+    title: ["/^(improve|improvement)\\(cognitive-tasks\\):/i"]
+
+  - label: pkg:cognitive-tasks:perf
+    title: ["/^(perf|performance)\\(cognitive-tasks\\):/i"]
 
   - label: pkg:cognitive-tasks:ci
-    files: ["packages/cht_ema_cognitive_tasks/**"]
-    title: ["/^(ci)\\b/i"]
+    title: ["/^(ci)\\(cognitive-tasks\\):/i"]
 
   - label: pkg:cognitive-tasks:chore
-    files: ["packages/cht_ema_cognitive_tasks/**"]
-    title: ["/^(chore)\\b/i"]
+    title: ["/^(chore)\\(cognitive-tasks\\):/i"]
 
   - label: pkg:cognitive-tasks:dependencies
-    files: ["packages/cht_ema_cognitive_tasks/**"]
-    title: ["/^(deps?|dependencies)\\b/i"]
+    title: ["/^(deps|dependencies)\\(cognitive-tasks\\):/i"]
 
+  # type-package compound labels: surveys
   - label: pkg:surveys:feature
-    files: ["packages/cht_ema_surveys/**"]
-    title: ["/^(feat|feature)\\b/i"]
+    title: ["/^(feature|feat)\\(surveys\\):/i"]
 
   - label: pkg:surveys:fix
-    files: ["packages/cht_ema_surveys/**"]
-    title: ["/^(fix|bug)\\b/i"]
+    title: ["/^(fix|bug)\\(surveys\\):/i"]
 
   - label: pkg:surveys:test
-    files: ["packages/cht_ema_surveys/**"]
-    title: ["/^(tests?)\\b/i"]
-
-  - label: pkg:surveys:improvement
-    files: ["packages/cht_ema_surveys/**"]
-    title: ["/^(improve|improvement)\\b/i"]
-
-  - label: pkg:surveys:refactor
-    files: ["packages/cht_ema_surveys/**"]
-    title: ["/^(refactor)\\b/i"]
-
-  - label: pkg:surveys:perf
-    files: ["packages/cht_ema_surveys/**"]
-    title: ["/^(perf|performance)\\b/i"]
+    title: ["/^(test|tests)\\(surveys\\):/i"]
 
   - label: pkg:surveys:documentation
-    files: ["packages/cht_ema_surveys/**"]
-    title: ["/^(docs?|documentation)\\b/i"]
+    title: ["/^(docs|doc|documentation)\\(surveys\\):/i"]
+
+  - label: pkg:surveys:refactor
+    title: ["/^(refactor)\\(surveys\\):/i"]
+
+  - label: pkg:surveys:improvement
+    title: ["/^(improve|improvement)\\(surveys\\):/i"]
+
+  - label: pkg:surveys:perf
+    title: ["/^(perf|performance)\\(surveys\\):/i"]
 
   - label: pkg:surveys:ci
-    files: ["packages/cht_ema_surveys/**"]
-    title: ["/^(ci)\\b/i"]
+    title: ["/^(ci)\\(surveys\\):/i"]
 
   - label: pkg:surveys:chore
-    files: ["packages/cht_ema_surveys/**"]
-    title: ["/^(chore)\\b/i"]
+    title: ["/^(chore)\\(surveys\\):/i"]
 
   - label: pkg:surveys:dependencies
-    files: ["packages/cht_ema_surveys/**"]
-    title: ["/^(deps?|dependencies)\\b/i"]
+    title: ["/^(deps|dependencies)\\(surveys\\):/i"]
+
+  # monorepo-wide "general" (no package)
+  - label: general
+    title:
+      [
+        "/^(feature|feat)\\(general\\):/i",
+        "/^(fix|bug)\\(general\\):/i",
+        "/^(test|tests)\\(general\\):/i",
+        "/^(doc|docs|documentation)\\(general\\):/i",
+        "/^(refactor)\\(general\\):/i",
+        "/^(improve|improvement)\\(general\\):/i",
+        "/^(perf|performance)\\(general\\):/i",
+        "/^(revert)\\(general\\):/i",
+        "/^(ci)\\(general\\):/i",
+        "/^(chore)\\(general\\):/i",
+        "/^(deps|dependencies)\\(general\\):/i",
+      ]
