@@ -94,46 +94,6 @@ version-resolver:
   default: patch
 
 autolabeler:
-  # basic labels
-  - label: feature
-    title: ["/^(feature|feat)\\([^)]*\\):/i"]
-
-  - label: fix
-    title: ["/^(fix|bug)\\([^)]*\\):/i"]
-
-  - label: test
-    title: ["/^(test|tests)\\([^)]*\\):/i"]
-
-  - label: documentation
-    title: ["/^(docs|doc|documentation)\\([^)]*\\):/i"]
-
-  - label: refactor
-    title: ["/^(refactor)\\([^)]*\\):/i"]
-
-  - label: improvement
-    title: ["/^(improve|improvement)\\([^)]*\\):/i"]
-
-  - label: perf
-    title: ["/^(perf|performance)\\([^)]*\\):/i"]
-
-  - label: revert
-    title: ["/^(revert)\\([^)]*\\):/i"]
-
-  - label: ci
-    title: ["/^(ci)\\([^)]*\\):/i"]
-
-  - label: chore
-    title: ["/^(chore)\\([^)]*\\):/i"]
-
-  - label: dependencies
-    title: ["/^(deps|dependencies)\\([^)]*\\):/i"]
-
-  - label: pkg:cognitive-tasks
-    files: ["packages/cht_ema_cognitive_tasks/**"]
-
-  - label: pkg:surveys
-    files: ["packages/cht_ema_surveys/**"]
-
   # type-package compound labels: cognitive-tasks
   - label: pkg:cognitive-tasks:feature
     title: ["/^(feature|feat)\\(cognitive-tasks\\):/i"]
@@ -212,3 +172,43 @@ autolabeler:
         "/^(chore)\\(general\\):/i",
         "/^(deps|dependencies)\\(general\\):/i",
       ]
+
+  # basic labels if nothing more specific matches
+  - label: feature
+    title: ["/^(feature|feat)\\([^)]*\\):/i"]
+
+  - label: fix
+    title: ["/^(fix|bug)\\([^)]*\\):/i"]
+
+  - label: test
+    title: ["/^(test|tests)\\([^)]*\\):/i"]
+
+  - label: documentation
+    title: ["/^(docs|doc|documentation)\\([^)]*\\):/i"]
+
+  - label: refactor
+    title: ["/^(refactor)\\([^)]*\\):/i"]
+
+  - label: improvement
+    title: ["/^(improve|improvement)\\([^)]*\\):/i"]
+
+  - label: perf
+    title: ["/^(perf|performance)\\([^)]*\\):/i"]
+
+  - label: revert
+    title: ["/^(revert)\\([^)]*\\):/i"]
+
+  - label: ci
+    title: ["/^(ci)\\([^)]*\\):/i"]
+
+  - label: chore
+    title: ["/^(chore)\\([^)]*\\):/i"]
+
+  - label: dependencies
+    title: ["/^(deps|dependencies)\\([^)]*\\):/i"]
+
+  - label: pkg:cognitive-tasks
+    files: ["packages/cht_ema_cognitive_tasks/**"]
+
+  - label: pkg:surveys
+    files: ["packages/cht_ema_surveys/**"]
