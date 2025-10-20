@@ -1,5 +1,100 @@
+name-template: "v$RESOLVED_VERSION"
+tag-template: "v$RESOLVED_VERSION"
+
+template: |
+  ## Changes
+  $CHANGES
+
+  ## Contributors
+  $CONTRIBUTORS
+
+categories:
+  # ================================
+  # 📦 cht_ema_cognitive_tasks
+  # ================================
+  - title: "## 📦 cht_ema_cognitive_tasks — 🚀 Features"
+    labels: [pkg:cognitive-tasks:feature]
+
+  - title: "## 📦 cht_ema_cognitive_tasks — 🐞 Fixes"
+    labels: [pkg:cognitive-tasks:fix]
+
+  - title: "## 📦 cht_ema_cognitive_tasks — 🧪 Tests"
+    labels: [pkg:cognitive-tasks:test]
+
+  - title: "## 📦 cht_ema_cognitive_tasks — 🛠️ Improvements / Refactors"
+    labels:
+      [
+        pkg:cognitive-tasks:improvement,
+        pkg:cognitive-tasks:refactor,
+        pkg:cognitive-tasks:perf,
+      ]
+
+  - title: "## 📦 cht_ema_cognitive_tasks — 📚 Documentation"
+    labels: [pkg:cognitive-tasks:documentation]
+
+  - title: "## 📦 cht_ema_cognitive_tasks — ⚙️ CI / Chores / Deps"
+    labels:
+      [
+        pkg:cognitive-tasks:ci,
+        pkg:cognitive-tasks:chore,
+        pkg:cognitive-tasks:dependencies,
+      ]
+
+  - title: "## 📦 cht_ema_cognitive_tasks — ✨ Other changes"
+    labels: [pkg:cognitive-tasks]
+
+  # ================================
+  # 📦 cht_ema_surveys
+  # ================================
+  - title: "## 📦 cht_ema_surveys — 🚀 Features"
+    labels: [pkg:surveys:feature]
+
+  - title: "## 📦 cht_ema_surveys — 🐞 Fixes"
+    labels: [pkg:surveys:fix]
+
+  - title: "## 📦 cht_ema_surveys — 🧪 Tests"
+    labels: [pkg:surveys:test]
+
+  - title: "## 📦 cht_ema_surveys — 🛠️ Improvements / Refactors"
+    labels: [pkg:surveys:improvement, pkg:surveys:refactor, pkg:surveys:perf]
+
+  - title: "## 📦 cht_ema_surveys — 📚 Documentation"
+    labels: [pkg:surveys:documentation]
+
+  - title: "## 📦 cht_ema_surveys — ⚙️ CI / Chores / Deps"
+    labels: [pkg:surveys:ci, pkg:surveys:chore, pkg:surveys:dependencies]
+
+  - title: "## 📦 cht_ema_surveys — ✨ Other changes"
+    labels: [pkg:surveys]
+
+change-template: "- $TITLE (#$NUMBER) by @$AUTHOR"
+
+exclude-labels:
+  - skip-changelog
+  - wip
+
+version-resolver:
+  major:
+    labels: [breaking, "semver:major"]
+  minor:
+    labels: [feature, "semver:minor"]
+  patch:
+    labels:
+      - fix
+      - test
+      - documentation
+      - refactor
+      - improvement
+      - ci
+      - chore
+      - dependencies
+      - perf
+      - revert
+      - "semver:patch"
+  default: patch
+
 autolabeler:
-  # -------- Generic type labels (any scope) --------
+  # basic labels
   - label: feature
     title: ["/^(feature|feat)\\([^)]*\\):/i"]
 
@@ -33,7 +128,13 @@ autolabeler:
   - label: dependencies
     title: ["/^(deps|dependencies)\\([^)]*\\):/i"]
 
-  # -------- Package-scoped labels: cognitive-tasks --------
+  - label: pkg:cognitive-tasks
+    files: ["packages/cht_ema_cognitive_tasks/**"]
+
+  - label: pkg:surveys
+    files: ["packages/cht_ema_surveys/**"]
+
+  # type-package compound labels: cognitive-tasks
   - label: pkg:cognitive-tasks:feature
     title: ["/^(feature|feat)\\(cognitive-tasks\\):/i"]
 
@@ -44,7 +145,7 @@ autolabeler:
     title: ["/^(test|tests)\\(cognitive-tasks\\):/i"]
 
   - label: pkg:cognitive-tasks:documentation
-    title: ["/^(docs|doc|documentation)\\(cognitive-tasks\\):/i"]
+    title: ["/^(doc|docs|documentation)\\(cognitive-tasks\\):/i"]
 
   - label: pkg:cognitive-tasks:refactor
     title: ["/^(refactor)\\(cognitive-tasks\\):/i"]
@@ -64,7 +165,7 @@ autolabeler:
   - label: pkg:cognitive-tasks:dependencies
     title: ["/^(deps|dependencies)\\(cognitive-tasks\\):/i"]
 
-  # -------- Package-scoped labels: surveys --------
+  # type-package compound labels: surveys
   - label: pkg:surveys:feature
     title: ["/^(feature|feat)\\(surveys\\):/i"]
 
@@ -95,14 +196,14 @@ autolabeler:
   - label: pkg:surveys:dependencies
     title: ["/^(deps|dependencies)\\(surveys\\):/i"]
 
-  # -------- Monorepo-wide "general" (no package) --------
+  # monorepo-wide "general" (no package)
   - label: general
     title:
       [
         "/^(feature|feat)\\(general\\):/i",
         "/^(fix|bug)\\(general\\):/i",
         "/^(test|tests)\\(general\\):/i",
-        "/^(docs|doc|documentation)\\(general\\):/i",
+        "/^(doc|docs|documentation)\\(general\\):/i",
         "/^(refactor)\\(general\\):/i",
         "/^(improve|improvement)\\(general\\):/i",
         "/^(perf|performance)\\(general\\):/i",
