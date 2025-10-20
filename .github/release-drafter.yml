@@ -96,119 +96,113 @@ version-resolver:
 autolabeler:
   # type-package compound labels: cognitive-tasks
   - label: pkg:cognitive-tasks:feature
-    title: ["/^(feature|feat)\\(cognitive-tasks\\):/i"]
+    title: ['/^(feature|feat)\(cognitive-tasks\):/i']
 
   - label: pkg:cognitive-tasks:fix
-    title: ["/^(fix|bug)\\(cognitive-tasks\\):/i"]
+    title: ['/^(fix|bug)\(cognitive-tasks\):/i']
 
   - label: pkg:cognitive-tasks:test
-    title: ["/^(test|tests)\\(cognitive-tasks\\):/i"]
+    title: ['/^(test|tests)\(cognitive-tasks\):/i']
 
   - label: pkg:cognitive-tasks:documentation
-    title: ["/^(doc|docs|documentation)\\(cognitive-tasks\\):/i"]
+    title: ['/^(doc|docs|documentation)\(cognitive-tasks\):/i']
 
   - label: pkg:cognitive-tasks:refactor
-    title: ["/^(refactor)\\(cognitive-tasks\\):/i"]
+    title: ['/^(refactor)\(cognitive-tasks\):/i']
 
   - label: pkg:cognitive-tasks:improvement
-    title: ["/^(improve|improvement)\\(cognitive-tasks\\):/i"]
+    title: ['/^(improve|improvement)\(cognitive-tasks\):/i']
 
   - label: pkg:cognitive-tasks:perf
-    title: ["/^(perf|performance)\\(cognitive-tasks\\):/i"]
+    title: ['/^(perf|performance)\(cognitive-tasks\):/i']
 
   - label: pkg:cognitive-tasks:ci
-    title: ["/^(ci)\\(cognitive-tasks\\):/i"]
+    title: ['/^(ci)\(cognitive-tasks\):/i']
 
   - label: pkg:cognitive-tasks:chore
-    title: ["/^(chore)\\(cognitive-tasks\\):/i"]
+    title: ['/^(chore)\(cognitive-tasks\):/i']
 
   - label: pkg:cognitive-tasks:dependencies
-    title: ["/^(deps|dependencies)\\(cognitive-tasks\\):/i"]
+    title: ['/^(deps|dependencies)\(cognitive-tasks\):/i']
 
   # type-package compound labels: surveys
   - label: pkg:surveys:feature
-    title: ["/^(feature|feat)\\(surveys\\):/i"]
+    title: ['/^(feature|feat)\(surveys\):/i']
 
   - label: pkg:surveys:fix
-    title: ["/^(fix|bug)\\(surveys\\):/i"]
+    title: ['/^(fix|bug)\(surveys\):/i']
 
   - label: pkg:surveys:test
-    title: ["/^(test|tests)\\(surveys\\):/i"]
+    title: ['/^(test|tests)\(surveys\):/i']
 
   - label: pkg:surveys:documentation
-    title: ["/^(docs|doc|documentation)\\(surveys\\):/i"]
+    title: ['/^(docs|doc|documentation)\(surveys\):/i']
 
   - label: pkg:surveys:refactor
-    title: ["/^(refactor)\\(surveys\\):/i"]
+    title: ['/^(refactor)\(surveys\):/i']
 
   - label: pkg:surveys:improvement
-    title: ["/^(improve|improvement)\\(surveys\\):/i"]
+    title: ['/^(improve|improvement)\(surveys\):/i']
 
   - label: pkg:surveys:perf
-    title: ["/^(perf|performance)\\(surveys\\):/i"]
+    title: ['/^(perf|performance)\(surveys\):/i']
 
   - label: pkg:surveys:ci
-    title: ["/^(ci)\\(surveys\\):/i"]
+    title: ['/^(ci)\(surveys\):/i']
 
   - label: pkg:surveys:chore
-    title: ["/^(chore)\\(surveys\\):/i"]
+    title: ['/^(chore)\(surveys\):/i']
 
   - label: pkg:surveys:dependencies
-    title: ["/^(deps|dependencies)\\(surveys\\):/i"]
+    title: ['/^(deps|dependencies)\(surveys\):/i']
 
   # monorepo-wide "general" (no package)
   - label: general
     title:
       [
-        "/^(feature|feat)\\(general\\):/i",
-        "/^(fix|bug)\\(general\\):/i",
-        "/^(test|tests)\\(general\\):/i",
-        "/^(doc|docs|documentation)\\(general\\):/i",
-        "/^(refactor)\\(general\\):/i",
-        "/^(improve|improvement)\\(general\\):/i",
-        "/^(perf|performance)\\(general\\):/i",
-        "/^(revert)\\(general\\):/i",
-        "/^(ci)\\(general\\):/i",
-        "/^(chore)\\(general\\):/i",
-        "/^(deps|dependencies)\\(general\\):/i",
+        '/^(feature|feat)\(general\):/i',
+        '/^(fix|bug)\(general\):/i',
+        '/^(test|tests)\(general\):/i',
+        '/^(doc|docs|documentation)\(general\):/i',
+        '/^(refactor)\(general\):/i',
+        '/^(improve|improvement)\(general\):/i',
+        '/^(perf|performance)\(general\):/i',
+        '/^(revert)\(general\):/i',
+        '/^(ci)\(general\):/i',
+        '/^(chore)\(general\):/i',
+        '/^(deps|dependencies)\(general\):/i',
       ]
 
   # basic labels if nothing more specific matches
   - label: feature
-    title: ["/^(feature|feat)\\([^)]*\\):/i"]
+    title: ['/^(feature|feat)\([^)]*\):/i']
 
   - label: fix
-    title: ["/^(fix|bug)\\([^)]*\\):/i"]
+    title: ['/^(fix|bug)\([^)]*\):/i']
 
   - label: test
-    title: ["/^(test|tests)\\([^)]*\\):/i"]
+    title: ['/^(test|tests)\([^)]*\):/i']
 
   - label: documentation
-    title: ["/^(docs|doc|documentation)\\([^)]*\\):/i"]
+    title: ['/^(docs|doc|documentation)\([^)]*\):/i']
 
   - label: refactor
-    title: ["/^(refactor)\\([^)]*\\):/i"]
+    title: ['/^(refactor)\([^)]*\):/i']
 
   - label: improvement
-    title: ["/^(improve|improvement)\\([^)]*\\):/i"]
+    title: ['/^(improve|improvement)\([^)]*\):/i']
 
   - label: perf
-    title: ["/^(perf|performance)\\([^)]*\\):/i"]
+    title: ['/^(perf|performance)\([^)]*\):/i']
 
   - label: revert
-    title: ["/^(revert)\\([^)]*\\):/i"]
+    title: ['/^(revert)\([^)]*\):/i']
 
   - label: ci
-    title: ["/^(ci)\\([^)]*\\):/i"]
+    title: ['/^(ci)\([^)]*\):/i']
 
   - label: chore
-    title: ["/^(chore)\\([^)]*\\):/i"]
+    title: ['/^(chore)\([^)]*\):/i']
 
   - label: dependencies
-    title: ["/^(deps|dependencies)\\([^)]*\\):/i"]
-
-  - label: pkg:cognitive-tasks
-    files: ["packages/cht_ema_cognitive_tasks/**"]
-
-  - label: pkg:surveys
-    files: ["packages/cht_ema_surveys/**"]
+    title: ['/^(deps|dependencies)\([^)]*\):/i']
