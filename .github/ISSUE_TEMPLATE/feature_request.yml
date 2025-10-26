@@ -1,0 +1,63 @@
+name: "✨ Feature request"
+description: Propose a new capability or enhancement
+title: "feat(scope): short summary"
+labels: ["feature", "needs-triage"]
+body:
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Package scope
+      options:
+        - cognitive-tasks
+        - surveys
+        - general
+      description: Which package (scope) will this feature affect?
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / motivation
+      description: What problem does this solve and why is it valuable?
+      placeholder: Users can't do X... It would unlock Y...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Sketch the solution (API shape, UX, examples). Link prior art if any.
+      placeholder: Add a new `FooConfig.bar` so that...
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Clear, testable outcomes.
+      placeholder: |
+        - Given ..., when ..., then ...
+        - Docs updated
+        - Example app demonstrates feature
+    validations:
+      required: false
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Breaking changes?
+      description: Note any behavior or API changes that would require migration.
+      placeholder: None / List breaking changes and migration notes
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I’ve searched existing issues and there isn’t a similar request
+          required: true

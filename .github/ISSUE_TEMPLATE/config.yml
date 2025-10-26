@@ -1,1 +1,6 @@
 blank_issues_enabled: false
+
+contact_links:
+  - name: Ask a question (Q&A), general discussion, share an idea, design proposal
+    url: https://github.com/cognition-health-technology-lab/cht_ema/discussions
+    about: "Questions about usage, discussions, and sharing ideas"

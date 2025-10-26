@@ -1,0 +1,58 @@
+name: "🛠️ Improvement / Refactor / Perf"
+description: Make existing behavior cleaner, faster, or safer
+title: "improvement(scope): short summary"
+labels: ["improvement", "needs-triage"]
+body:
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Package scope
+      options:
+        - cognitive-tasks
+        - surveys
+        - general
+      description: Which package (scope) will this feature affect?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Change type
+      options:
+        - improvement
+        - refactor
+        - perf
+      description: Pick the primary category
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / motivation
+      description: Why is this change needed?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed approach
+      description: Outline the change and any risks.
+    validations:
+      required: true
+
+  - type: textarea
+    id: tests
+    attributes:
+      label: Test plan
+      description: What tests should be added/updated?
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I’ve searched existing issues and there isn’t a similar request
+          required: true

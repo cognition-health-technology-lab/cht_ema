@@ -1,0 +1,77 @@
+name: "🐞 Bug report"
+description: Something isn’t working as expected
+title: "fix(scope): short summary"
+labels: ["bug", "needs-triage"]
+body:
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Package scope
+      options:
+        - cognitive-tasks
+        - surveys
+        - general
+      description: Which package (scope) will this feature affect?
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Explain the bug and what you expected to happen.
+      placeholder: Expected ..., but saw ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction steps
+      description: Minimal steps/code to reproduce (link to a gist/repo if easier).
+      placeholder: 1) ... 2) ... 3) ...
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Package version(s)
+      placeholder: e.g., cht_ema_surveys 0.1.0
+
+  - type: textarea
+    id: os-env
+    attributes:
+      label: OS Environment
+      description: OS
+      placeholder: macOS 14
+
+  - type: textarea
+    id: flutter-version
+    attributes:
+      label: Flutter version
+      description: Flutter version (`flutter doctor -v`)
+      placeholder: Flutter 3.35.x
+
+  - type: textarea
+    id: device-emulator
+    attributes:
+      label: Device / Emulator
+      description: Device or emulator being used
+      placeholder: iPhone 15 simulator
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      render: shell
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I’ve searched existing issues and there isn’t a similar bug reported
+          required: true
+        - label: This reproduces on latest `main`
+          required: false

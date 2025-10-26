@@ -51,8 +51,8 @@ Closes #123, Fixes #456, Resolves #789
 - [ ] **Public API change** (new/changed parameters, return types, or behavior)
 - [ ] **Breaking change** (requires host apps to update code)
 - [ ] **Docs** (README, example apps, or comments)
-- [ ] **i18n** (ARB/strings updated)
-- [ ] **CI/config** (melos, CI workflows, release-drafter, dependencies)
+- [ ] **Internalization** (language strings updated)
+- [ ] **CI/config/chore** (melos, CI workflows, release-drafter, dependencies)
 - [ ] **Security** (auth, permissions, secrets)
 - [ ] **Other changes** not listed above (explain below)
 

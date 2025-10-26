@@ -1,0 +1,49 @@
+name: "⚙️ Maintenance (CI / Chore / Deps)"
+description: Pipeline, chores, dependency updates
+title: "chore(scope): short summary"
+labels: ["chore", "needs-triage"]
+body:
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Affected area
+      options:
+        - cognitive-tasks
+        - surveys
+        - general
+      description: Which package (scope) will this feature affect?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Maintenance type
+      options:
+        - ci
+        - deps
+        - chore
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What should be changed and why?
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact / risk
+      description: Any breaking changes or follow-ups?
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I’ve searched existing issues and there isn’t a similar request
+          required: true
