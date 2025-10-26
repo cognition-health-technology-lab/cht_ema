@@ -1,54 +1,113 @@
-# name: CI
-# on:
-#   push:
-#     branches: [main]
-#   pull_request:
-#     branches: [main]
+name: CI
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
 
-# concurrency:
-#   group: ${{ github.workflow }}-${{ github.ref }}
-#   cancel-in-progress: true
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
 
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Clone repository
-#         uses: actions/checkout@v4
+jobs:
+    analyze_and_test:
+        name: Analyze & Test
+        runs-on: ubuntu-latest
+        steps:
+            - name: Clone repository
+              uses: actions/checkout@v4
 
-#       - name: Cache dependencies
-#         uses: actions/cache@v3
-#         with:
-#           path: ~/.cache/dependencies
-#           key: ${{ runner.os }}-dependencies-${{ hashFiles('**/package-lock.json') }}
-#           restore-keys: |
-#             ${{ runner.os }}-dependencies-
+            - name: Cache Pub packages
+              uses: actions/cache@v4
+              with:
+                  path: ~/.pub-cache
+                  key: ${{ runner.os }}-pub-${{ hashFiles('pubspec.lock', 'packages/**/pubspec.lock') }}
+                  restore-keys: |
+                      ${{ runner.os }}-pub-
 
-#       - name: Setup Flutter
-#         uses: subosito/flutter-action@v2.19.0
-#         with:
-#           channel: stable
-#           flutter-version: 3.19.4
-#           cache: true
+            - name: Setup Flutter
+              uses: subosito/flutter-action@v2.19.0
+              with:
+                  channel: stable
+                  flutter-version: 3.19.4
+                  cache: true
 
-#       - name: Install dependencies
-#         run: flutter pub get
+            - name: Bootstrap Melos workspace
+              run: |
+                  flutter pub get
+                  dart run melos bootstrap
 
-#       - name: Check code formatting
-#         shell: bash
-#         run: |
-#           find lib test example/lib example/test -type f -name '*.dart' \
-#             -not -path 'lib/src/core/l10n/*' \
-#             -not -path 'example/lib/l10n/*' \
-#             -not -name '*.g.dart' \
-#             -not -name '*.freezed.dart' \
-#             -print0 | xargs -0 dart format --set-exit-if-changed
+            - name: Check formatting (Melos)
+              run: dart run melos run check_format
 
-#       - name: Run analyzer (lint)
-#         run: flutter analyze
+            - name: Analyze (Melos)
+              run: dart run melos run analyze
 
-#       - name: Run package tests
-#         run: flutter test --coverage
+            - name: Test (Melos)
+              run: dart run melos run test
 
-#       - name: Run example app tests
-#         run: flutter test example
+    android_build:
+        name: Build Android examples
+        runs-on: ubuntu-latest
+        needs: analyze_and_test
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Cache Pub packages
+              uses: actions/cache@v4
+              with:
+                  path: ~/.pub-cache
+                  key: ${{ runner.os }}-pub-${{ hashFiles('pubspec.lock', 'packages/**/pubspec.lock') }}
+                  restore-keys: |
+                      ${{ runner.os }}-pub-
+
+            - name: Setup Java
+              uses: actions/setup-java@v4
+              with:
+                  distribution: temurin
+                  java-version: "17"
+
+            - name: Setup Flutter
+              uses: subosito/flutter-action@v2
+              with:
+                  channel: stable
+                  cache: true
+
+            - name: Bootstrap Melos workspace
+              run: |
+                  flutter pub get
+                  dart run melos bootstrap
+
+            - name: Build Android APKs (Melos)
+              run: dart run melos run build_android_examples
+
+    ios_build:
+        name: Build iOS examples (no codesign)
+        runs-on: macos-latest
+        needs: analyze_and_test
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Cache Pub packages
+              uses: actions/cache@v4
+              with:
+                  path: ~/.pub-cache
+                  key: ${{ runner.os }}-pub-${{ hashFiles('pubspec.lock', 'packages/**/pubspec.lock') }}
+                  restore-keys: |
+                      ${{ runner.os }}-pub-
+
+            - name: Setup Flutter
+              uses: subosito/flutter-action@v2
+              with:
+                  channel: stable
+                  cache: true
+
+            - name: Bootstrap Melos workspace
+              run: |
+                  flutter pub get
+                  dart run melos bootstrap
+
+            - name: Build iOS apps (Melos)
+              run: dart run melos run build_ios_examples
