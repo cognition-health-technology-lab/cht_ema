@@ -5,7 +5,9 @@ environment:
 
 workspace:
   - packages/cht_ema_surveys
+  - packages/cht_ema_surveys/example
   - packages/cht_ema_cognitive_tasks
+  - packages/cht_ema_cognitive_tasks/example
 
 dev_dependencies:
   melos: ^7.1.1

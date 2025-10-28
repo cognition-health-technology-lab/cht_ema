@@ -1,5 +1,5 @@
 import 'package:cht_ema_cognitive_tasks/cht_ema_cognitive_tasks.dart';
-import 'package:example/l10n/app_localizations.dart';
+import 'package:example_cognitive_tasks/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -82,9 +82,7 @@ class _HomePageState extends State<HomePage> {
 }
 
 class CognitiveTasksList extends StatelessWidget {
-  const CognitiveTasksList({
-    super.key,
-  });
+  const CognitiveTasksList({super.key});
 
   @override
   Widget build(BuildContext context) {

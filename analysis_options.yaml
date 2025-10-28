@@ -4,11 +4,11 @@ analyzer:
   exclude:
     - build/**
     - .dart_tool/**
-    - lib/src/core/l10n/**
     - "**/*.g.dart"
     - "**/*.freezed.dart"
-    - example/build/**
-    - example/lib/l10n/**
+    - packages/**/lib/src/core/l10n/**
+    - packages/**/example/build/**
+    - packages/**/example/lib/l10n/**
 
   language:
     strict-inference: true
