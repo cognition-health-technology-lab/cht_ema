@@ -4,9 +4,9 @@
   "@appTitle": {
     "description": "Title for the app"
   },
-  "homeMessage": "Pantalla de inicio",
-  "@homeMessage": {
-    "description": "Message displayed on the home screen"
+  "goNoGoExample": "Tarea Go/No-Go",
+  "@goNoGoExample": {
+    "description": "Go/No-Go Task Example name in home screen"
   },
   "languageToolTip": "Seleccionar idioma",
   "@languageToolTip": {
