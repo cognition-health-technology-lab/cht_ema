@@ -8,8 +8,8 @@ class DataManager {
   final List<TrialData> _trialData = <TrialData>[];
   final String participantId;
   final String sessionId;
-  late final DateTime startTime;
-  late final DateTime endTime;
+  DateTime? startTime;
+  DateTime? endTime;
 
   DataManager({
     required this.participantId,
@@ -36,11 +36,17 @@ class DataManager {
   }
 
   CognitiveData export() {
+    final start = startTime;
+    final end = endTime;
+    if (start == null || end == null) {
+      throw Exception('Cannot export data: startTime and endTime is not set.');
+    }
+
     final sessionData = SessionData(
       participantId: participantId,
       sessionId: sessionId,
-      startTime: startTime,
-      endTime: endTime,
+      startTime: start,
+      endTime: end,
     );
     return CognitiveData(
       sessionData: sessionData,
