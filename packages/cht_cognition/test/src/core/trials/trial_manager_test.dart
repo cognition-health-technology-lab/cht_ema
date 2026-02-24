@@ -8,6 +8,20 @@ void main() {
     trialManager = TrialManager<int>(trials: [1, 2, 3, 4, 5]);
   });
 
+  group(
+    'TrialManager',
+    () {
+      test(
+        'throws error if trial list is empty.',
+        () {
+          expect(
+            () => TrialManager<int>(trials: []),
+            throwsArgumentError,
+          );
+        },
+      );
+    },
+  );
   group('nextTrial', () {
     test(
       'Before called for the first time, '

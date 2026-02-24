@@ -1,14 +1,21 @@
 import 'dart:collection';
 
 class TrialManager<T> {
-  final List<T> _originalTrials;
+  late List<T> _originalTrials;
   final List<T> _usedTrials = <T>[];
   final List<T> _unusedTrials = <T>[];
-  T _currentTrial;
+  late T _currentTrial;
 
-  TrialManager({required List<T> trials})
-    : _originalTrials = List.unmodifiable(trials),
-      _currentTrial = trials.first {
+  TrialManager({required List<T> trials}) {
+    if (trials.isEmpty) {
+      throw ArgumentError.value(
+        trials,
+        'trials',
+        'trials list cannot be empty',
+      );
+    }
+    _originalTrials = List<T>.unmodifiable(trials);
+    _currentTrial = trials.first;
     _usedTrials.add(_currentTrial);
     _unusedTrials.addAll(trials.sublist(1));
   }
