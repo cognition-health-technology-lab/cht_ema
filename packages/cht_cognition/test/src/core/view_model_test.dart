@@ -33,13 +33,15 @@ const itiDuration = Duration(milliseconds: 1);
 class TestViewModel extends ViewModel<Trial<int>> {
   int onTrialCallCount = 0;
 
-  TestViewModel({required List<Trial<int>> trials, super.trialTimeoutDuration})
-    : super(
-        trialManager: TrialManager<Trial<int>>(trials: trials),
-        dataManager: DataManager(participantId: 'p1', sessionId: 's1'),
-        itiDuration: itiDuration,
-        restEveryNTrials: 5,
-      );
+  TestViewModel({
+    required List<Trial<int>> trials,
+    super.trialTimeoutDuration,
+    super.restEveryNTrials = 5,
+  }) : super(
+         trialManager: TrialManager<Trial<int>>(trials: trials),
+         dataManager: DataManager(participantId: 'p1', sessionId: 's1'),
+         itiDuration: itiDuration,
+       );
 
   @override
   void onTrial({required String response}) {
@@ -134,6 +136,22 @@ void main() {
           );
           viewModel.onRest();
           final shouldRest = viewModel.shouldRest();
+          expect(shouldRest, isFalse);
+        },
+      );
+      test(
+        'shouldRest returns false if rests are disabled.',
+        () {
+          final testSpecificViewModel = TestViewModel(
+            trials: trialList,
+            restEveryNTrials: null,
+          );
+          testSpecificViewModel.onInstructions();
+          testSpecificViewModel.onTrial(
+            response: trialData.response,
+          );
+          testSpecificViewModel.onRest();
+          final shouldRest = testSpecificViewModel.shouldRest();
           expect(shouldRest, isFalse);
         },
       );

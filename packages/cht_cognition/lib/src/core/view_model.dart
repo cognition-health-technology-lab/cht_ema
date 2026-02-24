@@ -16,7 +16,7 @@ abstract class ViewModel<T> extends ChangeNotifier {
   CognitiveTaskState<T> _state = CognitiveTaskState<T>.instructions();
   CognitiveTaskState<T> get state => _state;
 
-  final int _restEveryNTrials;
+  final int? _restEveryNTrials;
   final Duration? _trialTimeoutDuration;
   Timer? _trialTimeoutTimer;
   final Duration _itiDuration;
@@ -25,7 +25,7 @@ abstract class ViewModel<T> extends ChangeNotifier {
     required TrialManager<T> trialManager,
     required DataManager dataManager,
     required Duration itiDuration,
-    required int restEveryNTrials,
+    int? restEveryNTrials,
     Duration? trialTimeoutDuration,
     ProcessCognitiveDataCallback? processData,
   }) : _trialManager = trialManager,
@@ -90,7 +90,7 @@ abstract class ViewModel<T> extends ChangeNotifier {
   }
 
   bool shouldRest() {
-    if (_trialManager.usedCount == 0) return false;
+    if (_trialManager.usedCount == 0 || _restEveryNTrials == null) return false;
     return _trialManager.usedCount % _restEveryNTrials == 0;
   }
 

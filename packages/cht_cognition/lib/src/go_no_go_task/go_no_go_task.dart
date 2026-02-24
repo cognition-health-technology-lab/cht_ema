@@ -21,7 +21,7 @@ class GoNoGoTask extends CognitiveTask<Trial<GoNoGoStim>> {
     double goProbability = 0.7,
     Duration trialTimeoutDuration = const Duration(milliseconds: 1000),
     Duration itiDuration = const Duration(milliseconds: 750),
-    int restEveryNTrials = 1000,
+    int? restEveryNTrials,
     ProcessCognitiveDataCallback? processData,
   }) : super(
          viewModel: GoNoGoViewModel(
