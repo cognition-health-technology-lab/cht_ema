@@ -222,7 +222,7 @@ void main() {
         response: trialData.response,
       );
 
-      //  ignore: prefer_const_constructors - using const causes an error that seems to be a associated with the object being a freezed object, and not because  there is an actual error. If ran, test passes without issue.
+      // ignore: prefer_const_constructors - Using const causes an error associated with freezed objects, not an actual error. Test passes without issue.
       final expectedState = CognitiveTaskState<Trial<int>>.rest();
       expect(viewModel.state, expectedState);
     });
@@ -248,7 +248,7 @@ void main() {
           response: trialData.response,
         );
 
-        //  ignore: prefer_const_constructors - using const causes an error that seems to be a associated with the object being a freezed object, and not because  there is an actual error. If ran, test passes without issue.
+        // ignore: prefer_const_constructors - Using const causes an error associated with freezed objects, not an actual error. Test passes without issue.
         final expectedState = CognitiveTaskState<Trial<int>>.finished();
         expect(viewModel.state, expectedState);
       },

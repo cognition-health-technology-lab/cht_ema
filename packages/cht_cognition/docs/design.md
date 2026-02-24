@@ -2,14 +2,14 @@
 
 ## Architecture
 
-- MVVM (Model-View-ViewModel) patter and migrate/extend to a clean architecture as needed based
+- MVVM (Model-View-ViewModel) pattern and migrate/extend to a clean architecture as needed based
   on complexity.
 
 ## Design
 
 #### Overview
 
-We will design a general cognitive task object to standardize how cognitive tasks created. We will
+We will design a general cognitive task object to standardize how cognitive tasks are created. We will
 then have each specific cognitive task pass its configuration to the general cognitive task.
 
 Reusable components will be created to handle common functionality, like data managers.
@@ -28,5 +28,4 @@ Reusable components will be created to handle common functionality, like data ma
 
 ### Reusable components
 
-- Responsible for handling common functionality across different cognitive tasks, like data management.
-  stimuli and data management.
+- Responsible for handling common functionality across different cognitive tasks, like data and stimuli management.
