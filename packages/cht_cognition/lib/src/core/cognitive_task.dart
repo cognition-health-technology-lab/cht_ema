@@ -97,6 +97,7 @@ class _CognitiveTaskState<T> extends State<CognitiveTask<T>> {
   @override
   void dispose() {
     widget._viewModel.removeListener(updateUI);
+    widget._viewModel.dispose();
     super.dispose();
   }
 
