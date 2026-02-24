@@ -75,5 +75,16 @@ void main() {
         );
       },
     );
+    test(
+      'When called after no more trials are available, throws error.',
+      () {
+        trialManager.nextTrial();
+        trialManager.nextTrial();
+        trialManager.nextTrial();
+        trialManager.nextTrial();
+
+        expect(() => trialManager.nextTrial(), throwsStateError);
+      },
+    );
   });
 }

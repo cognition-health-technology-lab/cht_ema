@@ -30,6 +30,9 @@ class TrialManager<T> {
   int get unusedCount => _unusedTrials.length;
 
   T nextTrial() {
+    if (_unusedTrials.isEmpty) {
+      throw StateError('No more trials available');
+    }
     _currentTrial = _unusedTrials.removeAt(0);
     _usedTrials.add(_currentTrial);
     return _currentTrial;
