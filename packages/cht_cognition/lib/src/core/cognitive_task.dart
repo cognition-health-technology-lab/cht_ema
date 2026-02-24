@@ -4,7 +4,7 @@ import 'package:cht_cognition/src/core/instructions_page.dart';
 import 'package:cht_cognition/src/core/page_builder_definitions.dart';
 import 'package:cht_cognition/src/core/rest_page.dart';
 import 'package:cht_cognition/src/core/state/cognitive_task_state.dart';
-import 'package:cht_cognition/src/core/trials/iti.dart';
+import 'package:cht_cognition/src/core/trials/iti_page.dart';
 import 'package:cht_cognition/src/core/trials/on_trial_callback_definition.dart';
 import 'package:cht_cognition/src/core/view_model.dart';
 import 'package:flutter/material.dart';
