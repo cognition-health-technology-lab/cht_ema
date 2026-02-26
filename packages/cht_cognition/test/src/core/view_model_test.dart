@@ -36,7 +36,7 @@ class TestViewModel extends ViewModel<Trial<int>> {
   TestViewModel({
     required List<Trial<int>> trials,
     super.trialTimeoutDuration,
-    super.restEveryNTrials = 5,
+    super.restEveryNTrials = 2,
   }) : super(
          trialManager: TrialManager<Trial<int>>(trials: trials),
          dataManager: DataManager(participantId: 'p1', sessionId: 's1'),
@@ -107,24 +107,19 @@ void main() {
       test(
         'shouldRest returns true when rest criteria is met.',
         () {
-          viewModel.onInstructions();
-          viewModel.onTrial(
-            response: trialData.response,
-          );
-          viewModel.onTrial(
-            response: trialData.response,
-          );
-          viewModel.onTrial(
-            response: trialData.response,
-          );
-          viewModel.onTrial(
-            response: trialData.response,
-          );
-          viewModel.onTrial(
-            response: trialData.response,
-          );
-          final shouldRest = viewModel.shouldRest();
-          expect(shouldRest, isTrue);
+          fakeAsync((async) {
+            viewModel.onInstructions();
+            viewModel.onTrial(
+              response: trialData.response,
+            );
+            async.elapse(itiDuration);
+            viewModel.onTrial(
+              response: trialData.response,
+            );
+            async.elapse(itiDuration);
+            final shouldRest = viewModel.shouldRest();
+            expect(shouldRest, isTrue);
+          });
         },
       );
       test(
@@ -176,81 +171,92 @@ void main() {
     'ViewModel.shouldFinish',
     () {
       test(
-        'shouldFinish returns false, when finish criteria is met.',
+        'shouldFinish returns false, when finish criteria is unmet.',
         () {
           final shouldFinish = viewModel.shouldFinish();
           expect(shouldFinish, isFalse);
         },
       );
       test(
-        'shouldFinish returns true, when finish criteria is unmet.',
+        'shouldFinish returns true, when finish criteria is met.',
         () {
-          viewModel.onInstructions();
-          viewModel.onTrial(
-            response: trialData.response,
-          );
-          viewModel.onTrial(
-            response: trialData.response,
-          );
-          viewModel.onRest();
-          viewModel.onTrial(
-            response: trialData.response,
-          );
-          viewModel.onRest();
-          final shouldFinish = viewModel.shouldFinish();
-          expect(shouldFinish, isTrue);
+          fakeAsync((async) {
+            viewModel.onInstructions();
+            viewModel.onTrial(
+              response: trialData.response,
+            );
+            async.elapse(itiDuration);
+            viewModel.onTrial(
+              response: trialData.response,
+            );
+            async.elapse(itiDuration);
+            viewModel.onRest();
+            async.elapse(itiDuration);
+            viewModel.onTrial(
+              response: trialData.response,
+            );
+            async.elapse(itiDuration);
+            viewModel.onRest();
+            async.elapse(itiDuration);
+            viewModel.onTrial(
+              response: trialData.response,
+            );
+            async.elapse(itiDuration);
+            final shouldFinish = viewModel.shouldFinish();
+            expect(shouldFinish, isTrue);
+          });
         },
       );
     },
   );
   group('onTrial', () {
     test('When the rest criteria is met, state changes to rest', () {
-      viewModel.onInstructions();
-      viewModel.onTrial(
-        response: trialData.response,
-      );
-      viewModel.onTrial(
-        response: trialData.response,
-      );
-      viewModel.onTrial(
-        response: trialData.response,
-      );
-      viewModel.onTrial(
-        response: trialData.response,
-      );
-      viewModel.onTrial(
-        response: trialData.response,
-      );
-
-      // ignore: prefer_const_constructors - Using const causes an error associated with freezed objects, not an actual error. Test passes without issue.
-      final expectedState = CognitiveTaskState<Trial<int>>.rest();
-      expect(viewModel.state, expectedState);
-    });
-    test(
-      'When the finished criteria is met, state changes to finished',
-      () {
+      fakeAsync((async) {
         viewModel.onInstructions();
         viewModel.onTrial(
           response: trialData.response,
         );
+        async.elapse(itiDuration);
         viewModel.onTrial(
           response: trialData.response,
         );
-        viewModel.onRest();
-        viewModel.onTrial(
-          response: trialData.response,
-        );
-        viewModel.onTrial(
-          response: trialData.response,
-        );
-        viewModel.onRest();
-        viewModel.onTrial(
-          response: trialData.response,
-        );
+        async.elapse(itiDuration);
 
         // ignore: prefer_const_constructors - Using const causes an error associated with freezed objects, not an actual error. Test passes without issue.
-        final expectedState = CognitiveTaskState<Trial<int>>.finished();
+        final expectedState = CognitiveTaskState<Trial<int>>.rest();
         expect(viewModel.state, expectedState);
+      });
+    });
+    test(
+      'When the finished criteria is met, state changes to finished',
+      () {
+        fakeAsync((async) {
+          viewModel.onInstructions();
+          viewModel.onTrial(
+            response: trialData.response,
+          );
+          async.elapse(itiDuration);
+          viewModel.onRest();
+          async.elapse(itiDuration);
+          viewModel.onTrial(
+            response: trialData.response,
+          );
+          async.elapse(itiDuration);
+          viewModel.onRest();
+          async.elapse(itiDuration);
+          viewModel.onTrial(
+            response: trialData.response,
+          );
+          async.elapse(itiDuration);
+          viewModel.onTrial(
+            response: trialData.response,
+          );
+          async.elapse(itiDuration);
+
+          // ignore: prefer_const_constructors - Using const causes an error associated with freezed objects, not an actual error. Test passes without issue.
+          final expectedState = CognitiveTaskState<Trial<int>>.finished();
+          expect(viewModel.state, expectedState);
+        });
       },
     );
     test(

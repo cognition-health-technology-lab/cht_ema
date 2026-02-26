@@ -44,7 +44,13 @@ abstract class ViewModel<T> extends ChangeNotifier {
   }
 
   void _prepNextTrial() {
+    _presentITI();
+    Timer(_itiDuration, _advancedToNextTrial);
+  }
+
+  void _advancedToNextTrial() {
     _trialManager.nextTrial();
+    _startTrial();
   }
 
   void _startTrial() {
@@ -74,19 +80,17 @@ abstract class ViewModel<T> extends ChangeNotifier {
       _state = CognitiveTaskState<T>.rest();
       notifyListeners();
     } else {
-      _presentITI();
+      _prepNextTrial();
     }
   }
 
   void _presentITI() {
     _state = CognitiveTaskState<T>.iti();
     notifyListeners();
-    Timer(_itiDuration, _startTrial);
-    _prepNextTrial();
   }
 
   void onRest() {
-    _presentITI();
+    _prepNextTrial();
   }
 
   bool shouldRest() {
