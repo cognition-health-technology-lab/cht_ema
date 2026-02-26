@@ -224,8 +224,9 @@ void main() {
           response: trialData.response,
         );
         async.elapse(itiDuration);
-
-        // ignore: prefer_const_constructors - Using const causes an error associated with freezed objects, not an actual error. Test passes without issue.
+        // Using const causes an error associated with freezed objects,
+        // not an actual error. Test passes without issue.
+        // ignore: prefer_const_constructors -
         final expectedState = CognitiveTaskState<Trial<int>>.rest();
         expect(viewModel.state, expectedState);
       });
@@ -256,7 +257,9 @@ void main() {
           );
           async.elapse(itiDuration);
 
-          // ignore: prefer_const_constructors - Using const causes an error associated with freezed objects, not an actual error. Test passes without issue.
+          // Using const causes an error associated with freezed objects,
+          // not an actual error. Test passes without issue.
+          // ignore: prefer_const_constructors -
           final expectedState = CognitiveTaskState<Trial<int>>.finished();
           expect(viewModel.state, expectedState);
         });

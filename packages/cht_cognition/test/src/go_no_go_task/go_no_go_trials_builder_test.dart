@@ -51,7 +51,8 @@ void main() {
       final randomizedTrials = buildGoNoGoTrials(
         n: 10,
         goProbability: .1,
-        // ignore: avoid_redundant_argument_values to ensure values even if function changes
+        // Makes test deterministic.
+        // ignore: avoid_redundant_argument_values
         randomizationType: RandomizationType.full,
         seed: seed,
       );
