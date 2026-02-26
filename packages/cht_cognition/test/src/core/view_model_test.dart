@@ -157,6 +157,9 @@ void main() {
       'After onRest, state changes to trial and it contains the second original trial.',
       () {
         fakeAsync((async) {
+          // TrialManager starts with trialList.first as current, and
+          // onInstructions() initializes the trial lifecycle before onRest().
+          viewModel.onInstructions();
           viewModel.onRest();
           async.elapse(itiDuration);
           expect(
