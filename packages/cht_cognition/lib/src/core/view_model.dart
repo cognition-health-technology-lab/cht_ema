@@ -35,6 +35,12 @@ abstract class ViewModel<T> extends ChangeNotifier {
        _restEveryNTrials = restEveryNTrials,
        _itiDuration = itiDuration;
 
+  @override
+  void dispose() {
+    _trialTimeoutTimer?.cancel();
+    super.dispose();
+  }
+
   void init() {
     _dataManager.startTime = DateTime.now();
   }
