@@ -9,6 +9,10 @@ List<Trial<GoNoGoStim>> buildGoNoGoTrials({
   RandomizationType randomizationType = RandomizationType.full,
   int? seed,
 }) {
+  if (goProbability < 0.0 || goProbability > 1.0) {
+    throw ArgumentError('goProbability must be between 0.0 and 1.0');
+  }
+
   final trials = <Trial<GoNoGoStim>>[];
 
   final goCount = (n * goProbability).floor();
