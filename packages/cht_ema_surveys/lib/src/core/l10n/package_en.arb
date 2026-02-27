@@ -3,5 +3,65 @@
   "itemTitle": "Title for survey item",
   "@itemTitle": {
     "description": "Title for the EMA survey item"
+  },
+  "erqEmaInstructionsTitle": "Emotions",
+  "@erqEmaInstructionsTitle": {
+    "description": "ERQ EMA instructions title"
+  },
+  "erqEmaInstructionsBody": "The following statements concern how you controlled your emotions during the last day. Please indicate the extent to which you agree with each statement.",
+  "@erqEmaInstructionsBody": {
+    "description": "ERQ EMA instructions body"
+  },
+  "erqEmaCr1": "Since the last prompt, when I wanted to feel more positive emotion (such as joy or amusement), I changed the way I was thinking about the situation. ",
+  "@erqEmaCr1": {
+    "description": "ERQ EMA cognitive reappraisal item 1"
+  },
+  "erqEmaCr2": "Since the last prompt, when I wanted to feel less negative emotion (such as sadness or anger), I changed the way I was thinking about the situation.",
+  "@erqEmaCr2": {
+    "description": "ERQ EMA cognitive reappraisal item 2"
+  },
+  "erqEmaCr3": "Since the last prompt, I controlled my emotions by changing the way I was thinking about the situation I'm in.",
+  "@erqEmaCr3": {
+    "description": "ERQ EMA cognitive reappraisal item 3"
+  },
+  "erqEmaSup1": "Since the last prompt, I have kept my emotions to myself.",
+  "@erqEmaSup1": {
+    "description": "ERQ EMA expressive suppression item 1"
+  },
+  "erqEmaSup2": "Since the last prompt, I controlled my emotions by not expressing them.",
+  "@erqEmaSup2": {
+    "description": "ERQ EMA expressive suppression item 2"
+  },
+  "erqEmaSup3": "Since the last prompt, when I felt negative emotions, I made sure not to express them.",
+  "@erqEmaSup3": {
+    "description": "ERQ EMA expressive suppression item 3"
+  },
+  "likertStronglyDisagree": "Strongly disagree",
+  "@likertStronglyDisagree": {
+    "description": "Likert label for 1 on a 1–7 agreement scale"
+  },
+  "likertDisagree": "Disagree",
+  "@likertDisagree": {
+    "description": "Likert label for 2 on a 1–7 agreement scale"
+  },
+  "likertSlightlyDisagree": "Slightly disagree",
+  "@likertSlightlyDisagree": {
+    "description": "Likert label for 3 on a 1–7 agreement scale"
+  },
+  "likertNeutral": "Neutral",
+  "@likertNeutral": {
+    "description": "Likert label for 4 on a 1–7 agreement scale"
+  },
+  "likertSlightlyAgree": "Slightly agree",
+  "@likertSlightlyAgree": {
+    "description": "Likert label for 5 on a 1–7 agreement scale"
+  },
+  "likertAgree": "Agree",
+  "@likertAgree": {
+    "description": "Likert label for 6 on a 1–7 agreement scale"
+  },
+  "likertStronglyAgree": "Strongly agree",
+  "@likertStronglyAgree": {
+    "description": "Likert label for 7 on a 1–7 agreement scale"
   }
 }

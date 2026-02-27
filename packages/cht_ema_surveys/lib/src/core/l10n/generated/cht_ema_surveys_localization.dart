@@ -106,6 +106,96 @@ abstract class ChtEmaSurveysLocalization {
   /// In en, this message translates to:
   /// **'Title for survey item'**
   String get itemTitle;
+
+  /// ERQ EMA instructions title
+  ///
+  /// In en, this message translates to:
+  /// **'Emotions'**
+  String get erqEmaInstructionsTitle;
+
+  /// ERQ EMA instructions body
+  ///
+  /// In en, this message translates to:
+  /// **'The following statements concern how you controlled your emotions during the last day. Please indicate the extent to which you agree with each statement.'**
+  String get erqEmaInstructionsBody;
+
+  /// ERQ EMA cognitive reappraisal item 1
+  ///
+  /// In en, this message translates to:
+  /// **'Since the last prompt, when I wanted to feel more positive emotion (such as joy or amusement), I changed the way I was thinking about the situation. '**
+  String get erqEmaCr1;
+
+  /// ERQ EMA cognitive reappraisal item 2
+  ///
+  /// In en, this message translates to:
+  /// **'Since the last prompt, when I wanted to feel less negative emotion (such as sadness or anger), I changed the way I was thinking about the situation.'**
+  String get erqEmaCr2;
+
+  /// ERQ EMA cognitive reappraisal item 3
+  ///
+  /// In en, this message translates to:
+  /// **'Since the last prompt, I controlled my emotions by changing the way I was thinking about the situation I\'m in.'**
+  String get erqEmaCr3;
+
+  /// ERQ EMA expressive suppression item 1
+  ///
+  /// In en, this message translates to:
+  /// **'Since the last prompt, I have kept my emotions to myself.'**
+  String get erqEmaSup1;
+
+  /// ERQ EMA expressive suppression item 2
+  ///
+  /// In en, this message translates to:
+  /// **'Since the last prompt, I controlled my emotions by not expressing them.'**
+  String get erqEmaSup2;
+
+  /// ERQ EMA expressive suppression item 3
+  ///
+  /// In en, this message translates to:
+  /// **'Since the last prompt, when I felt negative emotions, I made sure not to express them.'**
+  String get erqEmaSup3;
+
+  /// Likert label for 1 on a 1–7 agreement scale
+  ///
+  /// In en, this message translates to:
+  /// **'Strongly disagree'**
+  String get likertStronglyDisagree;
+
+  /// Likert label for 2 on a 1–7 agreement scale
+  ///
+  /// In en, this message translates to:
+  /// **'Disagree'**
+  String get likertDisagree;
+
+  /// Likert label for 3 on a 1–7 agreement scale
+  ///
+  /// In en, this message translates to:
+  /// **'Slightly disagree'**
+  String get likertSlightlyDisagree;
+
+  /// Likert label for 4 on a 1–7 agreement scale
+  ///
+  /// In en, this message translates to:
+  /// **'Neutral'**
+  String get likertNeutral;
+
+  /// Likert label for 5 on a 1–7 agreement scale
+  ///
+  /// In en, this message translates to:
+  /// **'Slightly agree'**
+  String get likertSlightlyAgree;
+
+  /// Likert label for 6 on a 1–7 agreement scale
+  ///
+  /// In en, this message translates to:
+  /// **'Agree'**
+  String get likertAgree;
+
+  /// Likert label for 7 on a 1–7 agreement scale
+  ///
+  /// In en, this message translates to:
+  /// **'Strongly agree'**
+  String get likertStronglyAgree;
 }
 
 class _ChtEmaSurveysLocalizationDelegate

@@ -1,4 +1,8 @@
+// ignore_for_file: implementation_imports
+
 import 'package:cht_ema_surveys/cht_ema_surveys.dart';
+import 'package:cht_ema_surveys/src/erq_ema/data/erq_ema_survey_questions.dart';
+import 'package:cht_ema_surveys/src/erq_ema/presentation/erq_ema_variant_page.dart';
 import 'package:example_surveys/l10n/generated/app_localizations.dart';
 import 'package:flutter/material.dart';
 
@@ -92,13 +96,57 @@ class SurveyList extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            //ERQ EMA button...
             ElevatedButton(
               onPressed: () => Navigator.push(
                 context,
-                MaterialPageRoute<void>(builder: (context) => SurveyPage()),
+                MaterialPageRoute<void>(
+                  builder: (context) => ErqEmaVariantPage(
+                    variant: ErqEmaUiVariant.sliderSimple,
+                    onFinish: (context, result) {
+                      // optional: log
+                    },
+                  ),
+                ),
               ),
               child: Text(
-                localizations.homeMessage,
+                'ERQ EMA — Slider',
+                style: Theme.of(context).textTheme.headlineMedium,
+              ),
+            ),
+
+            const SizedBox(height: 16),
+
+            ElevatedButton(
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute<void>(
+                  builder: (context) => ErqEmaVariantPage(
+                    variant: ErqEmaUiVariant.multipleChoice,
+                    onFinish: (context, result) {},
+                  ),
+                ),
+              ),
+              child: Text(
+                'ERQ EMA — Multiple Choice',
+                style: Theme.of(context).textTheme.headlineMedium,
+              ),
+            ),
+
+            const SizedBox(height: 16),
+
+            ElevatedButton(
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute<void>(
+                  builder: (context) => ErqEmaVariantPage(
+                    variant: ErqEmaUiVariant.sliderWithLegend,
+                    onFinish: (context, result) {},
+                  ),
+                ),
+              ),
+              child: Text(
+                'ERQ EMA — Slider + Legend',
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
             ),
