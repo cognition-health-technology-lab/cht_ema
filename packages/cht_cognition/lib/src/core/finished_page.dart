@@ -1,3 +1,4 @@
+import 'package:cht_cognition/cht_cognition.dart';
 import 'package:cht_cognition/src/core/centered_page.dart';
 import 'package:flutter/material.dart';
 
@@ -11,13 +12,14 @@ class FinishedPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final localization = ChtCognitionLocalization.of(context);
     return CenteredPage(
       child: <Widget>[
-        const Text('Finished'),
+        Text(localization.endMessageMain),
         ElevatedButton.icon(
           onPressed: _onFinished,
           icon: const Icon(Icons.arrow_forward),
-          label: const Text('Next'),
+          label: Text(localization.endMessageButton),
         ),
       ],
     );

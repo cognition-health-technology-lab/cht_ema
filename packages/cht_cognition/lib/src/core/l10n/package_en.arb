@@ -3,5 +3,25 @@
   "placeholderText": "Placeholder cognitive task",
   "@placeholderText": {
     "description": "Message for example widget"
+  },
+  "goNoGoInstructions": "Go/No-Go Task Instructions",
+  "@goNoGoInstructions": {
+    "description": "Instructions for the Go/No-Go task"
+  },
+  "restMessageMain": "Rest",
+  "@restMessageMain": {
+    "description": "Default message presented during the rest period of a cognitive task"
+  },
+  "restMessageButton": "Continue",
+  "@restMessageButton": {
+    "description": "Default message presented on the `continue button` during the rest period of a cognitive task"
+  },
+  "endMessageMain": "Done!",
+  "@endMessageMain": {
+    "description": "Default message presented when a cognitive task is completed"
+  },
+  "endMessageButton": "Continue",
+  "@endMessageButton": {
+    "description": "Default message presented on the `continue button` when a cognitive task is completed"
   }
 }
