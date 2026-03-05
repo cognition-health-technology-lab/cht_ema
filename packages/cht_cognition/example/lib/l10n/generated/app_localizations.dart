@@ -104,11 +104,11 @@ abstract class AppLocalizations {
   /// **'CHT Cognitive Tasks Example'**
   String get appTitle;
 
-  /// Message displayed on the home screen
+  /// Go/No-Go Task Example name in home screen
   ///
   /// In en, this message translates to:
-  /// **'Home screen'**
-  String get homeMessage;
+  /// **'Go/No-Go Task'**
+  String get goNoGoExample;
 
   /// Tooltip for the language selection menu
   ///

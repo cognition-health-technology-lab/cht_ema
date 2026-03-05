@@ -12,7 +12,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get appTitle => 'Ejemplo CHT Tareas Cognitivas';
 
   @override
-  String get homeMessage => 'Pantalla de inicio';
+  String get goNoGoExample => 'Tarea Go/No-Go';
 
   @override
   String get languageToolTip => 'Seleccionar idioma';

@@ -10,6 +10,8 @@ workspace:
   - packages/cht_cognition/example
 
 dev_dependencies:
+  build_runner: ^2.10.4
+  freezed: ^3.2.3
   melos: ^7.1.1
   very_good_analysis: ^10.0.0
 

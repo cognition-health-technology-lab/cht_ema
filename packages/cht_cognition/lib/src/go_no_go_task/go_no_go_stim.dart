@@ -1,0 +1,4 @@
+enum GoNoGoStim {
+  go,
+  noGo,
+}
