@@ -6,6 +6,19 @@ import 'package:flutter_test/flutter_test.dart';
 void main() {
   group('buildGoNoGoTrials', () {
     test(
+      'When given n < 1, throws an error',
+      () {
+        expect(
+          () => buildGoNoGoTrials(n: 0, goProbability: .5),
+          throwsArgumentError,
+        );
+        expect(
+          () => buildGoNoGoTrials(n: -1, goProbability: .5),
+          throwsArgumentError,
+        );
+      },
+    );
+    test(
       'When given an invalid go probability, throws an error',
       () {
         expect(
