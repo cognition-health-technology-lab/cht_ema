@@ -4,6 +4,10 @@
   "@placeholderText": {
     "description": "Mensaje para el widget de ejemplo"
   },
+  "continueButton": "Continuar",
+  "@continueButton": {
+    "description": "Default message presented on the `continue button`"
+  },
   "goNoGoInstructions": "Instrucciones para tarea Go/No-Go",
   "@goNoGoInstructions": {
     "description": "Instructions for the Go/No-Go task"
@@ -12,16 +16,8 @@
   "@restMessageMain": {
     "description": "Default message presented during the rest period of a cognitive task"
   },
-  "restMessageButton": "Continuar",
-  "@restMessageButton": {
-    "description": "Default message presented on the `continue button` during the rest period of a cognitive task"
-  },
   "endMessageMain": "¡Listo!",
   "@endMessageMain": {
     "description": "Default message presented when a cognitive task is completed"
-  },
-  "endMessageButton": "Continuar",
-  "@endMessageButton": {
-    "description": "Default message presented on the `continue button` when a cognitive task is completed"
   }
 }

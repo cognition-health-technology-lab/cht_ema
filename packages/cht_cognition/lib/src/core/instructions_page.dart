@@ -19,7 +19,7 @@ class InstructionsPage extends StatelessWidget {
         ElevatedButton.icon(
           onPressed: _onFinished,
           icon: const Icon(Icons.arrow_forward),
-          label: const Text('Next'),
+          label: Text(localization.continueButton),
         ),
       ],
     );

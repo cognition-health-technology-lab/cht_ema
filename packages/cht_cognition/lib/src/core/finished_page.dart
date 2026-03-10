@@ -19,7 +19,7 @@ class FinishedPage extends StatelessWidget {
         ElevatedButton.icon(
           onPressed: _onFinished,
           icon: const Icon(Icons.arrow_forward),
-          label: Text(localization.endMessageButton),
+          label: Text(localization.continueButton),
         ),
       ],
     );

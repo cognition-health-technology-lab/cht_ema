@@ -19,7 +19,7 @@ class RestPage extends StatelessWidget {
         ElevatedButton.icon(
           onPressed: _onFinished,
           icon: const Icon(Icons.arrow_forward),
-          label: Text(localization.restMessageButton),
+          label: Text(localization.continueButton),
         ),
       ],
     );

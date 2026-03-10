@@ -12,17 +12,14 @@ class ChtCognitionLocalizationEn extends ChtCognitionLocalization {
   String get placeholderText => 'Placeholder cognitive task';
 
   @override
+  String get continueButton => 'Continue';
+
+  @override
   String get goNoGoInstructions => 'Go/No-Go Task Instructions';
 
   @override
   String get restMessageMain => 'Rest';
 
   @override
-  String get restMessageButton => 'Continue';
-
-  @override
   String get endMessageMain => 'Done!';
-
-  @override
-  String get endMessageButton => 'Continue';
 }

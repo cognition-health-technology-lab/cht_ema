@@ -107,6 +107,12 @@ abstract class ChtCognitionLocalization {
   /// **'Placeholder cognitive task'**
   String get placeholderText;
 
+  /// Default message presented on the `continue button`
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get continueButton;
+
   /// Instructions for the Go/No-Go task
   ///
   /// In en, this message translates to:
@@ -119,23 +125,11 @@ abstract class ChtCognitionLocalization {
   /// **'Rest'**
   String get restMessageMain;
 
-  /// Default message presented on the `continue button` during the rest period of a cognitive task
-  ///
-  /// In en, this message translates to:
-  /// **'Continue'**
-  String get restMessageButton;
-
   /// Default message presented when a cognitive task is completed
   ///
   /// In en, this message translates to:
   /// **'Done!'**
   String get endMessageMain;
-
-  /// Default message presented on the `continue button` when a cognitive task is completed
-  ///
-  /// In en, this message translates to:
-  /// **'Continue'**
-  String get endMessageButton;
 }
 
 class _ChtCognitionLocalizationDelegate
