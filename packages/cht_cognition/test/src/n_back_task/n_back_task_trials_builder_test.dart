@@ -7,11 +7,11 @@ void main() {
       'When given n < 1, throws an error',
       () {
         expect(
-          () => buildNBackTrials(n: 0),
+          () => buildNBackTrials(n: 0, matchProbability: 0.5),
           throwsArgumentError,
         );
         expect(
-          () => buildNBackTrials(n: -1),
+          () => buildNBackTrials(n: -1, matchProbability: 0.5),
           throwsArgumentError,
         );
       },

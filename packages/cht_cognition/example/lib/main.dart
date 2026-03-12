@@ -112,6 +112,26 @@ class CognitiveTasksList extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
             ),
+            ElevatedButton(
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute<void>(
+                  builder: (context) => NBackTask(
+                    processData: printData,
+                    participantId: 'p1',
+                    sessionId: 's1',
+                    nTrials: 12,
+                    matchProbability: .5,
+                    trialTimeoutDuration: const Duration(milliseconds: 1500),
+                    restEveryNTrials: 100,
+                  ),
+                ),
+              ),
+              child: Text(
+                localizations.nBackExample,
+                style: Theme.of(context).textTheme.headlineMedium,
+              ),
+            ),
           ],
         ),
       ),
