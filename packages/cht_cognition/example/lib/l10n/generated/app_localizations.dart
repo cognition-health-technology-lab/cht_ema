@@ -110,6 +110,12 @@ abstract class AppLocalizations {
   /// **'Go/No-Go Task'**
   String get goNoGoExample;
 
+  /// N Back Task Example name in home screen
+  ///
+  /// In en, this message translates to:
+  /// **'N Back Task'**
+  String get nBackExample;
+
   /// Tooltip for the language selection menu
   ///
   /// In en, this message translates to:

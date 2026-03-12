@@ -15,6 +15,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get goNoGoExample => 'Tarea Go/No-Go';
 
   @override
+  String get nBackExample => 'Tarea N Back';
+
+  @override
   String get languageToolTip => 'Seleccionar idioma';
 
   @override
