@@ -89,8 +89,11 @@ jobs:
           flutter pub get
           dart run melos bootstrap
 
-      - name: Build Android APKs (Melos)
+      - name: Build Android example APKs (Melos)
         run: dart run melos run build_android_examples
+
+      - name: Build mHealthGoal Android APK
+        run: dart run melos run build_android_mhealthgoal
 
   ios_build:
     name: Build iOS examples (no codesign)
@@ -120,5 +123,8 @@ jobs:
           flutter pub get
           dart run melos bootstrap
 
-      - name: Build iOS apps (Melos)
+      - name: Build iOS example apps (Melos)
         run: dart run melos run build_ios_examples
+
+      - name: Build mHealthGoal iOS app
+        run: dart run melos run build_ios_mhealthgoal

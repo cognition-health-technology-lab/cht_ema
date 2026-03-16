@@ -50,6 +50,31 @@
       "program": "lib/main.dart",
       "cwd": "${workspaceFolder}/packages/cht_cognition/example",
       "flutterMode": "release"
+    },
+    // mhealthgoal app
+    {
+      "name": "Run: mhealthgoal (debug)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "cwd": "${workspaceFolder}/apps/mhealthgoal",
+      "flutterMode": "debug"
+    },
+    {
+      "name": "Run: mhealthgoal (profile)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "cwd": "${workspaceFolder}/apps/mhealthgoal",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "Run: mhealthgoal (release)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "cwd": "${workspaceFolder}/apps/mhealthgoal",
+      "flutterMode": "release"
     }
   ]
 }
