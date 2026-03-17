@@ -11,5 +11,9 @@ List<Trial<NBackStim>> buildNBackTrials({
   if (n < 1) {
     throw ArgumentError('n must be greater than 0');
   }
-  return <Trial<NBackStim>>[const Trial<NBackStim>(stim: NBackStim.one)];
+  return <Trial<NBackStim>>[
+    const Trial<NBackStim>(stim: NBackStim.a),
+    const Trial<NBackStim>(stim: NBackStim.b),
+    const Trial<NBackStim>(stim: NBackStim.c),
+  ];
 }
