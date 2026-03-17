@@ -20,6 +20,21 @@ class NBackTaskTrialPage extends StatelessWidget {
       body: Center(
         child: getStimWidget(),
       ),
+      bottomNavigationBar: SafeArea(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            ElevatedButton(
+              onPressed: () => _onTap('no match'),
+              child: const Text("Don't match"),
+            ),
+            ElevatedButton(
+              onPressed: () => _onTap('match'),
+              child: const Text('Match'),
+            ),
+          ],
+        ),
+      ),
     );
   }
 
@@ -31,9 +46,9 @@ class NBackTaskTrialPage extends StatelessWidget {
     };
   }
 
-  void _onTap() {
+  void _onTap(String response) {
     _onFinished(
-      response: 'tap',
+      response: response,
     );
   }
 }
