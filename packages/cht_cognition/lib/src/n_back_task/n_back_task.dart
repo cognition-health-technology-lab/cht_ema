@@ -44,6 +44,9 @@ class NBackTask extends CognitiveTask<Trial<NBackStim>> {
     required Trial<NBackStim> trial,
     required OnTrialCallback onFinished,
   }) {
-    return const NBackTaskTrialPage();
+    return NBackTaskTrialPage(
+      trial: trial,
+      onFinished: onFinished,
+    );
   }
 }
