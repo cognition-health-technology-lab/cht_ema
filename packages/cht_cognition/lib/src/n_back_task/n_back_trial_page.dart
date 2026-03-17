@@ -20,35 +20,85 @@ class NBackTaskTrialPage extends StatelessWidget {
       body: Center(
         child: getStimWidget(),
       ),
-      bottomNavigationBar: SafeArea(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            ElevatedButton(
-              onPressed: () => _onTap('no match'),
-              child: const Text("Don't match"),
-            ),
-            ElevatedButton(
-              onPressed: () => _onTap('match'),
-              child: const Text('Match'),
-            ),
-          ],
-        ),
+      bottomNavigationBar: ResponseWidget(
+        onTap: _onFinished,
       ),
     );
   }
 
   Widget getStimWidget() {
+    return StimWidget(trial: _trial);
+  }
+}
+
+class StimWidget extends StatelessWidget {
+  const StimWidget({
+    required Trial<NBackStim> trial,
+    super.key,
+  }) : _trial = trial;
+
+  final Trial<NBackStim> _trial;
+
+  @override
+  Widget build(BuildContext context) {
     return switch (_trial.stim) {
       NBackStim.a => const Icon(Icons.square_outlined),
       NBackStim.b => const Icon(Icons.circle_outlined),
       NBackStim.c => const Icon(Icons.pentagon_outlined),
     };
   }
+}
 
-  void _onTap(String response) {
-    _onFinished(
-      response: response,
+class ResponseWidget extends StatelessWidget {
+  final OnTrialCallback _onTap;
+
+  const ResponseWidget({
+    required OnTrialCallback onTap,
+    super.key,
+  }) : _onTap = onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          ResponseButton(
+            onTap: _onTap,
+            buttonText: 'No match',
+            response: 'no match',
+          ),
+          ResponseButton(
+            onTap: _onTap,
+            buttonText: 'Match',
+            response: 'match',
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class ResponseButton extends StatelessWidget {
+  final String _buttonText;
+  final String _response;
+
+  const ResponseButton({
+    required OnTrialCallback onTap,
+    required String buttonText,
+    required String response,
+    super.key,
+  }) : _onTap = onTap,
+       _buttonText = buttonText,
+       _response = response;
+
+  final OnTrialCallback _onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      onPressed: () => _onTap(response: _response),
+      child: Text(_buttonText),
     );
   }
 }
