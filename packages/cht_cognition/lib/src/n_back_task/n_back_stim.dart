@@ -1,5 +1,1 @@
-enum NBackStim {
-  one,
-  two,
-  three,
-}
+enum NBackStim { a, b, c }
