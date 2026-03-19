@@ -9,6 +9,8 @@ import 'package:cht_cognition/src/n_back_task/n_back_trial_page.dart';
 import 'package:flutter/material.dart';
 
 class NBackTask extends CognitiveTask<Trial<NBackStim>> {
+  int currentTrialNumber = 0;
+
   NBackTask({
     required String participantId,
     required String sessionId,
@@ -44,9 +46,12 @@ class NBackTask extends CognitiveTask<Trial<NBackStim>> {
     required Trial<NBackStim> trial,
     required OnTrialCallback onFinished,
   }) {
+    currentTrialNumber++;
+    final enableResponse = currentTrialNumber > 1;
     return NBackTaskTrialPage(
       trial: trial,
       onFinished: onFinished,
+      enableResponse: enableResponse,
     );
   }
 }

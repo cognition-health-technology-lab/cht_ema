@@ -6,13 +6,16 @@ import 'package:flutter/material.dart';
 class NBackTaskTrialPage extends StatelessWidget {
   final Trial<NBackStim> _trial;
   final OnTrialCallback _onFinished;
+  final bool _enableResponse;
 
   const NBackTaskTrialPage({
     required Trial<NBackStim> trial,
     required OnTrialCallback onFinished,
+    required bool enableResponse,
     super.key,
   }) : _trial = trial,
-       _onFinished = onFinished;
+       _onFinished = onFinished,
+       _enableResponse = enableResponse;
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +25,7 @@ class NBackTaskTrialPage extends StatelessWidget {
       ),
       bottomNavigationBar: ResponseWidget(
         onTap: _onFinished,
+        isEnabled: _enableResponse,
       ),
     );
   }
@@ -50,12 +54,15 @@ class StimWidget extends StatelessWidget {
 }
 
 class ResponseWidget extends StatelessWidget {
+  final bool _isEnabled;
   final OnTrialCallback _onTap;
 
   const ResponseWidget({
     required OnTrialCallback onTap,
+    required bool isEnabled,
     super.key,
-  }) : _onTap = onTap;
+  }) : _onTap = onTap,
+       _isEnabled = isEnabled;
 
   @override
   Widget build(BuildContext context) {
@@ -67,11 +74,13 @@ class ResponseWidget extends StatelessWidget {
             onTap: _onTap,
             buttonText: 'No match',
             response: 'no match',
+            isEnabled: _isEnabled,
           ),
           ResponseButton(
             onTap: _onTap,
             buttonText: 'Match',
             response: 'match',
+            isEnabled: _isEnabled,
           ),
         ],
       ),
@@ -82,22 +91,25 @@ class ResponseWidget extends StatelessWidget {
 class ResponseButton extends StatelessWidget {
   final String _buttonText;
   final String _response;
+  final bool _isEnabled;
 
   const ResponseButton({
     required OnTrialCallback onTap,
     required String buttonText,
     required String response,
+    required bool isEnabled,
     super.key,
   }) : _onTap = onTap,
        _buttonText = buttonText,
-       _response = response;
+       _response = response,
+       _isEnabled = isEnabled;
 
   final OnTrialCallback _onTap;
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () => _onTap(response: _response),
+      onPressed: _isEnabled ? () => _onTap(response: _response) : null,
       child: Text(_buttonText),
     );
   }
