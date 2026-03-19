@@ -13,6 +13,8 @@ abstract class ViewModel<T> extends ChangeNotifier {
   final ProcessCognitiveDataCallback? _processData;
   late DateTime _trialStartTime;
 
+  int get trialNumber => _trialManager.usedCount;
+
   CognitiveTaskState<T> _state = CognitiveTaskState<T>.instructions();
   CognitiveTaskState<T> get state => _state;
 

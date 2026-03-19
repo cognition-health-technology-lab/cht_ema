@@ -40,6 +40,7 @@ class GoNoGoTask extends CognitiveTask<Trial<GoNoGoStim>> {
     required BuildContext context,
     required Trial<GoNoGoStim> trial,
     required OnTrialCallback onFinished,
+    required int trialNumber,
   }) {
     return GoNoGoTrialPage(
       trial: trial,
