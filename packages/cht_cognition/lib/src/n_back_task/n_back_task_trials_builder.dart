@@ -1,4 +1,4 @@
-import 'package:cht_cognition/src/core/trials/randomization_type.dart';
+// import 'package:cht_cognition/src/core/trials/randomization_type.dart';
 import 'package:cht_cognition/src/core/trials/trial.dart';
 import 'package:cht_cognition/src/n_back_task/n_back_stim.dart';
 
