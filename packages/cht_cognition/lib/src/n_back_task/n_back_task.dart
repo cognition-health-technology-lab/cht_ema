@@ -18,7 +18,7 @@ class NBackTask extends CognitiveTask<Trial<NBackStim>> {
     super.navigateAfterTask,
     super.key,
     int nTrials = 10,
-    double matchProbability = 0.3,
+    double matchProportion = 0.3,
     Duration trialTimeoutDuration = const Duration(milliseconds: 1000),
     Duration itiDuration = const Duration(milliseconds: 750),
     int? restEveryNTrials,
@@ -30,7 +30,7 @@ class NBackTask extends CognitiveTask<Trial<NBackStim>> {
            processData: processData,
            trials: buildNBackTrials(
              n: nTrials,
-             matchProbability: matchProbability,
+             matchProportion: matchProportion,
            ),
            trialTimeoutDuration: trialTimeoutDuration,
            itiDuration: itiDuration,
