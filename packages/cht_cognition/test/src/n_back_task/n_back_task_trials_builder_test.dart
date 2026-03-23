@@ -7,11 +7,11 @@ void main() {
       'When given n < 1, throws an error',
       () {
         expect(
-          () => buildNBackTrials(n: 0, matchProbability: 0.5),
+          () => buildNBackTrials(n: 0, matchProportion: 0.5),
           throwsArgumentError,
         );
         expect(
-          () => buildNBackTrials(n: -1, matchProbability: 0.5),
+          () => buildNBackTrials(n: -1, matchProportion: 0.5),
           throwsArgumentError,
         );
       },
@@ -21,7 +21,7 @@ void main() {
       'matches = 3, creates a list of 30 trials with the correct match '
       'proportion and no more than 3 consecutive matches',
       () {
-        final trials = buildNBackTrials(n: 30, matchProbability: 0.3);
+        final trials = buildNBackTrials(n: 30, matchProportion: 0.3);
         expect(trials.length, 30);
 
         var matchCount = 0;
