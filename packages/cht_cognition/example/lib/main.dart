@@ -121,7 +121,7 @@ class CognitiveTasksList extends StatelessWidget {
                     participantId: 'p1',
                     sessionId: 's1',
                     nTrials: 12,
-                    matchProbability: .5,
+                    matchProportion: .5,
                     trialTimeoutDuration: const Duration(milliseconds: 1500),
                     restEveryNTrials: 100,
                   ),
