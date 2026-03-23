@@ -16,5 +16,22 @@ void main() {
         );
       },
     );
+    test(
+      'When given n = 30, match proportion = .30, max consecutive '
+      'matches = 3, creates a list of 30 trials with the correct match '
+      'proportion and no more than 3 consecutive matches',
+      () {
+        final trials = buildNBackTrials(n: 30, matchProbability: 0.3);
+        expect(trials.length, 30);
+
+        var matchCount = 0;
+        for (var i = 1; i < trials.length; i++) {
+          if (trials[i].stim == trials[i - 1].stim) {
+            matchCount++;
+          }
+        }
+        expect(matchCount, 9);
+      },
+    );
   });
 }
