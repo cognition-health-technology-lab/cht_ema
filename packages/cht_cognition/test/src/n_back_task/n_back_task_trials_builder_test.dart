@@ -25,12 +25,15 @@ void main() {
       () {
         final trials = buildNBackTrials(n: 30, matchProportion: 0.3);
 
-        /// test length
         expect(trials.length, 30);
 
-        /// test match proportion
         final adjacentMatchCount = _countAdjacentMatches(trials);
         expect(adjacentMatchCount, 9);
+
+        final consecutiveMatchStreakLength = _countLongestMatchStreak(
+          trials,
+        );
+        expect(consecutiveMatchStreakLength, 3);
       },
     );
   });
@@ -44,4 +47,22 @@ int _countAdjacentMatches(List<Trial<NBackStim>> trials) {
     }
   }
   return count;
+}
+
+int _countLongestMatchStreak(List<Trial<NBackStim>> trials) {
+  var currentStreak = 0;
+  var longestStreak = 0;
+
+  for (var i = 1; i < trials.length; i++) {
+    if (trials[i].stim == trials[i - 1].stim) {
+      currentStreak++;
+      if (currentStreak > longestStreak) {
+        longestStreak = currentStreak;
+      }
+    } else {
+      currentStreak = 0;
+    }
+  }
+
+  return longestStreak;
 }
