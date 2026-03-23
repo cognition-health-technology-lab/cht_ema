@@ -120,8 +120,6 @@ class CognitiveTasksList extends StatelessWidget {
                     processData: printData,
                     participantId: 'p1',
                     sessionId: 's1',
-                    nTrials: 12,
-                    matchProportion: .5,
                     trialTimeoutDuration: const Duration(milliseconds: 1500),
                     restEveryNTrials: 100,
                   ),
