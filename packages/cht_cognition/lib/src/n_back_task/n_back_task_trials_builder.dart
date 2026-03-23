@@ -4,7 +4,7 @@ import 'package:cht_cognition/src/n_back_task/n_back_stim.dart';
 
 List<Trial<NBackStim>> buildNBackTrials({
   required int n,
-  required double matchProbability,
+  required double matchProportion,
   RandomizationType randomizationType = RandomizationType.full,
   int? seed,
 }) {
