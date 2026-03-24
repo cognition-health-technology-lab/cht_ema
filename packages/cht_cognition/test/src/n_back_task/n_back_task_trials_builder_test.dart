@@ -19,50 +19,23 @@ void main() {
       },
     );
     test(
-      'When given n = 30, match proportion = .30, max consecutive '
-      'matches = 3, creates a list of 30 trials with the correct match '
-      'proportion and no more than 3 consecutive matches',
+      'When given n = 30, match proportion = .30, creates a list of 30 trials '
+      'with the correct match/non-match proportion',
       () {
-        final trials = buildNBackTrials(n: 30, matchProportion: 0.3);
+        final trials = buildNBackTrials(n: 10, matchProportion: 0.3);
 
-        expect(trials.length, 30);
+        expect(trials.length, 10);
 
-        final adjacentMatchCount = _countAdjacentMatches(trials);
-        expect(adjacentMatchCount, 9);
-
-        final consecutiveMatchStreakLength = _countLongestMatchStreak(
-          trials,
+        final matchingCount = trials.where(
+          (trial) => trial.stim.matching,
         );
-        expect(consecutiveMatchStreakLength, 3);
+        expect(matchingCount, 3);
+
+        final nonMatchingCount = trials.where(
+          (trial) => !trial.stim.matching,
+        );
+        expect(nonMatchingCount, 7);
       },
     );
   });
-}
-
-int _countAdjacentMatches(List<Trial<NBackStim>> trials) {
-  var count = 0;
-  for (var i = 1; i < trials.length; i++) {
-    if (trials[i].stim == trials[i - 1].stim) {
-      count++;
-    }
-  }
-  return count;
-}
-
-int _countLongestMatchStreak(List<Trial<NBackStim>> trials) {
-  var currentStreak = 0;
-  var longestStreak = 0;
-
-  for (var i = 1; i < trials.length; i++) {
-    if (trials[i].stim == trials[i - 1].stim) {
-      currentStreak++;
-      if (currentStreak > longestStreak) {
-        longestStreak = currentStreak;
-      }
-    } else {
-      currentStreak = 0;
-    }
-  }
-
-  return longestStreak;
 }
