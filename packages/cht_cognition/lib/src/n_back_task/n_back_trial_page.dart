@@ -45,10 +45,10 @@ class StimWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return switch (_trial.stim) {
-      NBackStim.a => const Icon(Icons.square_outlined),
-      NBackStim.b => const Icon(Icons.circle_outlined),
-      NBackStim.c => const Icon(Icons.pentagon_outlined),
+    return switch (_trial.stim.currentStim) {
+      NBackStimType.a => const Icon(Icons.square_outlined),
+      NBackStimType.b => const Icon(Icons.circle_outlined),
+      NBackStimType.c => const Icon(Icons.pentagon_outlined),
     };
   }
 }
