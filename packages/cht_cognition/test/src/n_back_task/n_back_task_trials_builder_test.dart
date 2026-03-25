@@ -1,5 +1,3 @@
-import 'package:cht_cognition/src/core/trials/trial.dart';
-import 'package:cht_cognition/src/n_back_task/n_back_stim.dart';
 import 'package:cht_cognition/src/n_back_task/n_back_task_trials_builder.dart';
 import 'package:flutter_test/flutter_test.dart';
 
