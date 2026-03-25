@@ -19,22 +19,26 @@ void main() {
       },
     );
     test(
-      'When given n = 30, match proportion = .30, creates a list of 30 trials '
+      'When given n = 10, match proportion = .30, creates a list of 30 trials '
       'with the correct match/non-match proportion',
       () {
         final trials = buildNBackTrials(n: 10, matchProportion: 0.3);
 
         expect(trials.length, 10);
 
-        final matchingCount = trials.where(
-          (trial) => trial.stim.matching,
-        );
-        expect(matchingCount, 3);
+        final matchingTrials = trials
+            .where(
+              (trial) => trial.stim.matching,
+            )
+            .toList();
+        expect(matchingTrials.length, 3);
 
-        final nonMatchingCount = trials.where(
-          (trial) => !trial.stim.matching,
-        );
-        expect(nonMatchingCount, 7);
+        final nonMatchingTrials = trials
+            .where(
+              (trial) => !trial.stim.matching,
+            )
+            .toList();
+        expect(nonMatchingTrials.length, 7);
       },
     );
   });

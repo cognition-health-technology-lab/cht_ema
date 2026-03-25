@@ -18,7 +18,7 @@ List<Trial<NBackStim>> buildNBackTrials({
     throw ArgumentError('matchProportion must be between 0.0 and 1.0');
   }
 
-  final matchCount = n * matchProportion.floor();
+  final matchCount = (n * matchProportion).floor();
   final nonMatchCount = n - matchCount;
 
   final trials = <Trial<NBackStim>>[];
