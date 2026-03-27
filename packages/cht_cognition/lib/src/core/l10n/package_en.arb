@@ -1,8 +1,12 @@
 {
   "@@locale": "en",
-  "placeholderText": "Placeholder cognitive task",
-  "@placeholderText": {
-    "description": "Message for example widget"
+  "nBackTaskMatch": "Match",
+  "@nBackTaskMatch": {
+    "description": "Text for match button in n-back task"
+  },
+  "nBackTaskNonMatch": "No match",
+  "@nBackTaskNonMatch": {
+    "description": "Text for non-match button in n-back task"
   },
   "continueButton": "Continue",
   "@continueButton": {

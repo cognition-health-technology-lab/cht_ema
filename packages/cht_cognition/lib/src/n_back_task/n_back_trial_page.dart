@@ -1,3 +1,4 @@
+import 'package:cht_cognition/src/core/l10n/generated/cht_cognition_localization.dart';
 import 'package:cht_cognition/src/core/trials/on_trial_callback_definition.dart';
 import 'package:cht_cognition/src/core/trials/trial.dart';
 import 'package:cht_cognition/src/n_back_task/n_back_stim.dart';
@@ -66,19 +67,20 @@ class ResponseWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final localizations = ChtCognitionLocalization.of(context);
     return SafeArea(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           ResponseButton(
             onTap: _onTap,
-            buttonText: 'No match',
+            buttonText: localizations.nBackTaskNonMatch,
             response: 'no match',
             isEnabled: _isEnabled,
           ),
           ResponseButton(
             onTap: _onTap,
-            buttonText: 'Match',
+            buttonText: localizations.nBackTaskMatch,
             response: 'match',
             isEnabled: _isEnabled,
           ),

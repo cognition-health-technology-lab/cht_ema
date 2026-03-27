@@ -9,7 +9,10 @@ class ChtCognitionLocalizationEn extends ChtCognitionLocalization {
   ChtCognitionLocalizationEn([String locale = 'en']) : super(locale);
 
   @override
-  String get placeholderText => 'Placeholder cognitive task';
+  String get nBackTaskMatch => 'Match';
+
+  @override
+  String get nBackTaskNonMatch => 'No match';
 
   @override
   String get continueButton => 'Continue';
