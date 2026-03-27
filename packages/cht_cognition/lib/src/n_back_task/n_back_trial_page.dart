@@ -69,22 +69,25 @@ class ResponseWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final localizations = ChtCognitionLocalization.of(context);
     return SafeArea(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          ResponseButton(
-            onTap: _onTap,
-            buttonText: localizations.nBackTaskNonMatch,
-            response: 'no match',
-            isEnabled: _isEnabled,
-          ),
-          ResponseButton(
-            onTap: _onTap,
-            buttonText: localizations.nBackTaskMatch,
-            response: 'match',
-            isEnabled: _isEnabled,
-          ),
-        ],
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 15),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            ResponseButton(
+              onTap: _onTap,
+              buttonText: localizations.nBackTaskNonMatch,
+              response: 'no match',
+              isEnabled: _isEnabled,
+            ),
+            ResponseButton(
+              onTap: _onTap,
+              buttonText: localizations.nBackTaskMatch,
+              response: 'match',
+              isEnabled: _isEnabled,
+            ),
+          ],
+        ),
       ),
     );
   }
