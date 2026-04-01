@@ -12,27 +12,27 @@
   "@erqEmaInstructionsBody": {
     "description": "Cuerpo de instrucciones ERQ EMA"
   },
-  "erqEmaCr1": "Desde la última notificación, cuando quería incrementar mis emociones positivas (p.ej. alegría, diversión), cambié mi manera de pensar sobre la situación.",
+  "erqEmaCr1": "Cuando quería sentir más una emoción positiva (como alegría o diversión), cambié mi manera de pensar sobre esa situación.",
   "@erqEmaCr1": {
     "description": "ERQ EMA, ítem de reevaluación cognitiva 1"
   },
-  "erqEmaCr2": "Desde la última notificación, cuando quería incrementar mis emociones positivas (p.ej. alegría, diversión), cambié mi manera de pensar sobre la situación.",
+  "erqEmaCr2": "Guardé mis emociones para mí mismo/a.",
   "@erqEmaCr2": {
     "description": "ERQ EMA, ítem de reevaluación cognitiva 2"
   },
-  "erqEmaCr3": "Desde la última notificación, controlé mis emociones cambiando mi forma de pensar sobre la situación en la que me encuentro.",
+  "erqEmaCr3": "Cuando quería sentir menos una emoción negativa (como tristeza o enojo), cambié mi manera de pensar sobre la situación.",
   "@erqEmaCr3": {
     "description": "ERQ EMA, ítem de reevaluación cognitiva 3"
   },
-  "erqEmaSup1": "Desde la última notificación, guardé mis emociones para mí mismo.",
+  "erqEmaSup1": "Controlé mis emociones no expresándolas.",
   "@erqEmaSup1": {
     "description": "ERQ EMA, ítem de supresión expresiva 1"
   },
-  "erqEmaSup2": "Desde la última notificación, controlé mis emociones no expresándolas.",
+  "erqEmaSup2": "Controlé mis emociones cambiando mi manera de pensar sobre la situación en la que me encuentro.",
   "@erqEmaSup2": {
     "description": "ERQ EMA, ítem de supresión expresiva 2"
   },
-  "erqEmaSup3": "Desde la última notificación, cuando sentí emociones negativas, me aseguré de no expresarlas.",
+  "erqEmaSup3": "Cuando sentí emociones negativas, me aseguré de no expresarlas.",
   "@erqEmaSup3": {
     "description": "ERQ EMA, ítem de supresión expresiva 3"
   },
