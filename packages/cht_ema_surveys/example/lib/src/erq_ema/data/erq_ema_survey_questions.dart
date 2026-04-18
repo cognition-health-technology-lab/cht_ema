@@ -1,12 +1,8 @@
-import 'package:cht_ema_surveys/src/core/l10n/generated/cht_ema_surveys_localization.dart';
+import 'package:example_surveys/src/core/l10n/generated/cht_ema_surveys_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:research_package/model.dart';
 
-enum ErqEmaUiVariant {
-  sliderSimple,
-  multipleChoice,
-  sliderWithLegend,
-}
+enum ErqEmaUiVariant { sliderSimple, multipleChoice, sliderWithLegend }
 
 const String kErqEmaInstructionsStepId = 'erq_ema_instructions';
 
@@ -152,10 +148,7 @@ RPOrderedTask buildErqEmaSurveyTask(
     );
   }
 
-  return RPOrderedTask(
-    identifier: erqTaskIdForVariant(variant),
-    steps: steps,
-  );
+  return RPOrderedTask(identifier: erqTaskIdForVariant(variant), steps: steps);
 }
 
 List<ErqEmaItemResponse> parseErqEmaResponses(RPTaskResult taskResult) {

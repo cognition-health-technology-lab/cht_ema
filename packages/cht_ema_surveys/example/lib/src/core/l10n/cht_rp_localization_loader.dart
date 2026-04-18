@@ -19,7 +19,7 @@ class ChtRpLocalizationLoader extends LocalizationLoader {
   Future<Map<String, String>> load(Locale locale) async {
     final langCode = locale.languageCode;
     final path =
-        'packages/cht_ema_surveys/lib/src/core/l10n/package_$langCode.arb';
+        'packages/cht_ema_surveys/example/lib/src/core/l10n/package_$langCode.arb';
     try {
       final rawJson = await _loadLanguageFile(path);
       final cleanedJson = _cleanJson(rawJson);

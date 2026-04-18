@@ -1,9 +1,9 @@
 // ignore_for_file: implementation_imports
 
-import 'package:cht_ema_surveys/cht_ema_surveys.dart';
-import 'package:cht_ema_surveys/src/erq_ema/data/erq_ema_survey_questions.dart';
-import 'package:cht_ema_surveys/src/erq_ema/presentation/erq_ema_variant_page.dart';
+import 'package:example_surveys/cht_ema_surveys.dart';
 import 'package:example_surveys/l10n/generated/app_localizations.dart';
+import 'package:example_surveys/src/erq_ema/data/erq_ema_survey_questions.dart';
+import 'package:example_surveys/src/erq_ema/presentation/erq_ema_variant_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -90,7 +90,6 @@ class SurveyList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
     return Scaffold(
       body: Center(
         child: Column(

@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"c:\\\\Users\\\\JLu39\\\\Code Dev\\\\CHT - Coding\\\\cht_ema\" show HEAD:packages/cht_ema_surveys/lib/cht_ema_surveys.dart)",
+      "Bash(git -C \"c:\\\\Users\\\\JLu39\\\\Code Dev\\\\CHT - Coding\\\\cht_ema\" show HEAD:packages/cht_ema_surveys/example/lib/l10n/app_en.arb)",
+      "Bash(git -C \"c:\\\\Users\\\\JLu39\\\\Code Dev\\\\CHT - Coding\\\\cht_ema\" show HEAD:packages/cht_ema_surveys/lib/src/core/l10n/generated/cht_ema_surveys_localization.dart)",
+      "Bash(git -C \"c:\\\\Users\\\\JLu39\\\\Code Dev\\\\CHT - Coding\\\\cht_ema\" show HEAD:packages/cht_ema_surveys/example/lib/l10n/app_es.arb)",
+      "Bash(git -C \"c:\\\\Users\\\\JLu39\\\\Code Dev\\\\CHT - Coding\\\\cht_ema\" show HEAD:packages/cht_ema_surveys/lib/src/core/l10n/generated/cht_ema_surveys_localization_en.dart)",
+      "Bash(git -C \"c:\\\\Users\\\\JLu39\\\\Code Dev\\\\CHT - Coding\\\\cht_ema\" show HEAD:packages/cht_ema_surveys/lib/src/core/l10n/generated/cht_ema_surveys_localization_es.dart)",
+      "Bash(git -C \"c:\\\\Users\\\\JLu39\\\\Code Dev\\\\CHT - Coding\\\\cht_ema\" show HEAD:packages/cht_ema_surveys/example/lib/l10n/generated/app_localizations.dart)",
+      "Bash(git -C \"c:\\\\Users\\\\JLu39\\\\Code Dev\\\\CHT - Coding\\\\cht_ema\" show HEAD:packages/cht_ema_surveys/example/lib/l10n/generated/app_localizations_en.dart)",
+      "Bash(git -C \"c:\\\\Users\\\\JLu39\\\\Code Dev\\\\CHT - Coding\\\\cht_ema\" show HEAD:packages/cht_ema_surveys/example/lib/l10n/generated/app_localizations_es.dart)",
+      "Bash(flutter gen-l10n *)",
+      "Bash(flutter pub *)",
+      "Bash(git -C \"c:\\\\Users\\\\JLu39\\\\Code Dev\\\\CHT - Coding\\\\cht_ema\" show HEAD:packages/cht_ema_surveys/example/lib/main.dart)",
+      "Bash(flutter analyze *)"
+    ]
+  }
+}

@@ -1,9 +1,11 @@
-import 'package:cht_ema_surveys/src/erq_ema/data/erq_ema_survey_questions.dart';
+import 'package:example_surveys/src/erq_ema/data/erq_ema_survey_questions.dart';
 import 'package:flutter/material.dart';
 import 'package:research_package/model.dart';
 import 'package:research_package/ui.dart';
 
-class ErqEmaSurveyPage extends StatelessWidget {
+class ErqEmaVariantPage extends StatelessWidget {
+  final ErqEmaUiVariant variant;
+
   final void Function(BuildContext context, RPTaskResult result) onFinish;
 
   final void Function(
@@ -12,7 +14,8 @@ class ErqEmaSurveyPage extends StatelessWidget {
   )?
   onSubmit;
 
-  const ErqEmaSurveyPage({
+  const ErqEmaVariantPage({
+    required this.variant,
     required this.onFinish,
     this.onSubmit,
     super.key,
@@ -20,16 +23,13 @@ class ErqEmaSurveyPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final task = buildErqEmaSurveyTask(
-      context,
-      variant: ErqEmaUiVariant.sliderSimple,
-    );
+    final task = buildErqEmaSurveyTask(context, variant: variant);
 
     final customTheme = Theme.of(context).copyWith(
       textTheme: Theme.of(context).textTheme.copyWith(
-        bodySmall: Theme.of(context).textTheme.bodySmall?.copyWith(
-          fontSize: 25,
-        ),
+        bodySmall: Theme.of(
+          context,
+        ).textTheme.bodySmall?.copyWith(fontSize: 25),
       ),
     );
 
@@ -42,9 +42,7 @@ class ErqEmaSurveyPage extends StatelessWidget {
           onSubmit?.call(responses, result);
           onFinish(context, result);
         },
-        onCancel: (RPTaskResult? _) {
-          Navigator.of(context).pop();
-        },
+        onCancel: (RPTaskResult? _) => Navigator.of(context).pop(),
       ),
     );
   }

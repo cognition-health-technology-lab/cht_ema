@@ -1,11 +1,7 @@
-import 'package:cht_ema_surveys/src/core/l10n/generated/cht_ema_surveys_localization.dart';
+import 'package:example_surveys/src/core/l10n/generated/cht_ema_surveys_localization.dart';
 import 'package:research_package/model.dart';
 
-enum ErqEmaUiVariant {
-  sliderSimple,
-  multipleChoice,
-  sliderWithLegend,
-}
+enum ErqEmaUiVariant { sliderSimple, multipleChoice, sliderWithLegend }
 
 List<String> _likertLabels(ChtEmaSurveysLocalization l10n) => <String>[
   l10n.likertStronglyDisagree,
@@ -131,10 +127,7 @@ RPOrderedTask buildErqEmaTask(
     ),
   ];
 
-  return RPOrderedTask(
-    identifier: taskIdForVariant(),
-    steps: steps,
-  );
+  return RPOrderedTask(identifier: taskIdForVariant(), steps: steps);
 }
 
 RPOrderedTask buildErqEmaTaskSlider(ChtEmaSurveysLocalization l10n) =>

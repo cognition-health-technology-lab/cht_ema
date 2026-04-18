@@ -20,27 +20,25 @@ class ChtEmaSurveysLocalizationEs extends ChtEmaSurveysLocalization {
 
   @override
   String get erqEmaCr1 =>
-      'Desde la última notificación, cuando quería incrementar mis emociones positivas (p.ej. alegría, diversión), cambié mi manera de pensar sobre la situación.';
+      'Cuando quería sentir más una emoción positiva (como alegría o diversión), cambié mi manera de pensar sobre esa situación.';
 
   @override
-  String get erqEmaCr2 =>
-      'Desde la última notificación, cuando quería incrementar mis emociones positivas (p.ej. alegría, diversión), cambié mi manera de pensar sobre la situación.';
+  String get erqEmaCr2 => 'Guardé mis emociones para mí mismo/a.';
 
   @override
   String get erqEmaCr3 =>
-      'Desde la última notificación, controlé mis emociones cambiando mi forma de pensar sobre la situación en la que me encuentro.';
+      'Cuando quería sentir menos una emoción negativa (como tristeza o enojo), cambié mi manera de pensar sobre la situación.';
 
   @override
-  String get erqEmaSup1 =>
-      'Desde la última notificación, guardé mis emociones para mí mismo.';
+  String get erqEmaSup1 => 'Controlé mis emociones no expresándolas.';
 
   @override
   String get erqEmaSup2 =>
-      'Desde la última notificación, controlé mis emociones no expresándolas.';
+      'Controlé mis emociones cambiando mi manera de pensar sobre la situación en la que me encuentro.';
 
   @override
   String get erqEmaSup3 =>
-      'Desde la última notificación, cuando sentí emociones negativas, me aseguré de no expresarlas.';
+      'Cuando sentí emociones negativas, me aseguré de no expresarlas.';
 
   @override
   String get likertStronglyDisagree => 'Muy en desacuerdo';
