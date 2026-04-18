@@ -1,4 +1,5 @@
 import 'package:cht_ema_surveys/cht_ema_surveys.dart';
+import 'package:example_surveys/chronic_health/chronic_health_page.dart';
 import 'package:example_surveys/l10n/generated/app_localizations.dart';
 import 'package:flutter/material.dart';
 
@@ -31,7 +32,7 @@ class _ExampleAppState extends State<ExampleApp> {
       ],
       supportedLocales: AppLocalizations.supportedLocales,
       locale: locale,
-      home: HomePage(onLocaleChange: changeLocale),
+      home: const ChronicHealthPage(),
     );
   }
 
