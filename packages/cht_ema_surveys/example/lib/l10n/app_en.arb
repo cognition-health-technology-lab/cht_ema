@@ -1,166 +1,307 @@
 {
   "@@locale": "en",
-
   "appTitle": "CHT Surveys Example",
-  "@appTitle": { "description": "Title for the app" },
-  "homeMessage": "Home screen",
-  "@homeMessage": { "description": "Message displayed on the home screen" },
+  "@appTitle": {
+    "description": "Title for the app"
+  },
+  "homeMessage": "Chronic Health Questionnaire",
+  "@homeMessage": {
+    "description": "Message displayed on the home screen"
+  },
   "languageToolTip": "Select Language",
-  "@languageToolTip": { "description": "Tooltip for the language selection menu" },
+  "@languageToolTip": {
+    "description": "Tooltip for the language selection menu"
+  },
   "langOptionEn": "English",
-  "@langOptionEn": { "description": "English language option" },
+  "@langOptionEn": {
+    "description": "English language option"
+  },
   "langOptionEs": "Español",
-  "@langOptionEs": { "description": "Spanish language option" },
-
+  "@langOptionEs": {
+    "description": "Spanish language option"
+  },
   "ageQuestion": "What is your age?",
-  "@ageQuestion": { "description": "Sociodemographic survey - Q1 age" },
+  "@ageQuestion": {
+    "description": "Sociodemographic survey - Q1 age"
+  },
   "biologicalSexQuestion": "What biological sex were you assigned at birth?",
-  "@biologicalSexQuestion": { "description": "Sociodemographic survey - Q2 biological sex" },
+  "@biologicalSexQuestion": {
+    "description": "Sociodemographic survey - Q2 biological sex"
+  },
   "sexMale": "Male",
+  "@sexMale": {},
   "sexFemale": "Female",
+  "@sexFemale": {},
   "sexIntersexual": "Intersexual",
+  "@sexIntersexual": {},
   "sexOther": "Other",
+  "@sexOther": {},
   "sexOtherSpecify": "Please specify your biological sex",
+  "@sexOtherSpecify": {},
   "genderQuestion": "Gender:",
-  "@genderQuestion": { "description": "Sociodemographic survey - Q3 gender identity" },
+  "@genderQuestion": {
+    "description": "Sociodemographic survey - Q3 gender identity"
+  },
   "genderMale": "Male",
+  "@genderMale": {},
   "genderFemale": "Female",
+  "@genderFemale": {},
   "genderNonBinary": "Non-binary",
+  "@genderNonBinary": {},
   "genderTransgender": "Transgender",
+  "@genderTransgender": {},
   "genderOther": "Other",
+  "@genderOther": {},
   "genderOtherSpecify": "Please specify your gender",
+  "@genderOtherSpecify": {},
   "primaryLanguageQuestion": "Primary Language:",
-  "@primaryLanguageQuestion": { "description": "Sociodemographic survey - Q4 primary language" },
+  "@primaryLanguageQuestion": {
+    "description": "Sociodemographic survey - Q4 primary language"
+  },
   "languageSpanish": "Spanish",
+  "@languageSpanish": {},
   "languageEnglish": "English",
+  "@languageEnglish": {},
   "householdIncomeQuestion": "What is your household income?",
-  "@householdIncomeQuestion": { "description": "Sociodemographic survey - Q5 household income" },
+  "@householdIncomeQuestion": {
+    "description": "Sociodemographic survey - Q5 household income"
+  },
   "incomeLessThan10k": "Less than $10,000",
+  "@incomeLessThan10k": {},
   "income10kTo24k": "$10,000 – $24,999",
+  "@income10kTo24k": {},
   "income25kTo34k": "$25,000 – $34,999",
+  "@income25kTo34k": {},
   "income35kTo49k": "$35,000 – $49,999",
+  "@income35kTo49k": {},
   "income50kTo74k": "$50,000 – $74,999",
+  "@income50kTo74k": {},
   "income75kTo99k": "$75,000 – $99,999",
+  "@income75kTo99k": {},
   "income100kTo149k": "$100,000 – $149,999",
+  "@income100kTo149k": {},
   "income150kTo199k": "$150,000 – $199,999",
+  "@income150kTo199k": {},
   "income200kOrMore": "$200,000 or more",
+  "@income200kOrMore": {},
   "maritalStatusQuestion": "What is your current marital status?",
-  "@maritalStatusQuestion": { "description": "Sociodemographic survey - Q6 marital status" },
+  "@maritalStatusQuestion": {
+    "description": "Sociodemographic survey - Q6 marital status"
+  },
   "maritalMarried": "Married",
+  "@maritalMarried": {},
   "maritalDivorced": "Divorced",
+  "@maritalDivorced": {},
   "maritalWidowed": "Widow/widower",
+  "@maritalWidowed": {},
   "maritalSeparated": "Separated",
+  "@maritalSeparated": {},
   "maritalNeverMarried": "I've never been married",
+  "@maritalNeverMarried": {},
   "maritalCohabiting": "Live with a partner without being married",
+  "@maritalCohabiting": {},
   "educationLevelQuestion": "What is the highest degree or level of education you have completed?",
-  "@educationLevelQuestion": { "description": "Sociodemographic survey - Q7 education level" },
+  "@educationLevelQuestion": {
+    "description": "Sociodemographic survey - Q7 education level"
+  },
   "eduHighSchool": "Fourth year of high school",
+  "@eduHighSchool": {},
   "eduTechnical": "Technical grade",
+  "@eduTechnical": {},
   "eduAssociate": "Associate degree",
+  "@eduAssociate": {},
   "eduBachelor": "Bachelor's degree",
+  "@eduBachelor": {},
   "eduMasters": "Master's degree",
+  "@eduMasters": {},
   "eduDoctorate": "Doctorate",
+  "@eduDoctorate": {},
   "eduPostDoctorate": "Post-doctorate",
+  "@eduPostDoctorate": {},
   "eduOther": "Other",
+  "@eduOther": {},
   "educationOtherSpecify": "Please specify your education level",
+  "@educationOtherSpecify": {},
   "currentlyStudyingQuestion": "Are you currently studying?",
-  "@currentlyStudyingQuestion": { "description": "Sociodemographic survey - Q8 currently studying" },
+  "@currentlyStudyingQuestion": {
+    "description": "Sociodemographic survey - Q8 currently studying"
+  },
   "currentAcademicLevelQuestion": "Current academic level:",
-  "@currentAcademicLevelQuestion": { "description": "Sociodemographic survey - Q8b current academic level (conditional)" },
+  "@currentAcademicLevelQuestion": {
+    "description": "Sociodemographic survey - Q8b current academic level (conditional)"
+  },
   "academicLevelOtherSpecify": "Please specify your current academic level",
+  "@academicLevelOtherSpecify": {},
   "currentlyWorkingQuestion": "Do you currently work?",
-  "@currentlyWorkingQuestion": { "description": "Sociodemographic survey - Q9 currently working" },
+  "@currentlyWorkingQuestion": {
+    "description": "Sociodemographic survey - Q9 currently working"
+  },
   "jobTypeQuestion": "Please specify your job type",
-  "@jobTypeQuestion": { "description": "Sociodemographic survey - Q9b job type (conditional)" },
+  "@jobTypeQuestion": {
+    "description": "Sociodemographic survey - Q9b job type (conditional)"
+  },
   "jobTypeHint": "Describe your job or occupation",
+  "@jobTypeHint": {},
   "answerYes": "Yes",
+  "@answerYes": {},
   "answerNo": "No",
+  "@answerNo": {},
   "specifyHint": "Specify...",
+  "@specifyHint": {},
   "completionTitle": "Survey Complete",
+  "@completionTitle": {},
   "completionText": "Thank you for completing the sociodemographic survey.",
-
+  "@completionText": {},
   "chSurveyTitle": "Health History Survey",
-  "@chSurveyTitle": { "description": "Chronic health survey title" },
+  "@chSurveyTitle": {
+    "description": "Chronic health survey title"
+  },
   "chInstructions": "Indicate if a physical or mental health professional has diagnosed you with any of the following health conditions.",
-  "@chInstructions": { "description": "Chronic health survey instructions" },
-
+  "@chInstructions": {
+    "description": "Chronic health survey instructions"
+  },
   "chMentalHealthQuestion": "Mental Health or Substance Abuse (e.g., depression, anxiety)",
-  "@chMentalHealthQuestion": { "description": "Chronic health - Cat 1 gate question" },
+  "@chMentalHealthQuestion": {
+    "description": "Chronic health - Cat 1 gate question"
+  },
   "chMentalHealthConditionsQuestion": "Which mental health or substance use conditions have you been diagnosed with?",
-  "@chMentalHealthConditionsQuestion": { "description": "Chronic health - Cat 1 sub-conditions question" },
+  "@chMentalHealthConditionsQuestion": {
+    "description": "Chronic health - Cat 1 sub-conditions question"
+  },
   "chConditionDepression": "Depression",
+  "@chConditionDepression": {},
   "chConditionAnxiety": "Anxiety reaction / panic disorder",
+  "@chConditionAnxiety": {},
   "chConditionAlcohol": "Alcohol use disorder",
+  "@chConditionAlcohol": {},
   "chConditionDrugs": "Drug use disorder",
+  "@chConditionDrugs": {},
   "chConditionAdhd": "Attention deficit hyperactivity disorder (ADHD)",
+  "@chConditionAdhd": {},
   "chConditionPtsd": "Post-traumatic Stress Disorder (PTSD)",
+  "@chConditionPtsd": {},
   "chConditionAutism": "Autism Spectrum Disorder",
+  "@chConditionAutism": {},
   "chConditionSchizophrenia": "Schizophrenia",
+  "@chConditionSchizophrenia": {},
   "chConditionEatingDisorder": "Eating disorder",
+  "@chConditionEatingDisorder": {},
   "chConditionSocialPhobia": "Social Phobia",
+  "@chConditionSocialPhobia": {},
   "chConditionPersonalityDisorder": "Personality disorder",
-
+  "@chConditionPersonalityDisorder": {},
   "chCancerQuestion": "Cancer",
-  "@chCancerQuestion": { "description": "Chronic health - Cat 2 gate question" },
-
+  "@chCancerQuestion": {
+    "description": "Chronic health - Cat 2 gate question"
+  },
   "chHeartBloodQuestion": "Heart and Blood (e.g., hypertension, anemia)",
-  "@chHeartBloodQuestion": { "description": "Chronic health - Cat 3 gate question" },
+  "@chHeartBloodQuestion": {
+    "description": "Chronic health - Cat 3 gate question"
+  },
   "chHeartBloodConditionsQuestion": "Which heart and blood conditions have you been diagnosed with?",
-  "@chHeartBloodConditionsQuestion": { "description": "Chronic health - Cat 3 sub-conditions question" },
+  "@chHeartBloodConditionsQuestion": {
+    "description": "Chronic health - Cat 3 sub-conditions question"
+  },
   "chConditionHypertension": "Hypertension",
+  "@chConditionHypertension": {},
   "chConditionHighCholesterol": "High cholesterol",
+  "@chConditionHighCholesterol": {},
   "chConditionHeartAttack": "Heart attack",
+  "@chConditionHeartAttack": {},
   "chConditionStroke": "Stroke",
+  "@chConditionStroke": {},
   "chConditionAnemia": "Anemia",
+  "@chConditionAnemia": {},
   "chConditionSickleCellDisease": "Sickle cell disease",
-
+  "@chConditionSickleCellDisease": {},
   "chBoneJointQuestion": "Bone, Joint and Muscle (e.g., osteoporosis, arthritis)",
-  "@chBoneJointQuestion": { "description": "Chronic health - Cat 4 gate question" },
+  "@chBoneJointQuestion": {
+    "description": "Chronic health - Cat 4 gate question"
+  },
   "chBoneJointConditionsQuestion": "Which bone, joint, and muscle conditions have you been diagnosed with?",
-  "@chBoneJointConditionsQuestion": { "description": "Chronic health - Cat 4 sub-conditions question" },
+  "@chBoneJointConditionsQuestion": {
+    "description": "Chronic health - Cat 4 sub-conditions question"
+  },
   "chConditionOsteoporosis": "Osteoporosis",
+  "@chConditionOsteoporosis": {},
   "chConditionFibromyalgia": "Fibromyalgia",
+  "@chConditionFibromyalgia": {},
   "chConditionArthritis": "Arthritis",
+  "@chConditionArthritis": {},
   "chConditionLupus": "Systemic Lupus",
-
+  "@chConditionLupus": {},
   "chBrainNerveQuestion": "Brain and Nervous System (e.g., dementia, migraine)",
-  "@chBrainNerveQuestion": { "description": "Chronic health - Cat 5 gate question" },
+  "@chBrainNerveQuestion": {
+    "description": "Chronic health - Cat 5 gate question"
+  },
   "chBrainNerveConditionsQuestion": "Which brain and nervous system conditions have you been diagnosed with?",
-  "@chBrainNerveConditionsQuestion": { "description": "Chronic health - Cat 5 sub-conditions question" },
+  "@chBrainNerveConditionsQuestion": {
+    "description": "Chronic health - Cat 5 sub-conditions question"
+  },
   "chConditionDementia": "Dementia (includes Alzheimer's)",
+  "@chConditionDementia": {},
   "chConditionMigraine": "Migraine headaches",
+  "@chConditionMigraine": {},
   "chConditionNeuropathy": "Neuropathy",
+  "@chConditionNeuropathy": {},
   "chConditionEpilepsy": "Epilepsy or seizure",
+  "@chConditionEpilepsy": {},
   "chConditionInsomnia": "Insomnia",
+  "@chConditionInsomnia": {},
   "chConditionParkinsons": "Parkinson's disease",
+  "@chConditionParkinsons": {},
   "chConditionConcussion": "Concussions or loss of consciousness",
+  "@chConditionConcussion": {},
   "chConditionMemoryLoss": "Memory loss or impairment",
+  "@chConditionMemoryLoss": {},
   "chConditionChronicFatigue": "Chronic fatigue",
+  "@chConditionChronicFatigue": {},
   "chConditionMs": "Multiple sclerosis (MS)",
+  "@chConditionMs": {},
   "chConditionSpinalCord": "Spinal cord injury or impairment",
+  "@chConditionSpinalCord": {},
   "chConditionTbi": "Traumatic brain injury (TBI)",
+  "@chConditionTbi": {},
   "chConditionNarcolepsy": "Narcolepsy",
+  "@chConditionNarcolepsy": {},
   "chConditionAls": "Lou Gehrig's disease (amyotrophic lateral sclerosis or ALS)",
+  "@chConditionAls": {},
   "chConditionMuscularDystrophy": "Muscular dystrophy (MD)",
-
+  "@chConditionMuscularDystrophy": {},
   "chLungQuestion": "Lung Conditions (e.g., asthma)",
-  "@chLungQuestion": { "description": "Chronic health - Cat 6 gate question" },
+  "@chLungQuestion": {
+    "description": "Chronic health - Cat 6 gate question"
+  },
   "chLungConditionsQuestion": "Which lung conditions have you been diagnosed with?",
-  "@chLungConditionsQuestion": { "description": "Chronic health - Cat 6 sub-conditions question" },
+  "@chLungConditionsQuestion": {
+    "description": "Chronic health - Cat 6 sub-conditions question"
+  },
   "chConditionAsthma": "Asthma",
+  "@chConditionAsthma": {},
   "chConditionCopd": "Chronic lung disease (COPD, emphysema, or bronchitis)",
-
+  "@chConditionCopd": {},
   "chHormoneQuestion": "Hormone and Endocrine (e.g., diabetes, hypothyroidism)",
-  "@chHormoneQuestion": { "description": "Chronic health - Cat 7 gate question" },
+  "@chHormoneQuestion": {
+    "description": "Chronic health - Cat 7 gate question"
+  },
   "chHormoneConditionsQuestion": "Which hormone and endocrine conditions have you been diagnosed with?",
-  "@chHormoneConditionsQuestion": { "description": "Chronic health - Cat 7 sub-conditions question" },
+  "@chHormoneConditionsQuestion": {
+    "description": "Chronic health - Cat 7 sub-conditions question"
+  },
   "chConditionPrediabetes": "Pre-diabetes",
+  "@chConditionPrediabetes": {},
   "chConditionDiabetesType1": "Type I Diabetes",
+  "@chConditionDiabetesType1": {},
   "chConditionDiabetesType2": "Type II Diabetes",
+  "@chConditionDiabetesType2": {},
   "chConditionHypothyroidism": "Hypothyroidism",
-
+  "@chConditionHypothyroidism": {},
   "chCompletionTitle": "Survey Complete",
-  "@chCompletionTitle": { "description": "Chronic health survey completion title" },
+  "@chCompletionTitle": {
+    "description": "Chronic health survey completion title"
+  },
   "chCompletionText": "Thank you for completing the health history survey.",
-  "@chCompletionText": { "description": "Chronic health survey completion text" }
+  "@chCompletionText": {
+    "description": "Chronic health survey completion text"
+  }
 }
