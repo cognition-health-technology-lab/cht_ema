@@ -32,7 +32,7 @@ class _ExampleAppState extends State<ExampleApp> {
       ],
       supportedLocales: AppLocalizations.supportedLocales,
       locale: locale,
-      home: const SociodemographicPage(),
+      home: HomePage(onLocaleChange: changeLocale),
     );
   }
 
@@ -96,7 +96,9 @@ class SurveyList extends StatelessWidget {
             ElevatedButton(
               onPressed: () => Navigator.push(
                 context,
-                MaterialPageRoute<void>(builder: (context) => SurveyPage()),
+                MaterialPageRoute<void>(
+                  builder: (context) => const SociodemographicPage(),
+                ),
               ),
               child: Text(
                 localizations.homeMessage,

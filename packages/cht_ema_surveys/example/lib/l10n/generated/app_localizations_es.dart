@@ -12,7 +12,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get appTitle => 'Ejemplo CHT Encuestas';
 
   @override
-  String get homeMessage => 'Pantalla de inicio';
+  String get homeMessage => 'Encuesta sociodemográfica';
 
   @override
   String get languageToolTip => 'Seleccionar idioma';
@@ -82,25 +82,25 @@ class AppLocalizationsEs extends AppLocalizations {
   String get incomeLessThan10k => 'Menos que \$10,000';
 
   @override
-  String get income10kTo24k => '\$10,000 – \$24,999';
+  String get income10kTo24k => '\$10,000 - \$24,999';
 
   @override
-  String get income25kTo34k => '\$25,000 – \$34,999';
+  String get income25kTo34k => '\$25,000 - \$34,999';
 
   @override
-  String get income35kTo49k => '\$35,000 – \$49,999';
+  String get income35kTo49k => '\$35,000 - \$49,999';
 
   @override
-  String get income50kTo74k => '\$50,000 – \$74,999';
+  String get income50kTo74k => '\$50,000 - \$74,999';
 
   @override
-  String get income75kTo99k => '\$75,000 – \$99,999';
+  String get income75kTo99k => '\$75,000 - \$99,999';
 
   @override
-  String get income100kTo149k => '\$100,000 – \$149,999';
+  String get income100kTo149k => '\$100,000 - \$149,999';
 
   @override
-  String get income150kTo199k => '\$150,000 – \$199,999';
+  String get income150kTo199k => '\$150,000 - \$199,999';
 
   @override
   String get income200kOrMore => '\$200,000 o más';

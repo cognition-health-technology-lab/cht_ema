@@ -107,7 +107,7 @@ abstract class AppLocalizations {
   /// Message displayed on the home screen
   ///
   /// In en, this message translates to:
-  /// **'Home screen'**
+  /// **'Sociodemographic Survey'**
   String get homeMessage;
 
   /// Tooltip for the language selection menu
@@ -245,43 +245,43 @@ abstract class AppLocalizations {
   /// No description provided for @income10kTo24k.
   ///
   /// In en, this message translates to:
-  /// **'\$10,000 – \$24,999'**
+  /// **'\$10,000 - \$24,999'**
   String get income10kTo24k;
 
   /// No description provided for @income25kTo34k.
   ///
   /// In en, this message translates to:
-  /// **'\$25,000 – \$34,999'**
+  /// **'\$25,000 - \$34,999'**
   String get income25kTo34k;
 
   /// No description provided for @income35kTo49k.
   ///
   /// In en, this message translates to:
-  /// **'\$35,000 – \$49,999'**
+  /// **'\$35,000 - \$49,999'**
   String get income35kTo49k;
 
   /// No description provided for @income50kTo74k.
   ///
   /// In en, this message translates to:
-  /// **'\$50,000 – \$74,999'**
+  /// **'\$50,000 - \$74,999'**
   String get income50kTo74k;
 
   /// No description provided for @income75kTo99k.
   ///
   /// In en, this message translates to:
-  /// **'\$75,000 – \$99,999'**
+  /// **'\$75,000 - \$99,999'**
   String get income75kTo99k;
 
   /// No description provided for @income100kTo149k.
   ///
   /// In en, this message translates to:
-  /// **'\$100,000 – \$149,999'**
+  /// **'\$100,000 - \$149,999'**
   String get income100kTo149k;
 
   /// No description provided for @income150kTo199k.
   ///
   /// In en, this message translates to:
-  /// **'\$150,000 – \$199,999'**
+  /// **'\$150,000 - \$199,999'**
   String get income150kTo199k;
 
   /// No description provided for @income200kOrMore.
