@@ -20,10 +20,13 @@ List<Trial<NBackStim>> buildNBackTrials({
 
   final matchCount = (n * matchProportion).floor();
   final nonMatchCount = n - matchCount;
+  final random = seed != null ? Random(seed) : Random();
 
   final trials = <Trial<NBackStim>>[];
-  trials.addAll(buildMatchingTrials(trialCount: matchCount));
-  trials.addAll(buildNonMatchingTrials(trialCount: nonMatchCount));
+  trials.addAll(buildMatchingTrials(trialCount: matchCount, random: random));
+  trials.addAll(
+    buildNonMatchingTrials(trialCount: nonMatchCount, random: random),
+  );
 
   return TrialRandomizer.randomize(
     trials: trials,
@@ -32,7 +35,10 @@ List<Trial<NBackStim>> buildNBackTrials({
   );
 }
 
-List<Trial<NBackStim>> buildMatchingTrials({required int trialCount}) {
+List<Trial<NBackStim>> buildMatchingTrials({
+  required int trialCount,
+  required Random random,
+}) {
   const stimA = NBackStim(
     currentStim: NBackStimType.a,
     previousStim: NBackStimType.a,
@@ -56,14 +62,17 @@ List<Trial<NBackStim>> buildMatchingTrials({required int trialCount}) {
 
   final finalTrials = <Trial<NBackStim>>[];
   for (var i = 0; i < trialCount; i++) {
-    final randomIndex = Random().nextInt(matchingTrials.length);
+    final randomIndex = random.nextInt(matchingTrials.length);
     final matchingTrial = matchingTrials[randomIndex];
     finalTrials.add(matchingTrial);
   }
   return finalTrials;
 }
 
-List<Trial<NBackStim>> buildNonMatchingTrials({required int trialCount}) {
+List<Trial<NBackStim>> buildNonMatchingTrials({
+  required int trialCount,
+  required Random random,
+}) {
   const stim1 = NBackStim(
     currentStim: NBackStimType.a,
     previousStim: NBackStimType.b,
@@ -87,7 +96,7 @@ List<Trial<NBackStim>> buildNonMatchingTrials({required int trialCount}) {
 
   final finalTrials = <Trial<NBackStim>>[];
   for (var i = 0; i < trialCount; i++) {
-    final randomIndex = Random().nextInt(nonMatchingTrials.length);
+    final randomIndex = random.nextInt(nonMatchingTrials.length);
     final nonMatchingTrial = nonMatchingTrials[randomIndex];
     finalTrials.add(nonMatchingTrial);
   }
