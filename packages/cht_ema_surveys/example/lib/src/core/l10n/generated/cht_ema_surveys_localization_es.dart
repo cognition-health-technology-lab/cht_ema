@@ -12,7 +12,7 @@ class ChtEmaSurveysLocalizationEs extends ChtEmaSurveysLocalization {
   String get itemTitle => 'Título del ítem';
 
   @override
-  String get erqEmaInstructionsTitle => 'Emociones';
+  String get erqEmaInstructionsTitle => 'Instrucciones';
 
   @override
   String get erqEmaInstructionsBody =>
@@ -60,4 +60,7 @@ class ChtEmaSurveysLocalizationEs extends ChtEmaSurveysLocalization {
 
   @override
   String get likertStronglyAgree => 'Muy de acuerdo';
+
+  @override
+  String get erqEmaSurveyButtonLabel => 'Cuestionario de Regulación Emocional';
 }

@@ -63,5 +63,9 @@
   "likertStronglyAgree": "Strongly agree",
   "@likertStronglyAgree": {
     "description": "Likert label for 7 on a 1-7 agreement scale"
+  },
+  "erqEmaSurveyButtonLabel": "Emotion Regulation Questionnaire",
+  "@erqEmaSurveyButtonLabel": {
+    "description": "Home screen button label for the ERQ EMA survey"
   }
 }

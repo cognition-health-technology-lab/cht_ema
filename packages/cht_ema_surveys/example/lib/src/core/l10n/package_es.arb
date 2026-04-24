@@ -12,7 +12,7 @@
   "@erqEmaInstructionsBody": {
     "description": "Cuerpo de instrucciones ERQ EMA"
   },
-  "erqEmaCr1": "Cuando quería sentir más una emoción positiva (como alegría o diversión), cambié mi manera de pensar sobre esa situación.",
+  "erqEmaCr1": "Cuando quería sentir más una emoción positiva (como alegría o diversión), cambié mi manera de pensar sobre la situación.",
   "@erqEmaCr1": {
     "description": "ERQ EMA, ítem de reevaluación cognitiva 1"
   },
@@ -28,7 +28,7 @@
   "@erqEmaSup1": {
     "description": "ERQ EMA, ítem de supresión expresiva 1"
   },
-  "erqEmaSup2": "Controlé mis emociones cambiando mi manera de pensar sobre la situación en la que me encuentraba.",
+  "erqEmaSup2": "Controlé mis emociones cambiando mi manera de pensar sobre la situación en la que me encontraba.",
   "@erqEmaSup2": {
     "description": "ERQ EMA, ítem de supresión expresiva 2"
   },
@@ -63,5 +63,9 @@
   "likertStronglyAgree": "Muy de acuerdo",
   "@likertStronglyAgree": {
     "description": "Etiqueta Likert para 7 en escala de acuerdo 1-7"
+  },
+  "erqEmaSurveyButtonLabel": "Cuestionario de Regulación Emocional",
+  "@erqEmaSurveyButtonLabel": {
+    "description": "Etiqueta del botón de la pantalla de inicio para la encuesta ERQ EMA"
   }
 }

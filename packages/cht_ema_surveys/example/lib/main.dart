@@ -106,7 +106,7 @@ class SurveyList extends StatelessWidget {
                 ),
               ),
               child: Text(
-                AppLocalizations.of(context).erqEmaSurveyButtonLabel,
+                ChtEmaSurveysLocalization.of(context).erqEmaSurveyButtonLabel,
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
             ),

@@ -110,7 +110,7 @@ abstract class ChtEmaSurveysLocalization {
   /// ERQ EMA instructions title
   ///
   /// In en, this message translates to:
-  /// **'Emotions'**
+  /// **'Instructions'**
   String get erqEmaInstructionsTitle;
 
   /// ERQ EMA instructions body
@@ -196,6 +196,12 @@ abstract class ChtEmaSurveysLocalization {
   /// In en, this message translates to:
   /// **'Strongly agree'**
   String get likertStronglyAgree;
+
+  /// Home screen button label for the ERQ EMA survey
+  ///
+  /// In en, this message translates to:
+  /// **'Emotion Regulation Questionnaire'**
+  String get erqEmaSurveyButtonLabel;
 }
 
 class _ChtEmaSurveysLocalizationDelegate
