@@ -2,47 +2,16 @@ import 'package:example_surveys/src/core/l10n/generated/cht_ema_surveys_localiza
 import 'package:flutter/material.dart';
 import 'package:research_package/model.dart';
 
-enum ErqEmaUiVariant { sliderSimple, multipleChoice, sliderWithLegend }
+enum ErqEmaUiVariant { multipleChoice }
 
 const String kErqEmaInstructionsStepId = 'erq_ema_instructions';
 
-const double kErqEmaMinValue = 1;
-const double kErqEmaMaxValue = 7;
-const int kErqEmaDivisions = 6;
 
 String erqItemStepId(String scaleId, int itemId) =>
     'erq_ema_${scaleId}_$itemId';
 
-String erqTaskIdForVariant(ErqEmaUiVariant variant) {
-  switch (variant) {
-    case ErqEmaUiVariant.sliderSimple:
-      return 'erq_ema_task_slider_simple';
-    case ErqEmaUiVariant.multipleChoice:
-      return 'erq_ema_task_multiple_choice';
-    case ErqEmaUiVariant.sliderWithLegend:
-      return 'erq_ema_task_slider_with_legend';
-  }
-}
-
-String variantTitle(ErqEmaUiVariant variant) {
-  switch (variant) {
-    case ErqEmaUiVariant.sliderSimple:
-      return 'ERQ EMA (Slider)';
-    case ErqEmaUiVariant.multipleChoice:
-      return 'ERQ EMA (Multiple Choice)';
-    case ErqEmaUiVariant.sliderWithLegend:
-      return 'ERQ EMA (Slider + Legend)';
-  }
-}
-
-const String kErqLegendText =
-    '1 = Strongly disagree\n'
-    '2 = Disagree\n'
-    '3 = Slightly disagree\n'
-    '4 = Neutral\n'
-    '5 = Slightly agree\n'
-    '6 = Agree\n'
-    '7 = Strongly agree';
+String erqTaskIdForVariant(ErqEmaUiVariant variant) =>
+    'erq_ema_task_multiple_choice';
 
 class ErqEmaItemSpec {
   final String scaleId;
@@ -97,53 +66,33 @@ RPOrderedTask buildErqEmaSurveyTask(
 
   final instructionStep = RPInstructionStep(
     identifier: kErqEmaInstructionsStepId,
-    title: variantTitle(variant),
+    title: l10n.erqEmaInstructionsTitle,
     text: l10n.erqEmaInstructionsBody,
   );
 
   final specs = buildErqEmaItemSpecs(context);
 
-  final sliderFormat = RPSliderAnswerFormat(
-    minValue: kErqEmaMinValue,
-    maxValue: kErqEmaMaxValue,
-    divisions: kErqEmaDivisions,
-  );
-
   final choiceFormat = RPChoiceAnswerFormat(
     answerStyle: RPChoiceAnswerStyle.SingleChoice,
     choices: <RPChoice>[
-      RPChoice(text: 'Strongly disagree', value: 1),
-      RPChoice(text: 'Disagree', value: 2),
-      RPChoice(text: 'Slightly disagree', value: 3),
-      RPChoice(text: 'Neutral', value: 4),
-      RPChoice(text: 'Slightly agree', value: 5),
-      RPChoice(text: 'Agree', value: 6),
-      RPChoice(text: 'Strongly agree', value: 7),
+      RPChoice(text: l10n.likertStronglyDisagree, value: 1),
+      RPChoice(text: l10n.likertDisagree, value: 2),
+      RPChoice(text: l10n.likertSlightlyDisagree, value: 3),
+      RPChoice(text: l10n.likertNeutral, value: 4),
+      RPChoice(text: l10n.likertSlightlyAgree, value: 5),
+      RPChoice(text: l10n.likertAgree, value: 6),
+      RPChoice(text: l10n.likertStronglyAgree, value: 7),
     ],
   );
 
   final steps = <RPStep>[instructionStep];
 
   for (final s in specs) {
-    final RPAnswerFormat answerFormat;
-    switch (variant) {
-      case ErqEmaUiVariant.sliderSimple:
-      case ErqEmaUiVariant.sliderWithLegend:
-        answerFormat = sliderFormat;
-      case ErqEmaUiVariant.multipleChoice:
-        answerFormat = choiceFormat;
-    }
-
-    final footnote = (variant == ErqEmaUiVariant.sliderWithLegend)
-        ? kErqLegendText
-        : null;
-
     steps.add(
       RPQuestionStep(
         identifier: s.stepId,
         title: s.text,
-        answerFormat: answerFormat,
-        footnote: footnote,
+        answerFormat: choiceFormat,
       ),
     );
   }

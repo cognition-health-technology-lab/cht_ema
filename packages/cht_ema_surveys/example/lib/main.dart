@@ -95,27 +95,6 @@ class SurveyList extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            //ERQ EMA button...
-            ElevatedButton(
-              onPressed: () => Navigator.push(
-                context,
-                MaterialPageRoute<void>(
-                  builder: (context) => ErqEmaVariantPage(
-                    variant: ErqEmaUiVariant.sliderSimple,
-                    onFinish: (context, result) {
-                      // optional: log
-                    },
-                  ),
-                ),
-              ),
-              child: Text(
-                'ERQ EMA — Slider',
-                style: Theme.of(context).textTheme.headlineMedium,
-              ),
-            ),
-
-            const SizedBox(height: 16),
-
             ElevatedButton(
               onPressed: () => Navigator.push(
                 context,
@@ -127,25 +106,7 @@ class SurveyList extends StatelessWidget {
                 ),
               ),
               child: Text(
-                'ERQ EMA — Multiple Choice',
-                style: Theme.of(context).textTheme.headlineMedium,
-              ),
-            ),
-
-            const SizedBox(height: 16),
-
-            ElevatedButton(
-              onPressed: () => Navigator.push(
-                context,
-                MaterialPageRoute<void>(
-                  builder: (context) => ErqEmaVariantPage(
-                    variant: ErqEmaUiVariant.sliderWithLegend,
-                    onFinish: (context, result) {},
-                  ),
-                ),
-              ),
-              child: Text(
-                'ERQ EMA — Slider + Legend',
+                AppLocalizations.of(context).erqEmaSurveyButtonLabel,
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
             ),

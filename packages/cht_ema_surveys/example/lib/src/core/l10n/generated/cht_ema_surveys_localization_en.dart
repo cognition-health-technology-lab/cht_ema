@@ -34,7 +34,7 @@ class ChtEmaSurveysLocalizationEn extends ChtEmaSurveysLocalization {
 
   @override
   String get erqEmaSup2 =>
-      'I controlled my emotions by changing the way I was thinking about the situation I\'m in.';
+      'I controlled my emotions by changing the way I was thinking about the situation I was in.';
 
   @override
   String get erqEmaSup3 =>

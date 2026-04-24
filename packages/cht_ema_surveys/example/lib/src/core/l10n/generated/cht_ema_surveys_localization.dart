@@ -146,7 +146,7 @@ abstract class ChtEmaSurveysLocalization {
   /// ERQ EMA expressive suppression item 2
   ///
   /// In en, this message translates to:
-  /// **'I controlled my emotions by changing the way I was thinking about the situation I\'m in.'**
+  /// **'I controlled my emotions by changing the way I was thinking about the situation I was in.'**
   String get erqEmaSup2;
 
   /// ERQ EMA expressive suppression item 3

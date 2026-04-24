@@ -22,4 +22,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get langOptionEs => 'Español';
+
+  @override
+  String get erqEmaSurveyButtonLabel => 'ERQ EMA — Opción múltiple';
 }

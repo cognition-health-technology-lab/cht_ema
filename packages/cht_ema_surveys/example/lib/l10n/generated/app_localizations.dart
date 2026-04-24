@@ -127,6 +127,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Español'**
   String get langOptionEs;
+
+  /// Home screen button label for the ERQ EMA survey
+  ///
+  /// In en, this message translates to:
+  /// **'ERQ EMA — Multiple Choice'**
+  String get erqEmaSurveyButtonLabel;
 }
 
 class _AppLocalizationsDelegate

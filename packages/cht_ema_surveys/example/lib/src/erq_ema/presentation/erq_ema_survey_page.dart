@@ -12,7 +12,7 @@ class ErqEmaSurveyPageAlt extends StatelessWidget {
   Widget build(BuildContext context) {
     final task = buildErqEmaSurveyTask(
       context,
-      variant: ErqEmaUiVariant.sliderWithLegend,
+      variant: ErqEmaUiVariant.multipleChoice,
     );
 
     final customTheme = Theme.of(context).copyWith(

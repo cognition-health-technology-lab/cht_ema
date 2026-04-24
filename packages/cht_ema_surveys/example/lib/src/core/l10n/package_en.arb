@@ -4,7 +4,7 @@
   "@itemTitle": {
     "description": "Title for the EMA survey item"
   },
-  "erqEmaInstructionsTitle": "Emotions",
+  "erqEmaInstructionsTitle": "Instructions",
   "@erqEmaInstructionsTitle": {
     "description": "ERQ EMA instructions title"
   },
@@ -28,7 +28,7 @@
   "@erqEmaSup1": {
     "description": "ERQ EMA expressive suppression item 1"
   },
-  "erqEmaSup2": "I controlled my emotions by changing the way I was thinking about the situation I'm in.",
+  "erqEmaSup2": "I controlled my emotions by changing the way I was thinking about the situation I was in.",
   "@erqEmaSup2": {
     "description": "ERQ EMA expressive suppression item 2"
   },

@@ -18,7 +18,7 @@ class ErqEmaSurveyPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final task = buildErqEmaSurveyTask(
       context,
-      variant: ErqEmaUiVariant.sliderSimple,
+      variant: ErqEmaUiVariant.multipleChoice,
     );
 
     final customTheme = Theme.of(context).copyWith(
