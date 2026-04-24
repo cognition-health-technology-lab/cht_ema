@@ -17,7 +17,7 @@ void main() {
       },
     );
     test(
-      'When given n = 10, match proportion = .30, creates a list of 30 trials '
+      'When given n = 10, match proportion = .30, creates a list of 10 trials '
       'with the correct match/non-match proportion',
       () {
         final trials = buildNBackTrials(n: 10, matchProportion: 0.3);
