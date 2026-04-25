@@ -11,7 +11,6 @@ List<String> _likertLabels(ChtEmaSurveysLocalization l10n) => <String>[
   l10n.likertStronglyAgree,
 ];
 
-
 List<RPStep> erqEmaItems(ChtEmaSurveysLocalization l10n) {
   final labels = _likertLabels(l10n);
   final choiceFormat = RPChoiceAnswerFormat(

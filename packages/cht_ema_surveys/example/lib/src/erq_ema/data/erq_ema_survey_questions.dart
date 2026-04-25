@@ -6,7 +6,6 @@ enum ErqEmaUiVariant { multipleChoice }
 
 const String kErqEmaInstructionsStepId = 'erq_ema_instructions';
 
-
 String erqItemStepId(String scaleId, int itemId) =>
     'erq_ema_${scaleId}_$itemId';
 
