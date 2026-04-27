@@ -75,3 +75,4 @@ melos:
       description: "Run all formal checks: bootstrap, generate localizations, check format, analyze, test, build android, build ios."
 dependencies:
   pedometer: ^4.2.0
+  permission_handler: ^12.0.1
