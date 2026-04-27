@@ -10,14 +10,12 @@ class PedometerService {
   StreamSubscription<StepCount>? _stepCountSubscription;
   StreamSubscription<PedestrianStatus>? _pedestrianStatusSubscription;
 
-  static Future<PedometerService> init() async {
-    final service = PedometerService();
-    await service._askPermission();
-    if (service.permissionGranted) {
-      service._initStepCount();
-      service._initPedestrianStatus();
+  Future<void> init() async {
+    await _askPermission();
+    if (permissionGranted) {
+      _initStepCount();
+      _initPedestrianStatus();
     }
-    return service;
   }
 
   /// Asks the user for permission to access activity recognition on Android,
