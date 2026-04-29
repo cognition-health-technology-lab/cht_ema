@@ -7,6 +7,10 @@ class AppInitializer {
     : _pedometerService = pedometerService;
 
   Future<void> initPedometerService() async {
-    await _pedometerService.init();
+    await _pedometerService.askPermission();
+    if (_pedometerService.permissionGranted) {
+      _pedometerService.initStepCount();
+      _pedometerService.initPedestrianStatus();
+    }
   }
 }

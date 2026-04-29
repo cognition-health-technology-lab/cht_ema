@@ -12,19 +12,11 @@ class PedometerService {
   StreamSubscription<StepCount>? _stepCountSubscription;
   StreamSubscription<PedestrianStatus>? _pedestrianStatusSubscription;
 
-  Future<void> init() async {
-    await _askPermission();
-    if (permissionGranted) {
-      _initStepCount();
-      _initPedestrianStatus();
-    }
-  }
-
   /// Asks the user for permission to access activity recognition on Android,
   /// if it has not been granted. It has no effect on iOS because it is
   /// handled automatically by ios.
   /// It must be called before the pedometer can be used on Android.
-  Future<void> _askPermission() async {
+  Future<void> askPermission() async {
     if (Platform.isIOS) {
       permissionGranted = true;
     } else if (Platform.isAndroid) {
@@ -34,7 +26,7 @@ class PedometerService {
     }
   }
 
-  void _initStepCount() {
+  void initStepCount() {
     _stepCountSubscription = Pedometer.stepCountStream.listen(
       (event) {
         // ignore: avoid_print
@@ -51,7 +43,7 @@ class PedometerService {
     );
   }
 
-  void _initPedestrianStatus() {
+  void initPedestrianStatus() {
     _pedestrianStatusSubscription = Pedometer.pedestrianStatusStream.listen(
       (event) {
         // ignore: avoid_print
