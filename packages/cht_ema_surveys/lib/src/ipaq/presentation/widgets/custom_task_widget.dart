@@ -1,3 +1,4 @@
+import 'package:cht_ema_surveys/src/core/l10n/generated/cht_ema_surveys_localization.dart';
 import 'package:cht_ema_surveys/src/ipaq/data/custom_answer_result.dart';
 import 'package:cht_ema_surveys/src/ipaq/data/items.dart';
 import 'package:cht_ema_surveys/src/ipaq/presentation/widgets/custom_duration_question_body.dart';
@@ -81,6 +82,7 @@ class _CustomTaskWidgetState extends State<CustomTaskWidget> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = ChtEmaSurveysLocalization.of(context);
     final step = widget.task.steps[_currentStepIndex];
 
     return Scaffold(
@@ -174,9 +176,9 @@ class _CustomTaskWidgetState extends State<CustomTaskWidget> {
                       borderRadius: BorderRadius.circular(30),
                     ),
                   ),
-                  child: const Text(
-                    'Atrás',
-                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
+                  child: Text(
+                    l10n.backButtonLabel,
+                    style: const TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
                   ),
                 ),
               ),
@@ -195,9 +197,9 @@ class _CustomTaskWidgetState extends State<CustomTaskWidget> {
                       borderRadius: BorderRadius.circular(30),
                     ),
                   ),
-                  child: const Text(
-                    'Continuar',
-                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
+                  child: Text(
+                    l10n.nextButtonLabel,
+                    style: const TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
                   ),
                 ),
               ),
