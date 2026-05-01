@@ -61,6 +61,7 @@ class _HomePageState extends State<HomePage> {
           PopupMenuButton<Locale?>(
             tooltip: localizations.languageToolTip,
             onSelected: widget.onLocaleChange,
+            icon: const Icon(Icons.language),
             itemBuilder: (BuildContext context) {
               return <PopupMenuItem<Locale?>>[
                 PopupMenuItem<Locale?>(
@@ -95,10 +96,33 @@ class SurveyList extends StatelessWidget {
             ElevatedButton(
               onPressed: () => Navigator.push(
                 context,
-                MaterialPageRoute<void>(builder: (context) => SurveyPage()),
+                MaterialPageRoute<void>(
+                  builder: (context) => IPAQPage(
+                    navigateOnFinish: (BuildContext context) {
+                      Navigator.of(context).pop();
+                    },
+                  ),
+                ),
               ),
               child: Text(
-                localizations.homeMessage,
+                localizations.ipaqName,
+                style: Theme.of(context).textTheme.headlineMedium,
+              ),
+            ),
+            const SizedBox(height: 24),
+            ElevatedButton(
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute<void>(
+                  builder: (context) => ErqEmaPage(
+                    navigateOnFinish: (BuildContext context) {
+                      Navigator.of(context).pop();
+                    },
+                  ),
+                ),
+              ),
+              child: Text(
+                'ERQ EMA', // or a localized label if you add one to app_en/app_es
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
             ),
