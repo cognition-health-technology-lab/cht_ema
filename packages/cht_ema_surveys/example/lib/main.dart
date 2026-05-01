@@ -110,22 +110,6 @@ class SurveyList extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 24),
-            ElevatedButton(
-              onPressed: () => Navigator.push(
-                context,
-                MaterialPageRoute<void>(
-                  builder: (context) => ErqEmaPage(
-                    navigateOnFinish: (BuildContext context) {
-                      Navigator.of(context).pop();
-                    },
-                  ),
-                ),
-              ),
-              child: Text(
-                'ERQ EMA', // or a localized label if you add one to app_en/app_es
-                style: Theme.of(context).textTheme.headlineMedium,
-              ),
-            ),
           ],
         ),
       ),
