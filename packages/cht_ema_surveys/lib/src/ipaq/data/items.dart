@@ -1,5 +1,4 @@
 import 'package:cht_ema_surveys/src/core/l10n/generated/cht_ema_surveys_localization.dart';
-import 'package:cht_ema_surveys/src/ipaq/presentation/widgets/duration_answer_format.dart';
 import 'package:flutter/material.dart';
 import 'package:iconify_flutter/icons/mdi.dart';
 import 'package:research_package/research_package.dart';
