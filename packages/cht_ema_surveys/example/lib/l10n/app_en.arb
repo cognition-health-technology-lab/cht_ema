@@ -19,5 +19,57 @@
   "langOptionEs": "Español",
   "@langOptionEs": {
     "description": "Spanish language option"
+  },
+  "studyInformationPageTitle": "Study information",
+  "@studyInformationPageTitle": {
+    "description": "Title for the study information screen"
+  },
+  "studyInformationInfoTooltip": "Study information",
+  "@studyInformationInfoTooltip": {
+    "description": "Tooltip for opening the study information screen"
+  },
+  "studyInformationContinueButton": "Continue",
+  "@studyInformationContinueButton": {
+    "description": "Button label for continuing past the study information screen"
+  },
+  "studyInformationStudyTitleLabel": "Study title",
+  "@studyInformationStudyTitleLabel": {
+    "description": "Label for the study title section"
+  },
+  "studyInformationStudyTitleValue": "mHealthGoals",
+  "@studyInformationStudyTitleValue": {
+    "description": "Default neutral value for the study title"
+  },
+  "studyInformationDescriptionLabel": "Study description",
+  "@studyInformationDescriptionLabel": {
+    "description": "Label for the study description section"
+  },
+  "studyInformationDescriptionValue": "This study invites participants to complete brief surveys about their daily experiences so the research team can better understand participation in everyday contexts.",
+  "@studyInformationDescriptionValue": {
+    "description": "Default neutral value for the study description"
+  },
+  "studyInformationResearchTeamLabel": "Principal investigator / research team",
+  "@studyInformationResearchTeamLabel": {
+    "description": "Label for the principal investigator or research team section"
+  },
+  "studyInformationResearchTeamValue": "Dr. Mario Bermonti-Pérez, PhD\nCognition, Health, and Technology Lab",
+  "@studyInformationResearchTeamValue": {
+    "description": "Default neutral value for the research team"
+  },
+  "studyInformationTimeCommitmentLabel": "Study duration and time commitment",
+  "@studyInformationTimeCommitmentLabel": {
+    "description": "Label for the study duration and time commitment section"
+  },
+  "studyInformationTimeCommitmentValue": "Participants complete brief questionnaires and cognitive tasks during the study period. Each questionnaire or task should take only a few minutes.",
+  "@studyInformationTimeCommitmentValue": {
+    "description": "Default neutral value for the study duration and time commitment"
+  },
+  "studyInformationContactLabel": "Contact information",
+  "@studyInformationContactLabel": {
+    "description": "Label for the contact information section"
+  },
+  "studyInformationContactValue": "Email: chtlaboratory@psm.edu",
+  "@studyInformationContactValue": {
+    "description": "Default neutral value for contact information"
   }
 }

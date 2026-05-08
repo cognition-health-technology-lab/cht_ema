@@ -127,6 +127,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Español'**
   String get langOptionEs;
+
+  /// Title for the study information screen
+  ///
+  /// In en, this message translates to:
+  /// **'Study information'**
+  String get studyInformationPageTitle;
+
+  /// Tooltip for opening the study information screen
+  ///
+  /// In en, this message translates to:
+  /// **'Study information'**
+  String get studyInformationInfoTooltip;
+
+  /// Button label for continuing past the study information screen
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get studyInformationContinueButton;
+
+  /// Label for the study title section
+  ///
+  /// In en, this message translates to:
+  /// **'Study title'**
+  String get studyInformationStudyTitleLabel;
+
+  /// Default neutral value for the study title
+  ///
+  /// In en, this message translates to:
+  /// **'mHealthGoals'**
+  String get studyInformationStudyTitleValue;
+
+  /// Label for the study description section
+  ///
+  /// In en, this message translates to:
+  /// **'Study description'**
+  String get studyInformationDescriptionLabel;
+
+  /// Default neutral value for the study description
+  ///
+  /// In en, this message translates to:
+  /// **'This study invites participants to complete brief surveys about their daily experiences so the research team can better understand participation in everyday contexts.'**
+  String get studyInformationDescriptionValue;
+
+  /// Label for the principal investigator or research team section
+  ///
+  /// In en, this message translates to:
+  /// **'Principal investigator / research team'**
+  String get studyInformationResearchTeamLabel;
+
+  /// Default neutral value for the research team
+  ///
+  /// In en, this message translates to:
+  /// **'Dr. Mario Bermonti-Pérez, PhD\nCognition, Health, and Technology Lab'**
+  String get studyInformationResearchTeamValue;
+
+  /// Label for the study duration and time commitment section
+  ///
+  /// In en, this message translates to:
+  /// **'Study duration and time commitment'**
+  String get studyInformationTimeCommitmentLabel;
+
+  /// Default neutral value for the study duration and time commitment
+  ///
+  /// In en, this message translates to:
+  /// **'Participants complete brief questionnaires and cognitive tasks during the study period. Each questionnaire or task should take only a few minutes.'**
+  String get studyInformationTimeCommitmentValue;
+
+  /// Label for the contact information section
+  ///
+  /// In en, this message translates to:
+  /// **'Contact information'**
+  String get studyInformationContactLabel;
+
+  /// Default neutral value for contact information
+  ///
+  /// In en, this message translates to:
+  /// **'Email: chtlaboratory@psm.edu'**
+  String get studyInformationContactValue;
 }
 
 class _AppLocalizationsDelegate

@@ -19,5 +19,57 @@
   "langOptionEs": "Español",
   "@langOptionEs": {
     "description": "Spanish language option"
+  },
+  "studyInformationPageTitle": "Información del estudio",
+  "@studyInformationPageTitle": {
+    "description": "Title for the study information screen"
+  },
+  "studyInformationInfoTooltip": "Información del estudio",
+  "@studyInformationInfoTooltip": {
+    "description": "Tooltip for opening the study information screen"
+  },
+  "studyInformationContinueButton": "Continuar",
+  "@studyInformationContinueButton": {
+    "description": "Button label for continuing past the study information screen"
+  },
+  "studyInformationStudyTitleLabel": "Título del estudio",
+  "@studyInformationStudyTitleLabel": {
+    "description": "Label for the study title section"
+  },
+  "studyInformationStudyTitleValue": "mHealthGoals",
+  "@studyInformationStudyTitleValue": {
+    "description": "Default neutral value for the study title"
+  },
+  "studyInformationDescriptionLabel": "Descripción del estudio",
+  "@studyInformationDescriptionLabel": {
+    "description": "Label for the study description section"
+  },
+  "studyInformationDescriptionValue": "Este estudio invita a los participantes a responder encuestas breves sobre sus experiencias diarias para que el equipo de investigación comprenda mejor la participación en contextos cotidianos.",
+  "@studyInformationDescriptionValue": {
+    "description": "Default neutral value for the study description"
+  },
+  "studyInformationResearchTeamLabel": "Investigador principal / equipo de investigación",
+  "@studyInformationResearchTeamLabel": {
+    "description": "Label for the principal investigator or research team section"
+  },
+  "studyInformationResearchTeamValue": "Dr. Mario Bermonti-Pérez, PhD\nCognition, Health, and Technology Lab",
+  "@studyInformationResearchTeamValue": {
+    "description": "Default neutral value for the research team"
+  },
+  "studyInformationTimeCommitmentLabel": "Duración del estudio y tiempo requerido",
+  "@studyInformationTimeCommitmentLabel": {
+    "description": "Label for the study duration and time commitment section"
+  },
+  "studyInformationTimeCommitmentValue": "Los participantes completarán cuestionarios breves y tareas cognitivas durante el período del estudio. Cada cuestionario o tarea debería tomar solo unos minutos.",
+  "@studyInformationTimeCommitmentValue": {
+    "description": "Default neutral value for the study duration and time commitment"
+  },
+  "studyInformationContactLabel": "Información de contacto",
+  "@studyInformationContactLabel": {
+    "description": "Label for the contact information section"
+  },
+  "studyInformationContactValue": "Email: chtlaboratory@psm.edu",
+  "@studyInformationContactValue": {
+    "description": "Default neutral value for contact information"
   }
 }

@@ -21,6 +21,7 @@ dependencies:
     git:
       url: https://github.com/mario-bermonti/research.package.git
       ref: 90829448e20fa72ce34ee740dac25849078cb2de
+  shared_preferences: ^2.5.4
 
 dev_dependencies:
   flutter_test:

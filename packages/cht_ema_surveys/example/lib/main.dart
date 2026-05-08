@@ -1,13 +1,24 @@
+import 'dart:async';
+
 import 'package:cht_ema_surveys/cht_ema_surveys.dart';
 import 'package:example_surveys/l10n/generated/app_localizations.dart';
+import 'package:example_surveys/study_information/study_information_page.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+const _studyInformationSeenKey = 'hasSeenStudyInformation';
 
 void main() {
   runApp(const ExampleApp());
 }
 
 class ExampleApp extends StatefulWidget {
-  const ExampleApp({super.key});
+  final bool includeResearchPackageLocalizations;
+
+  const ExampleApp({
+    super.key,
+    this.includeResearchPackageLocalizations = true,
+  });
 
   @override
   State<ExampleApp> createState() => _ExampleAppState();
@@ -26,17 +37,72 @@ class _ExampleAppState extends State<ExampleApp> {
       ),
       localizationsDelegates: [
         ChtEmaSurveysLocalization.delegate,
-        ChtRpLocalizationLoader.rpDelegate,
+        if (widget.includeResearchPackageLocalizations)
+          ChtRpLocalizationLoader.rpDelegate,
         ...AppLocalizations.localizationsDelegates,
       ],
       supportedLocales: AppLocalizations.supportedLocales,
       locale: locale,
-      home: HomePage(onLocaleChange: changeLocale),
+      home: StudyInformationGate(onLocaleChange: changeLocale),
     );
   }
 
   void changeLocale(Locale? locale) {
     setState(() => this.locale = locale);
+  }
+}
+
+class StudyInformationGate extends StatefulWidget {
+  final void Function(Locale?) onLocaleChange;
+
+  const StudyInformationGate({required this.onLocaleChange, super.key});
+
+  @override
+  State<StudyInformationGate> createState() => _StudyInformationGateState();
+}
+
+class _StudyInformationGateState extends State<StudyInformationGate> {
+  bool? hasSeenStudyInformation;
+
+  @override
+  void initState() {
+    super.initState();
+    unawaited(loadStudyInformationSeenState());
+  }
+
+  Future<void> loadStudyInformationSeenState() async {
+    final preferences = await SharedPreferences.getInstance();
+    if (!mounted) return;
+
+    setState(() {
+      hasSeenStudyInformation =
+          preferences.getBool(_studyInformationSeenKey) ?? false;
+    });
+  }
+
+  Future<void> completeStudyInformation() async {
+    final preferences = await SharedPreferences.getInstance();
+    await preferences.setBool(_studyInformationSeenKey, true);
+    if (!mounted) return;
+
+    setState(() {
+      hasSeenStudyInformation = true;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (hasSeenStudyInformation == null) {
+      return const Scaffold(body: Center(child: CircularProgressIndicator()));
+    }
+
+    if (!hasSeenStudyInformation!) {
+      return StudyInformationPage(
+        onContinue: () => unawaited(completeStudyInformation()),
+      );
+    }
+
+    return HomePage(onLocaleChange: widget.onLocaleChange);
   }
 }
 
@@ -58,6 +124,16 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(localizations.appTitle),
         actions: <Widget>[
+          IconButton(
+            tooltip: localizations.studyInformationInfoTooltip,
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute<void>(
+                builder: (context) => const StudyInformationPage(),
+              ),
+            ),
+            icon: const Icon(Icons.info_outline),
+          ),
           PopupMenuButton<Locale?>(
             tooltip: localizations.languageToolTip,
             onSelected: widget.onLocaleChange,
