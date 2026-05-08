@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mhealthgoal/src/core/theme/cht_lab_theme.dart';
 import 'package:mhealthgoal/src/features/home/presentation/home_page.dart';
 import 'package:mhealthgoal/src/l10n/generated/app_localizations.dart';
 
@@ -7,10 +8,12 @@ class MHealthGoalApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: HomePage(),
+      home: const HomePage(),
+      theme: ChtLabTheme.lightTheme,
+      darkTheme: ChtLabTheme.dartkTheme,
     );
   }
 }
