@@ -19,5 +19,57 @@
   "langOptionEs": "Español",
   "@langOptionEs": {
     "description": "Spanish language option"
+  },
+  "dashboardTodayLabel": "Hoy",
+  "@dashboardTodayLabel": {
+    "description": "Label for the dashboard date strip"
+  },
+  "dashboardPlannedActivities": "Actividades planificadas",
+  "@dashboardPlannedActivities": {
+    "description": "Heading for the dashboard planned activities section"
+  },
+  "dashboardMorning": "Mañana",
+  "@dashboardMorning": {
+    "description": "Morning activity group label"
+  },
+  "dashboardAfternoon": "Tarde",
+  "@dashboardAfternoon": {
+    "description": "Afternoon activity group label"
+  },
+  "dashboardEvening": "Noche",
+  "@dashboardEvening": {
+    "description": "Evening activity group label"
+  },
+  "dashboardActivityERQ": "Completar encuesta de regulación emocional",
+  "@dashboardActivityERQ": {
+    "description": "Placeholder planned activity title"
+  },
+  "dashboardActivityIPAQ": "Completar encuesta de actividad física",
+  "@dashboardActivityIPAQ": {
+    "description": "Placeholder planned activity title"
+  },
+  "dashboardActivityGoNoGo": "Completar tarea Go/No-Go",
+  "@dashboardActivityGoNoGo": {
+    "description": "Placeholder planned activity title"
+  },
+  "dashboardActivityNBack": "Completar tarea N-back",
+  "@dashboardActivityNBack": {
+    "description": "Placeholder planned activity title"
+  },
+  "dashboardTabOverview": "Resumen",
+  "@dashboardTabOverview": {
+    "description": "Bottom navigation overview tab"
+  },
+  "dashboardTabSurveys": "Encuestas",
+  "@dashboardTabSurveys": {
+    "description": "Bottom navigation surveys tab"
+  },
+  "dashboardTabTasks": "Tareas",
+  "@dashboardTabTasks": {
+    "description": "Bottom navigation tasks tab"
+  },
+  "dashboardTabSettings": "Ajustes",
+  "@dashboardTabSettings": {
+    "description": "Bottom navigation settings tab"
   }
 }

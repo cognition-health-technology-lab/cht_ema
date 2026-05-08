@@ -127,6 +127,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Español'**
   String get langOptionEs;
+
+  /// Label for the dashboard date strip
+  ///
+  /// In en, this message translates to:
+  /// **'Today'**
+  String get dashboardTodayLabel;
+
+  /// Heading for the dashboard planned activities section
+  ///
+  /// In en, this message translates to:
+  /// **'Planned Activities'**
+  String get dashboardPlannedActivities;
+
+  /// Morning activity group label
+  ///
+  /// In en, this message translates to:
+  /// **'Morning'**
+  String get dashboardMorning;
+
+  /// Afternoon activity group label
+  ///
+  /// In en, this message translates to:
+  /// **'Afternoon'**
+  String get dashboardAfternoon;
+
+  /// Evening activity group label
+  ///
+  /// In en, this message translates to:
+  /// **'Evening'**
+  String get dashboardEvening;
+
+  /// Placeholder planned activity title
+  ///
+  /// In en, this message translates to:
+  /// **'Complete Emotional Regulation Survey'**
+  String get dashboardActivityERQ;
+
+  /// Placeholder planned activity title
+  ///
+  /// In en, this message translates to:
+  /// **'Complete Physical Activity Survey'**
+  String get dashboardActivityIPAQ;
+
+  /// Placeholder planned activity title
+  ///
+  /// In en, this message translates to:
+  /// **'Complete Go/No-Go Task'**
+  String get dashboardActivityGoNoGo;
+
+  /// Placeholder planned activity title
+  ///
+  /// In en, this message translates to:
+  /// **'Complete N-back Task'**
+  String get dashboardActivityNBack;
+
+  /// Bottom navigation overview tab
+  ///
+  /// In en, this message translates to:
+  /// **'Overview'**
+  String get dashboardTabOverview;
+
+  /// Bottom navigation surveys tab
+  ///
+  /// In en, this message translates to:
+  /// **'Surveys'**
+  String get dashboardTabSurveys;
+
+  /// Bottom navigation tasks tab
+  ///
+  /// In en, this message translates to:
+  /// **'Tasks'**
+  String get dashboardTabTasks;
+
+  /// Bottom navigation settings tab
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get dashboardTabSettings;
 }
 
 class _AppLocalizationsDelegate

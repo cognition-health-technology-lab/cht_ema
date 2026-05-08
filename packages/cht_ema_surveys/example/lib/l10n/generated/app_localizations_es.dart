@@ -22,4 +22,44 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get langOptionEs => 'Español';
+
+  @override
+  String get dashboardTodayLabel => 'Hoy';
+
+  @override
+  String get dashboardPlannedActivities => 'Actividades planificadas';
+
+  @override
+  String get dashboardMorning => 'Mañana';
+
+  @override
+  String get dashboardAfternoon => 'Tarde';
+
+  @override
+  String get dashboardEvening => 'Noche';
+
+  @override
+  String get dashboardActivityERQ =>
+      'Completar encuesta de regulación emocional';
+
+  @override
+  String get dashboardActivityIPAQ => 'Completar encuesta de actividad física';
+
+  @override
+  String get dashboardActivityGoNoGo => 'Completar tarea Go/No-Go';
+
+  @override
+  String get dashboardActivityNBack => 'Completar tarea N-back';
+
+  @override
+  String get dashboardTabOverview => 'Resumen';
+
+  @override
+  String get dashboardTabSurveys => 'Encuestas';
+
+  @override
+  String get dashboardTabTasks => 'Tareas';
+
+  @override
+  String get dashboardTabSettings => 'Ajustes';
 }
