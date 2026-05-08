@@ -9,7 +9,7 @@ class AppLocalizationsEs extends AppLocalizations {
   AppLocalizationsEs([String locale = 'es']) : super(locale);
 
   @override
-  String get appTitle => 'Ejemplo CHT Encuestas';
+  String get appTitle => 'mHealthGoal';
 
   @override
   String get homeMessage => 'Pantalla de inicio';
@@ -59,6 +59,15 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get dashboardTabTasks => 'Tareas';
+
+  @override
+  String get dashboardTabInstructions => 'Instrucciones';
+
+  @override
+  String get dashboardTabAboutUs => 'Sobre Nosotros';
+
+  @override
+  String get dashboardTabHome => 'Hogar';
 
   @override
   String get dashboardTabSettings => 'Ajustes';

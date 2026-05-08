@@ -1,60 +1,99 @@
-import 'package:example_surveys/main.dart';
+import 'package:example_surveys/home_dashboard/home_dashboard.dart';
+import 'package:example_surveys/l10n/generated/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  testWidgets('renders the dashboard template', (WidgetTester tester) async {
-    await pumpExampleApp(tester);
-
-    expect(find.text('CHT Surveys Example'), findsOneWidget);
-    expect(find.text('PLANNED ACTIVITIES'), findsOneWidget);
-    expect(find.text('Morning'), findsOneWidget);
-    expect(find.text('Spending time in nature'), findsOneWidget);
-    expect(find.text('Overview'), findsOneWidget);
-    expect(find.text('Surveys'), findsOneWidget);
-
-    await tester.tap(find.text('Surveys'));
-    await tester.pumpAndSettle();
-
-    expect(find.text('PLANNED ACTIVITIES'), findsOneWidget);
-    expect(find.byType(NavigationBar), findsOneWidget);
-  });
-
-  testWidgets('language menu switches the dashboard locale', (
+  testWidgets('renders the redesigned dashboard in English', (
     WidgetTester tester,
   ) async {
-    await pumpExampleApp(tester);
+    await pumpDashboard(tester, const Locale('en'));
 
-    await tester.tap(find.byIcon(Icons.language));
+    expect(find.text('mHealthGoal'), findsOneWidget);
+    expect(find.text('Tasks'), findsNWidgets(2));
+    expect(find.text('Instructions'), findsNWidgets(2));
+    expect(find.text('About Us'), findsNWidgets(2));
+    expect(find.text('Home'), findsOneWidget);
+    expect(find.byType(NavigationBar), findsNothing);
+  });
+
+  testWidgets('renders the redesigned dashboard in Spanish', (
+    WidgetTester tester,
+  ) async {
+    await pumpDashboard(tester, const Locale('es'));
+
+    expect(find.text('mHealthGoal'), findsOneWidget);
+    expect(find.text('Tareas'), findsNWidgets(2));
+    expect(find.text('Instrucciones'), findsNWidgets(2));
+    expect(find.text('Sobre Nosotros'), findsNWidgets(2));
+    expect(find.text('Hogar'), findsOneWidget);
+  });
+
+  testWidgets('dashboard controls update the selected destination', (
+    WidgetTester tester,
+  ) async {
+    await pumpDashboard(tester, const Locale('es'));
+
+    expect(
+      find.byKey(const ValueKey<String>('dashboard-nav-0-selected')),
+      findsOneWidget,
+    );
+
+    for (final entry in <MapEntry<String, int>>[
+      const MapEntry<String, int>('Instrucciones', 1),
+      const MapEntry<String, int>('Tareas', 2),
+      const MapEntry<String, int>('Sobre Nosotros', 3),
+    ]) {
+      final label = entry.key;
+      final index = entry.value;
+
+      await tester.tap(find.text(label).first);
+      await tester.pumpAndSettle();
+
+      expect(
+        find.byKey(ValueKey<String>('dashboard-nav-$index-selected')),
+        findsOneWidget,
+      );
+    }
+
+    await tester.tap(find.text('Hogar'));
     await tester.pumpAndSettle();
 
-    await tester.tap(find.text('Español'));
-    await tester.pumpAndSettle();
+    expect(
+      find.byKey(const ValueKey<String>('dashboard-nav-0-selected')),
+      findsOneWidget,
+    );
+  });
 
-    expect(find.text('Ejemplo CHT Encuestas'), findsOneWidget);
-    expect(find.text('ACTIVIDADES PLANIFICADAS'), findsOneWidget);
-    expect(find.text('Mañana'), findsOneWidget);
-    expect(find.text('Encuestas'), findsOneWidget);
+  testWidgets('bottom navigation uses the requested order', (
+    WidgetTester tester,
+  ) async {
+    await pumpDashboard(tester, const Locale('en'));
 
-    await tester.tap(find.byIcon(Icons.language));
-    await tester.pumpAndSettle();
+    final navLeftPositions = <double>[
+      tester.getTopLeft(find.text('Home')).dx,
+      tester.getTopLeft(find.text('Instructions').last).dx,
+      tester.getTopLeft(find.text('Tasks').last).dx,
+      tester.getTopLeft(find.text('About Us').last).dx,
+    ];
 
-    await tester.tap(find.text('English'));
-    await tester.pumpAndSettle();
-
-    expect(find.text('CHT Surveys Example'), findsOneWidget);
-    expect(find.text('PLANNED ACTIVITIES'), findsOneWidget);
+    expect(navLeftPositions, orderedEquals(navLeftPositions.toList()..sort()));
   });
 }
 
-Future<void> pumpExampleApp(WidgetTester tester) async {
+Future<void> pumpDashboard(WidgetTester tester, Locale locale) async {
   addTearDown(() async {
     await tester.pumpWidget(const SizedBox.shrink());
     await tester.pumpAndSettle();
   });
 
   await tester.pumpWidget(
-    const ExampleApp(includeResearchPackageLocalizations: false),
+    MaterialApp(
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
+      locale: locale,
+      home: HomeDashboard(onLocaleChange: (_) {}),
+    ),
   );
   await tester.pumpAndSettle();
 }

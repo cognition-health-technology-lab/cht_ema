@@ -1,6 +1,6 @@
 {
   "@@locale": "en",
-  "appTitle": "CHT Surveys Example",
+  "appTitle": "mHealthGoal",
   "@appTitle": {
     "description": "Title for the app"
   },
@@ -67,6 +67,18 @@
   "dashboardTabTasks": "Tasks",
   "@dashboardTabTasks": {
     "description": "Bottom navigation tasks tab"
+  },
+  "dashboardTabInstructions": "Instructions",
+  "@dashboardTabInstructions": {
+    "description": "Bottom navigation instructions tab"
+  },
+  "dashboardTabAboutUs": "About Us",
+  "@dashboardTabAboutUs": {
+    "description": "Bottom navigation about us tab"
+  },
+  "dashboardTabHome": "Home",
+  "@dashboardTabHome": {
+    "description": "Bottom navigation home tab"
   },
   "dashboardTabSettings": "Settings",
   "@dashboardTabSettings": {

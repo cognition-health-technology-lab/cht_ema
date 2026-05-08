@@ -9,7 +9,7 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get appTitle => 'CHT Surveys Example';
+  String get appTitle => 'mHealthGoal';
 
   @override
   String get homeMessage => 'Home screen';
@@ -58,6 +58,15 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get dashboardTabTasks => 'Tasks';
+
+  @override
+  String get dashboardTabInstructions => 'Instructions';
+
+  @override
+  String get dashboardTabAboutUs => 'About Us';
+
+  @override
+  String get dashboardTabHome => 'Home';
 
   @override
   String get dashboardTabSettings => 'Settings';

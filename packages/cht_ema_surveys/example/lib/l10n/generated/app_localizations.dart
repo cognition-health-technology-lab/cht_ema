@@ -101,7 +101,7 @@ abstract class AppLocalizations {
   /// Title for the app
   ///
   /// In en, this message translates to:
-  /// **'CHT Surveys Example'**
+  /// **'mHealthGoal'**
   String get appTitle;
 
   /// Message displayed on the home screen
@@ -199,6 +199,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Tasks'**
   String get dashboardTabTasks;
+
+  /// Bottom navigation instructions tab
+  ///
+  /// In en, this message translates to:
+  /// **'Instructions'**
+  String get dashboardTabInstructions;
+
+  /// Bottom navigation about us tab
+  ///
+  /// In en, this message translates to:
+  /// **'About Us'**
+  String get dashboardTabAboutUs;
+
+  /// Bottom navigation home tab
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get dashboardTabHome;
 
   /// Bottom navigation settings tab
   ///
