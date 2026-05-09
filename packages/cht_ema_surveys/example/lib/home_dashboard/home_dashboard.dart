@@ -23,6 +23,7 @@ class _HomeDashboardState extends State<HomeDashboard> {
   @override
   Widget build(BuildContext context) {
     final localizations = AppLocalizations.of(context);
+    final colorScheme = Theme.of(context).colorScheme;
     final items = <_DashboardDestination>[
       _DashboardDestination(
         label: localizations.dashboardTabHome,
@@ -43,7 +44,7 @@ class _HomeDashboardState extends State<HomeDashboard> {
     ];
 
     return Scaffold(
-      backgroundColor: _DashboardColors.surface,
+      backgroundColor: colorScheme.surface,
       body: LayoutBuilder(
         builder: (BuildContext context, BoxConstraints constraints) {
           final size = Size(constraints.maxWidth, constraints.maxHeight);
@@ -104,14 +105,6 @@ class _DashboardScale {
   double scaled(double designPixels) => designPixels * value;
 }
 
-class _DashboardColors {
-  static const Color teal = Color(0xFF004F4C);
-  static const Color activeTeal = Color(0xFF00A8A5);
-  static const Color buttonGray = Color(0xFFD9DADA);
-  static const Color orange = Color(0xFFF7931E);
-  static const Color surface = Colors.white;
-}
-
 class _DashboardHeader extends StatelessWidget {
   final _DashboardScale scale;
   final String title;
@@ -120,8 +113,11 @@ class _DashboardHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colorScheme = Theme.of(context).colorScheme;
+    final textTheme = Theme.of(context).textTheme;
+
     return ColoredBox(
-      color: _DashboardColors.teal,
+      color: colorScheme.primaryContainer,
       child: SizedBox(
         width: double.infinity,
         height: scale.height(169),
@@ -133,8 +129,8 @@ class _DashboardHeader extends StatelessWidget {
               child: Text(
                 title,
                 maxLines: 1,
-                style: TextStyle(
-                  color: Colors.white,
+                style: textTheme.displayMedium?.copyWith(
+                  color: colorScheme.onPrimaryContainer,
                   fontSize: scale.scaled(54),
                   fontWeight: FontWeight.w800,
                   letterSpacing: 0,
@@ -162,8 +158,10 @@ class _DashboardMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colorScheme = Theme.of(context).colorScheme;
+
     return ColoredBox(
-      color: _DashboardColors.surface,
+      color: colorScheme.surface,
       child: Column(
         children: <Widget>[
           SizedBox(height: scale.height(83)),
@@ -189,7 +187,9 @@ class _DashboardMenu extends StatelessWidget {
           SizedBox(
             width: scale.width(152),
             height: scale.height(154),
-            child: const CustomPaint(painter: _HeadGearsPainter()),
+            child: CustomPaint(
+              painter: _HeadGearsPainter(color: colorScheme.primary),
+            ),
           ),
           const Spacer(),
         ],
@@ -211,11 +211,14 @@ class _DashboardButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colorScheme = Theme.of(context).colorScheme;
+    final textTheme = Theme.of(context).textTheme;
+
     return SizedBox(
       width: scale.width(563),
       height: scale.height(145),
       child: Material(
-        color: _DashboardColors.buttonGray,
+        color: colorScheme.surfaceContainerHighest,
         borderRadius: BorderRadius.circular(scale.scaled(31)),
         child: InkWell(
           borderRadius: BorderRadius.circular(scale.scaled(31)),
@@ -228,9 +231,8 @@ class _DashboardButton extends StatelessWidget {
                 child: Text(
                   label,
                   maxLines: 1,
-                  style: TextStyle(
-                    color: _DashboardColors.teal,
-                    fontFamily: 'Georgia',
+                  style: textTheme.headlineMedium?.copyWith(
+                    color: colorScheme.primary,
                     fontSize: scale.scaled(52),
                     fontWeight: FontWeight.w800,
                     letterSpacing: 0,
@@ -270,8 +272,10 @@ class _DashboardNavigationBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colorScheme = Theme.of(context).colorScheme;
+
     return ColoredBox(
-      color: _DashboardColors.teal,
+      color: colorScheme.primaryContainer,
       child: SizedBox(
         height: scale.height(121),
         child: Row(
@@ -310,7 +314,11 @@ class _DashboardNavigationItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final color = isSelected ? _DashboardColors.activeTeal : Colors.white;
+    final colorScheme = Theme.of(context).colorScheme;
+    final textTheme = Theme.of(context).textTheme;
+    final color = isSelected
+        ? colorScheme.primary
+        : colorScheme.onPrimaryContainer;
 
     return Semantics(
       key: ValueKey<String>(
@@ -351,7 +359,7 @@ class _DashboardNavigationItem extends StatelessWidget {
                     destination.label,
                     maxLines: 1,
                     textAlign: TextAlign.center,
-                    style: TextStyle(
+                    style: textTheme.labelLarge?.copyWith(
                       color: color,
                       fontSize: scale.scaled(18),
                       fontWeight: FontWeight.w800,
@@ -552,10 +560,7 @@ class _HeadGearsPainter extends CustomPainter {
   final Color color;
   final double strokeWidth;
 
-  const _HeadGearsPainter({
-    this.color = _DashboardColors.orange,
-    this.strokeWidth = 4.0,
-  });
+  const _HeadGearsPainter({required this.color, this.strokeWidth = 4.0});
 
   @override
   void paint(Canvas canvas, Size size) {
