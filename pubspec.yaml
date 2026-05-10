@@ -21,7 +21,9 @@ dev_dependencies:
 melos:
   scripts:
     check_format:
-      run: dart run melos exec dart format --set-exit-if-changed .
+      run: |
+        git ls-files '*.dart' ':(exclude)**/firebase_options.dart' |
+          xargs dart format --set-exit-if-changed
       description: "Check if any file in any package needs formatting. Convenient for CI checks."
 
     analyze:
