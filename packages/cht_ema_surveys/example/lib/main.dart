@@ -1,5 +1,6 @@
 import 'package:cht_ema_surveys/cht_ema_surveys.dart';
 import 'package:example_surveys/l10n/generated/app_localizations.dart';
+import 'package:example_surveys/task_list/task_list.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,7 +32,7 @@ class _ExampleAppState extends State<ExampleApp> {
       ],
       supportedLocales: AppLocalizations.supportedLocales,
       locale: locale,
-      home: HomePage(onLocaleChange: changeLocale),
+      home: const TaskListPage(),
     );
   }
 
@@ -76,35 +77,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      body: const SurveyList(),
-    );
-  }
-}
-
-class SurveyList extends StatelessWidget {
-  const SurveyList({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            ElevatedButton(
-              onPressed: () => Navigator.push(
-                context,
-                MaterialPageRoute<void>(builder: (context) => SurveyPage()),
-              ),
-              child: Text(
-                localizations.homeMessage,
-                style: Theme.of(context).textTheme.headlineMedium,
-              ),
-            ),
-          ],
-        ),
-      ),
+      body: const TaskListPage(),
     );
   }
 }
