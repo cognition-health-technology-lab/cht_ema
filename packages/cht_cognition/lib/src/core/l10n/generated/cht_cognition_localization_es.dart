@@ -18,7 +18,7 @@ class ChtCognitionLocalizationEs extends ChtCognitionLocalization {
   String get continueButton => 'Continuar';
 
   @override
-  String get goNoGoInstructions => 'Instrucciones para tarea Go/No-Go';
+  String get genericTaskInstructions => 'Instrucciones para tarea cognitiva';
 
   @override
   String get restMessageMain => 'Descansa';

@@ -12,9 +12,9 @@
   "@continueButton": {
     "description": "Default message presented on the `continue button`"
   },
-  "goNoGoInstructions": "Instrucciones para tarea Go/No-Go",
-  "@goNoGoInstructions": {
-    "description": "Instructions for the Go/No-Go task"
+  "genericTaskInstructions": "Instrucciones para tarea cognitiva",
+  "@genericTaskInstructions": {
+    "description": "Instructions for cognitive task"
   },
   "restMessageMain": "Descansa",
   "@restMessageMain": {
