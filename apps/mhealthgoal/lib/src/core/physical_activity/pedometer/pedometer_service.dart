@@ -26,7 +26,8 @@ class PedometerService {
     }
   }
 
-  void initStepCount() {
+  Future<void> initStepCount() async {
+    await _stepCountSubscription?.cancel();
     _stepCountSubscription = Pedometer.stepCountStream.listen(
       (event) {
         // ignore: avoid_print
@@ -43,7 +44,8 @@ class PedometerService {
     );
   }
 
-  void initPedestrianStatus() {
+  Future<void> initPedestrianStatus() async {
+    await _pedestrianStatusSubscription?.cancel();
     _pedestrianStatusSubscription = Pedometer.pedestrianStatusStream.listen(
       (event) {
         // ignore: avoid_print
