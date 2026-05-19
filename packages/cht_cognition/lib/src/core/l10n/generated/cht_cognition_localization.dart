@@ -119,11 +119,11 @@ abstract class ChtCognitionLocalization {
   /// **'Continue'**
   String get continueButton;
 
-  /// Instructions for the Go/No-Go task
+  /// Instructions for cognitive task
   ///
   /// In en, this message translates to:
-  /// **'Go/No-Go Task Instructions'**
-  String get goNoGoInstructions;
+  /// **'Cognitive Task Instructions'**
+  String get genericTaskInstructions;
 
   /// Default message presented during the rest period of a cognitive task
   ///
