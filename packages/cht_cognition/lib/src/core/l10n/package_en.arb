@@ -1,16 +1,20 @@
 {
   "@@locale": "en",
-  "placeholderText": "Placeholder cognitive task",
-  "@placeholderText": {
-    "description": "Message for example widget"
+  "nBackTaskMatch": "Match",
+  "@nBackTaskMatch": {
+    "description": "Text for match button in n-back task"
+  },
+  "nBackTaskNonMatch": "No match",
+  "@nBackTaskNonMatch": {
+    "description": "Text for non-match button in n-back task"
   },
   "continueButton": "Continue",
   "@continueButton": {
     "description": "Default message presented on the `continue button`"
   },
-  "goNoGoInstructions": "Go/No-Go Task Instructions",
-  "@goNoGoInstructions": {
-    "description": "Instructions for the Go/No-Go task"
+  "genericTaskInstructions": "Cognitive Task Instructions",
+  "@genericTaskInstructions": {
+    "description": "Instructions for cognitive task"
   },
   "restMessageMain": "Rest",
   "@restMessageMain": {

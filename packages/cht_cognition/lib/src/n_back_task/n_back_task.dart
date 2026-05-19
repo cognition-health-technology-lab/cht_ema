@@ -2,14 +2,14 @@ import 'package:cht_cognition/src/core/cognitive_task.dart';
 import 'package:cht_cognition/src/core/data/process_data_callback.dart';
 import 'package:cht_cognition/src/core/trials/on_trial_callback_definition.dart';
 import 'package:cht_cognition/src/core/trials/trial.dart';
-import 'package:cht_cognition/src/go_no_go_task/go_no_go_stim.dart';
-import 'package:cht_cognition/src/go_no_go_task/go_no_go_trial_page.dart';
-import 'package:cht_cognition/src/go_no_go_task/go_no_go_trials_builder.dart';
-import 'package:cht_cognition/src/go_no_go_task/go_no_go_view_model.dart';
+import 'package:cht_cognition/src/n_back_task/n_back_stim.dart';
+import 'package:cht_cognition/src/n_back_task/n_back_task_trials_builder.dart';
+import 'package:cht_cognition/src/n_back_task/n_back_task_view_model.dart';
+import 'package:cht_cognition/src/n_back_task/n_back_trial_page.dart';
 import 'package:flutter/material.dart';
 
-class GoNoGoTask extends CognitiveTask<Trial<GoNoGoStim>> {
-  GoNoGoTask({
+class NBackTask extends CognitiveTask<Trial<NBackStim>> {
+  NBackTask({
     required String participantId,
     required String sessionId,
     super.instructionsPageBuilder,
@@ -18,17 +18,20 @@ class GoNoGoTask extends CognitiveTask<Trial<GoNoGoStim>> {
     super.navigateAfterTask,
     super.key,
     int nTrials = 10,
-    double goProbability = 0.7,
+    double matchProportion = 0.3,
     Duration trialTimeoutDuration = const Duration(milliseconds: 1000),
     Duration itiDuration = const Duration(milliseconds: 750),
     int? restEveryNTrials,
     ProcessCognitiveDataCallback? processData,
   }) : super(
-         viewModel: GoNoGoViewModel(
+         viewModel: NBackTaskViewModel(
            participantId: participantId,
            sessionId: sessionId,
            processData: processData,
-           trials: buildGoNoGoTrials(n: nTrials, goProbability: goProbability),
+           trials: buildNBackTrials(
+             n: nTrials,
+             matchProportion: matchProportion,
+           ),
            trialTimeoutDuration: trialTimeoutDuration,
            itiDuration: itiDuration,
            restEveryNTrials: restEveryNTrials,
@@ -38,13 +41,15 @@ class GoNoGoTask extends CognitiveTask<Trial<GoNoGoStim>> {
   @override
   Widget buildTrialPage({
     required BuildContext context,
-    required Trial<GoNoGoStim> trial,
+    required Trial<NBackStim> trial,
     required OnTrialCallback onFinished,
     required int trialNumber,
   }) {
-    return GoNoGoTrialPage(
+    final enableResponse = trialNumber > 1;
+    return NBackTaskTrialPage(
       trial: trial,
       onFinished: onFinished,
+      enableResponse: enableResponse,
     );
   }
 }

@@ -29,6 +29,7 @@ abstract class CognitiveTask<T> extends StatefulWidget {
     required BuildContext context,
     required T trial,
     required OnTrialCallback onFinished,
+    required int trialNumber,
   });
 
   Widget buildInstructionsPage({
@@ -120,6 +121,7 @@ class _CognitiveTaskState<T> extends State<CognitiveTask<T>> {
         context: context,
         trial: trial,
         onFinished: widget._viewModel.onTrial,
+        trialNumber: widget._viewModel.trialNumber,
       ),
 
       iti: () => widget.buildItiPage(context: context),

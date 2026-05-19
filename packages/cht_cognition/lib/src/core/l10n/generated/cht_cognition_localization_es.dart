@@ -9,13 +9,16 @@ class ChtCognitionLocalizationEs extends ChtCognitionLocalization {
   ChtCognitionLocalizationEs([String locale = 'es']) : super(locale);
 
   @override
-  String get placeholderText => 'Tarea cognitiva de ejemplo';
+  String get nBackTaskMatch => 'Parea';
+
+  @override
+  String get nBackTaskNonMatch => 'No parea';
 
   @override
   String get continueButton => 'Continuar';
 
   @override
-  String get goNoGoInstructions => 'Instrucciones para tarea Go/No-Go';
+  String get genericTaskInstructions => 'Instrucciones para tarea cognitiva';
 
   @override
   String get restMessageMain => 'Descansa';

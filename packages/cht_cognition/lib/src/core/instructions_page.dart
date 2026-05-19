@@ -15,7 +15,7 @@ class InstructionsPage extends StatelessWidget {
     final localization = ChtCognitionLocalization.of(context);
     return CenteredPage(
       child: <Widget>[
-        Text(localization.goNoGoInstructions),
+        Text(localization.genericTaskInstructions),
         ElevatedButton.icon(
           onPressed: _onFinished,
           icon: const Icon(Icons.arrow_forward),
