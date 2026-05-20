@@ -70,9 +70,12 @@ class FcmClient {
     _onNotificationTap(notification);
   }
 
+  /// Returns true if notifications are fully or provisionally enabled
+  /// on this device.
   Future<bool> areEnabled() async {
     final settings = await _firebaseMessaging.getNotificationSettings();
-    return settings.authorizationStatus == AuthorizationStatus.authorized;
+    return settings.authorizationStatus == AuthorizationStatus.authorized ||
+        settings.authorizationStatus == AuthorizationStatus.provisional;
   }
 
   /// Returns the auth token used to deliver remote notifications to this device.
