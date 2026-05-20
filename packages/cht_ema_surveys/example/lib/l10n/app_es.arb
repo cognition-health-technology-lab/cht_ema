@@ -4,9 +4,9 @@
   "@appTitle": {
     "description": "Title for the app"
   },
-  "homeMessage": "Encuesta sociodemográfica",
-  "@homeMessage": {
-    "description": "Message displayed on the home screen"
+  "surveyLaunchButtonLabel": "Encuesta sociodemográfica",
+  "@surveyLaunchButtonLabel": {
+    "description": "Etiqueta del botón para iniciar la encuesta"
   },
   "languageToolTip": "Seleccionar idioma",
   "@languageToolTip": {
@@ -19,93 +19,5 @@
   "langOptionEs": "Español",
   "@langOptionEs": {
     "description": "Spanish language option"
-  },
-  "ageQuestion": "¿Cuál es su edad?",
-  "@ageQuestion": {
-    "description": "Encuesta sociodemográfica - P1 edad"
-  },
-  "biologicalSexQuestion": "¿Cuál sexo biológico se le asignó al nacer?",
-  "@biologicalSexQuestion": {
-    "description": "Encuesta sociodemográfica - P2 sexo biológico"
-  },
-  "sexMale": "Masculino",
-  "sexFemale": "Femenino",
-  "sexIntersexual": "Intersexual",
-  "sexOther": "Otro",
-  "sexOtherSpecify": "Por favor especifique su sexo biológico",
-  "genderQuestion": "Género:",
-  "@genderQuestion": {
-    "description": "Encuesta sociodemográfica - P3 identidad de género"
-  },
-  "genderMale": "Masculino",
-  "genderFemale": "Femenino",
-  "genderNonBinary": "No binario",
-  "genderTransgender": "Transgénero",
-  "genderOther": "Otro",
-  "genderOtherSpecify": "Por favor especifique su género",
-  "primaryLanguageQuestion": "Idioma principal:",
-  "@primaryLanguageQuestion": {
-    "description": "Encuesta sociodemográfica - P4 idioma principal"
-  },
-  "languageSpanish": "Español",
-  "languageEnglish": "Inglés",
-  "householdIncomeQuestion": "¿Cuál es su ingreso familiar?",
-  "@householdIncomeQuestion": {
-    "description": "Encuesta sociodemográfica - P5 ingreso familiar"
-  },
-  "incomeLessThan10k": "Menos que $10,000",
-  "income10kTo24k": "$10,000 - $24,999",
-  "income25kTo34k": "$25,000 - $34,999",
-  "income35kTo49k": "$35,000 - $49,999",
-  "income50kTo74k": "$50,000 - $74,999",
-  "income75kTo99k": "$75,000 - $99,999",
-  "income100kTo149k": "$100,000 - $149,999",
-  "income150kTo199k": "$150,000 - $199,999",
-  "income200kOrMore": "$200,000 o más",
-  "maritalStatusQuestion": "¿Cuál es su estatus civil actual?",
-  "@maritalStatusQuestion": {
-    "description": "Encuesta sociodemográfica - P6 estatus civil"
-  },
-  "maritalMarried": "Casado/a",
-  "maritalDivorced": "Divorciado/a",
-  "maritalWidowed": "Viudo/a",
-  "maritalSeparated": "Separado/a",
-  "maritalNeverMarried": "Nunca he estado casado/a",
-  "maritalCohabiting": "Vive en pareja sin estar casado/a",
-  "educationLevelQuestion": "¿Cuál es el grado o nivel de educación más alto que ha completado?",
-  "@educationLevelQuestion": {
-    "description": "Encuesta sociodemográfica - P7 nivel de educación"
-  },
-  "eduHighSchool": "Cuarto año",
-  "eduTechnical": "Grado técnico",
-  "eduAssociate": "Grado asociado",
-  "eduBachelor": "Bachillerato",
-  "eduMasters": "Maestría",
-  "eduDoctorate": "Doctorado",
-  "eduPostDoctorate": "Post-doctorado",
-  "eduOther": "Otro",
-  "educationOtherSpecify": "Por favor especifique su nivel de educación",
-  "currentlyStudyingQuestion": "¿Estudia actualmente?",
-  "@currentlyStudyingQuestion": {
-    "description": "Encuesta sociodemográfica - P8 estudia actualmente"
-  },
-  "currentAcademicLevelQuestion": "Nivel académico actual:",
-  "@currentAcademicLevelQuestion": {
-    "description": "Encuesta sociodemográfica - P8b nivel académico actual (condicional)"
-  },
-  "academicLevelOtherSpecify": "Por favor especifique su nivel académico actual",
-  "currentlyWorkingQuestion": "¿Trabaja actualmente?",
-  "@currentlyWorkingQuestion": {
-    "description": "Encuesta sociodemográfica - P9 trabaja actualmente"
-  },
-  "jobTypeQuestion": "Por favor especifique su tipo de trabajo",
-  "@jobTypeQuestion": {
-    "description": "Encuesta sociodemográfica - P9b tipo de trabajo (condicional)"
-  },
-  "jobTypeHint": "Describa su trabajo u ocupación",
-  "answerYes": "Sí",
-  "answerNo": "No",
-  "specifyHint": "Especifique...",
-  "completionTitle": "Encuesta completada",
-  "completionText": "Gracias por completar la encuesta sociodemográfica."
+  }
 }

@@ -1,6 +1,5 @@
 import 'package:cht_ema_surveys/cht_ema_surveys.dart';
 import 'package:example_surveys/l10n/generated/app_localizations.dart';
-import 'package:example_surveys/sociodemographic/sociodemographic_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -101,7 +100,7 @@ class SurveyList extends StatelessWidget {
                 ),
               ),
               child: Text(
-                localizations.homeMessage,
+                localizations.surveyLaunchButtonLabel,
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
             ),
