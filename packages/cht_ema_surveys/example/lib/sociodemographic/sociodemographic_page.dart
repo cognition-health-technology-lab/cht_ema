@@ -1,4 +1,5 @@
-import 'package:example_surveys/l10n/generated/app_localizations.dart';
+import 'package:cht_ema_surveys/cht_ema_surveys.dart'
+    show ChtEmaSurveysLocalization;
 import 'package:flutter/material.dart';
 import 'package:research_package/model.dart';
 import 'package:research_package/ui.dart';
@@ -9,7 +10,7 @@ class SociodemographicPage extends StatelessWidget {
   const SociodemographicPage({super.key});
 
   RPNavigableOrderedTask _buildTask(BuildContext context) {
-    final l10n = AppLocalizations.of(context);
+    final l10n = ChtEmaSurveysLocalization.of(context);
 
     // ── Steps ──────────────────────────────────────────────────────────────
 
