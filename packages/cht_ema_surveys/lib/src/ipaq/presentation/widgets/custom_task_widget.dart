@@ -90,7 +90,7 @@ class _CustomTaskWidgetState extends State<CustomTaskWidget> {
         title: Text(
           step is RPInstructionStep
               ? step.title
-              : 'Pregunta $_currentStepIndex',
+              : '${l10n.questionLabel} $_currentStepIndex',
           style: const TextStyle(fontSize: 35, fontWeight: FontWeight.w600),
           textAlign: TextAlign.center,
         ),
@@ -178,7 +178,10 @@ class _CustomTaskWidgetState extends State<CustomTaskWidget> {
                   ),
                   child: Text(
                     l10n.backButtonLabel,
-                    style: const TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
+                    style: const TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
                 ),
               ),
@@ -199,7 +202,10 @@ class _CustomTaskWidgetState extends State<CustomTaskWidget> {
                   ),
                   child: Text(
                     l10n.nextButtonLabel,
-                    style: const TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
+                    style: const TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
                 ),
               ),
