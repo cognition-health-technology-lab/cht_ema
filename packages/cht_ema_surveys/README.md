@@ -17,6 +17,7 @@ It demonstrates:
 
 - How to initialize the package
 - How to load translations
+- How to switch between supported languages with the app bar translate icon
 - How to run the surveys
 
 ## 📦 Installation
