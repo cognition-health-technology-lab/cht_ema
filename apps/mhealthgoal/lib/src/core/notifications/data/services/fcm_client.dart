@@ -58,7 +58,7 @@ class FcmClient {
   }
 
   Future<void> _initTerminatedNotificationHandling() async {
-    final message = await FirebaseMessaging.instance.getInitialMessage();
+    final message = await _firebaseMessaging.getInitialMessage();
     if (message == null) {
       return;
     }
