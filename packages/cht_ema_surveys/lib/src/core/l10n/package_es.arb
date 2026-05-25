@@ -16,7 +16,7 @@
   "@erqEmaCr1": {
     "description": "ERQ EMA, ítem de reevaluación cognitiva 1"
   },
-  "erqEmaCr2": "Guardé mis emociones para mí mismo/a.",
+  "erqEmaCr2": "Controlé mis emociones cambiando mi manera de pensar sobre la situación en la que me encontraba.",
   "@erqEmaCr2": {
     "description": "ERQ EMA, ítem de reevaluación cognitiva 2"
   },
@@ -28,7 +28,7 @@
   "@erqEmaSup1": {
     "description": "ERQ EMA, ítem de supresión expresiva 1"
   },
-  "erqEmaSup2": "Controlé mis emociones cambiando mi manera de pensar sobre la situación en la que me encontraba.",
+  "erqEmaSup2": "Guardé mis emociones para mí mismo/a.",
   "@erqEmaSup2": {
     "description": "ERQ EMA, ítem de supresión expresiva 2"
   },

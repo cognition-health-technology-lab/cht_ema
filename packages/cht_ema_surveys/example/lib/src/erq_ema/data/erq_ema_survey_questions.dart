@@ -1,4 +1,4 @@
-import 'package:example_surveys/src/core/l10n/generated/cht_ema_surveys_localization.dart';
+import 'package:cht_ema_surveys/cht_ema_surveys.dart';
 import 'package:flutter/material.dart';
 import 'package:research_package/model.dart';
 
@@ -9,8 +9,9 @@ const String kErqEmaInstructionsStepId = 'erq_ema_instructions';
 String erqItemStepId(String scaleId, int itemId) =>
     'erq_ema_${scaleId}_$itemId';
 
-String erqTaskIdForVariant(ErqEmaUiVariant variant) =>
-    'erq_ema_task_multiple_choice';
+String erqTaskIdForVariant(ErqEmaUiVariant variant) => switch (variant) {
+  ErqEmaUiVariant.multipleChoice => 'erq_ema_task_multiple_choice',
+};
 
 class ErqEmaItemSpec {
   final String scaleId;
@@ -125,7 +126,7 @@ List<ErqEmaItemResponse> parseErqEmaResponses(RPTaskResult taskResult) {
       ErqEmaItemResponse(
         scaleId: scaleId,
         itemId: itemId,
-        value: numValue.round().clamp(1, 7),
+        value: numValue.clamp(1, 7).round(),
       ),
     );
   }

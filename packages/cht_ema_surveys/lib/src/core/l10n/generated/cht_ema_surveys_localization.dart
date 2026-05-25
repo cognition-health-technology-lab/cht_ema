@@ -128,7 +128,7 @@ abstract class ChtEmaSurveysLocalization {
   /// ERQ EMA cognitive reappraisal item 2
   ///
   /// In en, this message translates to:
-  /// **'I kept my emotions to myself.'**
+  /// **'I controlled my emotions by changing the way I was thinking about the situation I was in.'**
   String get erqEmaCr2;
 
   /// ERQ EMA cognitive reappraisal item 3
@@ -146,7 +146,7 @@ abstract class ChtEmaSurveysLocalization {
   /// ERQ EMA expressive suppression item 2
   ///
   /// In en, this message translates to:
-  /// **'I controlled my emotions by changing the way I was thinking about the situation I was in.'**
+  /// **'I kept my emotions to myself.'**
   String get erqEmaSup2;
 
   /// ERQ EMA expressive suppression item 3

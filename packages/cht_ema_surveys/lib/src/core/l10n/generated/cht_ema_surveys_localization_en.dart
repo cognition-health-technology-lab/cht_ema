@@ -23,7 +23,8 @@ class ChtEmaSurveysLocalizationEn extends ChtEmaSurveysLocalization {
       'When I wanted to feel more positive emotion (such as joy or amusement), I changed the way I was thinking about the situation.';
 
   @override
-  String get erqEmaCr2 => 'I kept my emotions to myself.';
+  String get erqEmaCr2 =>
+      'I controlled my emotions by changing the way I was thinking about the situation I was in.';
 
   @override
   String get erqEmaCr3 =>
@@ -33,8 +34,7 @@ class ChtEmaSurveysLocalizationEn extends ChtEmaSurveysLocalization {
   String get erqEmaSup1 => 'I controlled my emotions by not expressing them.';
 
   @override
-  String get erqEmaSup2 =>
-      'I controlled my emotions by changing the way I was thinking about the situation I was in.';
+  String get erqEmaSup2 => 'I kept my emotions to myself.';
 
   @override
   String get erqEmaSup3 =>

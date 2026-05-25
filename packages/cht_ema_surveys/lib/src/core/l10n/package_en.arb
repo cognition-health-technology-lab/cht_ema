@@ -16,7 +16,7 @@
   "@erqEmaCr1": {
     "description": "ERQ EMA cognitive reappraisal item 1"
   },
-  "erqEmaCr2": "I kept my emotions to myself.",
+  "erqEmaCr2": "I controlled my emotions by changing the way I was thinking about the situation I was in.",
   "@erqEmaCr2": {
     "description": "ERQ EMA cognitive reappraisal item 2"
   },
@@ -28,7 +28,7 @@
   "@erqEmaSup1": {
     "description": "ERQ EMA expressive suppression item 1"
   },
-  "erqEmaSup2": "I controlled my emotions by changing the way I was thinking about the situation I was in.",
+  "erqEmaSup2": "I kept my emotions to myself.",
   "@erqEmaSup2": {
     "description": "ERQ EMA expressive suppression item 2"
   },
