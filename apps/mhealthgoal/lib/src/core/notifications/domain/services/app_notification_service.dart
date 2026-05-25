@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart' show debugPrint;
+import 'package:flutter/foundation.dart' show debugPrint, kDebugMode;
 import 'package:mhealthgoal/src/core/notifications/domain/entities/notification.dart';
 import 'package:mhealthgoal/src/core/notifications/domain/services/fcm_notifications_service.dart';
 
@@ -18,8 +18,10 @@ class AppNotificationService {
 
   Future<void> init() async {
     await _notificationsService.init();
-    debugPrint(
-      'Device notification token: ${await _notificationsService.getDeviceToken()}',
-    );
+    if (kDebugMode) {
+      debugPrint(
+        'Device notification token: ${await _notificationsService.getDeviceToken()}',
+      );
+    }
   }
 }
