@@ -18,8 +18,8 @@ class IPAQPage extends StatelessWidget {
       onSubmit: (result) async {
         viewModel.saveData(result);
         await viewModel.closeIpaqPage();
-        // Context is valid here since closeIpaqPage has no async gap that outlives it.
-        // ignore: use_build_context_synchronously
+        if (!context.mounted) return;
+
         navigateOnFinish(context);
       },
     );

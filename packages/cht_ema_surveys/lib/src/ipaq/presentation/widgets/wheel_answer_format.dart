@@ -12,7 +12,7 @@ class WheelAnswerFormat extends RPAnswerFormat {
 
 class WheelQuestionBody extends StatefulWidget {
   final WheelAnswerFormat answerFormat;
-  final void Function(dynamic) onResultChange;
+  final ValueChanged<int> onResultChange;
 
   /// Optional previously selected value for this question.
   /// If provided and found in [answerFormat.choices], the wheel will
@@ -83,7 +83,6 @@ class _WheelQuestionBodyState extends State<WheelQuestionBody> {
     return SizedBox(
       height: 300,
       child: CupertinoPicker(
-        // 🔧 FIX: it's `scrollController`, not `controller`
         scrollController: _controller,
         itemExtent: 50,
         useMagnifier: true,

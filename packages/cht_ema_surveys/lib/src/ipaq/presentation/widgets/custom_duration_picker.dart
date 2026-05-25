@@ -28,11 +28,19 @@ class _CustomDurationPickerState extends State<CustomDurationPicker> {
   late FixedExtentScrollController _hoursController;
   late FixedExtentScrollController _minutesController;
 
+  int _effectiveMax(int max) => max < 0 ? 0 : max;
+
   @override
   void initState() {
     super.initState();
-    selectedHours = widget.initialDuration.inHours;
-    selectedMinutes = widget.initialDuration.inMinutes % 60;
+    final maxHours = _effectiveMax(widget.maxHours);
+    final maxMinutes = _effectiveMax(widget.maxMinutes);
+
+    selectedHours = widget.initialDuration.inHours.clamp(0, maxHours);
+    selectedMinutes = (widget.initialDuration.inMinutes % 60).clamp(
+      0,
+      maxMinutes,
+    );
 
     _hoursController = FixedExtentScrollController(initialItem: selectedHours);
     _minutesController = FixedExtentScrollController(
@@ -68,7 +76,7 @@ class _CustomDurationPickerState extends State<CustomDurationPicker> {
           _buildPicker(
             label: l10n.hoursLabel,
             value: selectedHours,
-            max: widget.maxHours,
+            max: _effectiveMax(widget.maxHours),
             controller: _hoursController,
             onChanged: (index) async {
               setState(() => selectedHours = index);
@@ -86,7 +94,7 @@ class _CustomDurationPickerState extends State<CustomDurationPicker> {
           _buildPicker(
             label: l10n.minutesLabel,
             value: selectedMinutes,
-            max: widget.maxMinutes,
+            max: _effectiveMax(widget.maxMinutes),
             controller: _minutesController,
             onChanged: (index) async {
               setState(() => selectedMinutes = index);

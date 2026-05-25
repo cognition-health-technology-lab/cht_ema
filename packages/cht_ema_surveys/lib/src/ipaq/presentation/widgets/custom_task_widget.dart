@@ -5,7 +5,6 @@ import 'package:cht_ema_surveys/src/ipaq/presentation/widgets/custom_duration_qu
 import 'package:cht_ema_surveys/src/ipaq/presentation/widgets/duration_answer_format.dart';
 import 'package:cht_ema_surveys/src/ipaq/presentation/widgets/wheel_answer_format.dart'
     as wheel_widgets;
-import 'package:cht_ema_surveys/src/ipaq/presentation/widgets/wheel_answer_format.dart';
 import 'package:flutter/material.dart';
 import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:iconify_flutter/icons/mdi.dart';
@@ -36,10 +35,35 @@ class _CustomTaskWidgetState extends State<CustomTaskWidget> {
 
   dynamic _currentAnswer;
 
-  void _nextStep() {
+  @override
+  void initState() {
+    super.initState();
+    _currentAnswer = _answerForStep(widget.task.steps[_currentStepIndex]);
+  }
+
+  dynamic _defaultAnswerForStep(RPStep step) {
+    if (step is! RPQuestionStep) return null;
+
+    final answerFormat = step.answerFormat;
+    if (answerFormat is DurationAnswerFormat) {
+      return Duration.zero;
+    }
+
+    if (answerFormat is wheel_widgets.WheelAnswerFormat &&
+        answerFormat.choices.isNotEmpty) {
+      return answerFormat.choices.first;
+    }
+
+    return null;
+  }
+
+  dynamic _answerForStep(RPStep step) {
+    return _answers[step.identifier] ?? _defaultAnswerForStep(step);
+  }
+
+  void _saveCurrentStepAnswer() {
     final currentStep = widget.task.steps[_currentStepIndex];
 
-    // Cache the current answer for back navigation.
     if (_currentAnswer != null) {
       _answers[currentStep.identifier] = _currentAnswer;
     } else {
@@ -54,28 +78,39 @@ class _CustomTaskWidgetState extends State<CustomTaskWidget> {
       currentStep.identifier,
       stepResult,
     );
+  }
+
+  void _moveToStep(int stepIndex) {
+    _currentStepIndex = stepIndex;
+    _currentAnswer = _answerForStep(widget.task.steps[_currentStepIndex]);
+  }
+
+  int get _currentQuestionNumber {
+    return widget.task.steps
+        .take(_currentStepIndex + 1)
+        .whereType<RPQuestionStep>()
+        .length;
+  }
+
+  void _nextStep() {
+    _saveCurrentStepAnswer();
 
     if (_currentStepIndex + 1 >= widget.task.steps.length) {
       // Last step: submit the entire task result.
       widget.onSubmit(_taskResult);
     } else {
       setState(() {
-        // Move to next step and clear current answer so the new
-        // question starts in a "fresh" state.
-        _currentStepIndex++;
-        _currentAnswer = null;
+        _moveToStep(_currentStepIndex + 1);
       });
     }
   }
 
   void _previousStep() {
     if (_currentStepIndex > 0) {
-      setState(() {
-        _currentStepIndex--;
+      _saveCurrentStepAnswer();
 
-        final prevStep = widget.task.steps[_currentStepIndex];
-        // Restore the previously given answer for this step, if any.
-        _currentAnswer = _answers[prevStep.identifier];
+      setState(() {
+        _moveToStep(_currentStepIndex - 1);
       });
     }
   }
@@ -90,7 +125,7 @@ class _CustomTaskWidgetState extends State<CustomTaskWidget> {
         title: Text(
           step is RPInstructionStep
               ? step.title
-              : '${l10n.questionLabel} $_currentStepIndex',
+              : '${l10n.questionLabel} $_currentQuestionNumber',
           style: const TextStyle(fontSize: 35, fontWeight: FontWeight.w600),
           textAlign: TextAlign.center,
         ),
@@ -116,7 +151,7 @@ class _CustomTaskWidgetState extends State<CustomTaskWidget> {
                   title: step.title,
                   identifier: step.identifier,
                 ),
-                CustomRPUIDateTimeQuestionBody(
+                CustomDurationQuestionBody(
                   key: ValueKey(step.identifier),
                   answerFormat: step.answerFormat as DurationAnswerFormat,
                   // When navigating back, restore the previous duration.
@@ -130,7 +165,7 @@ class _CustomTaskWidgetState extends State<CustomTaskWidget> {
                   },
                 ),
               ] else if (step is RPQuestionStep &&
-                  step.answerFormat is WheelAnswerFormat) ...[
+                  step.answerFormat is wheel_widgets.WheelAnswerFormat) ...[
                 _QuestionTitleWithIcon(
                   title: step.title,
                   identifier: step.identifier,

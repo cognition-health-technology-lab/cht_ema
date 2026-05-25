@@ -2,12 +2,12 @@ import 'package:cht_ema_surveys/src/ipaq/presentation/widgets/custom_duration_pi
 import 'package:cht_ema_surveys/src/ipaq/presentation/widgets/duration_answer_format.dart';
 import 'package:flutter/material.dart';
 
-class CustomRPUIDateTimeQuestionBody extends StatefulWidget {
+class CustomDurationQuestionBody extends StatefulWidget {
   final DurationAnswerFormat answerFormat;
   final void Function(Duration) onResultChange;
   final Duration? initialDuration;
 
-  const CustomRPUIDateTimeQuestionBody({
+  const CustomDurationQuestionBody({
     required this.answerFormat,
     required this.onResultChange,
     this.initialDuration,
@@ -15,12 +15,12 @@ class CustomRPUIDateTimeQuestionBody extends StatefulWidget {
   });
 
   @override
-  State<CustomRPUIDateTimeQuestionBody> createState() =>
-      _CustomRPUIDateTimeQuestionBodyState();
+  State<CustomDurationQuestionBody> createState() =>
+      _CustomDurationQuestionBodyState();
 }
 
-class _CustomRPUIDateTimeQuestionBodyState
-    extends State<CustomRPUIDateTimeQuestionBody> {
+class _CustomDurationQuestionBodyState
+    extends State<CustomDurationQuestionBody> {
   late Duration _duration;
 
   @override
