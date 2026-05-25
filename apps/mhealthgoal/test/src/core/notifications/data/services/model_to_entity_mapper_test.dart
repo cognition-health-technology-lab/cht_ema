@@ -120,6 +120,33 @@ void main() {
       expect(result.data, equals({'test-key': 'test-value'}));
     });
 
+    test(
+      'maps NotificationResponse that only contains required args to entity',
+      () {
+        final tappedTime = DateTime.now();
+        final payload = jsonEncode({
+          'id': 'test-id',
+          'title': 'test title',
+          'body': 'test body',
+        });
+        final notificationResponse = NotificationResponse(
+          notificationResponseType:
+              NotificationResponseType.selectedNotification,
+          payload: payload,
+        );
+
+        final result = notificationResponseToEntity(
+          notificationResponse: notificationResponse,
+          tappedTime: tappedTime,
+        );
+
+        expect(result.id, equals('test-id'));
+        expect(result.title, equals('test title'));
+        expect(result.body, equals('test body'));
+        expect(result.tappedTime, equals(tappedTime));
+      },
+    );
+
     test('throws StateError when payload is null', () {
       const notificationResponse = NotificationResponse(
         notificationResponseType: NotificationResponseType.selectedNotification,
