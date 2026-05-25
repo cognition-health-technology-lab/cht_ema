@@ -14,7 +14,7 @@ import 'package:mhealthgoal/src/core/notifications/domain/notification_handler_d
 /// Also exposes information related to the notifications, like
 /// device token and whether they are enabled on the device.
 ///
-/// Requires setting up FCM on you project. Follow the instructions in the
+/// Requires setting up FCM on your project. Follow the instructions in the
 /// official documentation:
 /// https://firebase.flutter.dev/docs/messaging/overview
 ///
@@ -57,7 +57,7 @@ class FcmNotificationsService {
     await _androidForegroundNotifications.createChannel();
   }
 
-  /// Must be called on on every app launch before using notifications.
+  /// Must be called on every app launch before using notifications.
   ///
   /// It configures notifications for the current session.
   Future<void> init() async {
@@ -71,9 +71,6 @@ class FcmNotificationsService {
   }
 
   /// Returns true if notifications are enabled on this device.
-  ///
-  /// On Android, it checks using both remote notifications service (FCM) and the
-  /// android foreground notifications service (flutter_local_notifications).
   Future<bool> areNotificationsEnabled() async {
     return _fcmNotifications.areEnabled();
   }
