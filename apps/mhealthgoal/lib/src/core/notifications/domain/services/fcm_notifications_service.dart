@@ -101,8 +101,9 @@ class FcmNotificationsService {
       'ttl': remoteNotification.ttl,
       'data': remoteNotification.data,
     };
+    const maxIntegerLimit = 2147483647;
     await _androidForegroundNotifications.showNotification(
-      id: DateTime.now().millisecondsSinceEpoch,
+      id: DateTime.now().millisecondsSinceEpoch.remainder(maxIntegerLimit),
       title: title,
       body: body,
       payload: jsonEncode(payload),
