@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.cht_cognition_example"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 36
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
