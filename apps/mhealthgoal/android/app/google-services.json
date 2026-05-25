@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "905566061973",
+    "project_id": "mhealthgoal",
+    "storage_bucket": "mhealthgoal.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905566061973:android:b59c9030f5815ccf4ca29c",
+        "android_client_info": {
+          "package_name": "com.example.mhealthgoal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAMVuWYZ5kIMe6_EsMgcakbwcP-PNy0hA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

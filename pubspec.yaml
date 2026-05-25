@@ -12,7 +12,8 @@ workspace:
 
 dev_dependencies:
   build_runner: ^2.10.4
-  freezed: ^3.2.3
+  freezed: ^3.2.5
+  json_serializable: ^6.13.2
   melos: ^7.1.1
   rename: ^3.1.0
   very_good_analysis: ^10.0.0
@@ -73,3 +74,8 @@ melos:
         dart run melos run build_android_examples && 
         dart run melos run build_ios_examples
       description: "Run all formal checks: bootstrap, generate localizations, check format, analyze, test, build android, build ios."
+dependencies:
+  firebase_core: ^4.7.0
+  firebase_messaging: ^16.2.0
+  flutter_local_notifications: ^20.1.0
+  freezed_annotation: ^3.1.0
