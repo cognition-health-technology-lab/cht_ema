@@ -9,6 +9,8 @@ environment:
   sdk: ^3.9.0
 
 dependencies:
+  cht_cognition:
+    path: ../../cht_cognition
   cht_ema_surveys:
     path: ../../cht_ema_surveys
   cupertino_icons: ^1.0.6

@@ -1,4 +1,5 @@
-import 'package:cht_ema_surveys/cht_ema_surveys.dart';
+import 'package:cht_cognition/cht_cognition.dart' as cognition;
+import 'package:cht_ema_surveys/cht_ema_surveys.dart' as surveys;
 import 'package:example_surveys/l10n/generated/app_localizations.dart';
 import 'package:example_surveys/task_list/task_list.dart';
 import 'package:flutter/material.dart';
@@ -26,13 +27,14 @@ class _ExampleAppState extends State<ExampleApp> {
         useMaterial3: true,
       ),
       localizationsDelegates: [
-        ChtEmaSurveysLocalization.delegate,
-        ChtRpLocalizationLoader.rpDelegate,
+        cognition.ChtCognitionLocalization.delegate,
+        surveys.ChtEmaSurveysLocalization.delegate,
+        surveys.ChtRpLocalizationLoader.rpDelegate,
         ...AppLocalizations.localizationsDelegates,
       ],
       supportedLocales: AppLocalizations.supportedLocales,
       locale: locale,
-      home: const TaskListPage(),
+      home: HomePage(onLocaleChange: changeLocale),
     );
   }
 

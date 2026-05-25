@@ -1,40 +1,23 @@
+import 'package:cht_cognition/cht_cognition.dart' as cognition;
+import 'package:cht_ema_surveys/cht_ema_surveys.dart' as surveys;
 import 'package:flutter/material.dart';
 
 const List<TaskListItem> taskListItems = <TaskListItem>[
-  TaskListItem(
-    id: 'n_back',
-    title: 'N-Back',
-    scope: 'Cognition',
-    description: 'Working memory task',
-    icon: Icons.psychology_alt_outlined,
-  ),
   TaskListItem(
     id: 'go_no_go',
     title: 'Go/No-Go',
     scope: 'Cognition',
     description: 'Response inhibition task',
     icon: Icons.touch_app_outlined,
+    destination: TaskListDestination.goNoGo,
   ),
   TaskListItem(
-    id: 'trail_making',
-    title: 'Trail Making',
-    scope: 'Cognition',
-    description: 'Cognitive flexibility task',
-    icon: Icons.route_outlined,
-  ),
-  TaskListItem(
-    id: 'ipaq',
-    title: 'IPAQ',
+    id: 'survey',
+    title: 'Survey',
     scope: 'Survey',
-    description: 'International Physical Activity Questionnaire',
-    icon: Icons.directions_run_outlined,
-  ),
-  TaskListItem(
-    id: 'erq',
-    title: 'ERQ',
-    scope: 'Survey',
-    description: 'Emotion Regulation Questionnaire',
+    description: 'Example EMA survey',
     icon: Icons.mood_outlined,
+    destination: TaskListDestination.survey,
   ),
 ];
 
@@ -75,7 +58,7 @@ class TaskListPage extends StatelessWidget {
                         return TaskTile(
                           key: Key('task-tile-${item.id}'),
                           item: item,
-                          onTap: () => _showTaskPlaceholder(context, item),
+                          onTap: () => _openTask(context, item.destination),
                         );
                       },
                     ),
@@ -95,12 +78,25 @@ class TaskListPage extends StatelessWidget {
     return 1;
   }
 
-  void _showTaskPlaceholder(BuildContext context, TaskListItem item) {
-    ScaffoldMessenger.of(context)
-      ..hideCurrentSnackBar()
-      ..showSnackBar(
-        SnackBar(content: Text('${item.title} task is not available yet.')),
-      );
+  void _openTask(BuildContext context, TaskListDestination destination) {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (BuildContext context) {
+          return switch (destination) {
+            TaskListDestination.goNoGo => cognition.GoNoGoTask(
+              processData: _printCognitiveData,
+              participantId: 'p1',
+              sessionId: 's1',
+              nTrials: 20,
+              goProbability: .75,
+              trialTimeoutDuration: const Duration(milliseconds: 750),
+              restEveryNTrials: 10,
+            ),
+            TaskListDestination.survey => surveys.SurveyPage(),
+          };
+        },
+      ),
+    );
   }
 }
 
@@ -173,6 +169,7 @@ class TaskListItem {
   final String scope;
   final String description;
   final IconData icon;
+  final TaskListDestination destination;
 
   const TaskListItem({
     required this.id,
@@ -180,5 +177,12 @@ class TaskListItem {
     required this.scope,
     required this.description,
     required this.icon,
+    required this.destination,
   });
+}
+
+enum TaskListDestination { goNoGo, survey }
+
+void _printCognitiveData(cognition.CognitiveData data) {
+  debugPrint(data.toString());
 }
