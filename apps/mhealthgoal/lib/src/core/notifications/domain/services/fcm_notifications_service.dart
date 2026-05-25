@@ -102,7 +102,7 @@ class FcmNotificationsService {
       'data': remoteNotification.data,
     };
     await _androidForegroundNotifications.showNotification(
-      id: remoteNotification.messageId.hashCode,
+      id: DateTime.now().millisecondsSinceEpoch,
       title: title,
       body: body,
       payload: jsonEncode(payload),
