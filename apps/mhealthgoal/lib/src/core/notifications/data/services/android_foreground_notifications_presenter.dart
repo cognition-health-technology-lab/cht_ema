@@ -37,7 +37,7 @@ class AndroidForegroundNotificationsPresenter {
   void _handleNotificationTap(NotificationResponse response) {
     final notification = notificationResponseToEntity(
       notificationResponse: response,
-      timeTapped: DateTime.now(),
+      tappedTime: DateTime.now(),
     );
     _onForegroundNotificationTap(notification);
   }

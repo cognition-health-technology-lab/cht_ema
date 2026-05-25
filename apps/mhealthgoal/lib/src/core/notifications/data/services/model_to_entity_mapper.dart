@@ -24,8 +24,8 @@ Notification remoteMessageToEntity({
     id: id,
     title: title,
     body: body,
-    timeTapped: timeTapped,
-    timeSent: remoteMessage.sentTime,
+    tappedTime: timeTapped,
+    sentTime: remoteMessage.sentTime,
     from: remoteMessage.from,
     ttl: remoteMessage.ttl,
     data: remoteMessage.data,
@@ -36,7 +36,7 @@ Notification remoteMessageToEntity({
 /// Converts a [NotificationResponse] from FCM into a [Notification] entity.
 Notification notificationResponseToEntity({
   required NotificationResponse notificationResponse,
-  required DateTime timeTapped,
+  required DateTime tappedTime,
 }) {
   final payload = notificationResponse.payload;
   if (payload == null) {
@@ -46,14 +46,17 @@ Notification notificationResponseToEntity({
   }
 
   final jsonPayload = jsonDecode(payload) as Map<String, dynamic>;
+  final sentTime = jsonPayload['sentTime'] != null
+      ? DateTime.parse(jsonPayload['sentTime'] as String)
+      : null;
   final notification = Notification(
     /// NotificationResponse.id can't be used because it doesn't represent
     /// fcm's notification id.
     id: jsonPayload['id'] as String,
     title: jsonPayload['title'] as String,
     body: jsonPayload['body'] as String,
-    timeTapped: timeTapped,
-    timeSent: jsonPayload['sentTime'] as DateTime?,
+    tappedTime: tappedTime,
+    sentTime: sentTime,
     from: jsonPayload['from'] as String?,
     ttl: jsonPayload['ttl'] as int?,
     data: jsonPayload['data'] as Map<String, dynamic>?,

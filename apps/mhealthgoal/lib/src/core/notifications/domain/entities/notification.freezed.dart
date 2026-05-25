@@ -15,7 +15,7 @@ T _$identity<T>(T value) => value;
 /// @nodoc
 mixin _$Notification {
 
- String get id; String get title; String get body; DateTime get timeTapped; DateTime? get timeSent; String? get from; int? get ttl; Map<String, dynamic>? get data;
+ String get id; String get title; String get body; DateTime get tappedTime; DateTime? get sentTime; String? get from; int? get ttl; Map<String, dynamic>? get data;
 /// Create a copy of Notification
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -28,16 +28,16 @@ $NotificationCopyWith<Notification> get copyWith => _$NotificationCopyWithImpl<N
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is Notification&&(identical(other.id, id) || other.id == id)&&(identical(other.title, title) || other.title == title)&&(identical(other.body, body) || other.body == body)&&(identical(other.timeTapped, timeTapped) || other.timeTapped == timeTapped)&&(identical(other.timeSent, timeSent) || other.timeSent == timeSent)&&(identical(other.from, from) || other.from == from)&&(identical(other.ttl, ttl) || other.ttl == ttl)&&const DeepCollectionEquality().equals(other.data, data));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is Notification&&(identical(other.id, id) || other.id == id)&&(identical(other.title, title) || other.title == title)&&(identical(other.body, body) || other.body == body)&&(identical(other.tappedTime, tappedTime) || other.tappedTime == tappedTime)&&(identical(other.sentTime, sentTime) || other.sentTime == sentTime)&&(identical(other.from, from) || other.from == from)&&(identical(other.ttl, ttl) || other.ttl == ttl)&&const DeepCollectionEquality().equals(other.data, data));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,id,title,body,timeTapped,timeSent,from,ttl,const DeepCollectionEquality().hash(data));
+int get hashCode => Object.hash(runtimeType,id,title,body,tappedTime,sentTime,from,ttl,const DeepCollectionEquality().hash(data));
 
 @override
 String toString() {
-  return 'Notification(id: $id, title: $title, body: $body, timeTapped: $timeTapped, timeSent: $timeSent, from: $from, ttl: $ttl, data: $data)';
+  return 'Notification(id: $id, title: $title, body: $body, tappedTime: $tappedTime, sentTime: $sentTime, from: $from, ttl: $ttl, data: $data)';
 }
 
 
@@ -48,7 +48,7 @@ abstract mixin class $NotificationCopyWith<$Res>  {
   factory $NotificationCopyWith(Notification value, $Res Function(Notification) _then) = _$NotificationCopyWithImpl;
 @useResult
 $Res call({
- String id, String title, String body, DateTime timeTapped, DateTime? timeSent, String? from, int? ttl, Map<String, dynamic>? data
+ String id, String title, String body, DateTime tappedTime, DateTime? sentTime, String? from, int? ttl, Map<String, dynamic>? data
 });
 
 
@@ -65,13 +65,13 @@ class _$NotificationCopyWithImpl<$Res>
 
 /// Create a copy of Notification
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? title = null,Object? body = null,Object? timeTapped = null,Object? timeSent = freezed,Object? from = freezed,Object? ttl = freezed,Object? data = freezed,}) {
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? title = null,Object? body = null,Object? tappedTime = null,Object? sentTime = freezed,Object? from = freezed,Object? ttl = freezed,Object? data = freezed,}) {
   return _then(_self.copyWith(
 id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as String,title: null == title ? _self.title : title // ignore: cast_nullable_to_non_nullable
 as String,body: null == body ? _self.body : body // ignore: cast_nullable_to_non_nullable
-as String,timeTapped: null == timeTapped ? _self.timeTapped : timeTapped // ignore: cast_nullable_to_non_nullable
-as DateTime,timeSent: freezed == timeSent ? _self.timeSent : timeSent // ignore: cast_nullable_to_non_nullable
+as String,tappedTime: null == tappedTime ? _self.tappedTime : tappedTime // ignore: cast_nullable_to_non_nullable
+as DateTime,sentTime: freezed == sentTime ? _self.sentTime : sentTime // ignore: cast_nullable_to_non_nullable
 as DateTime?,from: freezed == from ? _self.from : from // ignore: cast_nullable_to_non_nullable
 as String?,ttl: freezed == ttl ? _self.ttl : ttl // ignore: cast_nullable_to_non_nullable
 as int?,data: freezed == data ? _self.data : data // ignore: cast_nullable_to_non_nullable
@@ -160,10 +160,10 @@ return $default(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  String title,  String body,  DateTime timeTapped,  DateTime? timeSent,  String? from,  int? ttl,  Map<String, dynamic>? data)?  $default,{required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  String title,  String body,  DateTime tappedTime,  DateTime? sentTime,  String? from,  int? ttl,  Map<String, dynamic>? data)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case _Notification() when $default != null:
-return $default(_that.id,_that.title,_that.body,_that.timeTapped,_that.timeSent,_that.from,_that.ttl,_that.data);case _:
+return $default(_that.id,_that.title,_that.body,_that.tappedTime,_that.sentTime,_that.from,_that.ttl,_that.data);case _:
   return orElse();
 
 }
@@ -181,10 +181,10 @@ return $default(_that.id,_that.title,_that.body,_that.timeTapped,_that.timeSent,
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  String title,  String body,  DateTime timeTapped,  DateTime? timeSent,  String? from,  int? ttl,  Map<String, dynamic>? data)  $default,) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  String title,  String body,  DateTime tappedTime,  DateTime? sentTime,  String? from,  int? ttl,  Map<String, dynamic>? data)  $default,) {final _that = this;
 switch (_that) {
 case _Notification():
-return $default(_that.id,_that.title,_that.body,_that.timeTapped,_that.timeSent,_that.from,_that.ttl,_that.data);case _:
+return $default(_that.id,_that.title,_that.body,_that.tappedTime,_that.sentTime,_that.from,_that.ttl,_that.data);case _:
   throw StateError('Unexpected subclass');
 
 }
@@ -201,10 +201,10 @@ return $default(_that.id,_that.title,_that.body,_that.timeTapped,_that.timeSent,
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  String title,  String body,  DateTime timeTapped,  DateTime? timeSent,  String? from,  int? ttl,  Map<String, dynamic>? data)?  $default,) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  String title,  String body,  DateTime tappedTime,  DateTime? sentTime,  String? from,  int? ttl,  Map<String, dynamic>? data)?  $default,) {final _that = this;
 switch (_that) {
 case _Notification() when $default != null:
-return $default(_that.id,_that.title,_that.body,_that.timeTapped,_that.timeSent,_that.from,_that.ttl,_that.data);case _:
+return $default(_that.id,_that.title,_that.body,_that.tappedTime,_that.sentTime,_that.from,_that.ttl,_that.data);case _:
   return null;
 
 }
@@ -216,14 +216,14 @@ return $default(_that.id,_that.title,_that.body,_that.timeTapped,_that.timeSent,
 @JsonSerializable()
 
 class _Notification implements Notification {
-  const _Notification({required this.id, required this.title, required this.body, required this.timeTapped, this.timeSent, this.from, this.ttl, final  Map<String, dynamic>? data}): _data = data;
+  const _Notification({required this.id, required this.title, required this.body, required this.tappedTime, this.sentTime, this.from, this.ttl, final  Map<String, dynamic>? data}): _data = data;
   factory _Notification.fromJson(Map<String, dynamic> json) => _$NotificationFromJson(json);
 
 @override final  String id;
 @override final  String title;
 @override final  String body;
-@override final  DateTime timeTapped;
-@override final  DateTime? timeSent;
+@override final  DateTime tappedTime;
+@override final  DateTime? sentTime;
 @override final  String? from;
 @override final  int? ttl;
  final  Map<String, dynamic>? _data;
@@ -249,16 +249,16 @@ Map<String, dynamic> toJson() {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Notification&&(identical(other.id, id) || other.id == id)&&(identical(other.title, title) || other.title == title)&&(identical(other.body, body) || other.body == body)&&(identical(other.timeTapped, timeTapped) || other.timeTapped == timeTapped)&&(identical(other.timeSent, timeSent) || other.timeSent == timeSent)&&(identical(other.from, from) || other.from == from)&&(identical(other.ttl, ttl) || other.ttl == ttl)&&const DeepCollectionEquality().equals(other._data, _data));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Notification&&(identical(other.id, id) || other.id == id)&&(identical(other.title, title) || other.title == title)&&(identical(other.body, body) || other.body == body)&&(identical(other.tappedTime, tappedTime) || other.tappedTime == tappedTime)&&(identical(other.sentTime, sentTime) || other.sentTime == sentTime)&&(identical(other.from, from) || other.from == from)&&(identical(other.ttl, ttl) || other.ttl == ttl)&&const DeepCollectionEquality().equals(other._data, _data));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,id,title,body,timeTapped,timeSent,from,ttl,const DeepCollectionEquality().hash(_data));
+int get hashCode => Object.hash(runtimeType,id,title,body,tappedTime,sentTime,from,ttl,const DeepCollectionEquality().hash(_data));
 
 @override
 String toString() {
-  return 'Notification(id: $id, title: $title, body: $body, timeTapped: $timeTapped, timeSent: $timeSent, from: $from, ttl: $ttl, data: $data)';
+  return 'Notification(id: $id, title: $title, body: $body, tappedTime: $tappedTime, sentTime: $sentTime, from: $from, ttl: $ttl, data: $data)';
 }
 
 
@@ -269,7 +269,7 @@ abstract mixin class _$NotificationCopyWith<$Res> implements $NotificationCopyWi
   factory _$NotificationCopyWith(_Notification value, $Res Function(_Notification) _then) = __$NotificationCopyWithImpl;
 @override @useResult
 $Res call({
- String id, String title, String body, DateTime timeTapped, DateTime? timeSent, String? from, int? ttl, Map<String, dynamic>? data
+ String id, String title, String body, DateTime tappedTime, DateTime? sentTime, String? from, int? ttl, Map<String, dynamic>? data
 });
 
 
@@ -286,13 +286,13 @@ class __$NotificationCopyWithImpl<$Res>
 
 /// Create a copy of Notification
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? title = null,Object? body = null,Object? timeTapped = null,Object? timeSent = freezed,Object? from = freezed,Object? ttl = freezed,Object? data = freezed,}) {
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? title = null,Object? body = null,Object? tappedTime = null,Object? sentTime = freezed,Object? from = freezed,Object? ttl = freezed,Object? data = freezed,}) {
   return _then(_Notification(
 id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as String,title: null == title ? _self.title : title // ignore: cast_nullable_to_non_nullable
 as String,body: null == body ? _self.body : body // ignore: cast_nullable_to_non_nullable
-as String,timeTapped: null == timeTapped ? _self.timeTapped : timeTapped // ignore: cast_nullable_to_non_nullable
-as DateTime,timeSent: freezed == timeSent ? _self.timeSent : timeSent // ignore: cast_nullable_to_non_nullable
+as String,tappedTime: null == tappedTime ? _self.tappedTime : tappedTime // ignore: cast_nullable_to_non_nullable
+as DateTime,sentTime: freezed == sentTime ? _self.sentTime : sentTime // ignore: cast_nullable_to_non_nullable
 as DateTime?,from: freezed == from ? _self.from : from // ignore: cast_nullable_to_non_nullable
 as String?,ttl: freezed == ttl ? _self.ttl : ttl // ignore: cast_nullable_to_non_nullable
 as int?,data: freezed == data ? _self._data : data // ignore: cast_nullable_to_non_nullable
