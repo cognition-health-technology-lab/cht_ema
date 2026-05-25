@@ -13,62 +13,173 @@
     "description": "Encuesta sociodemográfica - P2 sexo biológico"
   },
   "sexMale": "Masculino",
+  "@sexMale": {
+    "description": "Encuesta sociodemográfica - P2 opción de sexo biológico: masculino"
+  },
   "sexFemale": "Femenino",
+  "@sexFemale": {
+    "description": "Encuesta sociodemográfica - P2 opción de sexo biológico: femenino"
+  },
   "sexIntersexual": "Intersexual",
+  "@sexIntersexual": {
+    "description": "Encuesta sociodemográfica - P2 opción de sexo biológico: intersexual"
+  },
   "sexOther": "Otro",
+  "@sexOther": {
+    "description": "Encuesta sociodemográfica - P2 opción de sexo biológico: otro"
+  },
   "sexOtherSpecify": "Por favor especifique su sexo biológico",
+  "@sexOtherSpecify": {
+    "description": "Encuesta sociodemográfica - P2b indicación para especificar otro sexo biológico"
+  },
   "genderQuestion": "Género:",
   "@genderQuestion": {
     "description": "Encuesta sociodemográfica - P3 identidad de género"
   },
   "genderMale": "Masculino",
+  "@genderMale": {
+    "description": "Encuesta sociodemográfica - P3 opción de identidad de género: masculino"
+  },
   "genderFemale": "Femenino",
+  "@genderFemale": {
+    "description": "Encuesta sociodemográfica - P3 opción de identidad de género: femenino"
+  },
   "genderNonBinary": "No binario",
+  "@genderNonBinary": {
+    "description": "Encuesta sociodemográfica - P3 opción de identidad de género: no binario"
+  },
   "genderTransgender": "Transgénero",
+  "@genderTransgender": {
+    "description": "Encuesta sociodemográfica - P3 opción de identidad de género: transgénero"
+  },
   "genderOther": "Otro",
+  "@genderOther": {
+    "description": "Encuesta sociodemográfica - P3 opción de identidad de género: otro"
+  },
   "genderOtherSpecify": "Por favor especifique su género",
+  "@genderOtherSpecify": {
+    "description": "Encuesta sociodemográfica - P3b indicación para especificar otro género"
+  },
   "primaryLanguageQuestion": "Idioma principal:",
   "@primaryLanguageQuestion": {
     "description": "Encuesta sociodemográfica - P4 idioma principal"
   },
   "languageSpanish": "Español",
+  "@languageSpanish": {
+    "description": "Encuesta sociodemográfica - P4 opción de idioma principal: español"
+  },
   "languageEnglish": "Inglés",
+  "@languageEnglish": {
+    "description": "Encuesta sociodemográfica - P4 opción de idioma principal: inglés"
+  },
   "householdIncomeQuestion": "¿Cuál es su ingreso familiar?",
   "@householdIncomeQuestion": {
     "description": "Encuesta sociodemográfica - P5 ingreso familiar"
   },
   "incomeLessThan10k": "Menos que $10,000",
+  "@incomeLessThan10k": {
+    "description": "Encuesta sociodemográfica - P5 opción de ingreso familiar: menos de $10,000"
+  },
   "income10kTo24k": "$10,000 - $24,999",
+  "@income10kTo24k": {
+    "description": "Encuesta sociodemográfica - P5 opción de ingreso familiar: $10,000 a $24,999"
+  },
   "income25kTo34k": "$25,000 - $34,999",
+  "@income25kTo34k": {
+    "description": "Encuesta sociodemográfica - P5 opción de ingreso familiar: $25,000 a $34,999"
+  },
   "income35kTo49k": "$35,000 - $49,999",
+  "@income35kTo49k": {
+    "description": "Encuesta sociodemográfica - P5 opción de ingreso familiar: $35,000 a $49,999"
+  },
   "income50kTo74k": "$50,000 - $74,999",
+  "@income50kTo74k": {
+    "description": "Encuesta sociodemográfica - P5 opción de ingreso familiar: $50,000 a $74,999"
+  },
   "income75kTo99k": "$75,000 - $99,999",
+  "@income75kTo99k": {
+    "description": "Encuesta sociodemográfica - P5 opción de ingreso familiar: $75,000 a $99,999"
+  },
   "income100kTo149k": "$100,000 - $149,999",
+  "@income100kTo149k": {
+    "description": "Encuesta sociodemográfica - P5 opción de ingreso familiar: $100,000 a $149,999"
+  },
   "income150kTo199k": "$150,000 - $199,999",
+  "@income150kTo199k": {
+    "description": "Encuesta sociodemográfica - P5 opción de ingreso familiar: $150,000 a $199,999"
+  },
   "income200kOrMore": "$200,000 o más",
+  "@income200kOrMore": {
+    "description": "Encuesta sociodemográfica - P5 opción de ingreso familiar: $200,000 o más"
+  },
   "maritalStatusQuestion": "¿Cuál es su estatus civil actual?",
   "@maritalStatusQuestion": {
     "description": "Encuesta sociodemográfica - P6 estatus civil"
   },
   "maritalMarried": "Casado/a",
+  "@maritalMarried": {
+    "description": "Encuesta sociodemográfica - P6 opción de estatus civil: casado/a"
+  },
   "maritalDivorced": "Divorciado/a",
+  "@maritalDivorced": {
+    "description": "Encuesta sociodemográfica - P6 opción de estatus civil: divorciado/a"
+  },
   "maritalWidowed": "Viudo/a",
+  "@maritalWidowed": {
+    "description": "Encuesta sociodemográfica - P6 opción de estatus civil: viudo/a"
+  },
   "maritalSeparated": "Separado/a",
+  "@maritalSeparated": {
+    "description": "Encuesta sociodemográfica - P6 opción de estatus civil: separado/a"
+  },
   "maritalNeverMarried": "Nunca he estado casado/a",
+  "@maritalNeverMarried": {
+    "description": "Encuesta sociodemográfica - P6 opción de estatus civil: nunca casado/a"
+  },
   "maritalCohabiting": "Vive en pareja sin estar casado/a",
+  "@maritalCohabiting": {
+    "description": "Encuesta sociodemográfica - P6 opción de estatus civil: convive con pareja"
+  },
   "educationLevelQuestion": "¿Cuál es el grado o nivel de educación más alto que ha completado?",
   "@educationLevelQuestion": {
     "description": "Encuesta sociodemográfica - P7 nivel de educación"
   },
   "eduHighSchool": "Cuarto año",
+  "@eduHighSchool": {
+    "description": "Encuesta sociodemográfica - P7 opción de nivel educativo: cuarto año"
+  },
   "eduTechnical": "Grado técnico",
+  "@eduTechnical": {
+    "description": "Encuesta sociodemográfica - P7 opción de nivel educativo: grado técnico"
+  },
   "eduAssociate": "Grado asociado",
+  "@eduAssociate": {
+    "description": "Encuesta sociodemográfica - P7 opción de nivel educativo: grado asociado"
+  },
   "eduBachelor": "Bachillerato",
+  "@eduBachelor": {
+    "description": "Encuesta sociodemográfica - P7 opción de nivel educativo: bachillerato"
+  },
   "eduMasters": "Maestría",
+  "@eduMasters": {
+    "description": "Encuesta sociodemográfica - P7 opción de nivel educativo: maestría"
+  },
   "eduDoctorate": "Doctorado",
+  "@eduDoctorate": {
+    "description": "Encuesta sociodemográfica - P7 opción de nivel educativo: doctorado"
+  },
   "eduPostDoctorate": "Post-doctorado",
+  "@eduPostDoctorate": {
+    "description": "Encuesta sociodemográfica - P7 opción de nivel educativo: post-doctorado"
+  },
   "eduOther": "Otro",
+  "@eduOther": {
+    "description": "Encuesta sociodemográfica - P7 opción de nivel educativo: otro"
+  },
   "educationOtherSpecify": "Por favor especifique su nivel de educación",
+  "@educationOtherSpecify": {
+    "description": "Encuesta sociodemográfica - P7b indicación para especificar otro nivel educativo"
+  },
   "currentlyStudyingQuestion": "¿Estudia actualmente?",
   "@currentlyStudyingQuestion": {
     "description": "Encuesta sociodemográfica - P8 estudia actualmente"
@@ -78,6 +189,9 @@
     "description": "Encuesta sociodemográfica - P8b nivel académico actual (condicional)"
   },
   "academicLevelOtherSpecify": "Por favor especifique su nivel académico actual",
+  "@academicLevelOtherSpecify": {
+    "description": "Encuesta sociodemográfica - P8b indicación para especificar otro nivel académico actual"
+  },
   "currentlyWorkingQuestion": "¿Trabaja actualmente?",
   "@currentlyWorkingQuestion": {
     "description": "Encuesta sociodemográfica - P9 trabaja actualmente"
@@ -87,9 +201,27 @@
     "description": "Encuesta sociodemográfica - P9b tipo de trabajo (condicional)"
   },
   "jobTypeHint": "Describa su trabajo u ocupación",
+  "@jobTypeHint": {
+    "description": "Encuesta sociodemográfica - P9b pista del campo de tipo de trabajo"
+  },
   "answerYes": "Sí",
+  "@answerYes": {
+    "description": "Opción de respuesta compartida: sí"
+  },
   "answerNo": "No",
+  "@answerNo": {
+    "description": "Opción de respuesta compartida: no"
+  },
   "specifyHint": "Especifique...",
+  "@specifyHint": {
+    "description": "Pista compartida para campos de especificación"
+  },
   "completionTitle": "Encuesta completada",
-  "completionText": "Gracias por completar la encuesta sociodemográfica."
+  "@completionTitle": {
+    "description": "Título del paso de finalización de la encuesta sociodemográfica"
+  },
+  "completionText": "Gracias por completar la encuesta sociodemográfica.",
+  "@completionText": {
+    "description": "Texto del paso de finalización de la encuesta sociodemográfica"
+  }
 }

@@ -119,31 +119,31 @@ abstract class ChtEmaSurveysLocalization {
   /// **'What biological sex were you assigned at birth?'**
   String get biologicalSexQuestion;
 
-  /// No description provided for @sexMale.
+  /// Sociodemographic survey - Q2 biological sex option: male
   ///
   /// In en, this message translates to:
   /// **'Male'**
   String get sexMale;
 
-  /// No description provided for @sexFemale.
+  /// Sociodemographic survey - Q2 biological sex option: female
   ///
   /// In en, this message translates to:
   /// **'Female'**
   String get sexFemale;
 
-  /// No description provided for @sexIntersexual.
+  /// Sociodemographic survey - Q2 biological sex option: intersexual
   ///
   /// In en, this message translates to:
   /// **'Intersexual'**
   String get sexIntersexual;
 
-  /// No description provided for @sexOther.
+  /// Sociodemographic survey - Q2 biological sex option: other
   ///
   /// In en, this message translates to:
   /// **'Other'**
   String get sexOther;
 
-  /// No description provided for @sexOtherSpecify.
+  /// Sociodemographic survey - Q2b biological sex other specify prompt
   ///
   /// In en, this message translates to:
   /// **'Please specify your biological sex'**
@@ -155,37 +155,37 @@ abstract class ChtEmaSurveysLocalization {
   /// **'Gender:'**
   String get genderQuestion;
 
-  /// No description provided for @genderMale.
+  /// Sociodemographic survey - Q3 gender identity option: male
   ///
   /// In en, this message translates to:
   /// **'Male'**
   String get genderMale;
 
-  /// No description provided for @genderFemale.
+  /// Sociodemographic survey - Q3 gender identity option: female
   ///
   /// In en, this message translates to:
   /// **'Female'**
   String get genderFemale;
 
-  /// No description provided for @genderNonBinary.
+  /// Sociodemographic survey - Q3 gender identity option: non-binary
   ///
   /// In en, this message translates to:
   /// **'Non-binary'**
   String get genderNonBinary;
 
-  /// No description provided for @genderTransgender.
+  /// Sociodemographic survey - Q3 gender identity option: transgender
   ///
   /// In en, this message translates to:
   /// **'Transgender'**
   String get genderTransgender;
 
-  /// No description provided for @genderOther.
+  /// Sociodemographic survey - Q3 gender identity option: other
   ///
   /// In en, this message translates to:
   /// **'Other'**
   String get genderOther;
 
-  /// No description provided for @genderOtherSpecify.
+  /// Sociodemographic survey - Q3b gender identity other specify prompt
   ///
   /// In en, this message translates to:
   /// **'Please specify your gender'**
@@ -197,13 +197,13 @@ abstract class ChtEmaSurveysLocalization {
   /// **'Primary Language:'**
   String get primaryLanguageQuestion;
 
-  /// No description provided for @languageSpanish.
+  /// Sociodemographic survey - Q4 primary language option: Spanish
   ///
   /// In en, this message translates to:
   /// **'Spanish'**
   String get languageSpanish;
 
-  /// No description provided for @languageEnglish.
+  /// Sociodemographic survey - Q4 primary language option: English
   ///
   /// In en, this message translates to:
   /// **'English'**
@@ -215,55 +215,55 @@ abstract class ChtEmaSurveysLocalization {
   /// **'What is your household income?'**
   String get householdIncomeQuestion;
 
-  /// No description provided for @incomeLessThan10k.
+  /// Sociodemographic survey - Q5 household income option: less than $10,000
   ///
   /// In en, this message translates to:
   /// **'Less than \$10,000'**
   String get incomeLessThan10k;
 
-  /// No description provided for @income10kTo24k.
+  /// Sociodemographic survey - Q5 household income option: $10,000 to $24,999
   ///
   /// In en, this message translates to:
   /// **'\$10,000 - \$24,999'**
   String get income10kTo24k;
 
-  /// No description provided for @income25kTo34k.
+  /// Sociodemographic survey - Q5 household income option: $25,000 to $34,999
   ///
   /// In en, this message translates to:
   /// **'\$25,000 - \$34,999'**
   String get income25kTo34k;
 
-  /// No description provided for @income35kTo49k.
+  /// Sociodemographic survey - Q5 household income option: $35,000 to $49,999
   ///
   /// In en, this message translates to:
   /// **'\$35,000 - \$49,999'**
   String get income35kTo49k;
 
-  /// No description provided for @income50kTo74k.
+  /// Sociodemographic survey - Q5 household income option: $50,000 to $74,999
   ///
   /// In en, this message translates to:
   /// **'\$50,000 - \$74,999'**
   String get income50kTo74k;
 
-  /// No description provided for @income75kTo99k.
+  /// Sociodemographic survey - Q5 household income option: $75,000 to $99,999
   ///
   /// In en, this message translates to:
   /// **'\$75,000 - \$99,999'**
   String get income75kTo99k;
 
-  /// No description provided for @income100kTo149k.
+  /// Sociodemographic survey - Q5 household income option: $100,000 to $149,999
   ///
   /// In en, this message translates to:
   /// **'\$100,000 - \$149,999'**
   String get income100kTo149k;
 
-  /// No description provided for @income150kTo199k.
+  /// Sociodemographic survey - Q5 household income option: $150,000 to $199,999
   ///
   /// In en, this message translates to:
   /// **'\$150,000 - \$199,999'**
   String get income150kTo199k;
 
-  /// No description provided for @income200kOrMore.
+  /// Sociodemographic survey - Q5 household income option: $200,000 or more
   ///
   /// In en, this message translates to:
   /// **'\$200,000 or more'**
@@ -275,37 +275,37 @@ abstract class ChtEmaSurveysLocalization {
   /// **'What is your current marital status?'**
   String get maritalStatusQuestion;
 
-  /// No description provided for @maritalMarried.
+  /// Sociodemographic survey - Q6 marital status option: married
   ///
   /// In en, this message translates to:
   /// **'Married'**
   String get maritalMarried;
 
-  /// No description provided for @maritalDivorced.
+  /// Sociodemographic survey - Q6 marital status option: divorced
   ///
   /// In en, this message translates to:
   /// **'Divorced'**
   String get maritalDivorced;
 
-  /// No description provided for @maritalWidowed.
+  /// Sociodemographic survey - Q6 marital status option: widow or widower
   ///
   /// In en, this message translates to:
   /// **'Widow/widower'**
   String get maritalWidowed;
 
-  /// No description provided for @maritalSeparated.
+  /// Sociodemographic survey - Q6 marital status option: separated
   ///
   /// In en, this message translates to:
   /// **'Separated'**
   String get maritalSeparated;
 
-  /// No description provided for @maritalNeverMarried.
+  /// Sociodemographic survey - Q6 marital status option: never married
   ///
   /// In en, this message translates to:
   /// **'I\'ve never been married'**
   String get maritalNeverMarried;
 
-  /// No description provided for @maritalCohabiting.
+  /// Sociodemographic survey - Q6 marital status option: cohabiting
   ///
   /// In en, this message translates to:
   /// **'Live with a partner without being married'**
@@ -317,55 +317,55 @@ abstract class ChtEmaSurveysLocalization {
   /// **'What is the highest degree or level of education you have completed?'**
   String get educationLevelQuestion;
 
-  /// No description provided for @eduHighSchool.
+  /// Sociodemographic survey - Q7 education level option: fourth year of high school
   ///
   /// In en, this message translates to:
   /// **'Fourth year of high school'**
   String get eduHighSchool;
 
-  /// No description provided for @eduTechnical.
+  /// Sociodemographic survey - Q7 education level option: technical grade
   ///
   /// In en, this message translates to:
   /// **'Technical grade'**
   String get eduTechnical;
 
-  /// No description provided for @eduAssociate.
+  /// Sociodemographic survey - Q7 education level option: associate degree
   ///
   /// In en, this message translates to:
   /// **'Associate degree'**
   String get eduAssociate;
 
-  /// No description provided for @eduBachelor.
+  /// Sociodemographic survey - Q7 education level option: bachelor's degree
   ///
   /// In en, this message translates to:
   /// **'Bachelor\'s degree'**
   String get eduBachelor;
 
-  /// No description provided for @eduMasters.
+  /// Sociodemographic survey - Q7 education level option: master's degree
   ///
   /// In en, this message translates to:
   /// **'Master\'s degree'**
   String get eduMasters;
 
-  /// No description provided for @eduDoctorate.
+  /// Sociodemographic survey - Q7 education level option: doctorate
   ///
   /// In en, this message translates to:
   /// **'Doctorate'**
   String get eduDoctorate;
 
-  /// No description provided for @eduPostDoctorate.
+  /// Sociodemographic survey - Q7 education level option: post-doctorate
   ///
   /// In en, this message translates to:
   /// **'Post-doctorate'**
   String get eduPostDoctorate;
 
-  /// No description provided for @eduOther.
+  /// Sociodemographic survey - Q7 education level option: other
   ///
   /// In en, this message translates to:
   /// **'Other'**
   String get eduOther;
 
-  /// No description provided for @educationOtherSpecify.
+  /// Sociodemographic survey - Q7b education level other specify prompt
   ///
   /// In en, this message translates to:
   /// **'Please specify your education level'**
@@ -383,7 +383,7 @@ abstract class ChtEmaSurveysLocalization {
   /// **'Current academic level:'**
   String get currentAcademicLevelQuestion;
 
-  /// No description provided for @academicLevelOtherSpecify.
+  /// Sociodemographic survey - Q8b current academic level other specify prompt
   ///
   /// In en, this message translates to:
   /// **'Please specify your current academic level'**
@@ -401,37 +401,37 @@ abstract class ChtEmaSurveysLocalization {
   /// **'Please specify your job type'**
   String get jobTypeQuestion;
 
-  /// No description provided for @jobTypeHint.
+  /// Sociodemographic survey - Q9b job type text field hint
   ///
   /// In en, this message translates to:
   /// **'Describe your job or occupation'**
   String get jobTypeHint;
 
-  /// No description provided for @answerYes.
+  /// Shared yes answer option
   ///
   /// In en, this message translates to:
   /// **'Yes'**
   String get answerYes;
 
-  /// No description provided for @answerNo.
+  /// Shared no answer option
   ///
   /// In en, this message translates to:
   /// **'No'**
   String get answerNo;
 
-  /// No description provided for @specifyHint.
+  /// Shared text field hint for specify prompts
   ///
   /// In en, this message translates to:
   /// **'Specify...'**
   String get specifyHint;
 
-  /// No description provided for @completionTitle.
+  /// Sociodemographic survey completion step title
   ///
   /// In en, this message translates to:
   /// **'Survey Complete'**
   String get completionTitle;
 
-  /// No description provided for @completionText.
+  /// Sociodemographic survey completion step text
   ///
   /// In en, this message translates to:
   /// **'Thank you for completing the sociodemographic survey.'**

@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:research_package/model.dart';
 import 'package:research_package/ui.dart';
 
-export './sociodemographic_page.dart';
-
 class SociodemographicPage extends StatelessWidget {
   const SociodemographicPage({super.key});
 
