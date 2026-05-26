@@ -7,7 +7,7 @@ import 'package:mhealthgoal/src/features/home/presentation/home_page.dart';
 /// The app should only depend on this class instead of external
 /// routing dependencies.
 class AppRouter {
-  final router = GoRouter(routes: _routes, initialLocation: '/');
+  final GoRouter router = GoRouter(routes: _routes, initialLocation: '/');
   List<GoRoute> get routes => List.unmodifiable(_routes);
 
   void navigateToHome(BuildContext context) => context.go('/');
