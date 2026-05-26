@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mhealthgoal/src/features/home/presentation/home_page.dart';
+import 'package:mhealthgoal/src/core/router/router.dart';
 import 'package:mhealthgoal/src/l10n/generated/app_localizations.dart';
 
 class MHealthGoalApp extends StatelessWidget {
@@ -7,10 +7,10 @@ class MHealthGoalApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp.router(
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: HomePage(),
+      routerConfig: router,
     );
   }
 }
