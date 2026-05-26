@@ -8,7 +8,7 @@ import 'package:mhealthgoal/src/features/home/presentation/home_page.dart';
 /// routing dependencies.
 class AppRouter {
   final router = GoRouter(routes: _routes, initialLocation: '/');
-  final routes = _routes;
+  List<GoRoute> get routes => List.unmodifiable(_routes);
 
   void navigateToHome(BuildContext context) => context.go('/');
 }
