@@ -10,7 +10,7 @@ class AppRouter {
   final router = GoRouter(routes: _routes, initialLocation: '/');
   final routes = _routes;
 
-  void navigateToHome(BuildContext context) => context.go('/home');
+  void navigateToHome(BuildContext context) => context.go('/');
 }
 
 final _routes = <GoRoute>[
