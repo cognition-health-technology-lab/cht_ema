@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mhealthgoal/src/app/app.dart';
 import 'package:mhealthgoal/src/app/startup/app_initializer.dart';
+import 'package:mhealthgoal/src/core/router/router.dart';
 
 Future<void> main() async {
   final appInitializer = AppInitializer();
@@ -8,5 +9,5 @@ Future<void> main() async {
   await appInitializer.initFirebase();
   await appInitializer.initNotificationsService();
   await appInitializer.initPedometerService();
-  runApp(const MHealthGoalApp());
+  runApp(MHealthGoalApp(appRouter: AppRouter()));
 }
