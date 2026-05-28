@@ -1,9 +1,5 @@
 {
   "@@locale": "es",
-  "itemTitle": "Título del ítem",
-  "@itemTitle": {
-    "description": "Título para el ítem de la EMA"
-  },
   "erqEmaInstructionsTitle": "Instrucciones",
   "@erqEmaInstructionsTitle": {
     "description": "Título de instrucciones ERQ EMA"

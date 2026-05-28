@@ -4,10 +4,6 @@
   "@appTitle": {
     "description": "Title for the app"
   },
-  "homeMessage": "Home screen",
-  "@homeMessage": {
-    "description": "Message displayed on the home screen"
-  },
   "languageToolTip": "Select Language",
   "@languageToolTip": {
     "description": "Tooltip for the language selection menu"

@@ -12,9 +12,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get appTitle => 'Ejemplo CHT Encuestas';
 
   @override
-  String get homeMessage => 'Pantalla de inicio';
-
-  @override
   String get languageToolTip => 'Seleccionar idioma';
 
   @override
@@ -22,4 +19,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get langOptionEs => 'Español';
+
+  @override
+  String get erqEmaSurveyButtonLabel => 'Cuestionario de Regulación Emocional';
 }
