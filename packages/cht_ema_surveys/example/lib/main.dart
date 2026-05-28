@@ -103,6 +103,7 @@ class SurveyList extends StatelessWidget {
               child: Text(
                 localizations.erqButtonLabel,
                 style: Theme.of(context).textTheme.headlineMedium,
+                textAlign: TextAlign.center,
               ),
             ),
           ],
