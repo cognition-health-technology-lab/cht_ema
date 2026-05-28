@@ -63,9 +63,5 @@
   "likertStronglyAgree": "Muy de acuerdo",
   "@likertStronglyAgree": {
     "description": "Etiqueta Likert para 7 en escala de acuerdo 1-7"
-  },
-  "erqEmaSurveyButtonLabel": "Cuestionario de Regulación Emocional",
-  "@erqEmaSurveyButtonLabel": {
-    "description": "Etiqueta del botón de la pantalla de inicio para la encuesta ERQ EMA"
   }
 }
