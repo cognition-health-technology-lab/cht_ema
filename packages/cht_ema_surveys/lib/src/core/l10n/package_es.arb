@@ -4,31 +4,31 @@
   "@erqInstructionsTitle": {
     "description": "Título de instrucciones ERQ"
   },
-  "erqInstructionsBody": "Las siguientes afirmaciones se refieren a cómo controló sus emociones durante el último día. Indique en qué medida está de acuerdo con cada afirmación.",
+  "erqInstructionsBody": "Describe cómo regulaste y manejaste tus emociones desde la última encuesta seleccionando la opción que mejor describe cuán de acuerdo estás.",
   "@erqInstructionsBody": {
     "description": "Cuerpo de instrucciones ERQ"
   },
-  "erqCr1": "Cuando quería sentir más una emoción positiva (como alegría o diversión), cambié mi manera de pensar sobre la situación.",
+  "erqCr1": "Desde la última encuesta, cuando quería sentir más una emoción positiva (como alegría o diversión), cambié mi manera de pensar sobre la situación.",
   "@erqCr1": {
     "description": "ERQ ítem de reevaluación cognitiva 1"
   },
-  "erqCr2": "Controlé mis emociones cambiando mi manera de pensar sobre la situación en la que me encontraba.",
+  "erqCr2": "Desde la última encuesta, controlé mis emociones cambiando mi manera de pensar sobre la situación en la que me encontraba.",
   "@erqCr2": {
     "description": "ERQ ítem de reevaluación cognitiva 2"
   },
-  "erqCr3": "Cuando quería sentir menos una emoción negativa (como tristeza o enojo), cambié mi manera de pensar sobre la situación.",
+  "erqCr3": "Desde la última encuesta, cuando quería sentir menos una emoción negativa (como tristeza o enojo), cambié mi manera de pensar sobre la situación.",
   "@erqCr3": {
     "description": "ERQ ítem de reevaluación cognitiva 3"
   },
-  "erqSup1": "Controlé mis emociones no expresándolas.",
+  "erqSup1": "Desde la última encuesta, controlé mis emociones no expresándolas.",
   "@erqSup1": {
     "description": "ERQ ítem de supresión expresiva 1"
   },
-  "erqSup2": "Guardé mis emociones para mí mismo/a.",
+  "erqSup2": "Desde la última encuesta, guardé mis emociones para mí mismo/a.",
   "@erqSup2": {
     "description": "ERQ ítem de supresión expresiva 2"
   },
-  "erqSup3": "Cuando sentí emociones negativas, me aseguré de no expresarlas.",
+  "erqSup3": "Desde la última encuesta, cuando sentí emociones negativas, me aseguré de no expresarlas.",
   "@erqSup3": {
     "description": "ERQ ítem de supresión expresiva 3"
   },
