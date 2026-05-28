@@ -16,8 +16,8 @@
   "@langOptionEs": {
     "description": "Spanish language option"
   },
-  "erqEmaSurveyButtonLabel": "Emotion Regulation Questionnaire",
-  "@erqEmaSurveyButtonLabel": {
-    "description": "Home screen button label for the ERQ EMA survey"
+  "erqButtonLabel": "Emotion Regulation Questionnaire",
+  "@erqButtonLabel": {
+    "description": "Home screen button label for the ERQ survey"
   }
 }

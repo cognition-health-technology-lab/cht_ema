@@ -101,59 +101,53 @@ abstract class ChtEmaSurveysLocalization {
     Locale('es'),
   ];
 
-  /// Title for the EMA survey item
-  ///
-  /// In en, this message translates to:
-  /// **'Title for survey item'**
-  String get itemTitle;
-
-  /// ERQ EMA instructions title
+  /// ERQ instructions title
   ///
   /// In en, this message translates to:
   /// **'Instructions'**
-  String get erqEmaInstructionsTitle;
+  String get erqInstructionsTitle;
 
-  /// ERQ EMA instructions body
+  /// ERQ instructions body
   ///
   /// In en, this message translates to:
-  /// **'The following statements concern how you controlled your emotions during the last day. Please indicate the extent to which you agree with each statement.'**
-  String get erqEmaInstructionsBody;
+  /// **'Describe how you have regulated and managed your emotions since the last survey by selecting the option that best describes how much you agree.'**
+  String get erqInstructionsBody;
 
-  /// ERQ EMA cognitive reappraisal item 1
+  /// ERQ cognitive reappraisal item 1
   ///
   /// In en, this message translates to:
-  /// **'When I wanted to feel more positive emotion (such as joy or amusement), I changed the way I was thinking about the situation.'**
-  String get erqEmaCr1;
+  /// **'Since the last survey, when I wanted to feel more positive emotion (such as joy or amusement), I changed the way I was thinking about the situation.'**
+  String get erqCr1;
 
-  /// ERQ EMA cognitive reappraisal item 2
+  /// ERQ cognitive reappraisal item 2
   ///
   /// In en, this message translates to:
-  /// **'I controlled my emotions by changing the way I was thinking about the situation I was in.'**
-  String get erqEmaCr2;
+  /// **'Since the last survey, I controlled my emotions by changing the way I was thinking about the situation I was in.'**
+  String get erqCr2;
 
-  /// ERQ EMA cognitive reappraisal item 3
+  /// ERQ cognitive reappraisal item 3
   ///
   /// In en, this message translates to:
-  /// **'When I wanted to feel less negative emotion (such as sadness or anger), I changed the way I was thinking about the situation.'**
-  String get erqEmaCr3;
+  /// **'Since the last survey, when I wanted to feel less negative emotion (such as sadness or anger), I changed the way I was thinking about the situation.'**
+  String get erqCr3;
 
-  /// ERQ EMA expressive suppression item 1
+  /// ERQ expressive suppression item 1
   ///
   /// In en, this message translates to:
-  /// **'I controlled my emotions by not expressing them.'**
-  String get erqEmaSup1;
+  /// **'Since the last survey, I controlled my emotions by not expressing them.'**
+  String get erqSup1;
 
-  /// ERQ EMA expressive suppression item 2
+  /// ERQ expressive suppression item 2
   ///
   /// In en, this message translates to:
-  /// **'I kept my emotions to myself.'**
-  String get erqEmaSup2;
+  /// **'Since the last survey, I kept my emotions to myself.'**
+  String get erqSup2;
 
-  /// ERQ EMA expressive suppression item 3
+  /// ERQ expressive suppression item 3
   ///
   /// In en, this message translates to:
-  /// **'When I felt negative emotions, I made sure not to express them.'**
-  String get erqEmaSup3;
+  /// **'Since the last survey, when I felt negative emotions, I made sure not to express them.'**
+  String get erqSup3;
 
   /// Likert label for 1 on a 1-7 agreement scale
   ///
@@ -196,12 +190,6 @@ abstract class ChtEmaSurveysLocalization {
   /// In en, this message translates to:
   /// **'Strongly agree'**
   String get likertStronglyAgree;
-
-  /// Home screen button label for the ERQ EMA survey
-  ///
-  /// In en, this message translates to:
-  /// **'Emotion Regulation Questionnaire'**
-  String get erqEmaSurveyButtonLabel;
 }
 
 class _ChtEmaSurveysLocalizationDelegate

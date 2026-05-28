@@ -21,5 +21,5 @@ class AppLocalizationsEn extends AppLocalizations {
   String get langOptionEs => 'Español';
 
   @override
-  String get erqEmaSurveyButtonLabel => 'Emotion Regulation Questionnaire';
+  String get erqButtonLabel => 'Emotion Regulation Questionnaire';
 }

@@ -9,36 +9,34 @@ class ChtEmaSurveysLocalizationEn extends ChtEmaSurveysLocalization {
   ChtEmaSurveysLocalizationEn([String locale = 'en']) : super(locale);
 
   @override
-  String get itemTitle => 'Title for survey item';
+  String get erqInstructionsTitle => 'Instructions';
 
   @override
-  String get erqEmaInstructionsTitle => 'Instructions';
+  String get erqInstructionsBody =>
+      'Describe how you have regulated and managed your emotions since the last survey by selecting the option that best describes how much you agree.';
 
   @override
-  String get erqEmaInstructionsBody =>
-      'The following statements concern how you controlled your emotions during the last day. Please indicate the extent to which you agree with each statement.';
+  String get erqCr1 =>
+      'Since the last survey, when I wanted to feel more positive emotion (such as joy or amusement), I changed the way I was thinking about the situation.';
 
   @override
-  String get erqEmaCr1 =>
-      'When I wanted to feel more positive emotion (such as joy or amusement), I changed the way I was thinking about the situation.';
+  String get erqCr2 =>
+      'Since the last survey, I controlled my emotions by changing the way I was thinking about the situation I was in.';
 
   @override
-  String get erqEmaCr2 =>
-      'I controlled my emotions by changing the way I was thinking about the situation I was in.';
+  String get erqCr3 =>
+      'Since the last survey, when I wanted to feel less negative emotion (such as sadness or anger), I changed the way I was thinking about the situation.';
 
   @override
-  String get erqEmaCr3 =>
-      'When I wanted to feel less negative emotion (such as sadness or anger), I changed the way I was thinking about the situation.';
+  String get erqSup1 =>
+      'Since the last survey, I controlled my emotions by not expressing them.';
 
   @override
-  String get erqEmaSup1 => 'I controlled my emotions by not expressing them.';
+  String get erqSup2 => 'Since the last survey, I kept my emotions to myself.';
 
   @override
-  String get erqEmaSup2 => 'I kept my emotions to myself.';
-
-  @override
-  String get erqEmaSup3 =>
-      'When I felt negative emotions, I made sure not to express them.';
+  String get erqSup3 =>
+      'Since the last survey, when I felt negative emotions, I made sure not to express them.';
 
   @override
   String get likertStronglyDisagree => 'Strongly disagree';
@@ -60,7 +58,4 @@ class ChtEmaSurveysLocalizationEn extends ChtEmaSurveysLocalization {
 
   @override
   String get likertStronglyAgree => 'Strongly agree';
-
-  @override
-  String get erqEmaSurveyButtonLabel => 'Emotion Regulation Questionnaire';
 }

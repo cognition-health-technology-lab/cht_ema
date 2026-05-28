@@ -1,6 +1,6 @@
 import 'package:cht_ema_surveys/cht_ema_surveys.dart';
 import 'package:example_surveys/l10n/generated/app_localizations.dart';
-import 'package:example_surveys/src/erq_ema/presentation/pages/erq_page.dart';
+import 'package:example_surveys/src/erq/presentation/pages/erq_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -54,6 +54,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     final localizations = AppLocalizations.of(context);
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -87,6 +88,8 @@ class SurveyList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final localizations = AppLocalizations.of(context);
+
     return Scaffold(
       body: Center(
         child: Column(
@@ -98,7 +101,7 @@ class SurveyList extends StatelessWidget {
                 MaterialPageRoute<void>(builder: (context) => ErqPage()),
               ),
               child: Text(
-                ChtEmaSurveysLocalization.of(context).erqEmaSurveyButtonLabel,
+                localizations.erqButtonLabel,
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
             ),

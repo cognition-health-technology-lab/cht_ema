@@ -1,4 +1,4 @@
-import 'package:example_surveys/src/erq_ema/data/erq_items.dart';
+import 'package:example_surveys/src/erq/data/erq_items.dart';
 import 'package:research_package/model.dart';
 
 class ErqViewModel {

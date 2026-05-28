@@ -16,8 +16,8 @@
   "@langOptionEs": {
     "description": "Spanish language option"
   },
-  "erqEmaSurveyButtonLabel": "Cuestionario de Regulación Emocional",
-  "@erqEmaSurveyButtonLabel": {
-    "description": "Etiqueta del botón de la pantalla de inicio para la encuesta ERQ EMA"
+  "erqButtonLabel": "Cuestionario de Regulación Emocional",
+  "@erqButtonLabel": {
+    "description": "Etiqueta del botón de la pantalla de inicio para la encuesta ERQ"
   }
 }
