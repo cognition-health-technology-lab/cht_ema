@@ -1,9 +1,9 @@
 import 'package:research_package/model.dart';
 
 final instructions = RPInstructionStep(
-  identifier: 'erq_ema_instructions',
-  title: 'erqEmaInstructionsTitle',
-  text: 'erqEmaInstructionsBody',
+  identifier: 'erq_instructions',
+  title: 'erqInstructionsTitle',
+  text: 'erqInstructionsBody',
 );
 
 final choiceFormat = RPChoiceAnswerFormat(
@@ -20,32 +20,32 @@ final choiceFormat = RPChoiceAnswerFormat(
 );
 
 final erq1 = RPQuestionStep(
-  identifier: 'erq1',
-  title: 'erqEmaCr1',
+  identifier: 'erqCr1',
+  title: 'erqCr1',
   answerFormat: choiceFormat,
 );
 final erq2 = RPQuestionStep(
-  identifier: 'erq2',
-  title: 'erqEmaCr2',
+  identifier: 'erqCr2',
+  title: 'erqCr2',
   answerFormat: choiceFormat,
 );
 final erq3 = RPQuestionStep(
-  identifier: 'erq3',
-  title: 'erqEmaCr3',
+  identifier: 'erqCr3',
+  title: 'erqCr3',
   answerFormat: choiceFormat,
 );
 final erq4 = RPQuestionStep(
-  identifier: 'erq4',
-  title: 'erqEmaSup1',
+  identifier: 'erqSup1',
+  title: 'erqSup1',
   answerFormat: choiceFormat,
 );
 final erq5 = RPQuestionStep(
-  identifier: 'erq5',
-  title: 'erqEmaSup2',
+  identifier: 'erqSup2',
+  title: 'erqSup2',
   answerFormat: choiceFormat,
 );
 final erq6 = RPQuestionStep(
-  identifier: 'erq6',
-  title: 'erqEmaSup3',
+  identifier: 'erqSup3',
+  title: 'erqSup3',
   answerFormat: choiceFormat,
 );

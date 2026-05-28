@@ -1,36 +1,36 @@
 {
   "@@locale": "en",
-  "erqEmaInstructionsTitle": "Instructions",
-  "@erqEmaInstructionsTitle": {
-    "description": "ERQ EMA instructions title"
+  "erqInstructionsTitle": "Instructions",
+  "@erqInstructionsTitle": {
+    "description": "ERQ instructions title"
   },
-  "erqEmaInstructionsBody": "The following statements concern how you controlled your emotions during the last day. Please indicate the extent to which you agree with each statement.",
-  "@erqEmaInstructionsBody": {
-    "description": "ERQ EMA instructions body"
+  "erqInstructionsBody": "The following statements concern how you controlled your emotions during the last day. Please indicate the extent to which you agree with each statement.",
+  "@erqInstructionsBody": {
+    "description": "ERQ instructions body"
   },
-  "erqEmaCr1": "When I wanted to feel more positive emotion (such as joy or amusement), I changed the way I was thinking about the situation.",
-  "@erqEmaCr1": {
-    "description": "ERQ EMA cognitive reappraisal item 1"
+  "erqCr1": "When I wanted to feel more positive emotion (such as joy or amusement), I changed the way I was thinking about the situation.",
+  "@erqCr1": {
+    "description": "ERQ cognitive reappraisal item 1"
   },
-  "erqEmaCr2": "I controlled my emotions by changing the way I was thinking about the situation I was in.",
-  "@erqEmaCr2": {
-    "description": "ERQ EMA cognitive reappraisal item 2"
+  "erqCr2": "I controlled my emotions by changing the way I was thinking about the situation I was in.",
+  "@erqCr2": {
+    "description": "ERQ cognitive reappraisal item 2"
   },
-  "erqEmaCr3": "When I wanted to feel less negative emotion (such as sadness or anger), I changed the way I was thinking about the situation.",
-  "@erqEmaCr3": {
-    "description": "ERQ EMA cognitive reappraisal item 3"
+  "erqCr3": "When I wanted to feel less negative emotion (such as sadness or anger), I changed the way I was thinking about the situation.",
+  "@erqCr3": {
+    "description": "ERQ cognitive reappraisal item 3"
   },
-  "erqEmaSup1": "I controlled my emotions by not expressing them.",
-  "@erqEmaSup1": {
-    "description": "ERQ EMA expressive suppression item 1"
+  "erqSup1": "I controlled my emotions by not expressing them.",
+  "@erqSup1": {
+    "description": "ERQ expressive suppression item 1"
   },
-  "erqEmaSup2": "I kept my emotions to myself.",
-  "@erqEmaSup2": {
-    "description": "ERQ EMA expressive suppression item 2"
+  "erqSup2": "I kept my emotions to myself.",
+  "@erqSup2": {
+    "description": "ERQ expressive suppression item 2"
   },
-  "erqEmaSup3": "When I felt negative emotions, I made sure not to express them.",
-  "@erqEmaSup3": {
-    "description": "ERQ EMA expressive suppression item 3"
+  "erqSup3": "When I felt negative emotions, I made sure not to express them.",
+  "@erqSup3": {
+    "description": "ERQ expressive suppression item 3"
   },
   "likertStronglyDisagree": "Strongly disagree",
   "@likertStronglyDisagree": {

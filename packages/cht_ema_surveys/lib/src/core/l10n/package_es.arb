@@ -1,36 +1,36 @@
 {
   "@@locale": "es",
-  "erqEmaInstructionsTitle": "Instrucciones",
-  "@erqEmaInstructionsTitle": {
-    "description": "Título de instrucciones ERQ EMA"
+  "erqInstructionsTitle": "Instrucciones",
+  "@erqInstructionsTitle": {
+    "description": "Título de instrucciones ERQ"
   },
-  "erqEmaInstructionsBody": "Las siguientes afirmaciones se refieren a cómo controló sus emociones durante el último día. Indique en qué medida está de acuerdo con cada afirmación.",
-  "@erqEmaInstructionsBody": {
-    "description": "Cuerpo de instrucciones ERQ EMA"
+  "erqInstructionsBody": "Las siguientes afirmaciones se refieren a cómo controló sus emociones durante el último día. Indique en qué medida está de acuerdo con cada afirmación.",
+  "@erqInstructionsBody": {
+    "description": "Cuerpo de instrucciones ERQ"
   },
-  "erqEmaCr1": "Cuando quería sentir más una emoción positiva (como alegría o diversión), cambié mi manera de pensar sobre la situación.",
-  "@erqEmaCr1": {
-    "description": "ERQ EMA, ítem de reevaluación cognitiva 1"
+  "erqCr1": "Cuando quería sentir más una emoción positiva (como alegría o diversión), cambié mi manera de pensar sobre la situación.",
+  "@erqCr1": {
+    "description": "ERQ ítem de reevaluación cognitiva 1"
   },
-  "erqEmaCr2": "Controlé mis emociones cambiando mi manera de pensar sobre la situación en la que me encontraba.",
-  "@erqEmaCr2": {
-    "description": "ERQ EMA, ítem de reevaluación cognitiva 2"
+  "erqCr2": "Controlé mis emociones cambiando mi manera de pensar sobre la situación en la que me encontraba.",
+  "@erqCr2": {
+    "description": "ERQ ítem de reevaluación cognitiva 2"
   },
-  "erqEmaCr3": "Cuando quería sentir menos una emoción negativa (como tristeza o enojo), cambié mi manera de pensar sobre la situación.",
-  "@erqEmaCr3": {
-    "description": "ERQ EMA, ítem de reevaluación cognitiva 3"
+  "erqCr3": "Cuando quería sentir menos una emoción negativa (como tristeza o enojo), cambié mi manera de pensar sobre la situación.",
+  "@erqCr3": {
+    "description": "ERQ ítem de reevaluación cognitiva 3"
   },
-  "erqEmaSup1": "Controlé mis emociones no expresándolas.",
-  "@erqEmaSup1": {
-    "description": "ERQ EMA, ítem de supresión expresiva 1"
+  "erqSup1": "Controlé mis emociones no expresándolas.",
+  "@erqSup1": {
+    "description": "ERQ ítem de supresión expresiva 1"
   },
-  "erqEmaSup2": "Guardé mis emociones para mí mismo/a.",
-  "@erqEmaSup2": {
-    "description": "ERQ EMA, ítem de supresión expresiva 2"
+  "erqSup2": "Guardé mis emociones para mí mismo/a.",
+  "@erqSup2": {
+    "description": "ERQ ítem de supresión expresiva 2"
   },
-  "erqEmaSup3": "Cuando sentí emociones negativas, me aseguré de no expresarlas.",
-  "@erqEmaSup3": {
-    "description": "ERQ EMA, ítem de supresión expresiva 3"
+  "erqSup3": "Cuando sentí emociones negativas, me aseguré de no expresarlas.",
+  "@erqSup3": {
+    "description": "ERQ ítem de supresión expresiva 3"
   },
   "likertStronglyDisagree": "Muy en desacuerdo",
   "@likertStronglyDisagree": {

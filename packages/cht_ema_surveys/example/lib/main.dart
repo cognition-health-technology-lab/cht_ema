@@ -1,6 +1,6 @@
 import 'package:cht_ema_surveys/cht_ema_surveys.dart';
 import 'package:example_surveys/l10n/generated/app_localizations.dart';
-import 'package:example_surveys/src/erq_ema/presentation/pages/erq_ema_page.dart';
+import 'package:example_surveys/src/erq_ema/presentation/pages/erq_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -95,9 +95,7 @@ class SurveyList extends StatelessWidget {
             ElevatedButton(
               onPressed: () => Navigator.push(
                 context,
-                MaterialPageRoute<void>(
-                  builder: (context) => ErqEmaSurveyPage(),
-                ),
+                MaterialPageRoute<void>(builder: (context) => ErqPage()),
               ),
               child: Text(
                 ChtEmaSurveysLocalization.of(context).erqEmaSurveyButtonLabel,
