@@ -13,7 +13,7 @@ class ChtEmaSurveysLocalizationEs extends ChtEmaSurveysLocalization {
 
   @override
   String get erqInstructionsBody =>
-      'Describe cómo regulaste y manejaste tus emociones desde la última encuesta seleccionando la opción que mejor describePu cuán de acuerdo estás.';
+      'Describe cómo regulaste y manejaste tus emociones desde la última encuesta seleccionando la opción que mejor describe cuán de acuerdo estás.';
 
   @override
   String get erqCr1 =>
@@ -40,7 +40,7 @@ class ChtEmaSurveysLocalizationEs extends ChtEmaSurveysLocalization {
       'Desde la última encuesta, cuando sentí emociones negativas, me aseguré de no expresarlas.';
 
   @override
-  String get likertStronglyDisagree => 'Muy en desacuerdo';
+  String get likertStronglyDisagree => 'Totalmente en desacuerdo';
 
   @override
   String get likertDisagree => 'En desacuerdo';
@@ -49,7 +49,7 @@ class ChtEmaSurveysLocalizationEs extends ChtEmaSurveysLocalization {
   String get likertSlightlyDisagree => 'Algo en desacuerdo';
 
   @override
-  String get likertNeutral => 'Ni de acuerdo ni en desacuerdo';
+  String get likertNeutral => 'Neutral';
 
   @override
   String get likertSlightlyAgree => 'Algo de acuerdo';
@@ -58,5 +58,5 @@ class ChtEmaSurveysLocalizationEs extends ChtEmaSurveysLocalization {
   String get likertAgree => 'De acuerdo';
 
   @override
-  String get likertStronglyAgree => 'Muy de acuerdo';
+  String get likertStronglyAgree => 'Totalmente de acuerdo';
 }

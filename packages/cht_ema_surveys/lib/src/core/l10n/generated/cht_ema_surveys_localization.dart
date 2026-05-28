@@ -149,43 +149,43 @@ abstract class ChtEmaSurveysLocalization {
   /// **'Since the last survey, when I felt negative emotions, I made sure not to express them.'**
   String get erqSup3;
 
-  /// Likert label for 1 on a 1-7 agreement scale
+  /// Likert label for strongly disagree response
   ///
   /// In en, this message translates to:
   /// **'Strongly disagree'**
   String get likertStronglyDisagree;
 
-  /// Likert label for 2 on a 1-7 agreement scale
+  /// Likert label for disagree response
   ///
   /// In en, this message translates to:
   /// **'Disagree'**
   String get likertDisagree;
 
-  /// Likert label for 3 on a 1-7 agreement scale
+  /// Likert label for slightly disagree response
   ///
   /// In en, this message translates to:
   /// **'Slightly disagree'**
   String get likertSlightlyDisagree;
 
-  /// Likert label for 4 on a 1-7 agreement scale
+  /// Likert label for neutral response
   ///
   /// In en, this message translates to:
   /// **'Neutral'**
   String get likertNeutral;
 
-  /// Likert label for 5 on a 1-7 agreement scale
+  /// Likert label for slightly agree response
   ///
   /// In en, this message translates to:
   /// **'Slightly agree'**
   String get likertSlightlyAgree;
 
-  /// Likert label for 6 on a 1-7 agreement scale
+  /// Likert label for agree response
   ///
   /// In en, this message translates to:
   /// **'Agree'**
   String get likertAgree;
 
-  /// Likert label for 7 on a 1-7 agreement scale
+  /// Likert label for strongly agree response
   ///
   /// In en, this message translates to:
   /// **'Strongly agree'**
