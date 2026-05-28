@@ -96,11 +96,39 @@ class CognitiveTasksList extends StatelessWidget {
               onPressed: () => Navigator.push(
                 context,
                 MaterialPageRoute<void>(
-                  builder: (context) => const CognitiveTasksPage(),
+                  builder: (context) => GoNoGoTask(
+                    processData: printData,
+                    participantId: 'p1',
+                    sessionId: 's1',
+                    nTrials: 20,
+                    goProbability: .75,
+                    trialTimeoutDuration: const Duration(milliseconds: 750),
+                    restEveryNTrials: 10,
+                  ),
                 ),
               ),
               child: Text(
-                localizations.homeMessage,
+                localizations.goNoGoExample,
+                style: Theme.of(context).textTheme.headlineMedium,
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute<void>(
+                  builder: (context) => NBackTask(
+                    processData: printData,
+                    participantId: 'p1',
+                    sessionId: 's1',
+                    nTrials: 12,
+                    matchProportion: .5,
+                    trialTimeoutDuration: const Duration(milliseconds: 1500),
+                    restEveryNTrials: 100,
+                  ),
+                ),
+              ),
+              child: Text(
+                localizations.nBackExample,
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
             ),
@@ -109,4 +137,8 @@ class CognitiveTasksList extends StatelessWidget {
       ),
     );
   }
+}
+
+void printData(CognitiveData data) {
+  debugPrint(data.toString());
 }

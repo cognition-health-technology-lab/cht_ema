@@ -101,11 +101,41 @@ abstract class ChtCognitionLocalization {
     Locale('es'),
   ];
 
-  /// Message for example widget
+  /// Text for match button in n-back task
   ///
   /// In en, this message translates to:
-  /// **'Placeholder cognitive task'**
-  String get placeholderText;
+  /// **'Match'**
+  String get nBackTaskMatch;
+
+  /// Text for non-match button in n-back task
+  ///
+  /// In en, this message translates to:
+  /// **'No match'**
+  String get nBackTaskNonMatch;
+
+  /// Default message presented on the `continue button`
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get continueButton;
+
+  /// Instructions for cognitive task
+  ///
+  /// In en, this message translates to:
+  /// **'Cognitive Task Instructions'**
+  String get genericTaskInstructions;
+
+  /// Default message presented during the rest period of a cognitive task
+  ///
+  /// In en, this message translates to:
+  /// **'Rest'**
+  String get restMessageMain;
+
+  /// Default message presented when a cognitive task is completed
+  ///
+  /// In en, this message translates to:
+  /// **'Done!'**
+  String get endMessageMain;
 }
 
 class _ChtCognitionLocalizationDelegate

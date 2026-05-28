@@ -1,7 +1,27 @@
 {
   "@@locale": "es",
-  "placeholderText": "Tarea cognitiva de ejemplo",
-  "@placeholderText": {
-    "description": "Mensaje para el widget de ejemplo"
+  "nBackTaskMatch": "Parea",
+  "@nBackTaskMatch": {
+    "description": "Text for match button in n-back task"
+  },
+  "nBackTaskNonMatch": "No parea",
+  "@nBackTaskNonMatch": {
+    "description": "Text for non-match button in n-back task"
+  },
+  "continueButton": "Continuar",
+  "@continueButton": {
+    "description": "Default message presented on the `continue button`"
+  },
+  "genericTaskInstructions": "Instrucciones para tarea cognitiva",
+  "@genericTaskInstructions": {
+    "description": "Instructions for cognitive task"
+  },
+  "restMessageMain": "Descansa",
+  "@restMessageMain": {
+    "description": "Default message presented during the rest period of a cognitive task"
+  },
+  "endMessageMain": "¡Listo!",
+  "@endMessageMain": {
+    "description": "Default message presented when a cognitive task is completed"
   }
 }

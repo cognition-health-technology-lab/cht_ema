@@ -8,15 +8,22 @@ workspace:
   - packages/cht_ema_surveys/example
   - packages/cht_cognition
   - packages/cht_cognition/example
+  - apps/mhealthgoal
 
 dev_dependencies:
+  build_runner: ^2.10.4
+  freezed: ^3.2.5
+  json_serializable: ^6.13.2
   melos: ^7.1.1
+  rename: ^3.1.0
   very_good_analysis: ^10.0.0
 
 melos:
   scripts:
     check_format:
-      run: dart run melos exec dart format --set-exit-if-changed .
+      run: |
+        git ls-files '*.dart' ':(exclude)**/firebase_options.dart' |
+          xargs dart format --set-exit-if-changed
       description: "Check if any file in any package needs formatting. Convenient for CI checks."
 
     analyze:
@@ -41,6 +48,14 @@ melos:
     build_ios_examples:
       run: dart run melos exec -c 2 --dir-exists=example -- 'cd example && flutter build ios --no-codesign'
       description: "Check iOS app build for all example apps. Useful for CI checks."
+
+    build_ios_mhealthgoal:
+      run: dart run melos exec -c 1 --scope=mhealthgoal -- 'flutter build ios --no-codesign'
+      description: "Check iOS mHealthGoal app builds. Useful for CI checks."
+
+    build_android_mhealthgoal:
+      run: dart run melos exec -c 1 --scope=mhealthgoal -- 'flutter build apk --debug'
+      description: "Check Android mHealthGoal app builds. Useful for CI checks."
 
     all_basic_checks:
       run: |

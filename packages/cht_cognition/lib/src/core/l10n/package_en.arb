@@ -1,7 +1,27 @@
 {
   "@@locale": "en",
-  "placeholderText": "Placeholder cognitive task",
-  "@placeholderText": {
-    "description": "Message for example widget"
+  "nBackTaskMatch": "Match",
+  "@nBackTaskMatch": {
+    "description": "Text for match button in n-back task"
+  },
+  "nBackTaskNonMatch": "No match",
+  "@nBackTaskNonMatch": {
+    "description": "Text for non-match button in n-back task"
+  },
+  "continueButton": "Continue",
+  "@continueButton": {
+    "description": "Default message presented on the `continue button`"
+  },
+  "genericTaskInstructions": "Cognitive Task Instructions",
+  "@genericTaskInstructions": {
+    "description": "Instructions for cognitive task"
+  },
+  "restMessageMain": "Rest",
+  "@restMessageMain": {
+    "description": "Default message presented during the rest period of a cognitive task"
+  },
+  "endMessageMain": "Done!",
+  "@endMessageMain": {
+    "description": "Default message presented when a cognitive task is completed"
   }
 }

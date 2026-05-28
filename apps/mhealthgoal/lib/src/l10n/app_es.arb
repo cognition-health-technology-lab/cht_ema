@@ -1,0 +1,7 @@
+{
+  "@@locale": "es",
+  "appTitle": "mHealthGoal",
+  "@appTitle": {
+    "description": "App title"
+  }
+}

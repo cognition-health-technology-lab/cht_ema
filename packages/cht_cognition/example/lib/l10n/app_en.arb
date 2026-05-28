@@ -4,9 +4,13 @@
   "@appTitle": {
     "description": "Title for the app"
   },
-  "homeMessage": "Home screen",
-  "@homeMessage": {
-    "description": "Message displayed on the home screen"
+  "goNoGoExample": "Go/No-Go Task",
+  "@goNoGoExample": {
+    "description": "Go/No-Go Task Example name in home screen"
+  },
+  "nBackExample": "N Back Task",
+  "@nBackExample": {
+    "description": "N Back Task Example name in home screen"
   },
   "languageToolTip": "Select Language",
   "@languageToolTip": {
