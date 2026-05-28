@@ -34,30 +34,30 @@
   },
   "likertStronglyDisagree": "Strongly disagree",
   "@likertStronglyDisagree": {
-    "description": "Likert label for 1 on a 1-7 agreement scale"
+    "description": "Likert label for strongly disagree response"
   },
   "likertDisagree": "Disagree",
   "@likertDisagree": {
-    "description": "Likert label for 2 on a 1-7 agreement scale"
+    "description": "Likert label for disagree response"
   },
   "likertSlightlyDisagree": "Slightly disagree",
   "@likertSlightlyDisagree": {
-    "description": "Likert label for 3 on a 1-7 agreement scale"
+    "description": "Likert label for slightly disagree response"
   },
   "likertNeutral": "Neutral",
   "@likertNeutral": {
-    "description": "Likert label for 4 on a 1-7 agreement scale"
+    "description": "Likert label for neutral response"
   },
   "likertSlightlyAgree": "Slightly agree",
   "@likertSlightlyAgree": {
-    "description": "Likert label for 5 on a 1-7 agreement scale"
+    "description": "Likert label for slightly agree response"
   },
   "likertAgree": "Agree",
   "@likertAgree": {
-    "description": "Likert label for 6 on a 1-7 agreement scale"
+    "description": "Likert label for agree response"
   },
   "likertStronglyAgree": "Strongly agree",
   "@likertStronglyAgree": {
-    "description": "Likert label for 7 on a 1-7 agreement scale"
+    "description": "Likert label for strongly agree response"
   }
 }

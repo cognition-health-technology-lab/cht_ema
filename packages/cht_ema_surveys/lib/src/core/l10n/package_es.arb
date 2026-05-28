@@ -2,62 +2,62 @@
   "@@locale": "es",
   "erqInstructionsTitle": "Instrucciones",
   "@erqInstructionsTitle": {
-    "description": "Título de instrucciones ERQ"
+    "description": "ERQ instructions title"
   },
   "erqInstructionsBody": "Describe cómo regulaste y manejaste tus emociones desde la última encuesta seleccionando la opción que mejor describe cuán de acuerdo estás.",
   "@erqInstructionsBody": {
-    "description": "Cuerpo de instrucciones ERQ"
+    "description": "ERQ instructions body"
   },
   "erqCr1": "Desde la última encuesta, cuando quería sentir más una emoción positiva (como alegría o diversión), cambié mi manera de pensar sobre la situación.",
   "@erqCr1": {
-    "description": "ERQ ítem de reevaluación cognitiva 1"
+    "description": "ERQ cognitive reappraisal item 1"
   },
   "erqCr2": "Desde la última encuesta, controlé mis emociones cambiando mi manera de pensar sobre la situación en la que me encontraba.",
   "@erqCr2": {
-    "description": "ERQ ítem de reevaluación cognitiva 2"
+    "description": "ERQ cognitive reappraisal item 2"
   },
   "erqCr3": "Desde la última encuesta, cuando quería sentir menos una emoción negativa (como tristeza o enojo), cambié mi manera de pensar sobre la situación.",
   "@erqCr3": {
-    "description": "ERQ ítem de reevaluación cognitiva 3"
+    "description": "ERQ cognitive reappraisal item 3"
   },
   "erqSup1": "Desde la última encuesta, controlé mis emociones no expresándolas.",
   "@erqSup1": {
-    "description": "ERQ ítem de supresión expresiva 1"
+    "description": "ERQ expressive suppression item 1"
   },
   "erqSup2": "Desde la última encuesta, guardé mis emociones para mí mismo/a.",
   "@erqSup2": {
-    "description": "ERQ ítem de supresión expresiva 2"
+    "description": "ERQ expressive suppression item 2"
   },
   "erqSup3": "Desde la última encuesta, cuando sentí emociones negativas, me aseguré de no expresarlas.",
   "@erqSup3": {
-    "description": "ERQ ítem de supresión expresiva 3"
+    "description": "ERQ expressive suppression item 3"
   },
   "likertStronglyDisagree": "Muy en desacuerdo",
   "@likertStronglyDisagree": {
-    "description": "Etiqueta Likert para 1 en escala de acuerdo 1-7"
+    "description": "Likert label for strongly disagree response"
   },
   "likertDisagree": "En desacuerdo",
   "@likertDisagree": {
-    "description": "Etiqueta Likert para 2 en escala de acuerdo 1-7"
+    "description": "Likert label for disagree response"
   },
   "likertSlightlyDisagree": "Algo en desacuerdo",
   "@likertSlightlyDisagree": {
-    "description": "Etiqueta Likert para 3 en escala de acuerdo 1-7"
+    "description": "Likert label for slightly disagree response"
   },
   "likertNeutral": "Ni de acuerdo ni en desacuerdo",
   "@likertNeutral": {
-    "description": "Etiqueta Likert para 4 en escala de acuerdo 1-7"
+    "description": "Likert label for neutral response"
   },
   "likertSlightlyAgree": "Algo de acuerdo",
   "@likertSlightlyAgree": {
-    "description": "Etiqueta Likert para 5 en escala de acuerdo 1-7"
+    "description": "Likert label for slightly agree response"
   },
   "likertAgree": "De acuerdo",
   "@likertAgree": {
-    "description": "Etiqueta Likert para 6 en escala de acuerdo 1-7"
+    "description": "Likert label for agree response"
   },
   "likertStronglyAgree": "Muy de acuerdo",
   "@likertStronglyAgree": {
-    "description": "Etiqueta Likert para 7 en escala de acuerdo 1-7"
+    "description": "Likert label for strongly agree response"
   }
 }

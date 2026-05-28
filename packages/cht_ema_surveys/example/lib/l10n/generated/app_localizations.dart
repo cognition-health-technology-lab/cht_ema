@@ -122,7 +122,7 @@ abstract class AppLocalizations {
   /// **'Español'**
   String get langOptionEs;
 
-  /// Home screen button label for the ERQ survey
+  /// Home page button text for the ERQ
   ///
   /// In en, this message translates to:
   /// **'Emotion Regulation Questionnaire'**

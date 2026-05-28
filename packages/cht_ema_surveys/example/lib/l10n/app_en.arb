@@ -18,6 +18,6 @@
   },
   "erqButtonLabel": "Emotion Regulation Questionnaire",
   "@erqButtonLabel": {
-    "description": "Home screen button label for the ERQ survey"
+    "description": "Home page button text for the ERQ"
   }
 }
