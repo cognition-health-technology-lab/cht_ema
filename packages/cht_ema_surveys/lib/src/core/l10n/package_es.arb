@@ -32,7 +32,7 @@
   "@erqSup3": {
     "description": "ERQ expressive suppression item 3"
   },
-  "likertStronglyDisagree": "Muy en desacuerdo",
+  "likertStronglyDisagree": "Totalmente en desacuerdo",
   "@likertStronglyDisagree": {
     "description": "Likert label for strongly disagree response"
   },
@@ -44,7 +44,7 @@
   "@likertSlightlyDisagree": {
     "description": "Likert label for slightly disagree response"
   },
-  "likertNeutral": "Ni de acuerdo ni en desacuerdo",
+  "likertNeutral": "Neutral",
   "@likertNeutral": {
     "description": "Likert label for neutral response"
   },
@@ -56,7 +56,7 @@
   "@likertAgree": {
     "description": "Likert label for agree response"
   },
-  "likertStronglyAgree": "Muy de acuerdo",
+  "likertStronglyAgree": "Totalmente de acuerdo",
   "@likertStronglyAgree": {
     "description": "Likert label for strongly agree response"
   }
