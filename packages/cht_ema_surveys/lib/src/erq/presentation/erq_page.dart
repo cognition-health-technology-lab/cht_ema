@@ -1,4 +1,4 @@
-import 'package:example_surveys/src/erq/presentation/view_model/erq_view_model.dart';
+import 'package:cht_ema_surveys/src/erq/presentation/erq_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:research_package/ui.dart';
 

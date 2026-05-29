@@ -1,6 +1,5 @@
 import 'package:cht_ema_surveys/cht_ema_surveys.dart';
 import 'package:example_surveys/l10n/generated/app_localizations.dart';
-import 'package:example_surveys/src/erq/presentation/pages/erq_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
