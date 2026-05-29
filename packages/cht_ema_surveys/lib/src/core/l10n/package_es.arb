@@ -1,7 +1,88 @@
 {
   "@@locale": "es",
-  "itemTitle": "Título del item",
+  "itemTitle": "Título del ítem",
   "@itemTitle": {
-    "description": "Title for the EMA survey item"
+    "description": "Título para el ítem de la EMA"
+  },
+
+  "ipaqInstructionsTitle": "Actividad Física",
+  "@ipaqInstructionsTitle": {
+    "description": "Título de la pantalla de instrucciones del IPAQ"
+  },
+  "ipaqInstructionsBody": "A continuación responderás algunas preguntas sobre la clase de actividad física que realizaste hoy.\n\nPor favor, responde a cada pregunta aun si no te consideras una persona activa.\n\nPor favor, piensa en aquellas actividades que haces como parte del trabajo, en el jardín y en la casa, para ir de un sitio a otro, y en tu tiempo libre de descanso, ejercicio o deporte.",
+  "@ipaqInstructionsBody": {
+    "description": "Texto introductorio del IPAQ"
+  },
+  "ipaqVigorousQuestionTitle": "¿Cuánto tiempo dedicaste hoy a actividad física vigorosa?\n\nConsidera vigorosa cuando no puedes decir más de unas pocas palabras sin parar a respirar, como al trotar o nadar rápido.",
+  "@ipaqVigorousQuestionTitle": {
+    "description": "Pregunta sobre actividad física vigorosa"
+  },
+  "ipaqModerateQuestionTitle": "¿Cuánto tiempo dedicaste hoy a realizar actividades físicas moderadas, como caminar rápido, bailar o andar en bicicleta a ritmo suave?",
+  "@ipaqModerateQuestionTitle": {
+    "description": "Pregunta sobre actividad física moderada"
+  },
+  "ipaqWalkQuestionTitle": "¿Cuánto tiempo dedicaste hoy a caminar?",
+  "@ipaqWalkQuestionTitle": {
+    "description": "Pregunta sobre caminata"
+  },
+  "ipaqSeatedQuestionTitle": "¿Cuánto tiempo estuviste hoy sentado?",
+  "@ipaqSeatedQuestionTitle": {
+    "description": "Pregunta sobre tiempo sentado"
+  },
+
+  "backButtonLabel": "Atrás",
+  "@backButtonLabel": {
+    "description": "Etiqueta del botón Atrás en el cuestionario"
+  },
+  "nextButtonLabel": "Continuar",
+  "@nextButtonLabel": {
+    "description": "Etiqueta del botón Continuar en el cuestionario"
+  },
+  "questionLabel": "Pregunta",
+  "@questionLabel": {
+    "description": "Prefijo que se muestra antes del número de la pregunta"
+  },
+  "hoursLabel": "Horas",
+  "@hoursLabel": {
+    "description": "Etiqueta para horas en el selector de duración"
+  },
+  "minutesLabel": "Minutos",
+  "@minutesLabel": {
+    "description": "Etiqueta para minutos en el selector de duración"
+  },
+
+  "erqEmaInstructionsTitle": "Regulación emocional",
+  "@erqEmaInstructionsTitle": {
+    "description": "Título del bloque ERQ EMA"
+  },
+  "erqEmaInstructionsBody": "A continuación verás algunas frases sobre cómo manejaste esta emoción.\n\nIndica qué tanto cada frase describe lo que hiciste, usando la siguiente escala:\n1 = muy en desacuerdo, 4 = ni de acuerdo ni en desacuerdo, 7 = muy de acuerdo.",
+  "@erqEmaInstructionsBody": {
+    "description": "Instrucciones para los ítems de ERQ EMA y descripción de la escala 1–7"
+  },
+
+  "erqEmaCr1": "Controlé esta emoción cambiando la manera en que estaba pensando sobre la situación en la que me encontraba.",
+  "@erqEmaCr1": {
+    "description": "ERQ EMA, ítem de reevaluación cognitiva 1"
+  },
+  "erqEmaCr2": "Cuando quería sentir menos de esta emoción, cambié en qué estaba pensando.",
+  "@erqEmaCr2": {
+    "description": "ERQ EMA, ítem de reevaluación cognitiva 2"
+  },
+  "erqEmaCr3": "Cuando quería sentir menos de esta emoción, cambié la manera en que estaba pensando sobre la situación.",
+  "@erqEmaCr3": {
+    "description": "ERQ EMA, ítem de reevaluación cognitiva 3"
+  },
+
+  "erqEmaSup1": "Controlé esta emoción al no expresarla.",
+  "@erqEmaSup1": {
+    "description": "ERQ EMA, ítem de supresión expresiva 1"
+  },
+  "erqEmaSup2": "Me guardé esta emoción para mí.",
+  "@erqEmaSup2": {
+    "description": "ERQ EMA, ítem de supresión expresiva 2"
+  },
+  "erqEmaSup3": "Cuando sentí esta emoción, me aseguré de no expresarla.",
+  "@erqEmaSup3": {
+    "description": "ERQ EMA, ítem de supresión expresiva 3"
   }
 }

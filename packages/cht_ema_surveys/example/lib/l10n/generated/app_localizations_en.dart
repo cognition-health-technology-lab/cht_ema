@@ -12,7 +12,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get appTitle => 'CHT Surveys Example';
 
   @override
-  String get homeMessage => 'Home screen';
+  String get ipaqName => 'IPAQ';
 
   @override
   String get languageToolTip => 'Select Language';

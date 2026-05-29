@@ -3,5 +3,86 @@
   "itemTitle": "Title for survey item",
   "@itemTitle": {
     "description": "Title for the EMA survey item"
+  },
+
+  "ipaqInstructionsTitle": "Physical Activity",
+  "@ipaqInstructionsTitle": {
+    "description": "IPAQ intro step title"
+  },
+  "ipaqInstructionsBody": "Next, you will answer some questions about the kinds of physical activity you did today.\n\nPlease answer each question even if you do not think of yourself as a physically active person.\n\nPlease think about activities you do as part of your work, in the garden and at home, to get from one place to another, and in your free time for rest, exercise, or sports.",
+  "@ipaqInstructionsBody": {
+    "description": "IPAQ introductory explanatory text"
+  },
+  "ipaqVigorousQuestionTitle": "How much time did you spend today doing vigorous physical activity?\n\nConsider it vigorous when you cannot say more than a few words without stopping to breathe, such as when jogging or swimming fast.",
+  "@ipaqVigorousQuestionTitle": {
+    "description": "IPAQ vigorous activity question"
+  },
+  "ipaqModerateQuestionTitle": "How much time did you spend today doing moderate physical activities, such as brisk walking, dancing, or cycling at an easy pace?",
+  "@ipaqModerateQuestionTitle": {
+    "description": "IPAQ moderate activity question"
+  },
+  "ipaqWalkQuestionTitle": "How much time did you spend today walking?",
+  "@ipaqWalkQuestionTitle": {
+    "description": "IPAQ walking question"
+  },
+  "ipaqSeatedQuestionTitle": "How much time did you spend today sitting?",
+  "@ipaqSeatedQuestionTitle": {
+    "description": "IPAQ sitting question"
+  },
+
+  "backButtonLabel": "Back",
+  "@backButtonLabel": {
+    "description": "Back button label in the survey"
+  },
+  "nextButtonLabel": "Continue",
+  "@nextButtonLabel": {
+    "description": "Next/continue button label in the survey"
+  },
+  "questionLabel": "Question",
+  "@questionLabel": {
+    "description": "Prefix used before the question index"
+  },
+  "hoursLabel": "Hours",
+  "@hoursLabel": {
+    "description": "Label for hours in duration picker"
+  },
+  "minutesLabel": "Minutes",
+  "@minutesLabel": {
+    "description": "Label for minutes in duration picker"
+  },
+
+  "erqEmaInstructionsTitle": "Emotion Regulation",
+  "@erqEmaInstructionsTitle": {
+    "description": "Title for the ERQ EMA block"
+  },
+  "erqEmaInstructionsBody": "Below are some statements about how you handled this emotion.\n\nPlease rate how much each statement describes what you did, using the following scale:\n1 = strongly disagree, 4 = neutral, 7 = strongly agree.",
+  "@erqEmaInstructionsBody": {
+    "description": "Instructions for ERQ EMA items and 1–7 scale description"
+  },
+
+  "erqEmaCr1": "I controlled this emotion by changing the way I was thinking about the situation I was in.",
+  "@erqEmaCr1": {
+    "description": "ERQ EMA cognitive reappraisal item 1"
+  },
+  "erqEmaCr2": "When I wanted to feel less of this emotion, I changed what I was thinking about.",
+  "@erqEmaCr2": {
+    "description": "ERQ EMA cognitive reappraisal item 2"
+  },
+  "erqEmaCr3": "When I wanted to feel less of this emotion, I changed the way I was thinking about the situation.",
+  "@erqEmaCr3": {
+    "description": "ERQ EMA cognitive reappraisal item 3"
+  },
+
+  "erqEmaSup1": "I controlled this emotion by not expressing it.",
+  "@erqEmaSup1": {
+    "description": "ERQ EMA expressive suppression item 1"
+  },
+  "erqEmaSup2": "I kept this emotion to myself.",
+  "@erqEmaSup2": {
+    "description": "ERQ EMA expressive suppression item 2"
+  },
+  "erqEmaSup3": "When I felt this emotion, I made sure not to express it.",
+  "@erqEmaSup3": {
+    "description": "ERQ EMA expressive suppression item 3"
   }
 }

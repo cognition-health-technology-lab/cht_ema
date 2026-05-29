@@ -106,6 +106,120 @@ abstract class ChtEmaSurveysLocalization {
   /// In en, this message translates to:
   /// **'Title for survey item'**
   String get itemTitle;
+
+  /// IPAQ intro step title
+  ///
+  /// In en, this message translates to:
+  /// **'Physical Activity'**
+  String get ipaqInstructionsTitle;
+
+  /// IPAQ introductory explanatory text
+  ///
+  /// In en, this message translates to:
+  /// **'Next, you will answer some questions about the kinds of physical activity you did today.\n\nPlease answer each question even if you do not think of yourself as a physically active person.\n\nPlease think about activities you do as part of your work, in the garden and at home, to get from one place to another, and in your free time for rest, exercise, or sports.'**
+  String get ipaqInstructionsBody;
+
+  /// IPAQ vigorous activity question
+  ///
+  /// In en, this message translates to:
+  /// **'How much time did you spend today doing vigorous physical activity?\n\nConsider it vigorous when you cannot say more than a few words without stopping to breathe, such as when jogging or swimming fast.'**
+  String get ipaqVigorousQuestionTitle;
+
+  /// IPAQ moderate activity question
+  ///
+  /// In en, this message translates to:
+  /// **'How much time did you spend today doing moderate physical activities, such as brisk walking, dancing, or cycling at an easy pace?'**
+  String get ipaqModerateQuestionTitle;
+
+  /// IPAQ walking question
+  ///
+  /// In en, this message translates to:
+  /// **'How much time did you spend today walking?'**
+  String get ipaqWalkQuestionTitle;
+
+  /// IPAQ sitting question
+  ///
+  /// In en, this message translates to:
+  /// **'How much time did you spend today sitting?'**
+  String get ipaqSeatedQuestionTitle;
+
+  /// Back button label in the survey
+  ///
+  /// In en, this message translates to:
+  /// **'Back'**
+  String get backButtonLabel;
+
+  /// Next/continue button label in the survey
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get nextButtonLabel;
+
+  /// Prefix used before the question index
+  ///
+  /// In en, this message translates to:
+  /// **'Question'**
+  String get questionLabel;
+
+  /// Label for hours in duration picker
+  ///
+  /// In en, this message translates to:
+  /// **'Hours'**
+  String get hoursLabel;
+
+  /// Label for minutes in duration picker
+  ///
+  /// In en, this message translates to:
+  /// **'Minutes'**
+  String get minutesLabel;
+
+  /// Title for the ERQ EMA block
+  ///
+  /// In en, this message translates to:
+  /// **'Emotion Regulation'**
+  String get erqEmaInstructionsTitle;
+
+  /// Instructions for ERQ EMA items and 1–7 scale description
+  ///
+  /// In en, this message translates to:
+  /// **'Below are some statements about how you handled this emotion.\n\nPlease rate how much each statement describes what you did, using the following scale:\n1 = strongly disagree, 4 = neutral, 7 = strongly agree.'**
+  String get erqEmaInstructionsBody;
+
+  /// ERQ EMA cognitive reappraisal item 1
+  ///
+  /// In en, this message translates to:
+  /// **'I controlled this emotion by changing the way I was thinking about the situation I was in.'**
+  String get erqEmaCr1;
+
+  /// ERQ EMA cognitive reappraisal item 2
+  ///
+  /// In en, this message translates to:
+  /// **'When I wanted to feel less of this emotion, I changed what I was thinking about.'**
+  String get erqEmaCr2;
+
+  /// ERQ EMA cognitive reappraisal item 3
+  ///
+  /// In en, this message translates to:
+  /// **'When I wanted to feel less of this emotion, I changed the way I was thinking about the situation.'**
+  String get erqEmaCr3;
+
+  /// ERQ EMA expressive suppression item 1
+  ///
+  /// In en, this message translates to:
+  /// **'I controlled this emotion by not expressing it.'**
+  String get erqEmaSup1;
+
+  /// ERQ EMA expressive suppression item 2
+  ///
+  /// In en, this message translates to:
+  /// **'I kept this emotion to myself.'**
+  String get erqEmaSup2;
+
+  /// ERQ EMA expressive suppression item 3
+  ///
+  /// In en, this message translates to:
+  /// **'When I felt this emotion, I made sure not to express it.'**
+  String get erqEmaSup3;
 }
 
 class _ChtEmaSurveysLocalizationDelegate

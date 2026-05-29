@@ -104,11 +104,11 @@ abstract class AppLocalizations {
   /// **'CHT Surveys Example'**
   String get appTitle;
 
-  /// Message displayed on the home screen
+  /// IPAQ name displayed on the home screen
   ///
   /// In en, this message translates to:
-  /// **'Home screen'**
-  String get homeMessage;
+  /// **'IPAQ'**
+  String get ipaqName;
 
   /// Tooltip for the language selection menu
   ///

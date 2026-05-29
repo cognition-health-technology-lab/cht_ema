@@ -4,9 +4,9 @@
   "@appTitle": {
     "description": "Title for the app"
   },
-  "homeMessage": "Pantalla de inicio",
-  "@homeMessage": {
-    "description": "Message displayed on the home screen"
+  "ipaqName": "IPAQ",
+  "@ipaqName": {
+    "description": "IPAQ name displayed on the home screen"
   },
   "languageToolTip": "Seleccionar idioma",
   "@languageToolTip": {

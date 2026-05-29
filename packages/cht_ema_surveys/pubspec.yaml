@@ -13,6 +13,7 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
+  iconify_flutter: ^0.0.7
   intl: any
   research_package:
     git:
