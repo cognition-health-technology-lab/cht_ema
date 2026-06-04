@@ -4,7 +4,7 @@ import 'dart:io' show Platform;
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:mhealthgoal/src/core/notifications/data/services/android_foreground_notifications_presenter.dart';
 import 'package:mhealthgoal/src/core/notifications/data/services/fcm_client.dart';
-import 'package:mhealthgoal/src/core/notifications/domain/notification_handler_definitions.dart';
+import 'package:mhealthgoal/src/core/notifications/domain/notification_handlers.dart';
 
 /// Simplified interface to Firebase Cloud Messaging (FCM) services.
 ///

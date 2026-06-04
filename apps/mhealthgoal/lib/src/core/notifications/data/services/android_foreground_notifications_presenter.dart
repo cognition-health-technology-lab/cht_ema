@@ -2,7 +2,7 @@ import 'dart:io' show Platform;
 
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:mhealthgoal/src/core/notifications/data/services/model_to_entity_mapper.dart';
-import 'package:mhealthgoal/src/core/notifications/domain/notification_handler_definitions.dart';
+import 'package:mhealthgoal/src/core/notifications/domain/notification_handlers.dart';
 
 /// Helper to show notifications received while the app is in the foreground on Android.
 ///

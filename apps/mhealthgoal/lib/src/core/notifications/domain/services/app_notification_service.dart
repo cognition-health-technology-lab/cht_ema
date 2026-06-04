@@ -1,13 +1,16 @@
 import 'package:flutter/foundation.dart' show debugPrint, kDebugMode;
 import 'package:mhealthgoal/src/core/notifications/domain/entities/notification.dart';
+import 'package:mhealthgoal/src/core/notifications/domain/navigation_handler.dart';
 import 'package:mhealthgoal/src/core/notifications/domain/services/fcm_notifications_service.dart';
 
 class AppNotificationService {
   late final FcmNotificationsService _notificationsService;
+  final NavigationHandler _navigationHandler;
 
-  AppNotificationService() {
+  AppNotificationService({required NavigationHandler navigationHandler})
+    : _navigationHandler = navigationHandler {
     _notificationsService = FcmNotificationsService(
-      onNotificationTap: (Notification _) {},
+      onNotificationTap: onNotificationTap,
       channelId: 'mhealthgoal_notifications',
     );
   }
@@ -23,5 +26,9 @@ class AppNotificationService {
         'Device notification token: ${await _notificationsService.getDeviceToken()}',
       );
     }
+  }
+
+  void onNotificationTap(Notification _) {
+    _navigationHandler();
   }
 }

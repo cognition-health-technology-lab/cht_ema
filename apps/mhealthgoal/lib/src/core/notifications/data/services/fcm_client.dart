@@ -1,6 +1,6 @@
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:mhealthgoal/src/core/notifications/data/services/model_to_entity_mapper.dart';
-import 'package:mhealthgoal/src/core/notifications/domain/notification_handler_definitions.dart';
+import 'package:mhealthgoal/src/core/notifications/domain/notification_handlers.dart';
 
 /// Interacts directly with the external FCM to configure, manage,
 /// and deliver remote notifications.
