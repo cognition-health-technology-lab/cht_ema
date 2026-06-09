@@ -1,5 +1,4 @@
 import 'package:cht_ema_surveys/cht_ema_surveys.dart';
-import 'package:example_surveys/chronic_health/chronic_health_page.dart';
 import 'package:example_surveys/l10n/generated/app_localizations.dart';
 import 'package:flutter/material.dart';
 
@@ -97,7 +96,7 @@ class SurveyList extends StatelessWidget {
               onPressed: () => Navigator.push(
                 context,
                 MaterialPageRoute<void>(
-                  builder: (context) => const ChronicHealthPage(),
+                  builder: (context) => ChronicHealthPage(),
                 ),
               ),
               child: Text(

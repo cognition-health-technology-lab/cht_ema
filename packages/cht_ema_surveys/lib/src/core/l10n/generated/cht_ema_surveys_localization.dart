@@ -106,6 +106,378 @@ abstract class ChtEmaSurveysLocalization {
   /// In en, this message translates to:
   /// **'Title for survey item'**
   String get itemTitle;
+
+  /// Shared yes answer option
+  ///
+  /// In en, this message translates to:
+  /// **'Yes'**
+  String get answerYes;
+
+  /// Shared no answer option
+  ///
+  /// In en, this message translates to:
+  /// **'No'**
+  String get answerNo;
+
+  /// Chronic health survey title
+  ///
+  /// In en, this message translates to:
+  /// **'Health History Survey'**
+  String get chSurveyTitle;
+
+  /// Chronic health survey instructions
+  ///
+  /// In en, this message translates to:
+  /// **'Indicate if a physical or mental health professional has diagnosed you with any of the following health conditions.'**
+  String get chInstructions;
+
+  /// Chronic health - combined instructions and Cat 1 gate question
+  ///
+  /// In en, this message translates to:
+  /// **'Indicate if a physical or mental health professional has diagnosed you with any of the following health conditions.\n\nMental Health or Substance Abuse (e.g., depression, anxiety)'**
+  String get chMentalHealthCategoryPrompt;
+
+  /// Chronic health - Cat 1 gate question
+  ///
+  /// In en, this message translates to:
+  /// **'Mental Health or Substance Abuse (e.g., depression, anxiety)'**
+  String get chMentalHealthQuestion;
+
+  /// Chronic health - Cat 1 sub-conditions question
+  ///
+  /// In en, this message translates to:
+  /// **'Which mental health or substance use conditions have you been diagnosed with?'**
+  String get chMentalHealthConditionsQuestion;
+
+  /// Chronic health condition: depression
+  ///
+  /// In en, this message translates to:
+  /// **'Depression'**
+  String get chConditionDepression;
+
+  /// Chronic health condition: anxiety reaction or panic disorder
+  ///
+  /// In en, this message translates to:
+  /// **'Anxiety reaction / panic disorder'**
+  String get chConditionAnxiety;
+
+  /// Chronic health condition: alcohol use disorder
+  ///
+  /// In en, this message translates to:
+  /// **'Alcohol use disorder'**
+  String get chConditionAlcohol;
+
+  /// Chronic health condition: drug use disorder
+  ///
+  /// In en, this message translates to:
+  /// **'Drug use disorder'**
+  String get chConditionDrugs;
+
+  /// Chronic health condition: ADHD
+  ///
+  /// In en, this message translates to:
+  /// **'Attention deficit hyperactivity disorder (ADHD)'**
+  String get chConditionAdhd;
+
+  /// Chronic health condition: PTSD
+  ///
+  /// In en, this message translates to:
+  /// **'Post-traumatic Stress Disorder (PTSD)'**
+  String get chConditionPtsd;
+
+  /// Chronic health condition: autism spectrum disorder
+  ///
+  /// In en, this message translates to:
+  /// **'Autism Spectrum Disorder'**
+  String get chConditionAutism;
+
+  /// Chronic health condition: schizophrenia
+  ///
+  /// In en, this message translates to:
+  /// **'Schizophrenia'**
+  String get chConditionSchizophrenia;
+
+  /// Chronic health condition: eating disorder
+  ///
+  /// In en, this message translates to:
+  /// **'Eating disorder'**
+  String get chConditionEatingDisorder;
+
+  /// Chronic health condition: social phobia
+  ///
+  /// In en, this message translates to:
+  /// **'Social Phobia'**
+  String get chConditionSocialPhobia;
+
+  /// Chronic health condition: personality disorder
+  ///
+  /// In en, this message translates to:
+  /// **'Personality disorder'**
+  String get chConditionPersonalityDisorder;
+
+  /// Chronic health - Cat 2 gate question
+  ///
+  /// In en, this message translates to:
+  /// **'Cancer'**
+  String get chCancerQuestion;
+
+  /// Chronic health - Cat 3 gate question
+  ///
+  /// In en, this message translates to:
+  /// **'Heart and Blood (e.g., hypertension, anemia)'**
+  String get chHeartBloodQuestion;
+
+  /// Chronic health - Cat 3 sub-conditions question
+  ///
+  /// In en, this message translates to:
+  /// **'Which heart and blood conditions have you been diagnosed with?'**
+  String get chHeartBloodConditionsQuestion;
+
+  /// Chronic health condition: hypertension
+  ///
+  /// In en, this message translates to:
+  /// **'Hypertension'**
+  String get chConditionHypertension;
+
+  /// Chronic health condition: high cholesterol
+  ///
+  /// In en, this message translates to:
+  /// **'High cholesterol'**
+  String get chConditionHighCholesterol;
+
+  /// Chronic health condition: heart attack
+  ///
+  /// In en, this message translates to:
+  /// **'Heart attack'**
+  String get chConditionHeartAttack;
+
+  /// Chronic health condition: stroke
+  ///
+  /// In en, this message translates to:
+  /// **'Stroke'**
+  String get chConditionStroke;
+
+  /// Chronic health condition: anemia
+  ///
+  /// In en, this message translates to:
+  /// **'Anemia'**
+  String get chConditionAnemia;
+
+  /// Chronic health condition: sickle cell disease
+  ///
+  /// In en, this message translates to:
+  /// **'Sickle cell disease'**
+  String get chConditionSickleCellDisease;
+
+  /// Chronic health - Cat 4 gate question
+  ///
+  /// In en, this message translates to:
+  /// **'Bone, Joint and Muscle (e.g., osteoporosis, arthritis)'**
+  String get chBoneJointQuestion;
+
+  /// Chronic health - Cat 4 sub-conditions question
+  ///
+  /// In en, this message translates to:
+  /// **'Which bone, joint, and muscle conditions have you been diagnosed with?'**
+  String get chBoneJointConditionsQuestion;
+
+  /// Chronic health condition: osteoporosis
+  ///
+  /// In en, this message translates to:
+  /// **'Osteoporosis'**
+  String get chConditionOsteoporosis;
+
+  /// Chronic health condition: fibromyalgia
+  ///
+  /// In en, this message translates to:
+  /// **'Fibromyalgia'**
+  String get chConditionFibromyalgia;
+
+  /// Chronic health condition: arthritis
+  ///
+  /// In en, this message translates to:
+  /// **'Arthritis'**
+  String get chConditionArthritis;
+
+  /// Chronic health condition: systemic lupus
+  ///
+  /// In en, this message translates to:
+  /// **'Systemic Lupus'**
+  String get chConditionLupus;
+
+  /// Chronic health - Cat 5 gate question
+  ///
+  /// In en, this message translates to:
+  /// **'Brain and Nervous System (e.g., dementia, migraine)'**
+  String get chBrainNerveQuestion;
+
+  /// Chronic health - Cat 5 sub-conditions question
+  ///
+  /// In en, this message translates to:
+  /// **'Which brain and nervous system conditions have you been diagnosed with?'**
+  String get chBrainNerveConditionsQuestion;
+
+  /// Chronic health condition: dementia
+  ///
+  /// In en, this message translates to:
+  /// **'Dementia (includes Alzheimer\'s)'**
+  String get chConditionDementia;
+
+  /// Chronic health condition: migraine headaches
+  ///
+  /// In en, this message translates to:
+  /// **'Migraine headaches'**
+  String get chConditionMigraine;
+
+  /// Chronic health condition: neuropathy
+  ///
+  /// In en, this message translates to:
+  /// **'Neuropathy'**
+  String get chConditionNeuropathy;
+
+  /// Chronic health condition: epilepsy or seizure
+  ///
+  /// In en, this message translates to:
+  /// **'Epilepsy or seizure'**
+  String get chConditionEpilepsy;
+
+  /// Chronic health condition: insomnia
+  ///
+  /// In en, this message translates to:
+  /// **'Insomnia'**
+  String get chConditionInsomnia;
+
+  /// Chronic health condition: Parkinson's disease
+  ///
+  /// In en, this message translates to:
+  /// **'Parkinson\'s disease'**
+  String get chConditionParkinsons;
+
+  /// Chronic health condition: concussions or loss of consciousness
+  ///
+  /// In en, this message translates to:
+  /// **'Concussions or loss of consciousness'**
+  String get chConditionConcussion;
+
+  /// Chronic health condition: memory loss or impairment
+  ///
+  /// In en, this message translates to:
+  /// **'Memory loss or impairment'**
+  String get chConditionMemoryLoss;
+
+  /// Chronic health condition: chronic fatigue
+  ///
+  /// In en, this message translates to:
+  /// **'Chronic fatigue'**
+  String get chConditionChronicFatigue;
+
+  /// Chronic health condition: multiple sclerosis
+  ///
+  /// In en, this message translates to:
+  /// **'Multiple sclerosis (MS)'**
+  String get chConditionMs;
+
+  /// Chronic health condition: spinal cord injury or impairment
+  ///
+  /// In en, this message translates to:
+  /// **'Spinal cord injury or impairment'**
+  String get chConditionSpinalCord;
+
+  /// Chronic health condition: traumatic brain injury
+  ///
+  /// In en, this message translates to:
+  /// **'Traumatic brain injury (TBI)'**
+  String get chConditionTbi;
+
+  /// Chronic health condition: narcolepsy
+  ///
+  /// In en, this message translates to:
+  /// **'Narcolepsy'**
+  String get chConditionNarcolepsy;
+
+  /// Chronic health condition: ALS
+  ///
+  /// In en, this message translates to:
+  /// **'Lou Gehrig\'s disease (amyotrophic lateral sclerosis or ALS)'**
+  String get chConditionAls;
+
+  /// Chronic health condition: muscular dystrophy
+  ///
+  /// In en, this message translates to:
+  /// **'Muscular dystrophy (MD)'**
+  String get chConditionMuscularDystrophy;
+
+  /// Chronic health - Cat 6 gate question
+  ///
+  /// In en, this message translates to:
+  /// **'Lung Conditions (e.g., asthma)'**
+  String get chLungQuestion;
+
+  /// Chronic health - Cat 6 sub-conditions question
+  ///
+  /// In en, this message translates to:
+  /// **'Which lung conditions have you been diagnosed with?'**
+  String get chLungConditionsQuestion;
+
+  /// Chronic health condition: asthma
+  ///
+  /// In en, this message translates to:
+  /// **'Asthma'**
+  String get chConditionAsthma;
+
+  /// Chronic health condition: chronic lung disease
+  ///
+  /// In en, this message translates to:
+  /// **'Chronic lung disease (COPD, emphysema, or bronchitis)'**
+  String get chConditionCopd;
+
+  /// Chronic health - Cat 7 gate question
+  ///
+  /// In en, this message translates to:
+  /// **'Hormone and Endocrine (e.g., diabetes, hypothyroidism)'**
+  String get chHormoneQuestion;
+
+  /// Chronic health - Cat 7 sub-conditions question
+  ///
+  /// In en, this message translates to:
+  /// **'Which hormone and endocrine conditions have you been diagnosed with?'**
+  String get chHormoneConditionsQuestion;
+
+  /// Chronic health condition: pre-diabetes
+  ///
+  /// In en, this message translates to:
+  /// **'Pre-diabetes'**
+  String get chConditionPrediabetes;
+
+  /// Chronic health condition: Type I Diabetes
+  ///
+  /// In en, this message translates to:
+  /// **'Type I Diabetes'**
+  String get chConditionDiabetesType1;
+
+  /// Chronic health condition: Type II Diabetes
+  ///
+  /// In en, this message translates to:
+  /// **'Type II Diabetes'**
+  String get chConditionDiabetesType2;
+
+  /// Chronic health condition: hypothyroidism
+  ///
+  /// In en, this message translates to:
+  /// **'Hypothyroidism'**
+  String get chConditionHypothyroidism;
+
+  /// Chronic health survey completion title
+  ///
+  /// In en, this message translates to:
+  /// **'Survey Complete'**
+  String get chCompletionTitle;
+
+  /// Chronic health survey completion text
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you for completing the health history survey.'**
+  String get chCompletionText;
 }
 
 class _ChtEmaSurveysLocalizationDelegate
