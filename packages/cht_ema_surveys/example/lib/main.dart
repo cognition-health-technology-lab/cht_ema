@@ -96,7 +96,7 @@ class SurveyList extends StatelessWidget {
               onPressed: () => Navigator.push(
                 context,
                 MaterialPageRoute<void>(
-                  builder: (context) => const SociodemographicPage(),
+                  builder: (context) => SociodemographicPage(),
                 ),
               ),
               child: Text(

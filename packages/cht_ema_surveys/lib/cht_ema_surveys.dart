@@ -1,9 +1,3 @@
-import 'package:cht_ema_surveys/src/sociodemographic/sociodemographic_page.dart';
-
 export 'package:cht_ema_surveys/src/core/l10n/cht_rp_localization_loader.dart';
 export 'package:cht_ema_surveys/src/core/l10n/generated/cht_ema_surveys_localization.dart';
-export 'package:cht_ema_surveys/src/sociodemographic/sociodemographic_page.dart';
-
-class SurveyPage extends SociodemographicPage {
-  const SurveyPage({super.key});
-}
+export 'package:cht_ema_surveys/src/sociodemographic/presentation/sociodemographic_page.dart';
