@@ -8,6 +8,8 @@ environment:
   sdk: ^3.9.0
 
 dependencies:
+  cht_cognition:
+    path: ../../packages/cht_cognition
   firebase_core: ^4.7.0
   firebase_messaging: ^16.2.0
   flutter:
