@@ -50,10 +50,6 @@ class EmaSessionViewModel extends ChangeNotifier {
     _tasks.shuffle();
   }
 
-  // void runCurrentTask() {
-  //   throw UnimplementedError();
-  // }
-
   void onCompleteCognitiveTask(CognitiveData data) {
     _nextTask();
     _finishIfNecessary();
