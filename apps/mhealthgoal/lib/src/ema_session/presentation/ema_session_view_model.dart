@@ -14,6 +14,27 @@ class EmaSessionViewModel extends ChangeNotifier {
     _counterBalanceTasks();
   }
 
+  void _counterBalanceTasks() {
+    _tasks.shuffle();
+  }
+
+  void onCompleteCognitiveTask(CognitiveData data) {
+    _setupNextTask();
+    _finishIfNecessary();
+    notifyListeners();
+  }
+
+  void _setupNextTask() {
+    _tasks.removeAt(0);
+  }
+
+  void _finishIfNecessary() {
+    if (_tasks.isNotEmpty) {
+      return;
+    }
+    _isFinished = true;
+  }
+
   void _setupTasks() {
     final goNoGoTask = EmaTask(
       identifier: 'Go/No-Go Task',
@@ -43,26 +64,5 @@ class EmaSessionViewModel extends ChangeNotifier {
     );
 
     _tasks.addAll([goNoGoTask, nBackTask]);
-  }
-
-  void _counterBalanceTasks() {
-    _tasks.shuffle();
-  }
-
-  void onCompleteCognitiveTask(CognitiveData data) {
-    _setupNextTask();
-    _finishIfNecessary();
-    notifyListeners();
-  }
-
-  void _setupNextTask() {
-    _tasks.removeAt(0);
-  }
-
-  void _finishIfNecessary() {
-    if (_tasks.isNotEmpty) {
-      return;
-    }
-    _isFinished = true;
   }
 }
