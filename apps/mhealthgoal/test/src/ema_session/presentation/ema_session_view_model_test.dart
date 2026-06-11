@@ -2,6 +2,7 @@ import 'package:cht_cognition/cht_cognition.dart';
 import 'package:cht_cognition/src/core/data/session_data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:mhealthgoal/src/ema_session/data/ema_task.dart';
 import 'package:mhealthgoal/src/ema_session/presentation/ema_session_view_model.dart';
 
 void main() {
@@ -12,9 +13,9 @@ void main() {
   });
 
   group('EmaSessionViewModel.init', () {
-    test('currentTask returns a widget', () {
+    test('currentTask returns an EMA task', () {
       viewModel.init();
-      expect(viewModel.currentTask, isA<Widget>());
+      expect(viewModel.currentTask, isA<EmaTask>());
     });
   });
 
