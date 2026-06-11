@@ -50,12 +50,12 @@ class EmaSessionViewModel extends ChangeNotifier {
   }
 
   void onCompleteCognitiveTask(CognitiveData data) {
-    _nextTask();
+    _setupNextTask();
     _finishIfNecessary();
     notifyListeners();
   }
 
-  void _nextTask() {
+  void _setupNextTask() {
     _tasks.removeAt(0);
   }
 
