@@ -52,7 +52,11 @@ class EmaSessionViewModel extends ChangeNotifier {
   // }
 
   void onCompleteCognitiveTask(CognitiveData data) {
-    throw UnimplementedError();
+    _tasks.removeAt(0);
+    if (_tasks.isEmpty) {
+      onFinished();
+    }
+    notifyListeners();
   }
 
   void nextTask() {
