@@ -1,3 +1,4 @@
+import 'package:cht_cognition/cht_cognition.dart';
 import 'package:flutter/material.dart';
 import 'package:mhealthgoal/src/app/app_deps.dart';
 import 'package:mhealthgoal/src/l10n/generated/app_localizations.dart';
@@ -11,7 +12,11 @@ class MHealthGoalApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      localizationsDelegates: [
+        ChtCognitionLocalization.delegate,
+        ChtRpLocalizationLoader.rpDelegate,
+        ...AppLocalizations.localizationsDelegates,
+      ],
       supportedLocales: AppLocalizations.supportedLocales,
 
       routerConfig: _appDependencies.appRouter.router,
