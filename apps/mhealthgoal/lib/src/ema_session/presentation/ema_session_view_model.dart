@@ -7,7 +7,6 @@ class EmaSessionViewModel extends ChangeNotifier {
   bool _isFinished = false;
 
   bool get isFinished => _isFinished;
-
   EmaTask get currentTask => _tasks.first;
 
   void init() {
