@@ -6,7 +6,7 @@ import 'package:mhealthgoal/src/ema_session/presentation/ema_session_view_model.
 class EmaSessionPage extends StatefulWidget {
   final VoidCallback _onFinished;
 
-  EmaSessionPage({required VoidCallback onFinished, super.key})
+  const EmaSessionPage({required VoidCallback onFinished, super.key})
     : _onFinished = onFinished;
 
   @override
@@ -16,10 +16,17 @@ class EmaSessionPage extends StatefulWidget {
 class _EmaSessionPageState extends State<EmaSessionPage> {
   final _viewModel = EmaSessionViewModel();
 
-  // TODO - init vm notifier
+  @override
+  void initState() {
+    super.initState();
+    _viewModel.init();
+  }
+
   @override
   Widget build(BuildContext context) {
-    /// todo - adapt to actual impl
-    return const Scaffold(body: Center(child: Text('EMA Session Page')));
+    if (_viewModel.isFinished) {
+      widget._onFinished();
+    }
+    return _viewModel.currentTask.build();
   }
 }
