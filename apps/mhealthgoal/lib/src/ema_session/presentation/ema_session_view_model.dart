@@ -4,6 +4,9 @@ import 'package:mhealthgoal/src/ema_session/data/ema_task.dart';
 
 class EmaSessionViewModel extends ChangeNotifier {
   final _tasks = <EmaTask>[];
+  bool _isFinished = false;
+
+  bool get isFinished => _isFinished;
 
   EmaTask get currentTask => _tasks.first;
 
@@ -52,18 +55,19 @@ class EmaSessionViewModel extends ChangeNotifier {
   // }
 
   void onCompleteCognitiveTask(CognitiveData data) {
-    _tasks.removeAt(0);
-    if (_tasks.isEmpty) {
-      onFinished();
-    }
+    _nextTask();
+    _finishIfNecessary();
     notifyListeners();
   }
 
-  void nextTask() {
-    throw UnimplementedError();
+  void _nextTask() {
+    _tasks.removeAt(0);
   }
 
-  void onFinished() {
-    throw UnimplementedError();
+  void _finishIfNecessary() {
+    if (_tasks.isNotEmpty) {
+      return;
+    }
+    _isFinished = true;
   }
 }

@@ -35,5 +35,34 @@ void main() {
       viewModel.onCompleteCognitiveTask(data);
       expect(viewModel.currentTask.identifier, isNot(initialTaskId));
     });
+    test('when session is finished, flags the session as such.', () {
+      viewModel.init();
+
+      final sessionData = SessionData(
+        participantId: '',
+        sessionId: '',
+        startTime: DateTime.now(),
+        endTime: DateTime.now(),
+      );
+      final data = CognitiveData(sessionData: sessionData, trialData: []);
+
+      viewModel.onCompleteCognitiveTask(data);
+      viewModel.onCompleteCognitiveTask(data);
+      expect(viewModel.isFinished, isTrue);
+    });
+    test('when session is unfinished, does not change the session flag.', () {
+      viewModel.init();
+
+      final sessionData = SessionData(
+        participantId: '',
+        sessionId: '',
+        startTime: DateTime.now(),
+        endTime: DateTime.now(),
+      );
+      final data = CognitiveData(sessionData: sessionData, trialData: []);
+
+      viewModel.onCompleteCognitiveTask(data);
+      expect(viewModel.isFinished, isFalse);
+    });
   });
 }
