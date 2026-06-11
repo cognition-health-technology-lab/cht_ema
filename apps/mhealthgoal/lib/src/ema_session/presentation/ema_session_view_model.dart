@@ -19,7 +19,7 @@ class EmaSessionViewModel extends ChangeNotifier {
     final goNoGoTask = EmaTask(
       identifier: 'Go/No-Go Task',
       description: 'A cognitive task that measures response inhibition (EF).',
-      builder: () => GoNoGoTask(
+      build: () => GoNoGoTask(
         processData: onCompleteCognitiveTask,
         participantId: 'p001',
         sessionId: 's001',
@@ -33,7 +33,7 @@ class EmaSessionViewModel extends ChangeNotifier {
       identifier: 'N-Back Task',
       description:
           'A cognitive task that measures working memory updating (EF).',
-      builder: () => NBackTask(
+      build: () => NBackTask(
         processData: onCompleteCognitiveTask,
         participantId: 'p001',
         sessionId: 's001',
