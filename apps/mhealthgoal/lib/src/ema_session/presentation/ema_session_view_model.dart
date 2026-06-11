@@ -5,7 +5,7 @@ import 'package:mhealthgoal/src/ema_session/data/ema_task.dart';
 class EmaSessionViewModel extends ChangeNotifier {
   final _tasks = <EmaTask>[];
 
-  Widget get currentTask => _tasks.first.builder();
+  EmaTask get currentTask => _tasks.first;
 
   void init() {
     _setupTasks();
