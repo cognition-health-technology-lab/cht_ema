@@ -1,4 +1,5 @@
 import 'package:cht_cognition/cht_cognition.dart';
+import 'package:cht_cognition_example/instructionspage.dart';
 import 'package:cht_cognition_example/l10n/generated/app_localizations.dart';
 import 'package:flutter/material.dart';
 
@@ -31,7 +32,7 @@ class _ExampleAppState extends State<ExampleApp> {
       ],
       supportedLocales: AppLocalizations.supportedLocales,
       locale: locale,
-      home: HomePage(onLocaleChange: changeLocale),
+      home: Instructionspage(),
     );
   }
 
