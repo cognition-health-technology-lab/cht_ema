@@ -104,12 +104,6 @@ abstract class AppLocalizations {
   /// **'CHT Surveys Example'**
   String get appTitle;
 
-  /// Message displayed on the home screen
-  ///
-  /// In en, this message translates to:
-  /// **'Home screen'**
-  String get homeMessage;
-
   /// Tooltip for the language selection menu
   ///
   /// In en, this message translates to:
@@ -127,6 +121,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Español'**
   String get langOptionEs;
+
+  /// Home page button text for the ERQ
+  ///
+  /// In en, this message translates to:
+  /// **'Emotion Regulation Questionnaire'**
+  String get erqButtonLabel;
 }
 
 class _AppLocalizationsDelegate

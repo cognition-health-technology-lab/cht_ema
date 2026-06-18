@@ -1,7 +1,63 @@
 {
   "@@locale": "es",
-  "itemTitle": "Título del item",
-  "@itemTitle": {
-    "description": "Title for the EMA survey item"
+  "erqInstructionsTitle": "Instrucciones",
+  "@erqInstructionsTitle": {
+    "description": "ERQ instructions title"
+  },
+  "erqInstructionsBody": "Describe cómo regulaste y manejaste tus emociones desde la última encuesta seleccionando la opción que mejor describe cuán de acuerdo estás.",
+  "@erqInstructionsBody": {
+    "description": "ERQ instructions body"
+  },
+  "erqCr1": "Desde la última encuesta, cuando quería sentir más una emoción positiva (como alegría o diversión), cambié mi manera de pensar sobre la situación.",
+  "@erqCr1": {
+    "description": "ERQ cognitive reappraisal item 1"
+  },
+  "erqCr2": "Desde la última encuesta, controlé mis emociones cambiando mi manera de pensar sobre la situación en la que me encontraba.",
+  "@erqCr2": {
+    "description": "ERQ cognitive reappraisal item 2"
+  },
+  "erqCr3": "Desde la última encuesta, cuando quería sentir menos una emoción negativa (como tristeza o enojo), cambié mi manera de pensar sobre la situación.",
+  "@erqCr3": {
+    "description": "ERQ cognitive reappraisal item 3"
+  },
+  "erqSup1": "Desde la última encuesta, controlé mis emociones no expresándolas.",
+  "@erqSup1": {
+    "description": "ERQ expressive suppression item 1"
+  },
+  "erqSup2": "Desde la última encuesta, guardé mis emociones para mí mismo/a.",
+  "@erqSup2": {
+    "description": "ERQ expressive suppression item 2"
+  },
+  "erqSup3": "Desde la última encuesta, cuando sentí emociones negativas, me aseguré de no expresarlas.",
+  "@erqSup3": {
+    "description": "ERQ expressive suppression item 3"
+  },
+  "likertStronglyDisagree": "Totalmente en desacuerdo",
+  "@likertStronglyDisagree": {
+    "description": "Likert label for strongly disagree response"
+  },
+  "likertDisagree": "En desacuerdo",
+  "@likertDisagree": {
+    "description": "Likert label for disagree response"
+  },
+  "likertSlightlyDisagree": "Algo en desacuerdo",
+  "@likertSlightlyDisagree": {
+    "description": "Likert label for slightly disagree response"
+  },
+  "likertNeutral": "Neutral",
+  "@likertNeutral": {
+    "description": "Likert label for neutral response"
+  },
+  "likertSlightlyAgree": "Algo de acuerdo",
+  "@likertSlightlyAgree": {
+    "description": "Likert label for slightly agree response"
+  },
+  "likertAgree": "De acuerdo",
+  "@likertAgree": {
+    "description": "Likert label for agree response"
+  },
+  "likertStronglyAgree": "Totalmente de acuerdo",
+  "@likertStronglyAgree": {
+    "description": "Likert label for strongly agree response"
   }
 }

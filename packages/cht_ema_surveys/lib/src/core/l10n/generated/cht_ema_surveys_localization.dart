@@ -101,11 +101,95 @@ abstract class ChtEmaSurveysLocalization {
     Locale('es'),
   ];
 
-  /// Title for the EMA survey item
+  /// ERQ instructions title
   ///
   /// In en, this message translates to:
-  /// **'Title for survey item'**
-  String get itemTitle;
+  /// **'Instructions'**
+  String get erqInstructionsTitle;
+
+  /// ERQ instructions body
+  ///
+  /// In en, this message translates to:
+  /// **'Describe how you have regulated and managed your emotions since the last survey by selecting the option that best describes how much you agree.'**
+  String get erqInstructionsBody;
+
+  /// ERQ cognitive reappraisal item 1
+  ///
+  /// In en, this message translates to:
+  /// **'Since the last survey, when I wanted to feel more positive emotion (such as joy or amusement), I changed the way I was thinking about the situation.'**
+  String get erqCr1;
+
+  /// ERQ cognitive reappraisal item 2
+  ///
+  /// In en, this message translates to:
+  /// **'Since the last survey, I controlled my emotions by changing the way I was thinking about the situation I was in.'**
+  String get erqCr2;
+
+  /// ERQ cognitive reappraisal item 3
+  ///
+  /// In en, this message translates to:
+  /// **'Since the last survey, when I wanted to feel less negative emotion (such as sadness or anger), I changed the way I was thinking about the situation.'**
+  String get erqCr3;
+
+  /// ERQ expressive suppression item 1
+  ///
+  /// In en, this message translates to:
+  /// **'Since the last survey, I controlled my emotions by not expressing them.'**
+  String get erqSup1;
+
+  /// ERQ expressive suppression item 2
+  ///
+  /// In en, this message translates to:
+  /// **'Since the last survey, I kept my emotions to myself.'**
+  String get erqSup2;
+
+  /// ERQ expressive suppression item 3
+  ///
+  /// In en, this message translates to:
+  /// **'Since the last survey, when I felt negative emotions, I made sure not to express them.'**
+  String get erqSup3;
+
+  /// Likert label for strongly disagree response
+  ///
+  /// In en, this message translates to:
+  /// **'Strongly disagree'**
+  String get likertStronglyDisagree;
+
+  /// Likert label for disagree response
+  ///
+  /// In en, this message translates to:
+  /// **'Disagree'**
+  String get likertDisagree;
+
+  /// Likert label for slightly disagree response
+  ///
+  /// In en, this message translates to:
+  /// **'Slightly disagree'**
+  String get likertSlightlyDisagree;
+
+  /// Likert label for neutral response
+  ///
+  /// In en, this message translates to:
+  /// **'Neutral'**
+  String get likertNeutral;
+
+  /// Likert label for slightly agree response
+  ///
+  /// In en, this message translates to:
+  /// **'Slightly agree'**
+  String get likertSlightlyAgree;
+
+  /// Likert label for agree response
+  ///
+  /// In en, this message translates to:
+  /// **'Agree'**
+  String get likertAgree;
+
+  /// Likert label for strongly agree response
+  ///
+  /// In en, this message translates to:
+  /// **'Strongly agree'**
+  String get likertStronglyAgree;
 }
 
 class _ChtEmaSurveysLocalizationDelegate

@@ -53,6 +53,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     final localizations = AppLocalizations.of(context);
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -87,6 +88,7 @@ class SurveyList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final localizations = AppLocalizations.of(context);
+
     return Scaffold(
       body: Center(
         child: Column(
@@ -95,11 +97,12 @@ class SurveyList extends StatelessWidget {
             ElevatedButton(
               onPressed: () => Navigator.push(
                 context,
-                MaterialPageRoute<void>(builder: (context) => SurveyPage()),
+                MaterialPageRoute<void>(builder: (context) => ErqPage()),
               ),
               child: Text(
-                localizations.homeMessage,
+                localizations.erqButtonLabel,
                 style: Theme.of(context).textTheme.headlineMedium,
+                textAlign: TextAlign.center,
               ),
             ),
           ],
