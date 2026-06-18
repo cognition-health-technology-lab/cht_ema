@@ -1,3 +1,9 @@
 {
-  "cSpell.words": ["likert", "bermonti", "mhealthgoal", "multipackage"]
+  "cSpell.words": [
+    "likert",
+    "bermonti",
+    "mhealthgoal",
+    "multipackage"
+  ],
+  "dart.flutterSdkPath": ".fvm/versions/3.35.5"
 }
