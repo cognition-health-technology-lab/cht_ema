@@ -46,6 +46,6 @@ final _routes = <GoRoute>[
   GoRoute(
     name: 'emaSessionPage',
     path: '/emaSessionPage',
-    builder: (context, state) => EmaSessionPage(),
+    builder: (context, state) => EmaSessionPage(onFinished: AppRouter().navigateToHome,
   ),
 ];
