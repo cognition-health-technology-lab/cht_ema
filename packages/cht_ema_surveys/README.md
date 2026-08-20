@@ -18,6 +18,7 @@ It demonstrates:
 - How to initialize the package
 - How to load translations
 - How to run the surveys
+- How to present cognition and survey features from a shared task list
 
 ## 📦 Installation
 

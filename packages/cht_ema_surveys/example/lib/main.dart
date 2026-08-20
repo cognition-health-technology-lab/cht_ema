@@ -1,5 +1,8 @@
-import 'package:cht_ema_surveys/cht_ema_surveys.dart';
+import 'package:cht_cognition/cht_cognition.dart' as cognition;
+import 'package:cht_ema_surveys/cht_ema_surveys.dart' as surveys;
 import 'package:example_surveys/l10n/generated/app_localizations.dart';
+import 'package:example_surveys/task_list/task_catalog.dart';
+import 'package:example_surveys/task_list/task_list_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -25,8 +28,9 @@ class _ExampleAppState extends State<ExampleApp> {
         useMaterial3: true,
       ),
       localizationsDelegates: [
-        ChtEmaSurveysLocalization.delegate,
-        ChtRpLocalizationLoader.rpDelegate,
+        cognition.ChtCognitionLocalization.delegate,
+        surveys.ChtEmaSurveysLocalization.delegate,
+        surveys.ChtRpLocalizationLoader.rpDelegate,
         ...AppLocalizations.localizationsDelegates,
       ],
       supportedLocales: AppLocalizations.supportedLocales,
@@ -53,6 +57,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     final localizations = AppLocalizations.of(context);
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -76,34 +81,9 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      body: const SurveyList(),
-    );
-  }
-}
-
-class SurveyList extends StatelessWidget {
-  const SurveyList({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            ElevatedButton(
-              onPressed: () => Navigator.push(
-                context,
-                MaterialPageRoute<void>(builder: (context) => SurveyPage()),
-              ),
-              child: Text(
-                localizations.homeMessage,
-                style: Theme.of(context).textTheme.headlineMedium,
-              ),
-            ),
-          ],
-        ),
+      body: TaskListPage(
+        title: localizations.taskListTitle,
+        items: buildTaskCatalog(localizations),
       ),
     );
   }
