@@ -101,6 +101,7 @@ class SurveyList extends StatelessWidget {
               ),
               child: Text(
                 localizations.homeMessage,
+                textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
             ),
