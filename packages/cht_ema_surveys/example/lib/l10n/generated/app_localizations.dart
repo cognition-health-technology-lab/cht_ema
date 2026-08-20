@@ -104,11 +104,11 @@ abstract class AppLocalizations {
   /// **'CHT Surveys Example'**
   String get appTitle;
 
-  /// Message displayed on the home screen
+  /// Label for the survey launch button
   ///
   /// In en, this message translates to:
-  /// **'Home screen'**
-  String get homeMessage;
+  /// **'Sociodemographic Survey'**
+  String get surveyLaunchButtonLabel;
 
   /// Tooltip for the language selection menu
   ///

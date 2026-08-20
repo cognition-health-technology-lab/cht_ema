@@ -1,7 +1,223 @@
 {
   "@@locale": "en",
-  "itemTitle": "Title for survey item",
-  "@itemTitle": {
-    "description": "Title for the EMA survey item"
+  "ageQuestion": "What is your age?",
+  "@ageQuestion": {
+    "description": "Sociodemographic survey - Q1 age"
+  },
+  "biologicalSexQuestion": "What biological sex were you assigned at birth?",
+  "@biologicalSexQuestion": {
+    "description": "Sociodemographic survey - Q2 biological sex"
+  },
+  "sexMale": "Male",
+  "@sexMale": {
+    "description": "Sociodemographic survey - Q2 biological sex option: male"
+  },
+  "sexFemale": "Female",
+  "@sexFemale": {
+    "description": "Sociodemographic survey - Q2 biological sex option: female"
+  },
+  "sexIntersexual": "Intersexual",
+  "@sexIntersexual": {
+    "description": "Sociodemographic survey - Q2 biological sex option: intersexual"
+  },
+  "sexOther": "Other",
+  "@sexOther": {
+    "description": "Sociodemographic survey - Q2 biological sex option: other"
+  },
+  "sexOtherSpecify": "Please specify your biological sex",
+  "@sexOtherSpecify": {
+    "description": "Sociodemographic survey - Q2b biological sex other specify prompt"
+  },
+  "genderQuestion": "Gender:",
+  "@genderQuestion": {
+    "description": "Sociodemographic survey - Q3 gender identity"
+  },
+  "genderMale": "Male",
+  "@genderMale": {
+    "description": "Sociodemographic survey - Q3 gender identity option: male"
+  },
+  "genderFemale": "Female",
+  "@genderFemale": {
+    "description": "Sociodemographic survey - Q3 gender identity option: female"
+  },
+  "genderNonBinary": "Non-binary",
+  "@genderNonBinary": {
+    "description": "Sociodemographic survey - Q3 gender identity option: non-binary"
+  },
+  "genderTransgender": "Transgender",
+  "@genderTransgender": {
+    "description": "Sociodemographic survey - Q3 gender identity option: transgender"
+  },
+  "genderOther": "Other",
+  "@genderOther": {
+    "description": "Sociodemographic survey - Q3 gender identity option: other"
+  },
+  "genderOtherSpecify": "Please specify your gender",
+  "@genderOtherSpecify": {
+    "description": "Sociodemographic survey - Q3b gender identity other specify prompt"
+  },
+  "primaryLanguageQuestion": "Primary Language:",
+  "@primaryLanguageQuestion": {
+    "description": "Sociodemographic survey - Q4 primary language"
+  },
+  "languageSpanish": "Spanish",
+  "@languageSpanish": {
+    "description": "Sociodemographic survey - Q4 primary language option: Spanish"
+  },
+  "languageEnglish": "English",
+  "@languageEnglish": {
+    "description": "Sociodemographic survey - Q4 primary language option: English"
+  },
+  "householdIncomeQuestion": "What is your household income?",
+  "@householdIncomeQuestion": {
+    "description": "Sociodemographic survey - Q5 household income"
+  },
+  "incomeLessThan10k": "Less than $10,000",
+  "@incomeLessThan10k": {
+    "description": "Sociodemographic survey - Q5 household income option: less than $10,000"
+  },
+  "income10kTo24k": "$10,000 - $24,999",
+  "@income10kTo24k": {
+    "description": "Sociodemographic survey - Q5 household income option: $10,000 to $24,999"
+  },
+  "income25kTo34k": "$25,000 - $34,999",
+  "@income25kTo34k": {
+    "description": "Sociodemographic survey - Q5 household income option: $25,000 to $34,999"
+  },
+  "income35kTo49k": "$35,000 - $49,999",
+  "@income35kTo49k": {
+    "description": "Sociodemographic survey - Q5 household income option: $35,000 to $49,999"
+  },
+  "income50kTo74k": "$50,000 - $74,999",
+  "@income50kTo74k": {
+    "description": "Sociodemographic survey - Q5 household income option: $50,000 to $74,999"
+  },
+  "income75kTo99k": "$75,000 - $99,999",
+  "@income75kTo99k": {
+    "description": "Sociodemographic survey - Q5 household income option: $75,000 to $99,999"
+  },
+  "income100kTo149k": "$100,000 - $149,999",
+  "@income100kTo149k": {
+    "description": "Sociodemographic survey - Q5 household income option: $100,000 to $149,999"
+  },
+  "income150kTo199k": "$150,000 - $199,999",
+  "@income150kTo199k": {
+    "description": "Sociodemographic survey - Q5 household income option: $150,000 to $199,999"
+  },
+  "income200kOrMore": "$200,000 or more",
+  "@income200kOrMore": {
+    "description": "Sociodemographic survey - Q5 household income option: $200,000 or more"
+  },
+  "maritalStatusQuestion": "What is your current marital status?",
+  "@maritalStatusQuestion": {
+    "description": "Sociodemographic survey - Q6 marital status"
+  },
+  "maritalMarried": "Married",
+  "@maritalMarried": {
+    "description": "Sociodemographic survey - Q6 marital status option: married"
+  },
+  "maritalDivorced": "Divorced",
+  "@maritalDivorced": {
+    "description": "Sociodemographic survey - Q6 marital status option: divorced"
+  },
+  "maritalWidowed": "Widow/widower",
+  "@maritalWidowed": {
+    "description": "Sociodemographic survey - Q6 marital status option: widow or widower"
+  },
+  "maritalSeparated": "Separated",
+  "@maritalSeparated": {
+    "description": "Sociodemographic survey - Q6 marital status option: separated"
+  },
+  "maritalNeverMarried": "I've never been married",
+  "@maritalNeverMarried": {
+    "description": "Sociodemographic survey - Q6 marital status option: never married"
+  },
+  "maritalCohabiting": "Live with a partner without being married",
+  "@maritalCohabiting": {
+    "description": "Sociodemographic survey - Q6 marital status option: cohabiting"
+  },
+  "educationLevelQuestion": "What is the highest degree or level of education you have completed?",
+  "@educationLevelQuestion": {
+    "description": "Sociodemographic survey - Q7 education level"
+  },
+  "eduHighSchool": "Fourth year of high school",
+  "@eduHighSchool": {
+    "description": "Sociodemographic survey - Q7 education level option: fourth year of high school"
+  },
+  "eduTechnical": "Technical grade",
+  "@eduTechnical": {
+    "description": "Sociodemographic survey - Q7 education level option: technical grade"
+  },
+  "eduAssociate": "Associate degree",
+  "@eduAssociate": {
+    "description": "Sociodemographic survey - Q7 education level option: associate degree"
+  },
+  "eduBachelor": "Bachelor's degree",
+  "@eduBachelor": {
+    "description": "Sociodemographic survey - Q7 education level option: bachelor's degree"
+  },
+  "eduMasters": "Master's degree",
+  "@eduMasters": {
+    "description": "Sociodemographic survey - Q7 education level option: master's degree"
+  },
+  "eduDoctorate": "Doctorate",
+  "@eduDoctorate": {
+    "description": "Sociodemographic survey - Q7 education level option: doctorate"
+  },
+  "eduPostDoctorate": "Post-doctorate",
+  "@eduPostDoctorate": {
+    "description": "Sociodemographic survey - Q7 education level option: post-doctorate"
+  },
+  "eduOther": "Other",
+  "@eduOther": {
+    "description": "Sociodemographic survey - Q7 education level option: other"
+  },
+  "educationOtherSpecify": "Please specify your education level",
+  "@educationOtherSpecify": {
+    "description": "Sociodemographic survey - Q7b education level other specify prompt"
+  },
+  "currentlyStudyingQuestion": "Are you currently studying?",
+  "@currentlyStudyingQuestion": {
+    "description": "Sociodemographic survey - Q8 currently studying"
+  },
+  "currentAcademicLevelQuestion": "Current academic level:",
+  "@currentAcademicLevelQuestion": {
+    "description": "Sociodemographic survey - Q8b current academic level (conditional)"
+  },
+  "academicLevelOtherSpecify": "Please specify your current academic level",
+  "@academicLevelOtherSpecify": {
+    "description": "Sociodemographic survey - Q8b current academic level other specify prompt"
+  },
+  "currentlyWorkingQuestion": "Do you currently work?",
+  "@currentlyWorkingQuestion": {
+    "description": "Sociodemographic survey - Q9 currently working"
+  },
+  "jobTypeQuestion": "Please specify your job type",
+  "@jobTypeQuestion": {
+    "description": "Sociodemographic survey - Q9b job type (conditional)"
+  },
+  "jobTypeHint": "Describe your job or occupation",
+  "@jobTypeHint": {
+    "description": "Sociodemographic survey - Q9b job type text field hint"
+  },
+  "answerYes": "Yes",
+  "@answerYes": {
+    "description": "Shared yes answer option"
+  },
+  "answerNo": "No",
+  "@answerNo": {
+    "description": "Shared no answer option"
+  },
+  "specifyHint": "Specify...",
+  "@specifyHint": {
+    "description": "Shared text field hint for specify prompts"
+  },
+  "sociodemographicCompletionTitle": "Survey Complete",
+  "@sociodemographicCompletionTitle": {
+    "description": "Sociodemographic survey completion step title"
+  },
+  "sociodemographicCompletionText": "Thank you for completing the sociodemographic survey.",
+  "@sociodemographicCompletionText": {
+    "description": "Sociodemographic survey completion step text"
   }
 }

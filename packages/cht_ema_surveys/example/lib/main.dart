@@ -95,10 +95,12 @@ class SurveyList extends StatelessWidget {
             ElevatedButton(
               onPressed: () => Navigator.push(
                 context,
-                MaterialPageRoute<void>(builder: (context) => SurveyPage()),
+                MaterialPageRoute<void>(
+                  builder: (context) => SociodemographicPage(),
+                ),
               ),
               child: Text(
-                localizations.homeMessage,
+                localizations.surveyLaunchButtonLabel,
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
             ),

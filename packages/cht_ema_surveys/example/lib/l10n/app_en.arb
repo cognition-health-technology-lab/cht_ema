@@ -4,9 +4,9 @@
   "@appTitle": {
     "description": "Title for the app"
   },
-  "homeMessage": "Home screen",
-  "@homeMessage": {
-    "description": "Message displayed on the home screen"
+  "surveyLaunchButtonLabel": "Sociodemographic Survey",
+  "@surveyLaunchButtonLabel": {
+    "description": "Label for the survey launch button"
   },
   "languageToolTip": "Select Language",
   "@languageToolTip": {
