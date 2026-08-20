@@ -61,6 +61,7 @@ class _HomePageState extends State<HomePage> {
           PopupMenuButton<Locale?>(
             tooltip: localizations.languageToolTip,
             onSelected: widget.onLocaleChange,
+            icon: const Icon(Icons.translate),
             itemBuilder: (BuildContext context) {
               return <PopupMenuItem<Locale?>>[
                 PopupMenuItem<Locale?>(
