@@ -1,7 +1,8 @@
 import 'package:cht_cognition/cht_cognition.dart' as cognition;
 import 'package:cht_ema_surveys/cht_ema_surveys.dart' as surveys;
 import 'package:example_surveys/l10n/generated/app_localizations.dart';
-import 'package:example_surveys/task_list/task_list.dart';
+import 'package:example_surveys/task_list/task_catalog.dart';
+import 'package:example_surveys/task_list/task_list_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -56,6 +57,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     final localizations = AppLocalizations.of(context);
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -79,7 +81,10 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      body: const TaskListPage(),
+      body: TaskListPage(
+        title: localizations.taskListTitle,
+        items: buildTaskCatalog(localizations),
+      ),
     );
   }
 }

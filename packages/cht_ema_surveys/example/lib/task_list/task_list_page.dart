@@ -1,28 +1,10 @@
-import 'package:cht_cognition/cht_cognition.dart' as cognition;
-import 'package:cht_ema_surveys/cht_ema_surveys.dart' as surveys;
 import 'package:flutter/material.dart';
 
-const List<TaskListItem> taskListItems = <TaskListItem>[
-  TaskListItem(
-    id: 'go_no_go',
-    title: 'Go/No-Go',
-    scope: 'Cognition',
-    description: 'Response inhibition task',
-    icon: Icons.touch_app_outlined,
-    destination: TaskListDestination.goNoGo,
-  ),
-  TaskListItem(
-    id: 'survey',
-    title: 'Survey',
-    scope: 'Survey',
-    description: 'Example EMA survey',
-    icon: Icons.mood_outlined,
-    destination: TaskListDestination.survey,
-  ),
-];
-
 class TaskListPage extends StatelessWidget {
-  const TaskListPage({super.key});
+  final String title;
+  final List<TaskListItem> items;
+
+  const TaskListPage({required this.title, required this.items, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,19 +16,17 @@ class TaskListPage extends StatelessWidget {
             final crossAxisCount = _crossAxisCountForWidth(
               constraints.maxWidth,
             );
+
             return Padding(
               padding: const EdgeInsets.all(16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text(
-                    'Available tasks',
-                    style: Theme.of(context).textTheme.headlineSmall,
-                  ),
+                  Text(title, style: Theme.of(context).textTheme.headlineSmall),
                   const SizedBox(height: 16),
                   Expanded(
                     child: GridView.builder(
-                      itemCount: taskListItems.length,
+                      itemCount: items.length,
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: crossAxisCount,
                         crossAxisSpacing: 12,
@@ -54,11 +34,12 @@ class TaskListPage extends StatelessWidget {
                         childAspectRatio: 2.8,
                       ),
                       itemBuilder: (BuildContext context, int index) {
-                        final item = taskListItems[index];
-                        return TaskTile(
+                        final item = items[index];
+
+                        return _TaskTile(
                           key: Key('task-tile-${item.id}'),
                           item: item,
-                          onTap: () => _openTask(context, item.destination),
+                          onTap: () => _openTask(context, item),
                         );
                       },
                     ),
@@ -78,33 +59,36 @@ class TaskListPage extends StatelessWidget {
     return 1;
   }
 
-  void _openTask(BuildContext context, TaskListDestination destination) {
-    Navigator.of(context).push(
-      MaterialPageRoute<void>(
-        builder: (BuildContext context) {
-          return switch (destination) {
-            TaskListDestination.goNoGo => cognition.GoNoGoTask(
-              processData: _printCognitiveData,
-              participantId: 'p1',
-              sessionId: 's1',
-              nTrials: 20,
-              goProbability: .75,
-              trialTimeoutDuration: const Duration(milliseconds: 750),
-              restEveryNTrials: 10,
-            ),
-            TaskListDestination.survey => surveys.SurveyPage(),
-          };
-        },
-      ),
-    );
+  void _openTask(BuildContext context, TaskListItem item) {
+    Navigator.of(
+      context,
+    ).push(MaterialPageRoute<void>(builder: item.destinationBuilder));
   }
 }
 
-class TaskTile extends StatelessWidget {
-  final TaskListItem item;
-  final VoidCallback? onTap;
+class TaskListItem {
+  final String id;
+  final String title;
+  final String scope;
+  final String description;
+  final IconData icon;
+  final WidgetBuilder destinationBuilder;
 
-  const TaskTile({required this.item, this.onTap, super.key});
+  const TaskListItem({
+    required this.id,
+    required this.title,
+    required this.scope,
+    required this.description,
+    required this.icon,
+    required this.destinationBuilder,
+  });
+}
+
+class _TaskTile extends StatelessWidget {
+  final TaskListItem item;
+  final VoidCallback onTap;
+
+  const _TaskTile({required this.item, required this.onTap, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -161,28 +145,4 @@ class TaskTile extends StatelessWidget {
       ),
     );
   }
-}
-
-class TaskListItem {
-  final String id;
-  final String title;
-  final String scope;
-  final String description;
-  final IconData icon;
-  final TaskListDestination destination;
-
-  const TaskListItem({
-    required this.id,
-    required this.title,
-    required this.scope,
-    required this.description,
-    required this.icon,
-    required this.destination,
-  });
-}
-
-enum TaskListDestination { goNoGo, survey }
-
-void _printCognitiveData(cognition.CognitiveData data) {
-  debugPrint(data.toString());
 }
