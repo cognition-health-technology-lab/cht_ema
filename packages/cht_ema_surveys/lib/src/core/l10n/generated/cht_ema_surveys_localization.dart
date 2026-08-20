@@ -101,12 +101,6 @@ abstract class ChtEmaSurveysLocalization {
     Locale('es'),
   ];
 
-  /// Title for the EMA survey item
-  ///
-  /// In en, this message translates to:
-  /// **'Title for survey item'**
-  String get itemTitle;
-
   /// Sociodemographic survey - Q1 age
   ///
   /// In en, this message translates to:
@@ -429,13 +423,13 @@ abstract class ChtEmaSurveysLocalization {
   ///
   /// In en, this message translates to:
   /// **'Survey Complete'**
-  String get completionTitle;
+  String get sociodemographicCompletionTitle;
 
   /// Sociodemographic survey completion step text
   ///
   /// In en, this message translates to:
   /// **'Thank you for completing the sociodemographic survey.'**
-  String get completionText;
+  String get sociodemographicCompletionText;
 }
 
 class _ChtEmaSurveysLocalizationDelegate

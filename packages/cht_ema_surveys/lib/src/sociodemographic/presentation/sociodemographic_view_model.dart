@@ -4,7 +4,7 @@ import 'package:research_package/model.dart';
 class SociodemographicViewModel {
   final task =
       RPNavigableOrderedTask(
-          identifier: 'sociodemographicSurvey',
+          identifier: 'sociodemographic',
           steps: sociodemographicSteps,
         )
         ..setNavigationRuleForTriggerStepIdentifier(
@@ -88,12 +88,14 @@ class SociodemographicViewModel {
           'academicLevelOtherSpecify',
         )
         ..setNavigationRuleForTriggerStepIdentifier(
-          RPStepJumpRule(answerMap: {0: 'surveyCompletion', 1: 'jobType'}),
+          RPStepJumpRule(
+            answerMap: {0: 'sociodemographicCompletion', 1: 'jobType'},
+          ),
           'currentlyWorking',
         )
         ..setNavigationRuleForTriggerStepIdentifier(
           RPDirectStepNavigationRule(
-            destinationStepIdentifier: 'surveyCompletion',
+            destinationStepIdentifier: 'sociodemographicCompletion',
           ),
           'jobType',
         );

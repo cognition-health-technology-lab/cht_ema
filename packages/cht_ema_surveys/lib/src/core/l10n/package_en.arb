@@ -1,9 +1,5 @@
 {
   "@@locale": "en",
-  "itemTitle": "Title for survey item",
-  "@itemTitle": {
-    "description": "Title for the EMA survey item"
-  },
   "ageQuestion": "What is your age?",
   "@ageQuestion": {
     "description": "Sociodemographic survey - Q1 age"
@@ -216,12 +212,12 @@
   "@specifyHint": {
     "description": "Shared text field hint for specify prompts"
   },
-  "completionTitle": "Survey Complete",
-  "@completionTitle": {
+  "sociodemographicCompletionTitle": "Survey Complete",
+  "@sociodemographicCompletionTitle": {
     "description": "Sociodemographic survey completion step title"
   },
-  "completionText": "Thank you for completing the sociodemographic survey.",
-  "@completionText": {
+  "sociodemographicCompletionText": "Thank you for completing the sociodemographic survey.",
+  "@sociodemographicCompletionText": {
     "description": "Sociodemographic survey completion step text"
   }
 }

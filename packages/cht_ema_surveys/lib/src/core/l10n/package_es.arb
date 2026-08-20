@@ -1,9 +1,5 @@
 {
   "@@locale": "es",
-  "itemTitle": "Título del item",
-  "@itemTitle": {
-    "description": "Title for the EMA survey item"
-  },
   "ageQuestion": "¿Cuál es su edad?",
   "@ageQuestion": {
     "description": "Encuesta sociodemográfica - P1 edad"
@@ -216,12 +212,12 @@
   "@specifyHint": {
     "description": "Pista compartida para campos de especificación"
   },
-  "completionTitle": "Encuesta completada",
-  "@completionTitle": {
+  "sociodemographicCompletionTitle": "Encuesta completada",
+  "@sociodemographicCompletionTitle": {
     "description": "Título del paso de finalización de la encuesta sociodemográfica"
   },
-  "completionText": "Gracias por completar la encuesta sociodemográfica.",
-  "@completionText": {
+  "sociodemographicCompletionText": "Gracias por completar la encuesta sociodemográfica.",
+  "@sociodemographicCompletionText": {
     "description": "Texto del paso de finalización de la encuesta sociodemográfica"
   }
 }

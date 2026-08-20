@@ -9,9 +9,6 @@ class ChtEmaSurveysLocalizationEs extends ChtEmaSurveysLocalization {
   ChtEmaSurveysLocalizationEs([String locale = 'es']) : super(locale);
 
   @override
-  String get itemTitle => 'Título del item';
-
-  @override
   String get ageQuestion => '¿Cuál es su edad?';
 
   @override
@@ -175,9 +172,9 @@ class ChtEmaSurveysLocalizationEs extends ChtEmaSurveysLocalization {
   String get specifyHint => 'Especifique...';
 
   @override
-  String get completionTitle => 'Encuesta completada';
+  String get sociodemographicCompletionTitle => 'Encuesta completada';
 
   @override
-  String get completionText =>
+  String get sociodemographicCompletionText =>
       'Gracias por completar la encuesta sociodemográfica.';
 }

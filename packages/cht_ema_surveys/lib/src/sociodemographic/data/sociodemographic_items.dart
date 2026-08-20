@@ -1,12 +1,12 @@
 import 'package:research_package/model.dart';
 
-final ageStep = RPQuestionStep(
+final _ageStep = RPQuestionStep(
   identifier: 'age',
   title: 'ageQuestion',
   answerFormat: RPIntegerAnswerFormat(minValue: 0, maxValue: 120),
 );
 
-final biologicalSexAnswerFormat = RPChoiceAnswerFormat(
+final _biologicalSexAnswerFormat = RPChoiceAnswerFormat(
   answerStyle: RPChoiceAnswerStyle.SingleChoice,
   choices: <RPChoice>[
     RPChoice(text: 'sexMale', value: 0),
@@ -16,19 +16,19 @@ final biologicalSexAnswerFormat = RPChoiceAnswerFormat(
   ],
 );
 
-final biologicalSexStep = RPQuestionStep(
+final _biologicalSexStep = RPQuestionStep(
   identifier: 'biologicalSex',
   title: 'biologicalSexQuestion',
-  answerFormat: biologicalSexAnswerFormat,
+  answerFormat: _biologicalSexAnswerFormat,
 );
 
-final sexOtherStep = RPQuestionStep(
+final _sexOtherStep = RPQuestionStep(
   identifier: 'sexOtherSpecify',
   title: 'sexOtherSpecify',
   answerFormat: RPTextAnswerFormat(hintText: 'specifyHint'),
 );
 
-final genderAnswerFormat = RPChoiceAnswerFormat(
+final _genderAnswerFormat = RPChoiceAnswerFormat(
   answerStyle: RPChoiceAnswerStyle.SingleChoice,
   choices: <RPChoice>[
     RPChoice(text: 'genderMale', value: 0),
@@ -39,19 +39,19 @@ final genderAnswerFormat = RPChoiceAnswerFormat(
   ],
 );
 
-final genderStep = RPQuestionStep(
+final _genderStep = RPQuestionStep(
   identifier: 'gender',
   title: 'genderQuestion',
-  answerFormat: genderAnswerFormat,
+  answerFormat: _genderAnswerFormat,
 );
 
-final genderOtherStep = RPQuestionStep(
+final _genderOtherStep = RPQuestionStep(
   identifier: 'genderOtherSpecify',
   title: 'genderOtherSpecify',
   answerFormat: RPTextAnswerFormat(hintText: 'specifyHint'),
 );
 
-final primaryLanguageAnswerFormat = RPChoiceAnswerFormat(
+final _primaryLanguageAnswerFormat = RPChoiceAnswerFormat(
   answerStyle: RPChoiceAnswerStyle.SingleChoice,
   choices: <RPChoice>[
     RPChoice(text: 'languageSpanish', value: 0),
@@ -59,13 +59,13 @@ final primaryLanguageAnswerFormat = RPChoiceAnswerFormat(
   ],
 );
 
-final primaryLanguageStep = RPQuestionStep(
+final _primaryLanguageStep = RPQuestionStep(
   identifier: 'primaryLanguage',
   title: 'primaryLanguageQuestion',
-  answerFormat: primaryLanguageAnswerFormat,
+  answerFormat: _primaryLanguageAnswerFormat,
 );
 
-final householdIncomeAnswerFormat = RPChoiceAnswerFormat(
+final _householdIncomeAnswerFormat = RPChoiceAnswerFormat(
   answerStyle: RPChoiceAnswerStyle.SingleChoice,
   choices: <RPChoice>[
     RPChoice(text: 'incomeLessThan10k', value: 0),
@@ -80,13 +80,13 @@ final householdIncomeAnswerFormat = RPChoiceAnswerFormat(
   ],
 );
 
-final householdIncomeStep = RPQuestionStep(
+final _householdIncomeStep = RPQuestionStep(
   identifier: 'householdIncome',
   title: 'householdIncomeQuestion',
-  answerFormat: householdIncomeAnswerFormat,
+  answerFormat: _householdIncomeAnswerFormat,
 );
 
-final maritalStatusAnswerFormat = RPChoiceAnswerFormat(
+final _maritalStatusAnswerFormat = RPChoiceAnswerFormat(
   answerStyle: RPChoiceAnswerStyle.SingleChoice,
   choices: <RPChoice>[
     RPChoice(text: 'maritalMarried', value: 0),
@@ -98,13 +98,13 @@ final maritalStatusAnswerFormat = RPChoiceAnswerFormat(
   ],
 );
 
-final maritalStatusStep = RPQuestionStep(
+final _maritalStatusStep = RPQuestionStep(
   identifier: 'maritalStatus',
   title: 'maritalStatusQuestion',
-  answerFormat: maritalStatusAnswerFormat,
+  answerFormat: _maritalStatusAnswerFormat,
 );
 
-final educationLevelAnswerFormat = RPChoiceAnswerFormat(
+final _educationLevelAnswerFormat = RPChoiceAnswerFormat(
   answerStyle: RPChoiceAnswerStyle.SingleChoice,
   choices: <RPChoice>[
     RPChoice(text: 'eduHighSchool', value: 0),
@@ -118,19 +118,19 @@ final educationLevelAnswerFormat = RPChoiceAnswerFormat(
   ],
 );
 
-final educationLevelStep = RPQuestionStep(
+final _educationLevelStep = RPQuestionStep(
   identifier: 'educationLevel',
   title: 'educationLevelQuestion',
-  answerFormat: educationLevelAnswerFormat,
+  answerFormat: _educationLevelAnswerFormat,
 );
 
-final educationOtherStep = RPQuestionStep(
+final _educationOtherStep = RPQuestionStep(
   identifier: 'educationOtherSpecify',
   title: 'educationOtherSpecify',
   answerFormat: RPTextAnswerFormat(hintText: 'specifyHint'),
 );
 
-final yesNoAnswerFormat = RPChoiceAnswerFormat(
+final _yesNoAnswerFormat = RPChoiceAnswerFormat(
   answerStyle: RPChoiceAnswerStyle.SingleChoice,
   choices: <RPChoice>[
     RPChoice(text: 'answerNo', value: 0),
@@ -138,13 +138,13 @@ final yesNoAnswerFormat = RPChoiceAnswerFormat(
   ],
 );
 
-final currentlyStudyingStep = RPQuestionStep(
+final _currentlyStudyingStep = RPQuestionStep(
   identifier: 'currentlyStudying',
   title: 'currentlyStudyingQuestion',
-  answerFormat: yesNoAnswerFormat,
+  answerFormat: _yesNoAnswerFormat,
 );
 
-final currentAcademicLevelAnswerFormat = RPChoiceAnswerFormat(
+final _currentAcademicLevelAnswerFormat = RPChoiceAnswerFormat(
   answerStyle: RPChoiceAnswerStyle.SingleChoice,
   choices: <RPChoice>[
     RPChoice(text: 'eduTechnical', value: 0),
@@ -157,51 +157,51 @@ final currentAcademicLevelAnswerFormat = RPChoiceAnswerFormat(
   ],
 );
 
-final currentAcademicLevelStep = RPQuestionStep(
+final _currentAcademicLevelStep = RPQuestionStep(
   identifier: 'currentAcademicLevel',
   title: 'currentAcademicLevelQuestion',
-  answerFormat: currentAcademicLevelAnswerFormat,
+  answerFormat: _currentAcademicLevelAnswerFormat,
 );
 
-final academicLevelOtherStep = RPQuestionStep(
+final _academicLevelOtherStep = RPQuestionStep(
   identifier: 'academicLevelOtherSpecify',
   title: 'academicLevelOtherSpecify',
   answerFormat: RPTextAnswerFormat(hintText: 'specifyHint'),
 );
 
-final currentlyWorkingStep = RPQuestionStep(
+final _currentlyWorkingStep = RPQuestionStep(
   identifier: 'currentlyWorking',
   title: 'currentlyWorkingQuestion',
-  answerFormat: yesNoAnswerFormat,
+  answerFormat: _yesNoAnswerFormat,
 );
 
-final jobTypeStep = RPQuestionStep(
+final _jobTypeStep = RPQuestionStep(
   identifier: 'jobType',
   title: 'jobTypeQuestion',
   answerFormat: RPTextAnswerFormat(hintText: 'jobTypeHint'),
 );
 
-final completionStep = RPCompletionStep(
-  identifier: 'surveyCompletion',
-  title: 'completionTitle',
-  text: 'completionText',
+final _completionStep = RPCompletionStep(
+  identifier: 'sociodemographicCompletion',
+  title: 'sociodemographicCompletionTitle',
+  text: 'sociodemographicCompletionText',
 );
 
 final sociodemographicSteps = <RPStep>[
-  ageStep,
-  biologicalSexStep,
-  sexOtherStep,
-  genderStep,
-  genderOtherStep,
-  primaryLanguageStep,
-  householdIncomeStep,
-  maritalStatusStep,
-  educationLevelStep,
-  educationOtherStep,
-  currentlyStudyingStep,
-  currentAcademicLevelStep,
-  academicLevelOtherStep,
-  currentlyWorkingStep,
-  jobTypeStep,
-  completionStep,
+  _ageStep,
+  _biologicalSexStep,
+  _sexOtherStep,
+  _genderStep,
+  _genderOtherStep,
+  _primaryLanguageStep,
+  _householdIncomeStep,
+  _maritalStatusStep,
+  _educationLevelStep,
+  _educationOtherStep,
+  _currentlyStudyingStep,
+  _currentAcademicLevelStep,
+  _academicLevelOtherStep,
+  _currentlyWorkingStep,
+  _jobTypeStep,
+  _completionStep,
 ];
