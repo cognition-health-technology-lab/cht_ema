@@ -1,7 +1,215 @@
 {
   "@@locale": "es",
-  "itemTitle": "Título del item",
-  "@itemTitle": {
-    "description": "Title for the EMA survey item"
+  "answerYes": "Sí",
+  "@answerYes": {
+    "description": "Opción de respuesta compartida: sí"
+  },
+  "answerNo": "No",
+  "@answerNo": {
+    "description": "Opción de respuesta compartida: no"
+  },
+  "chMentalHealthCategoryPrompt": "Indica si algún profesional de la salud física o mental te ha diagnosticado con alguna de las siguientes condiciones de salud.\n\nSalud mental o abuso de sustancias (ejemplo: depresión, ansiedad)",
+  "@chMentalHealthCategoryPrompt": {
+    "description": "Salud crónica - instrucciones combinadas y Categoría 1 pregunta principal"
+  },
+  "chConditionDepression": "Depresión",
+  "@chConditionDepression": {
+    "description": "Condición de salud crónica: depresión"
+  },
+  "chConditionAnxiety": "Reacción de ansiedad / trastorno de pánico",
+  "@chConditionAnxiety": {
+    "description": "Condición de salud crónica: reacción de ansiedad o trastorno de pánico"
+  },
+  "chConditionAlcohol": "Trastorno por consumo de alcohol",
+  "@chConditionAlcohol": {
+    "description": "Condición de salud crónica: trastorno por consumo de alcohol"
+  },
+  "chConditionDrugs": "Trastorno por consumo de drogas",
+  "@chConditionDrugs": {
+    "description": "Condición de salud crónica: trastorno por consumo de drogas"
+  },
+  "chConditionAdhd": "Trastorno por déficit de atención con hiperactividad (TDAH)",
+  "@chConditionAdhd": {
+    "description": "Condición de salud crónica: TDAH"
+  },
+  "chConditionPtsd": "Trastorno de estrés postraumático (TEPT)",
+  "@chConditionPtsd": {
+    "description": "Condición de salud crónica: TEPT"
+  },
+  "chConditionAutism": "Trastorno del espectro autista",
+  "@chConditionAutism": {
+    "description": "Condición de salud crónica: trastorno del espectro autista"
+  },
+  "chConditionSchizophrenia": "Esquizofrenia",
+  "@chConditionSchizophrenia": {
+    "description": "Condición de salud crónica: esquizofrenia"
+  },
+  "chConditionEatingDisorder": "Trastorno alimentario",
+  "@chConditionEatingDisorder": {
+    "description": "Condición de salud crónica: trastorno alimentario"
+  },
+  "chConditionSocialPhobia": "Fobia social",
+  "@chConditionSocialPhobia": {
+    "description": "Condición de salud crónica: fobia social"
+  },
+  "chConditionPersonalityDisorder": "Trastorno de la personalidad",
+  "@chConditionPersonalityDisorder": {
+    "description": "Condición de salud crónica: trastorno de la personalidad"
+  },
+  "chCancerQuestion": "Cáncer",
+  "@chCancerQuestion": {
+    "description": "Salud crónica - Categoría 2 pregunta principal"
+  },
+  "chHeartBloodQuestion": "Corazón y sangre (ejemplo: hipertensión, anemia)",
+  "@chHeartBloodQuestion": {
+    "description": "Salud crónica - Categoría 3 pregunta principal"
+  },
+  "chConditionHypertension": "Hipertensión",
+  "@chConditionHypertension": {
+    "description": "Condición de salud crónica: hipertensión"
+  },
+  "chConditionHighCholesterol": "Colesterol alto",
+  "@chConditionHighCholesterol": {
+    "description": "Condición de salud crónica: colesterol alto"
+  },
+  "chConditionHeartAttack": "Infarto",
+  "@chConditionHeartAttack": {
+    "description": "Condición de salud crónica: infarto"
+  },
+  "chConditionStroke": "Accidente cerebrovascular (ACV)",
+  "@chConditionStroke": {
+    "description": "Condición de salud crónica: accidente cerebrovascular"
+  },
+  "chConditionAnemia": "Anemia",
+  "@chConditionAnemia": {
+    "description": "Condición de salud crónica: anemia"
+  },
+  "chConditionSickleCellDisease": "Enfermedad de células falciformes",
+  "@chConditionSickleCellDisease": {
+    "description": "Condición de salud crónica: enfermedad de células falciformes"
+  },
+  "chBoneJointQuestion": "Hueso, articulaciones y músculos (ejemplo: osteoporosis, artritis)",
+  "@chBoneJointQuestion": {
+    "description": "Salud crónica - Categoría 4 pregunta principal"
+  },
+  "chConditionOsteoporosis": "Osteoporosis",
+  "@chConditionOsteoporosis": {
+    "description": "Condición de salud crónica: osteoporosis"
+  },
+  "chConditionFibromyalgia": "Fibromialgia",
+  "@chConditionFibromyalgia": {
+    "description": "Condición de salud crónica: fibromialgia"
+  },
+  "chConditionArthritis": "Artritis",
+  "@chConditionArthritis": {
+    "description": "Condición de salud crónica: artritis"
+  },
+  "chConditionLupus": "Lupus",
+  "@chConditionLupus": {
+    "description": "Condición de salud crónica: lupus"
+  },
+  "chBrainNerveQuestion": "Cerebro y sistema nervioso (ejemplo: demencia, migraña)",
+  "@chBrainNerveQuestion": {
+    "description": "Salud crónica - Categoría 5 pregunta principal"
+  },
+  "chConditionDementia": "Demencia (incluye la enfermedad de Alzheimer)",
+  "@chConditionDementia": {
+    "description": "Condición de salud crónica: demencia"
+  },
+  "chConditionMigraine": "Migraña",
+  "@chConditionMigraine": {
+    "description": "Condición de salud crónica: migraña"
+  },
+  "chConditionNeuropathy": "Neuropatía",
+  "@chConditionNeuropathy": {
+    "description": "Condición de salud crónica: neuropatía"
+  },
+  "chConditionEpilepsy": "Epilepsia o convulsiones",
+  "@chConditionEpilepsy": {
+    "description": "Condición de salud crónica: epilepsia o convulsiones"
+  },
+  "chConditionInsomnia": "Insomnio",
+  "@chConditionInsomnia": {
+    "description": "Condición de salud crónica: insomnio"
+  },
+  "chConditionParkinsons": "Enfermedad de Parkinson",
+  "@chConditionParkinsons": {
+    "description": "Condición de salud crónica: enfermedad de Parkinson"
+  },
+  "chConditionConcussion": "Concusión o pérdida del conocimiento",
+  "@chConditionConcussion": {
+    "description": "Condición de salud crónica: concusión o pérdida del conocimiento"
+  },
+  "chConditionMemoryLoss": "Pérdida o deterioro de la memoria",
+  "@chConditionMemoryLoss": {
+    "description": "Condición de salud crónica: pérdida o deterioro de la memoria"
+  },
+  "chConditionChronicFatigue": "Fatiga crónica",
+  "@chConditionChronicFatigue": {
+    "description": "Condición de salud crónica: fatiga crónica"
+  },
+  "chConditionMs": "Esclerosis múltiple (EM)",
+  "@chConditionMs": {
+    "description": "Condición de salud crónica: esclerosis múltiple"
+  },
+  "chConditionSpinalCord": "Lesión o deterioro de la médula espinal",
+  "@chConditionSpinalCord": {
+    "description": "Condición de salud crónica: lesión o deterioro de la médula espinal"
+  },
+  "chConditionTbi": "Lesión cerebral traumática (TBI)",
+  "@chConditionTbi": {
+    "description": "Condición de salud crónica: lesión cerebral traumática"
+  },
+  "chConditionNarcolepsy": "Narcolepsia",
+  "@chConditionNarcolepsy": {
+    "description": "Condición de salud crónica: narcolepsia"
+  },
+  "chConditionAls": "Enfermedad de Lou Gehrig (esclerosis lateral amiotrófica o ELA)",
+  "@chConditionAls": {
+    "description": "Condición de salud crónica: ELA"
+  },
+  "chConditionMuscularDystrophy": "Distrofia muscular (DM)",
+  "@chConditionMuscularDystrophy": {
+    "description": "Condición de salud crónica: distrofia muscular"
+  },
+  "chLungQuestion": "Afecciones pulmonares (ejemplo: asma)",
+  "@chLungQuestion": {
+    "description": "Salud crónica - Categoría 6 pregunta principal"
+  },
+  "chConditionAsthma": "Asma",
+  "@chConditionAsthma": {
+    "description": "Condición de salud crónica: asma"
+  },
+  "chConditionCopd": "Enfermedad pulmonar crónica (EPOC, enfisema o bronquitis)",
+  "@chConditionCopd": {
+    "description": "Condición de salud crónica: enfermedad pulmonar crónica"
+  },
+  "chHormoneQuestion": "Hormonas y endocrinas (ejemplo: diabetes, hipotiroidismo)",
+  "@chHormoneQuestion": {
+    "description": "Salud crónica - Categoría 7 pregunta principal"
+  },
+  "chConditionPrediabetes": "Prediabetes",
+  "@chConditionPrediabetes": {
+    "description": "Condición de salud crónica: prediabetes"
+  },
+  "chConditionDiabetesType1": "Diabetes Tipo I",
+  "@chConditionDiabetesType1": {
+    "description": "Condición de salud crónica: diabetes tipo I"
+  },
+  "chConditionDiabetesType2": "Diabetes Tipo II",
+  "@chConditionDiabetesType2": {
+    "description": "Condición de salud crónica: diabetes tipo II"
+  },
+  "chConditionHypothyroidism": "Hipotiroidismo",
+  "@chConditionHypothyroidism": {
+    "description": "Condición de salud crónica: hipotiroidismo"
+  },
+  "chCompletionTitle": "Encuesta completada",
+  "@chCompletionTitle": {
+    "description": "Título de finalización de la encuesta de salud crónica"
+  },
+  "chCompletionText": "Gracias por completar el cuestionario de historial de salud.",
+  "@chCompletionText": {
+    "description": "Texto de finalización de la encuesta de salud crónica"
   }
 }

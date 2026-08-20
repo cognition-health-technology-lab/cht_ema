@@ -95,10 +95,13 @@ class SurveyList extends StatelessWidget {
             ElevatedButton(
               onPressed: () => Navigator.push(
                 context,
-                MaterialPageRoute<void>(builder: (context) => SurveyPage()),
+                MaterialPageRoute<void>(
+                  builder: (context) => ChronicHealthPage(),
+                ),
               ),
               child: Text(
-                localizations.homeMessage,
+                localizations.chronicHealthButtonLabel,
+                textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
             ),

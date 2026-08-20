@@ -4,9 +4,9 @@
   "@appTitle": {
     "description": "Title for the app"
   },
-  "homeMessage": "Pantalla de inicio",
-  "@homeMessage": {
-    "description": "Message displayed on the home screen"
+  "chronicHealthButtonLabel": "Cuestionario de Salud Crónica",
+  "@chronicHealthButtonLabel": {
+    "description": "Texto del botón para abrir el cuestionario de salud crónica"
   },
   "languageToolTip": "Seleccionar idioma",
   "@languageToolTip": {

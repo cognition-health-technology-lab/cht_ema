@@ -104,11 +104,11 @@ abstract class AppLocalizations {
   /// **'CHT Surveys Example'**
   String get appTitle;
 
-  /// Message displayed on the home screen
+  /// Home page button text for the chronic health questionnaire
   ///
   /// In en, this message translates to:
-  /// **'Home screen'**
-  String get homeMessage;
+  /// **'Chronic Health Questionnaire'**
+  String get chronicHealthButtonLabel;
 
   /// Tooltip for the language selection menu
   ///

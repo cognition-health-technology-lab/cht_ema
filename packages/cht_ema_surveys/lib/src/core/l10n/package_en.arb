@@ -1,7 +1,215 @@
 {
   "@@locale": "en",
-  "itemTitle": "Title for survey item",
-  "@itemTitle": {
-    "description": "Title for the EMA survey item"
+  "answerYes": "Yes",
+  "@answerYes": {
+    "description": "Shared yes answer option"
+  },
+  "answerNo": "No",
+  "@answerNo": {
+    "description": "Shared no answer option"
+  },
+  "chMentalHealthCategoryPrompt": "Indicate if a physical or mental health professional has diagnosed you with any of the following health conditions.\n\nMental Health or Substance Abuse (e.g., depression, anxiety)",
+  "@chMentalHealthCategoryPrompt": {
+    "description": "Chronic health - combined instructions and Cat 1 gate question"
+  },
+  "chConditionDepression": "Depression",
+  "@chConditionDepression": {
+    "description": "Chronic health condition: depression"
+  },
+  "chConditionAnxiety": "Anxiety reaction / panic disorder",
+  "@chConditionAnxiety": {
+    "description": "Chronic health condition: anxiety reaction or panic disorder"
+  },
+  "chConditionAlcohol": "Alcohol use disorder",
+  "@chConditionAlcohol": {
+    "description": "Chronic health condition: alcohol use disorder"
+  },
+  "chConditionDrugs": "Drug use disorder",
+  "@chConditionDrugs": {
+    "description": "Chronic health condition: drug use disorder"
+  },
+  "chConditionAdhd": "Attention deficit hyperactivity disorder (ADHD)",
+  "@chConditionAdhd": {
+    "description": "Chronic health condition: ADHD"
+  },
+  "chConditionPtsd": "Post-traumatic Stress Disorder (PTSD)",
+  "@chConditionPtsd": {
+    "description": "Chronic health condition: PTSD"
+  },
+  "chConditionAutism": "Autism Spectrum Disorder",
+  "@chConditionAutism": {
+    "description": "Chronic health condition: autism spectrum disorder"
+  },
+  "chConditionSchizophrenia": "Schizophrenia",
+  "@chConditionSchizophrenia": {
+    "description": "Chronic health condition: schizophrenia"
+  },
+  "chConditionEatingDisorder": "Eating disorder",
+  "@chConditionEatingDisorder": {
+    "description": "Chronic health condition: eating disorder"
+  },
+  "chConditionSocialPhobia": "Social Phobia",
+  "@chConditionSocialPhobia": {
+    "description": "Chronic health condition: social phobia"
+  },
+  "chConditionPersonalityDisorder": "Personality disorder",
+  "@chConditionPersonalityDisorder": {
+    "description": "Chronic health condition: personality disorder"
+  },
+  "chCancerQuestion": "Cancer",
+  "@chCancerQuestion": {
+    "description": "Chronic health - Cat 2 gate question"
+  },
+  "chHeartBloodQuestion": "Heart and Blood (e.g., hypertension, anemia)",
+  "@chHeartBloodQuestion": {
+    "description": "Chronic health - Cat 3 gate question"
+  },
+  "chConditionHypertension": "Hypertension",
+  "@chConditionHypertension": {
+    "description": "Chronic health condition: hypertension"
+  },
+  "chConditionHighCholesterol": "High cholesterol",
+  "@chConditionHighCholesterol": {
+    "description": "Chronic health condition: high cholesterol"
+  },
+  "chConditionHeartAttack": "Heart attack",
+  "@chConditionHeartAttack": {
+    "description": "Chronic health condition: heart attack"
+  },
+  "chConditionStroke": "Stroke",
+  "@chConditionStroke": {
+    "description": "Chronic health condition: stroke"
+  },
+  "chConditionAnemia": "Anemia",
+  "@chConditionAnemia": {
+    "description": "Chronic health condition: anemia"
+  },
+  "chConditionSickleCellDisease": "Sickle cell disease",
+  "@chConditionSickleCellDisease": {
+    "description": "Chronic health condition: sickle cell disease"
+  },
+  "chBoneJointQuestion": "Bone, Joint and Muscle (e.g., osteoporosis, arthritis)",
+  "@chBoneJointQuestion": {
+    "description": "Chronic health - Cat 4 gate question"
+  },
+  "chConditionOsteoporosis": "Osteoporosis",
+  "@chConditionOsteoporosis": {
+    "description": "Chronic health condition: osteoporosis"
+  },
+  "chConditionFibromyalgia": "Fibromyalgia",
+  "@chConditionFibromyalgia": {
+    "description": "Chronic health condition: fibromyalgia"
+  },
+  "chConditionArthritis": "Arthritis",
+  "@chConditionArthritis": {
+    "description": "Chronic health condition: arthritis"
+  },
+  "chConditionLupus": "Systemic Lupus",
+  "@chConditionLupus": {
+    "description": "Chronic health condition: systemic lupus"
+  },
+  "chBrainNerveQuestion": "Brain and Nervous System (e.g., dementia, migraine)",
+  "@chBrainNerveQuestion": {
+    "description": "Chronic health - Cat 5 gate question"
+  },
+  "chConditionDementia": "Dementia (includes Alzheimer's)",
+  "@chConditionDementia": {
+    "description": "Chronic health condition: dementia"
+  },
+  "chConditionMigraine": "Migraine headaches",
+  "@chConditionMigraine": {
+    "description": "Chronic health condition: migraine headaches"
+  },
+  "chConditionNeuropathy": "Neuropathy",
+  "@chConditionNeuropathy": {
+    "description": "Chronic health condition: neuropathy"
+  },
+  "chConditionEpilepsy": "Epilepsy or seizure",
+  "@chConditionEpilepsy": {
+    "description": "Chronic health condition: epilepsy or seizure"
+  },
+  "chConditionInsomnia": "Insomnia",
+  "@chConditionInsomnia": {
+    "description": "Chronic health condition: insomnia"
+  },
+  "chConditionParkinsons": "Parkinson's disease",
+  "@chConditionParkinsons": {
+    "description": "Chronic health condition: Parkinson's disease"
+  },
+  "chConditionConcussion": "Concussions or loss of consciousness",
+  "@chConditionConcussion": {
+    "description": "Chronic health condition: concussions or loss of consciousness"
+  },
+  "chConditionMemoryLoss": "Memory loss or impairment",
+  "@chConditionMemoryLoss": {
+    "description": "Chronic health condition: memory loss or impairment"
+  },
+  "chConditionChronicFatigue": "Chronic fatigue",
+  "@chConditionChronicFatigue": {
+    "description": "Chronic health condition: chronic fatigue"
+  },
+  "chConditionMs": "Multiple sclerosis (MS)",
+  "@chConditionMs": {
+    "description": "Chronic health condition: multiple sclerosis"
+  },
+  "chConditionSpinalCord": "Spinal cord injury or impairment",
+  "@chConditionSpinalCord": {
+    "description": "Chronic health condition: spinal cord injury or impairment"
+  },
+  "chConditionTbi": "Traumatic brain injury (TBI)",
+  "@chConditionTbi": {
+    "description": "Chronic health condition: traumatic brain injury"
+  },
+  "chConditionNarcolepsy": "Narcolepsy",
+  "@chConditionNarcolepsy": {
+    "description": "Chronic health condition: narcolepsy"
+  },
+  "chConditionAls": "Lou Gehrig's disease (amyotrophic lateral sclerosis or ALS)",
+  "@chConditionAls": {
+    "description": "Chronic health condition: ALS"
+  },
+  "chConditionMuscularDystrophy": "Muscular dystrophy (MD)",
+  "@chConditionMuscularDystrophy": {
+    "description": "Chronic health condition: muscular dystrophy"
+  },
+  "chLungQuestion": "Lung Conditions (e.g., asthma)",
+  "@chLungQuestion": {
+    "description": "Chronic health - Cat 6 gate question"
+  },
+  "chConditionAsthma": "Asthma",
+  "@chConditionAsthma": {
+    "description": "Chronic health condition: asthma"
+  },
+  "chConditionCopd": "Chronic lung disease (COPD, emphysema, or bronchitis)",
+  "@chConditionCopd": {
+    "description": "Chronic health condition: chronic lung disease"
+  },
+  "chHormoneQuestion": "Hormone and Endocrine (e.g., diabetes, hypothyroidism)",
+  "@chHormoneQuestion": {
+    "description": "Chronic health - Cat 7 gate question"
+  },
+  "chConditionPrediabetes": "Pre-diabetes",
+  "@chConditionPrediabetes": {
+    "description": "Chronic health condition: pre-diabetes"
+  },
+  "chConditionDiabetesType1": "Type I Diabetes",
+  "@chConditionDiabetesType1": {
+    "description": "Chronic health condition: Type I Diabetes"
+  },
+  "chConditionDiabetesType2": "Type II Diabetes",
+  "@chConditionDiabetesType2": {
+    "description": "Chronic health condition: Type II Diabetes"
+  },
+  "chConditionHypothyroidism": "Hypothyroidism",
+  "@chConditionHypothyroidism": {
+    "description": "Chronic health condition: hypothyroidism"
+  },
+  "chCompletionTitle": "Survey Complete",
+  "@chCompletionTitle": {
+    "description": "Chronic health survey completion title"
+  },
+  "chCompletionText": "Thank you for completing the health history survey.",
+  "@chCompletionText": {
+    "description": "Chronic health survey completion text"
   }
 }
