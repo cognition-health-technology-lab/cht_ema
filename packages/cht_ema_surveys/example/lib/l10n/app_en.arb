@@ -4,9 +4,9 @@
   "@appTitle": {
     "description": "Title for the app"
   },
-  "homeMessage": "Chronic Health Questionnaire",
-  "@homeMessage": {
-    "description": "Message displayed on the home screen"
+  "chronicHealthButtonLabel": "Chronic Health Questionnaire",
+  "@chronicHealthButtonLabel": {
+    "description": "Home page button text for the chronic health questionnaire"
   },
   "languageToolTip": "Select Language",
   "@languageToolTip": {

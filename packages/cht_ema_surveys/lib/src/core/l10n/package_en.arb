@@ -1,9 +1,5 @@
 {
   "@@locale": "en",
-  "itemTitle": "Title for survey item",
-  "@itemTitle": {
-    "description": "Title for the EMA survey item"
-  },
   "answerYes": "Yes",
   "@answerYes": {
     "description": "Shared yes answer option"
@@ -12,25 +8,9 @@
   "@answerNo": {
     "description": "Shared no answer option"
   },
-  "chSurveyTitle": "Health History Survey",
-  "@chSurveyTitle": {
-    "description": "Chronic health survey title"
-  },
-  "chInstructions": "Indicate if a physical or mental health professional has diagnosed you with any of the following health conditions.",
-  "@chInstructions": {
-    "description": "Chronic health survey instructions"
-  },
   "chMentalHealthCategoryPrompt": "Indicate if a physical or mental health professional has diagnosed you with any of the following health conditions.\n\nMental Health or Substance Abuse (e.g., depression, anxiety)",
   "@chMentalHealthCategoryPrompt": {
     "description": "Chronic health - combined instructions and Cat 1 gate question"
-  },
-  "chMentalHealthQuestion": "Mental Health or Substance Abuse (e.g., depression, anxiety)",
-  "@chMentalHealthQuestion": {
-    "description": "Chronic health - Cat 1 gate question"
-  },
-  "chMentalHealthConditionsQuestion": "Which mental health or substance use conditions have you been diagnosed with?",
-  "@chMentalHealthConditionsQuestion": {
-    "description": "Chronic health - Cat 1 sub-conditions question"
   },
   "chConditionDepression": "Depression",
   "@chConditionDepression": {
@@ -84,10 +64,6 @@
   "@chHeartBloodQuestion": {
     "description": "Chronic health - Cat 3 gate question"
   },
-  "chHeartBloodConditionsQuestion": "Which heart and blood conditions have you been diagnosed with?",
-  "@chHeartBloodConditionsQuestion": {
-    "description": "Chronic health - Cat 3 sub-conditions question"
-  },
   "chConditionHypertension": "Hypertension",
   "@chConditionHypertension": {
     "description": "Chronic health condition: hypertension"
@@ -116,10 +92,6 @@
   "@chBoneJointQuestion": {
     "description": "Chronic health - Cat 4 gate question"
   },
-  "chBoneJointConditionsQuestion": "Which bone, joint, and muscle conditions have you been diagnosed with?",
-  "@chBoneJointConditionsQuestion": {
-    "description": "Chronic health - Cat 4 sub-conditions question"
-  },
   "chConditionOsteoporosis": "Osteoporosis",
   "@chConditionOsteoporosis": {
     "description": "Chronic health condition: osteoporosis"
@@ -139,10 +111,6 @@
   "chBrainNerveQuestion": "Brain and Nervous System (e.g., dementia, migraine)",
   "@chBrainNerveQuestion": {
     "description": "Chronic health - Cat 5 gate question"
-  },
-  "chBrainNerveConditionsQuestion": "Which brain and nervous system conditions have you been diagnosed with?",
-  "@chBrainNerveConditionsQuestion": {
-    "description": "Chronic health - Cat 5 sub-conditions question"
   },
   "chConditionDementia": "Dementia (includes Alzheimer's)",
   "@chConditionDementia": {
@@ -208,10 +176,6 @@
   "@chLungQuestion": {
     "description": "Chronic health - Cat 6 gate question"
   },
-  "chLungConditionsQuestion": "Which lung conditions have you been diagnosed with?",
-  "@chLungConditionsQuestion": {
-    "description": "Chronic health - Cat 6 sub-conditions question"
-  },
   "chConditionAsthma": "Asthma",
   "@chConditionAsthma": {
     "description": "Chronic health condition: asthma"
@@ -223,10 +187,6 @@
   "chHormoneQuestion": "Hormone and Endocrine (e.g., diabetes, hypothyroidism)",
   "@chHormoneQuestion": {
     "description": "Chronic health - Cat 7 gate question"
-  },
-  "chHormoneConditionsQuestion": "Which hormone and endocrine conditions have you been diagnosed with?",
-  "@chHormoneConditionsQuestion": {
-    "description": "Chronic health - Cat 7 sub-conditions question"
   },
   "chConditionPrediabetes": "Pre-diabetes",
   "@chConditionPrediabetes": {

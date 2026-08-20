@@ -101,12 +101,6 @@ abstract class ChtEmaSurveysLocalization {
     Locale('es'),
   ];
 
-  /// Title for the EMA survey item
-  ///
-  /// In en, this message translates to:
-  /// **'Title for survey item'**
-  String get itemTitle;
-
   /// Shared yes answer option
   ///
   /// In en, this message translates to:
@@ -119,35 +113,11 @@ abstract class ChtEmaSurveysLocalization {
   /// **'No'**
   String get answerNo;
 
-  /// Chronic health survey title
-  ///
-  /// In en, this message translates to:
-  /// **'Health History Survey'**
-  String get chSurveyTitle;
-
-  /// Chronic health survey instructions
-  ///
-  /// In en, this message translates to:
-  /// **'Indicate if a physical or mental health professional has diagnosed you with any of the following health conditions.'**
-  String get chInstructions;
-
   /// Chronic health - combined instructions and Cat 1 gate question
   ///
   /// In en, this message translates to:
   /// **'Indicate if a physical or mental health professional has diagnosed you with any of the following health conditions.\n\nMental Health or Substance Abuse (e.g., depression, anxiety)'**
   String get chMentalHealthCategoryPrompt;
-
-  /// Chronic health - Cat 1 gate question
-  ///
-  /// In en, this message translates to:
-  /// **'Mental Health or Substance Abuse (e.g., depression, anxiety)'**
-  String get chMentalHealthQuestion;
-
-  /// Chronic health - Cat 1 sub-conditions question
-  ///
-  /// In en, this message translates to:
-  /// **'Which mental health or substance use conditions have you been diagnosed with?'**
-  String get chMentalHealthConditionsQuestion;
 
   /// Chronic health condition: depression
   ///
@@ -227,12 +197,6 @@ abstract class ChtEmaSurveysLocalization {
   /// **'Heart and Blood (e.g., hypertension, anemia)'**
   String get chHeartBloodQuestion;
 
-  /// Chronic health - Cat 3 sub-conditions question
-  ///
-  /// In en, this message translates to:
-  /// **'Which heart and blood conditions have you been diagnosed with?'**
-  String get chHeartBloodConditionsQuestion;
-
   /// Chronic health condition: hypertension
   ///
   /// In en, this message translates to:
@@ -275,12 +239,6 @@ abstract class ChtEmaSurveysLocalization {
   /// **'Bone, Joint and Muscle (e.g., osteoporosis, arthritis)'**
   String get chBoneJointQuestion;
 
-  /// Chronic health - Cat 4 sub-conditions question
-  ///
-  /// In en, this message translates to:
-  /// **'Which bone, joint, and muscle conditions have you been diagnosed with?'**
-  String get chBoneJointConditionsQuestion;
-
   /// Chronic health condition: osteoporosis
   ///
   /// In en, this message translates to:
@@ -310,12 +268,6 @@ abstract class ChtEmaSurveysLocalization {
   /// In en, this message translates to:
   /// **'Brain and Nervous System (e.g., dementia, migraine)'**
   String get chBrainNerveQuestion;
-
-  /// Chronic health - Cat 5 sub-conditions question
-  ///
-  /// In en, this message translates to:
-  /// **'Which brain and nervous system conditions have you been diagnosed with?'**
-  String get chBrainNerveConditionsQuestion;
 
   /// Chronic health condition: dementia
   ///
@@ -413,12 +365,6 @@ abstract class ChtEmaSurveysLocalization {
   /// **'Lung Conditions (e.g., asthma)'**
   String get chLungQuestion;
 
-  /// Chronic health - Cat 6 sub-conditions question
-  ///
-  /// In en, this message translates to:
-  /// **'Which lung conditions have you been diagnosed with?'**
-  String get chLungConditionsQuestion;
-
   /// Chronic health condition: asthma
   ///
   /// In en, this message translates to:
@@ -436,12 +382,6 @@ abstract class ChtEmaSurveysLocalization {
   /// In en, this message translates to:
   /// **'Hormone and Endocrine (e.g., diabetes, hypothyroidism)'**
   String get chHormoneQuestion;
-
-  /// Chronic health - Cat 7 sub-conditions question
-  ///
-  /// In en, this message translates to:
-  /// **'Which hormone and endocrine conditions have you been diagnosed with?'**
-  String get chHormoneConditionsQuestion;
 
   /// Chronic health condition: pre-diabetes
   ///

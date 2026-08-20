@@ -9,32 +9,14 @@ class ChtEmaSurveysLocalizationEn extends ChtEmaSurveysLocalization {
   ChtEmaSurveysLocalizationEn([String locale = 'en']) : super(locale);
 
   @override
-  String get itemTitle => 'Title for survey item';
-
-  @override
   String get answerYes => 'Yes';
 
   @override
   String get answerNo => 'No';
 
   @override
-  String get chSurveyTitle => 'Health History Survey';
-
-  @override
-  String get chInstructions =>
-      'Indicate if a physical or mental health professional has diagnosed you with any of the following health conditions.';
-
-  @override
   String get chMentalHealthCategoryPrompt =>
       'Indicate if a physical or mental health professional has diagnosed you with any of the following health conditions.\n\nMental Health or Substance Abuse (e.g., depression, anxiety)';
-
-  @override
-  String get chMentalHealthQuestion =>
-      'Mental Health or Substance Abuse (e.g., depression, anxiety)';
-
-  @override
-  String get chMentalHealthConditionsQuestion =>
-      'Which mental health or substance use conditions have you been diagnosed with?';
 
   @override
   String get chConditionDepression => 'Depression';
@@ -78,10 +60,6 @@ class ChtEmaSurveysLocalizationEn extends ChtEmaSurveysLocalization {
       'Heart and Blood (e.g., hypertension, anemia)';
 
   @override
-  String get chHeartBloodConditionsQuestion =>
-      'Which heart and blood conditions have you been diagnosed with?';
-
-  @override
   String get chConditionHypertension => 'Hypertension';
 
   @override
@@ -104,10 +82,6 @@ class ChtEmaSurveysLocalizationEn extends ChtEmaSurveysLocalization {
       'Bone, Joint and Muscle (e.g., osteoporosis, arthritis)';
 
   @override
-  String get chBoneJointConditionsQuestion =>
-      'Which bone, joint, and muscle conditions have you been diagnosed with?';
-
-  @override
   String get chConditionOsteoporosis => 'Osteoporosis';
 
   @override
@@ -122,10 +96,6 @@ class ChtEmaSurveysLocalizationEn extends ChtEmaSurveysLocalization {
   @override
   String get chBrainNerveQuestion =>
       'Brain and Nervous System (e.g., dementia, migraine)';
-
-  @override
-  String get chBrainNerveConditionsQuestion =>
-      'Which brain and nervous system conditions have you been diagnosed with?';
 
   @override
   String get chConditionDementia => 'Dementia (includes Alzheimer\'s)';
@@ -177,10 +147,6 @@ class ChtEmaSurveysLocalizationEn extends ChtEmaSurveysLocalization {
   String get chLungQuestion => 'Lung Conditions (e.g., asthma)';
 
   @override
-  String get chLungConditionsQuestion =>
-      'Which lung conditions have you been diagnosed with?';
-
-  @override
   String get chConditionAsthma => 'Asthma';
 
   @override
@@ -190,10 +156,6 @@ class ChtEmaSurveysLocalizationEn extends ChtEmaSurveysLocalization {
   @override
   String get chHormoneQuestion =>
       'Hormone and Endocrine (e.g., diabetes, hypothyroidism)';
-
-  @override
-  String get chHormoneConditionsQuestion =>
-      'Which hormone and endocrine conditions have you been diagnosed with?';
 
   @override
   String get chConditionPrediabetes => 'Pre-diabetes';

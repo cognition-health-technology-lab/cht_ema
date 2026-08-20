@@ -100,7 +100,7 @@ class SurveyList extends StatelessWidget {
                 ),
               ),
               child: Text(
-                localizations.homeMessage,
+                localizations.chronicHealthButtonLabel,
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.headlineMedium,
               ),

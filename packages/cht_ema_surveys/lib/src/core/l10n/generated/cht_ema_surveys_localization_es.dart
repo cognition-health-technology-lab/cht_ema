@@ -9,32 +9,14 @@ class ChtEmaSurveysLocalizationEs extends ChtEmaSurveysLocalization {
   ChtEmaSurveysLocalizationEs([String locale = 'es']) : super(locale);
 
   @override
-  String get itemTitle => 'Título del item';
-
-  @override
   String get answerYes => 'Sí';
 
   @override
   String get answerNo => 'No';
 
   @override
-  String get chSurveyTitle => 'Cuestionario de historial de salud';
-
-  @override
-  String get chInstructions =>
-      'Indica si algún profesional de la salud física o mental te ha diagnosticado con alguna de las siguientes condiciones de salud.';
-
-  @override
   String get chMentalHealthCategoryPrompt =>
       'Indica si algún profesional de la salud física o mental te ha diagnosticado con alguna de las siguientes condiciones de salud.\n\nSalud mental o abuso de sustancias (ejemplo: depresión, ansiedad)';
-
-  @override
-  String get chMentalHealthQuestion =>
-      'Salud mental o abuso de sustancias (ejemplo: depresión, ansiedad)';
-
-  @override
-  String get chMentalHealthConditionsQuestion =>
-      '¿Con cuáles condiciones de salud mental o uso de sustancias ha sido diagnosticado/a?';
 
   @override
   String get chConditionDepression => 'Depresión';
@@ -78,10 +60,6 @@ class ChtEmaSurveysLocalizationEs extends ChtEmaSurveysLocalization {
       'Corazón y sangre (ejemplo: hipertensión, anemia)';
 
   @override
-  String get chHeartBloodConditionsQuestion =>
-      '¿Con cuáles condiciones del corazón y la sangre ha sido diagnosticado/a?';
-
-  @override
   String get chConditionHypertension => 'Hipertensión';
 
   @override
@@ -105,10 +83,6 @@ class ChtEmaSurveysLocalizationEs extends ChtEmaSurveysLocalization {
       'Hueso, articulaciones y músculos (ejemplo: osteoporosis, artritis)';
 
   @override
-  String get chBoneJointConditionsQuestion =>
-      '¿Con cuáles condiciones de huesos, articulaciones y músculos ha sido diagnosticado/a?';
-
-  @override
   String get chConditionOsteoporosis => 'Osteoporosis';
 
   @override
@@ -123,10 +97,6 @@ class ChtEmaSurveysLocalizationEs extends ChtEmaSurveysLocalization {
   @override
   String get chBrainNerveQuestion =>
       'Cerebro y sistema nervioso (ejemplo: demencia, migraña)';
-
-  @override
-  String get chBrainNerveConditionsQuestion =>
-      '¿Con cuáles condiciones del cerebro y sistema nervioso ha sido diagnosticado/a?';
 
   @override
   String get chConditionDementia =>
@@ -179,10 +149,6 @@ class ChtEmaSurveysLocalizationEs extends ChtEmaSurveysLocalization {
   String get chLungQuestion => 'Afecciones pulmonares (ejemplo: asma)';
 
   @override
-  String get chLungConditionsQuestion =>
-      '¿Con cuáles afecciones pulmonares ha sido diagnosticado/a?';
-
-  @override
   String get chConditionAsthma => 'Asma';
 
   @override
@@ -192,10 +158,6 @@ class ChtEmaSurveysLocalizationEs extends ChtEmaSurveysLocalization {
   @override
   String get chHormoneQuestion =>
       'Hormonas y endocrinas (ejemplo: diabetes, hipotiroidismo)';
-
-  @override
-  String get chHormoneConditionsQuestion =>
-      '¿Con cuáles condiciones hormonales o endocrinas ha sido diagnosticado/a?';
 
   @override
   String get chConditionPrediabetes => 'Prediabetes';

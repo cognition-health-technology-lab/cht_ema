@@ -12,7 +12,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get appTitle => 'Ejemplo CHT Encuestas';
 
   @override
-  String get homeMessage => 'Cuestionario de Salud Crónica';
+  String get chronicHealthButtonLabel => 'Cuestionario de Salud Crónica';
 
   @override
   String get languageToolTip => 'Seleccionar idioma';

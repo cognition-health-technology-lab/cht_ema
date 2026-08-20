@@ -1,9 +1,5 @@
 {
   "@@locale": "es",
-  "itemTitle": "Título del item",
-  "@itemTitle": {
-    "description": "Title for the EMA survey item"
-  },
   "answerYes": "Sí",
   "@answerYes": {
     "description": "Opción de respuesta compartida: sí"
@@ -12,25 +8,9 @@
   "@answerNo": {
     "description": "Opción de respuesta compartida: no"
   },
-  "chSurveyTitle": "Cuestionario de historial de salud",
-  "@chSurveyTitle": {
-    "description": "Título de la encuesta de salud crónica"
-  },
-  "chInstructions": "Indica si algún profesional de la salud física o mental te ha diagnosticado con alguna de las siguientes condiciones de salud.",
-  "@chInstructions": {
-    "description": "Instrucciones de la encuesta de salud crónica"
-  },
   "chMentalHealthCategoryPrompt": "Indica si algún profesional de la salud física o mental te ha diagnosticado con alguna de las siguientes condiciones de salud.\n\nSalud mental o abuso de sustancias (ejemplo: depresión, ansiedad)",
   "@chMentalHealthCategoryPrompt": {
     "description": "Salud crónica - instrucciones combinadas y Categoría 1 pregunta principal"
-  },
-  "chMentalHealthQuestion": "Salud mental o abuso de sustancias (ejemplo: depresión, ansiedad)",
-  "@chMentalHealthQuestion": {
-    "description": "Salud crónica - Categoría 1 pregunta principal"
-  },
-  "chMentalHealthConditionsQuestion": "¿Con cuáles condiciones de salud mental o uso de sustancias ha sido diagnosticado/a?",
-  "@chMentalHealthConditionsQuestion": {
-    "description": "Salud crónica - Categoría 1 subcondiciones"
   },
   "chConditionDepression": "Depresión",
   "@chConditionDepression": {
@@ -84,10 +64,6 @@
   "@chHeartBloodQuestion": {
     "description": "Salud crónica - Categoría 3 pregunta principal"
   },
-  "chHeartBloodConditionsQuestion": "¿Con cuáles condiciones del corazón y la sangre ha sido diagnosticado/a?",
-  "@chHeartBloodConditionsQuestion": {
-    "description": "Salud crónica - Categoría 3 subcondiciones"
-  },
   "chConditionHypertension": "Hipertensión",
   "@chConditionHypertension": {
     "description": "Condición de salud crónica: hipertensión"
@@ -116,10 +92,6 @@
   "@chBoneJointQuestion": {
     "description": "Salud crónica - Categoría 4 pregunta principal"
   },
-  "chBoneJointConditionsQuestion": "¿Con cuáles condiciones de huesos, articulaciones y músculos ha sido diagnosticado/a?",
-  "@chBoneJointConditionsQuestion": {
-    "description": "Salud crónica - Categoría 4 subcondiciones"
-  },
   "chConditionOsteoporosis": "Osteoporosis",
   "@chConditionOsteoporosis": {
     "description": "Condición de salud crónica: osteoporosis"
@@ -139,10 +111,6 @@
   "chBrainNerveQuestion": "Cerebro y sistema nervioso (ejemplo: demencia, migraña)",
   "@chBrainNerveQuestion": {
     "description": "Salud crónica - Categoría 5 pregunta principal"
-  },
-  "chBrainNerveConditionsQuestion": "¿Con cuáles condiciones del cerebro y sistema nervioso ha sido diagnosticado/a?",
-  "@chBrainNerveConditionsQuestion": {
-    "description": "Salud crónica - Categoría 5 subcondiciones"
   },
   "chConditionDementia": "Demencia (incluye la enfermedad de Alzheimer)",
   "@chConditionDementia": {
@@ -208,10 +176,6 @@
   "@chLungQuestion": {
     "description": "Salud crónica - Categoría 6 pregunta principal"
   },
-  "chLungConditionsQuestion": "¿Con cuáles afecciones pulmonares ha sido diagnosticado/a?",
-  "@chLungConditionsQuestion": {
-    "description": "Salud crónica - Categoría 6 subcondiciones"
-  },
   "chConditionAsthma": "Asma",
   "@chConditionAsthma": {
     "description": "Condición de salud crónica: asma"
@@ -223,10 +187,6 @@
   "chHormoneQuestion": "Hormonas y endocrinas (ejemplo: diabetes, hipotiroidismo)",
   "@chHormoneQuestion": {
     "description": "Salud crónica - Categoría 7 pregunta principal"
-  },
-  "chHormoneConditionsQuestion": "¿Con cuáles condiciones hormonales o endocrinas ha sido diagnosticado/a?",
-  "@chHormoneConditionsQuestion": {
-    "description": "Salud crónica - Categoría 7 subcondiciones"
   },
   "chConditionPrediabetes": "Prediabetes",
   "@chConditionPrediabetes": {

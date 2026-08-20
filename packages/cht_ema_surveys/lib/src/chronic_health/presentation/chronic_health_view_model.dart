@@ -4,7 +4,7 @@ import 'package:research_package/model.dart';
 class ChronicHealthViewModel {
   final task =
       RPNavigableOrderedTask(
-          identifier: 'chronicHealthSurvey',
+          identifier: 'chronicHealth',
           steps: chronicHealthSteps,
         )
         ..setNavigationRuleForTriggerStepIdentifier(
