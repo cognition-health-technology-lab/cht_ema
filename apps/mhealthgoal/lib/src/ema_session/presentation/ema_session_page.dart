@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mhealthgoal/src/core/router/data/app_router.dart';
 import 'package:mhealthgoal/src/ema_session/presentation/ema_session_view_model.dart';
 
 /// todo - add general instructions page?
@@ -21,13 +20,21 @@ class _EmaSessionPageState extends State<EmaSessionPage> {
   void initState() {
     super.initState();
     _viewModel.init();
+    _viewModel.addListener(_onViewModelChanged);
   }
 
   @override
   Widget build(BuildContext context) {
     if (_viewModel.isFinished) {
       widget._onFinished();
+      // return const SizedBox.shrink();
     }
+    // } else {
     return _viewModel.currentTask.build();
+    // }
+  }
+
+  void _onViewModelChanged() {
+    setState(() {});
   }
 }

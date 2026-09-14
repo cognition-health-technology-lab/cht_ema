@@ -18,6 +18,7 @@ class EmaSessionViewModel extends ChangeNotifier {
     _tasks.shuffle();
   }
 
+  // void onCompleteCognitiveTask(BuildContext _) {
   void onCompleteCognitiveTask(CognitiveData data) {
     _setupNextTask();
     _finishIfNecessary();
@@ -40,12 +41,15 @@ class EmaSessionViewModel extends ChangeNotifier {
       identifier: 'Go/No-Go Task',
       description: 'A cognitive task that measures response inhibition (EF).',
       build: () => GoNoGoTask(
+        // navigateAfterTask: onCompleteCognitiveTask,
         processData: onCompleteCognitiveTask,
         participantId: 'p001',
         sessionId: 's001',
-        nTrials: 10,
+        nTrials: 5,
         goProbability: .75,
         trialTimeoutDuration: const Duration(milliseconds: 750),
+        // The view model advances to the next task itself; no navigation needed.
+        navigateAfterTask: (context) {},
       ),
     );
 
@@ -54,12 +58,15 @@ class EmaSessionViewModel extends ChangeNotifier {
       description:
           'A cognitive task that measures working memory updating (EF).',
       build: () => NBackTask(
+        // navigateAfterTask: onCompleteCognitiveTask,
         processData: onCompleteCognitiveTask,
         participantId: 'p001',
         sessionId: 's001',
-        nTrials: 10,
+        nTrials: 5,
         matchProportion: .5,
         trialTimeoutDuration: const Duration(milliseconds: 750),
+        // The view model advances to the next task itself; no navigation needed.
+        navigateAfterTask: (context) {},
       ),
     );
 
