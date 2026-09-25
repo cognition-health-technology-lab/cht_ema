@@ -25,7 +25,7 @@ flutter:
 
   assets:
     #- assets/fonts/
-    - apps/mhealthgoal/assets/
+    - C:\Users\Owner\OneDrive\Desktop\Coding\cht_ema\apps\mhealthgoal\assets\fonts
 
   fonts:
     - family: OpenSans
