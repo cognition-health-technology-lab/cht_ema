@@ -22,3 +22,21 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   generate: true
+
+  assets:
+    #- assets/fonts/
+    - apps/mhealthgoal/assets/
+
+  fonts:
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/OpenSans-Bold.ttf
+          weight: 700
+
+    - family: NotoSerif
+      fonts:
+        - asset: assets/fonts/NotoSerif-Regular.ttf
+
+    - family: BaskervilleBT
+      fonts:
+        - asset: assets/fonts/BaskervilleBT-Roman.ttf

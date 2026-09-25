@@ -13,7 +13,7 @@ class MHealthGoalApp extends StatelessWidget {
       supportedLocales: AppLocalizations.supportedLocales,
       home: const HomePage(),
       theme: ChtLabTheme.lightTheme,
-      darkTheme: ChtLabTheme.dartkTheme,
+      //darkTheme: ChtLabTheme.dartkTheme,
     );
   }
 }
