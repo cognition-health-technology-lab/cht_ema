@@ -1,7 +1,9 @@
 import 'package:cht_cognition/src/core/cognitive_task.dart';
 import 'package:cht_cognition/src/core/data/process_data_callback.dart';
+import 'package:cht_cognition/src/core/page_builder_definitions.dart';
 import 'package:cht_cognition/src/core/trials/on_trial_callback_definition.dart';
 import 'package:cht_cognition/src/core/trials/trial.dart';
+import 'package:cht_cognition/src/go_no_go_task/go_no_go_default_instructions_page.dart';
 import 'package:cht_cognition/src/go_no_go_task/go_no_go_stim.dart';
 import 'package:cht_cognition/src/go_no_go_task/go_no_go_trial_page.dart';
 import 'package:cht_cognition/src/go_no_go_task/go_no_go_trials_builder.dart';
@@ -9,10 +11,11 @@ import 'package:cht_cognition/src/go_no_go_task/go_no_go_view_model.dart';
 import 'package:flutter/material.dart';
 
 class GoNoGoTask extends CognitiveTask<Trial<GoNoGoStim>> {
+  final PageBuilder? instructionsPageBuilder;
+
   GoNoGoTask({
     required String participantId,
     required String sessionId,
-    super.instructionsPageBuilder,
     super.restPageBuilder,
     super.finishedPageBuilder,
     super.navigateAfterTask,
@@ -23,6 +26,7 @@ class GoNoGoTask extends CognitiveTask<Trial<GoNoGoStim>> {
     Duration itiDuration = const Duration(milliseconds: 750),
     int? restEveryNTrials,
     ProcessCognitiveDataCallback? processData,
+    this.instructionsPageBuilder,
   }) : super(
          viewModel: GoNoGoViewModel(
            participantId: participantId,
@@ -44,6 +48,20 @@ class GoNoGoTask extends CognitiveTask<Trial<GoNoGoStim>> {
   }) {
     return GoNoGoTrialPage(
       trial: trial,
+      onFinished: onFinished,
+    );
+  }
+
+  @override
+  Widget buildInstructionsPage({
+    required BuildContext context,
+    required VoidCallback onFinished,
+  }) {
+    if (instructionsPageBuilder == null) {
+      return GoNoGoDefaultInstructionsPage(onFinished: onFinished);
+    }
+    return instructionsPageBuilder!(
+      context: context,
       onFinished: onFinished,
     );
   }
