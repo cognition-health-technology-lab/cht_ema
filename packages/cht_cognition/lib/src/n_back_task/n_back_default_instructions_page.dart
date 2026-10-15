@@ -2,10 +2,10 @@ import 'package:cht_cognition/src/core/centered_page.dart';
 import 'package:cht_cognition/src/core/l10n/generated/cht_cognition_localization.dart';
 import 'package:flutter/material.dart';
 
-class InstructionsPage extends StatelessWidget {
+class NBackDefaultInstructionsPage extends StatelessWidget {
   final VoidCallback _onFinished;
 
-  const InstructionsPage({
+  const NBackDefaultInstructionsPage({
     required VoidCallback onFinished,
     super.key,
   }) : _onFinished = onFinished;
@@ -15,7 +15,7 @@ class InstructionsPage extends StatelessWidget {
     final localization = ChtCognitionLocalization.of(context);
     return CenteredPage(
       child: <Widget>[
-        Text(localization.genericTaskInstructions),
+        Text(localization.nBackDefaultInstructions),
         ElevatedButton.icon(
           onPressed: _onFinished,
           icon: const Icon(Icons.arrow_forward),

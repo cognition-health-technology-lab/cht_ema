@@ -1,6 +1,5 @@
 import 'package:cht_cognition/src/core/after_task_navigator_definition.dart';
 import 'package:cht_cognition/src/core/finished_page.dart';
-import 'package:cht_cognition/src/core/instructions_page.dart';
 import 'package:cht_cognition/src/core/page_builder_definitions.dart';
 import 'package:cht_cognition/src/core/rest_page.dart';
 import 'package:cht_cognition/src/core/state/cognitive_task_state.dart';
@@ -11,7 +10,6 @@ import 'package:flutter/material.dart';
 
 abstract class CognitiveTask<T> extends StatefulWidget {
   final AfterTaskNavigator? navigateAfterTask;
-  final PageBuilder? instructionsPageBuilder;
   final PageBuilder? restPageBuilder;
   final PageBuilder? finishedPageBuilder;
   final ViewModel<T> _viewModel;
@@ -20,7 +18,6 @@ abstract class CognitiveTask<T> extends StatefulWidget {
     required ViewModel<T> viewModel,
     super.key,
     this.navigateAfterTask,
-    this.instructionsPageBuilder,
     this.restPageBuilder,
     this.finishedPageBuilder,
   }) : _viewModel = viewModel;
@@ -35,15 +32,7 @@ abstract class CognitiveTask<T> extends StatefulWidget {
   Widget buildInstructionsPage({
     required BuildContext context,
     required VoidCallback onFinished,
-  }) {
-    if (instructionsPageBuilder != null) {
-      return instructionsPageBuilder!(
-        context: context,
-        onFinished: onFinished,
-      );
-    }
-    return InstructionsPage(onFinished: onFinished);
-  }
+  });
 
   Widget buildItiPage({required BuildContext context}) {
     return const ITIPage();

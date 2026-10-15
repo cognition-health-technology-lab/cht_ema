@@ -1,7 +1,9 @@
 import 'package:cht_cognition/src/core/cognitive_task.dart';
 import 'package:cht_cognition/src/core/data/process_data_callback.dart';
+import 'package:cht_cognition/src/core/page_builder_definitions.dart';
 import 'package:cht_cognition/src/core/trials/on_trial_callback_definition.dart';
 import 'package:cht_cognition/src/core/trials/trial.dart';
+import 'package:cht_cognition/src/n_back_task/n_back_default_instructions_page.dart';
 import 'package:cht_cognition/src/n_back_task/n_back_stim.dart';
 import 'package:cht_cognition/src/n_back_task/n_back_task_trials_builder.dart';
 import 'package:cht_cognition/src/n_back_task/n_back_task_view_model.dart';
@@ -9,10 +11,11 @@ import 'package:cht_cognition/src/n_back_task/n_back_trial_page.dart';
 import 'package:flutter/material.dart';
 
 class NBackTask extends CognitiveTask<Trial<NBackStim>> {
+  final PageBuilder? instructionsPageBuilder;
+
   NBackTask({
     required String participantId,
     required String sessionId,
-    super.instructionsPageBuilder,
     super.restPageBuilder,
     super.finishedPageBuilder,
     super.navigateAfterTask,
@@ -23,6 +26,7 @@ class NBackTask extends CognitiveTask<Trial<NBackStim>> {
     Duration itiDuration = const Duration(milliseconds: 750),
     int? restEveryNTrials,
     ProcessCognitiveDataCallback? processData,
+    this.instructionsPageBuilder,
   }) : super(
          viewModel: NBackTaskViewModel(
            participantId: participantId,
@@ -50,6 +54,20 @@ class NBackTask extends CognitiveTask<Trial<NBackStim>> {
       trial: trial,
       onFinished: onFinished,
       enableResponse: enableResponse,
+    );
+  }
+
+  @override
+  Widget buildInstructionsPage({
+    required BuildContext context,
+    required VoidCallback onFinished,
+  }) {
+    if (instructionsPageBuilder == null) {
+      return NBackDefaultInstructionsPage(onFinished: onFinished);
+    }
+    return instructionsPageBuilder!(
+      context: context,
+      onFinished: onFinished,
     );
   }
 }
