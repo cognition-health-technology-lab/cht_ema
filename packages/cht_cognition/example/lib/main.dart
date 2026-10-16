@@ -32,7 +32,7 @@ class _ExampleAppState extends State<ExampleApp> {
       ],
       supportedLocales: AppLocalizations.supportedLocales,
       locale: locale,
-      home: Instructionspage(),
+      home: const Instructionspage(),
     );
   }
 
