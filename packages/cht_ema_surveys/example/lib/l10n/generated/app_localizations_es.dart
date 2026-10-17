@@ -12,7 +12,25 @@ class AppLocalizationsEs extends AppLocalizations {
   String get appTitle => 'Ejemplo CHT Encuestas';
 
   @override
-  String get homeMessage => 'Pantalla de inicio';
+  String get taskListTitle => 'Tareas disponibles';
+
+  @override
+  String get taskScopeCognition => 'Cognición';
+
+  @override
+  String get taskScopeSurvey => 'Encuesta';
+
+  @override
+  String get goNoGoTaskTitle => 'Go/No-Go';
+
+  @override
+  String get goNoGoTaskDescription => 'Tarea de inhibición de respuesta';
+
+  @override
+  String get surveyTaskTitle => 'Encuesta';
+
+  @override
+  String get surveyTaskDescription => 'Encuesta EMA de ejemplo';
 
   @override
   String get languageToolTip => 'Seleccionar idioma';

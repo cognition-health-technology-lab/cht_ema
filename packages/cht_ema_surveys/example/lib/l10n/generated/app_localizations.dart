@@ -104,11 +104,47 @@ abstract class AppLocalizations {
   /// **'CHT Surveys Example'**
   String get appTitle;
 
-  /// Message displayed on the home screen
+  /// Heading displayed above the task list
   ///
   /// In en, this message translates to:
-  /// **'Home screen'**
-  String get homeMessage;
+  /// **'Available tasks'**
+  String get taskListTitle;
+
+  /// Scope label for cognitive tasks
+  ///
+  /// In en, this message translates to:
+  /// **'Cognition'**
+  String get taskScopeCognition;
+
+  /// Scope label for survey tasks
+  ///
+  /// In en, this message translates to:
+  /// **'Survey'**
+  String get taskScopeSurvey;
+
+  /// Display title for the Go/No-Go task
+  ///
+  /// In en, this message translates to:
+  /// **'Go/No-Go'**
+  String get goNoGoTaskTitle;
+
+  /// Short description of the Go/No-Go task
+  ///
+  /// In en, this message translates to:
+  /// **'Response inhibition task'**
+  String get goNoGoTaskDescription;
+
+  /// Display title for the example EMA survey
+  ///
+  /// In en, this message translates to:
+  /// **'Survey'**
+  String get surveyTaskTitle;
+
+  /// Short description of the example EMA survey
+  ///
+  /// In en, this message translates to:
+  /// **'Example EMA survey'**
+  String get surveyTaskDescription;
 
   /// Tooltip for the language selection menu
   ///

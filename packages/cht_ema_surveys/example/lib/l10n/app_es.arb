@@ -2,22 +2,46 @@
   "@@locale": "es",
   "appTitle": "Ejemplo CHT Encuestas",
   "@appTitle": {
-    "description": "Title for the app"
+    "description": "Título de la aplicación"
   },
-  "homeMessage": "Pantalla de inicio",
-  "@homeMessage": {
-    "description": "Message displayed on the home screen"
+  "taskListTitle": "Tareas disponibles",
+  "@taskListTitle": {
+    "description": "Encabezado mostrado sobre la lista de tareas"
+  },
+  "taskScopeCognition": "Cognición",
+  "@taskScopeCognition": {
+    "description": "Etiqueta de categoría para tareas cognitivas"
+  },
+  "taskScopeSurvey": "Encuesta",
+  "@taskScopeSurvey": {
+    "description": "Etiqueta de categoría para encuestas"
+  },
+  "goNoGoTaskTitle": "Go/No-Go",
+  "@goNoGoTaskTitle": {
+    "description": "Título mostrado para la tarea Go/No-Go"
+  },
+  "goNoGoTaskDescription": "Tarea de inhibición de respuesta",
+  "@goNoGoTaskDescription": {
+    "description": "Descripción breve de la tarea Go/No-Go"
+  },
+  "surveyTaskTitle": "Encuesta",
+  "@surveyTaskTitle": {
+    "description": "Título mostrado para la encuesta EMA de ejemplo"
+  },
+  "surveyTaskDescription": "Encuesta EMA de ejemplo",
+  "@surveyTaskDescription": {
+    "description": "Descripción breve de la encuesta EMA de ejemplo"
   },
   "languageToolTip": "Seleccionar idioma",
   "@languageToolTip": {
-    "description": "Tooltip for the language selection menu"
+    "description": "Descripción emergente del menú de selección de idioma"
   },
   "langOptionEn": "English",
   "@langOptionEn": {
-    "description": "English language option"
+    "description": "Opción de idioma inglés"
   },
   "langOptionEs": "Español",
   "@langOptionEs": {
-    "description": "Spanish language option"
+    "description": "Opción de idioma español"
   }
 }

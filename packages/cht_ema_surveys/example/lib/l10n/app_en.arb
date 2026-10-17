@@ -4,9 +4,33 @@
   "@appTitle": {
     "description": "Title for the app"
   },
-  "homeMessage": "Home screen",
-  "@homeMessage": {
-    "description": "Message displayed on the home screen"
+  "taskListTitle": "Available tasks",
+  "@taskListTitle": {
+    "description": "Heading displayed above the task list"
+  },
+  "taskScopeCognition": "Cognition",
+  "@taskScopeCognition": {
+    "description": "Scope label for cognitive tasks"
+  },
+  "taskScopeSurvey": "Survey",
+  "@taskScopeSurvey": {
+    "description": "Scope label for survey tasks"
+  },
+  "goNoGoTaskTitle": "Go/No-Go",
+  "@goNoGoTaskTitle": {
+    "description": "Display title for the Go/No-Go task"
+  },
+  "goNoGoTaskDescription": "Response inhibition task",
+  "@goNoGoTaskDescription": {
+    "description": "Short description of the Go/No-Go task"
+  },
+  "surveyTaskTitle": "Survey",
+  "@surveyTaskTitle": {
+    "description": "Display title for the example EMA survey"
+  },
+  "surveyTaskDescription": "Example EMA survey",
+  "@surveyTaskDescription": {
+    "description": "Short description of the example EMA survey"
   },
   "languageToolTip": "Select Language",
   "@languageToolTip": {
